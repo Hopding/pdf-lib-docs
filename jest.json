@@ -1,0 +1,9 @@
+{
+  "preset": "ts-jest",
+  "coverageReporters": ["html"],
+  "testMatch": ["<rootDir>/tests/**/*.spec.ts"],
+  "roots": ["src", "tests"],
+  "moduleNameMapper": {
+    "^src/(.*)$": "<rootDir>/src/$1"
+  }
+}
