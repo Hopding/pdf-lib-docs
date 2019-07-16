@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "start": "cd website && yarn && yarn start",
+    "pull:pdf-lib": "git fetch pdf-lib Rewrite && git subtree pull --prefix=pdf-lib pdf-lib Rewrite --squash"
+  },
   "devDependencies": {
     "docusaurus-init": "^1.11.1"
   }
