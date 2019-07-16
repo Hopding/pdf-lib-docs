@@ -5,7 +5,7 @@
     <title>pdf-lib logo</title>
     <style>
       .container {
-        background-color: #f6f4f4;
+        background-color: #d50000;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -56,23 +56,28 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.7.1/svg.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/opentype.js@latest/dist/opentype.min.js"></script>
   <script>
-    loadFont('ubuntu/Ubuntu-R.ttf').then(font => {
-      const textPath = font.getPath('PDF', 0, 0, 200).toPathData();
+    loadFont('ubuntu/Ubuntu-B.ttf').then(font => {
+      const pdfTextPath = font.getPath('PDF', 0, 0, 200).toPathData();
+      const libTextPath = font.getPath('-LIB', 0, 0, 200).toPathData();
 
-      const svg = SVG('logo').size(450, 450);
+      const svg = SVG('logo').size(450 + 414, 450);
 
       svg
         .rect(430, 430)
-        .move(10, 10)
+        .move(35, 10)
         .radius(35)
         .style({
           fill: '#00000000',
           stroke: '#ffffff',
-          'stroke-width': 10,
+          'stroke-width': 25,
         })
       svg
-        .path(textPath)
-        .move(75, 270)
+        .path(pdfTextPath)
+        .move(75, 250)
+        .fill('#ffffff');
+      svg
+        .path(libTextPath)
+        .move(500, 250)
         .fill('#ffffff');
 
       renderSvgSource(svg.node)

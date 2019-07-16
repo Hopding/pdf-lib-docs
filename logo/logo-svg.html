@@ -56,15 +56,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.7.1/svg.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/opentype.js@latest/dist/opentype.min.js"></script>
   <script>
-    loadFont('ubuntu/Ubuntu-R.ttf').then(font => {
+    loadFont('ubuntu/Ubuntu-B.ttf').then(font => {
       const textPath = font.getPath('PDF', 0, 0, 200).toPathData();
 
       const svg = SVG('logo').size(450, 450);
 
-      const rect = svg.rect(450, 450).move(0, 0).attr({ fill: '#d50000' });
+      const rect = svg.rect(425, 425).move(25,25).attr({ fill: '#d50000' });
       svg
         .path(textPath)
-        .move(90, 270)
+        .move(65, 270)
         .fill('#ffffff');
 
       renderSvgSource(svg.node)

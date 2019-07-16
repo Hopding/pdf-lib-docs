@@ -1,0 +1,193 @@
+/* your custom css */
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (max-width: 1023px) {
+}
+
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1500px) {
+}
+
+/* Below are styles that should be global to all Reason-ecosystem sites
+ but which we have no current plans to upstream to Docusaurus. */
+
+/* 1. Custom code block styling */
+.homeContainer .hljs {
+  /* this -15px margin offsets the usual margin given to a page. This way it looks like this:
+      |        |
+    | myCode     |
+      |        |
+
+    instead of:
+
+      |        |
+      | myCode |
+      |        |
+
+    might not be clear as ascii comment, but the **code words inside the code
+    block** are aligned with the page's boundaries; previously the code block
+    itself starts at the boundary, then has extra padding. Now the code words
+    themselves are aligned with the rest of the page's paragraphs' starting
+    point
+   */
+  margin-left: -15px;
+  margin-right: -15px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: 15px;
+
+  /* respect the section's max width, from .mainContainer .wrapper p */
+  max-width: 50rem;
+}
+.homeContainer .hljs.javascript {
+  background-color: rgba(247, 223, 30, 0.03);
+}
+.homeContainer table .hljs {
+  border: none;
+  background: none;
+}
+@media (max-width: 736px) {
+  .homeContainer .hljs {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 20px;
+    /* on small screens, the code block completely occupies the width of the
+      view. No need for left/right borders */
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+/* tweaks to syntax highlighting, assuming atom-one-light theme */
+.homeContainer .hljs-operator {
+  color: #a626a4;
+}
+.homeContainer .hljs-character {
+  color: #50a14f;
+}
+.homeContainer .hljs-module-identifier {
+  color: #4078f2;
+}
+.homeContainer .hljs-constructor {
+  color: #e45649;
+}
+
+.homeWrapperWrapper {
+  background-color: #f6f4f4;
+  overflow: hidden;
+  position: relative;
+}
+
+.homeWrapperInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 0px 20px 0px;
+}
+
+.homeCodeSnippet {
+  background-color: transparent;
+  border: none;
+  text-align: initial;
+  padding-top: 20px;
+}
+
+.homeTagLine {
+  font-size: 24px;
+  font-weight: 300;
+  max-width: 500px;
+  line-height: 1.5em;
+}
+
+.quickStartAndExamples .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 750px;
+}
+
+@media (max-width: 736px) {
+  .quickStartAndExamples .wrapper {
+    flex-direction: column;
+  }
+}
+
+.projectTitle {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: proxima-nova, sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .homeWrapperInner {
+    flex-direction: column;
+  }
+}
+
+.homeCodeSnippet .hljs {
+  background-color: transparent;
+  border: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  color: rgb(57, 57, 57);
+  font-size: 14px;
+}
+/* hide the small code snippet on normal screens */
+.homeWrapperInner .homeCodeSnippet > div:nth-child(1) {
+  display: none;
+}
+/* mobile */
+@media (max-width: 480px) {
+  .projectTitle {
+    font-size: 30px;
+  }
+
+  .homeCodeSnippet .hljs {
+    font-size: 13px;
+    padding: 0;
+  }
+  .homeWrapperInner .homeCodeSnippet > div:nth-child(1) {
+    display: block;
+  }
+  /* hide the big code snippet on small screens */
+  .homeWrapperInner .homeCodeSnippet > div:nth-child(2) {
+    display: none;
+  }
+}
+
+.getStarted {
+  background-color: $primaryColor;
+  color: white;
+}
+
+.card {
+  width: 100%;
+  height: 500px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d9d9d9;
+}
+
+#examples {
+  padding-top: 20px;
+}
+
+.examplesOuterContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.examplesInnerContainer {
+  overflow: hidden;
+}
