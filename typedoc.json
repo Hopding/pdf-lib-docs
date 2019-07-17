@@ -1,0 +1,13 @@
+{
+  "src": "./src/api/index.ts",
+  "mode": "file",
+  "tsconfig": "./tsconfig.json",
+  "out": "../docs/api",
+  "exclude": ["./src/core/**/*", "./src/utils/**/*"],
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "ignoreCompilerErrors": true,
+  "readme": "none",
+  "theme": "markdown",
+  "platform": "docusaurus"
+}

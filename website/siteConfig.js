@@ -72,7 +72,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    { doc: 'doc1', label: 'API' },
+    { doc: 'api/index', label: 'API' },
     { page: 'help', label: 'Help' },
     { href: 'https://github.com/Hopding/pdf-lib', label: 'GitHub' },
     { search: true },
