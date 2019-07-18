@@ -5,45 +5,9 @@
     "previous": "Previous",
     "tagline": " Create and modify PDF documents in any JavaScript environment.",
     "docs": {
-      "api/classes/ascii85stream": {
-        "title": "Ascii85Stream",
-        "sidebar_label": "Ascii85Stream"
-      },
-      "api/classes/asciihexstream": {
-        "title": "AsciiHexStream",
-        "sidebar_label": "AsciiHexStream"
-      },
-      "api/classes/baseparser": {
-        "title": "BaseParser",
-        "sidebar_label": "BaseParser"
-      },
-      "api/classes/bytestream": {
-        "title": "ByteStream",
-        "sidebar_label": "ByteStream"
-      },
-      "api/classes/cache": {
-        "title": "Cache",
-        "sidebar_label": "Cache"
-      },
-      "api/classes/customfontembedder": {
-        "title": "CustomFontEmbedder",
-        "sidebar_label": "CustomFontEmbedder"
-      },
-      "api/classes/customfontsubsetembedder": {
-        "title": "CustomFontSubsetEmbedder",
-        "sidebar_label": "CustomFontSubsetEmbedder"
-      },
-      "api/classes/decodestream": {
-        "title": "DecodeStream",
-        "sidebar_label": "DecodeStream"
-      },
       "api/classes/encryptedpdferror": {
         "title": "EncryptedPDFError",
         "sidebar_label": "EncryptedPDFError"
-      },
-      "api/classes/flatestream": {
-        "title": "FlateStream",
-        "sidebar_label": "FlateStream"
       },
       "api/classes/fontkitnotregisterederror": {
         "title": "FontkitNotRegisteredError",
@@ -53,261 +17,29 @@
         "title": "ForeignPageError",
         "sidebar_label": "ForeignPageError"
       },
-      "api/classes/jpegembedder": {
-        "title": "JpegEmbedder",
-        "sidebar_label": "JpegEmbedder"
-      },
-      "api/classes/lzwstream": {
-        "title": "LZWStream",
-        "sidebar_label": "LZWStream"
-      },
-      "api/classes/methodnotimplementederror": {
-        "title": "MethodNotImplementedError",
-        "sidebar_label": "MethodNotImplementedError"
-      },
-      "api/classes/missingcatalogerror": {
-        "title": "MissingCatalogError",
-        "sidebar_label": "MissingCatalogError"
-      },
-      "api/classes/missingkeyworderror": {
-        "title": "MissingKeywordError",
-        "sidebar_label": "MissingKeywordError"
-      },
-      "api/classes/missingpdfheadererror": {
-        "title": "MissingPDFHeaderError",
-        "sidebar_label": "MissingPDFHeaderError"
-      },
-      "api/classes/nextbyteassertionerror": {
-        "title": "NextByteAssertionError",
-        "sidebar_label": "NextByteAssertionError"
-      },
-      "api/classes/numberparsingerror": {
-        "title": "NumberParsingError",
-        "sidebar_label": "NumberParsingError"
-      },
-      "api/classes/pdfarray": {
-        "title": "PDFArray",
-        "sidebar_label": "PDFArray"
-      },
-      "api/classes/pdfbool": {
-        "title": "PDFBool",
-        "sidebar_label": "PDFBool"
-      },
-      "api/classes/pdfcatalog": {
-        "title": "PDFCatalog",
-        "sidebar_label": "PDFCatalog"
-      },
-      "api/classes/pdfcontentstream": {
-        "title": "PDFContentStream",
-        "sidebar_label": "PDFContentStream"
-      },
-      "api/classes/pdfcontext": {
-        "title": "PDFContext",
-        "sidebar_label": "PDFContext"
-      },
-      "api/classes/pdfcrossrefsection": {
-        "title": "PDFCrossRefSection",
-        "sidebar_label": "PDFCrossRefSection"
-      },
-      "api/classes/pdfcrossrefstream": {
-        "title": "PDFCrossRefStream",
-        "sidebar_label": "PDFCrossRefStream"
-      },
-      "api/classes/pdfdict": {
-        "title": "PDFDict",
-        "sidebar_label": "PDFDict"
-      },
       "api/classes/pdfdocument": {
         "title": "PDFDocument",
         "sidebar_label": "PDFDocument"
-      },
-      "api/classes/pdfflatestream": {
-        "title": "PDFFlateStream",
-        "sidebar_label": "PDFFlateStream"
       },
       "api/classes/pdffont": {
         "title": "PDFFont",
         "sidebar_label": "PDFFont"
       },
-      "api/classes/pdfheader": {
-        "title": "PDFHeader",
-        "sidebar_label": "PDFHeader"
-      },
-      "api/classes/pdfhexstring": {
-        "title": "PDFHexString",
-        "sidebar_label": "PDFHexString"
-      },
       "api/classes/pdfimage": {
         "title": "PDFImage",
         "sidebar_label": "PDFImage"
-      },
-      "api/classes/pdfinvalidobject": {
-        "title": "PDFInvalidObject",
-        "sidebar_label": "PDFInvalidObject"
-      },
-      "api/classes/pdfinvalidobjectparsingerror": {
-        "title": "PDFInvalidObjectParsingError",
-        "sidebar_label": "PDFInvalidObjectParsingError"
-      },
-      "api/classes/pdfname": {
-        "title": "PDFName",
-        "sidebar_label": "PDFName"
-      },
-      "api/classes/pdfnull": {
-        "title": "PDFNull",
-        "sidebar_label": "PDFNull"
-      },
-      "api/classes/pdfnumber": {
-        "title": "PDFNumber",
-        "sidebar_label": "PDFNumber"
-      },
-      "api/classes/pdfobject": {
-        "title": "PDFObject",
-        "sidebar_label": "PDFObject"
-      },
-      "api/classes/pdfobjectcopier": {
-        "title": "PDFObjectCopier",
-        "sidebar_label": "PDFObjectCopier"
-      },
-      "api/classes/pdfobjectparser": {
-        "title": "PDFObjectParser",
-        "sidebar_label": "PDFObjectParser"
-      },
-      "api/classes/pdfobjectparsingerror": {
-        "title": "PDFObjectParsingError",
-        "sidebar_label": "PDFObjectParsingError"
-      },
-      "api/classes/pdfobjectstream": {
-        "title": "PDFObjectStream",
-        "sidebar_label": "PDFObjectStream"
-      },
-      "api/classes/pdfobjectstreamparser": {
-        "title": "PDFObjectStreamParser",
-        "sidebar_label": "PDFObjectStreamParser"
-      },
-      "api/classes/pdfoperator": {
-        "title": "PDFOperator",
-        "sidebar_label": "PDFOperator"
       },
       "api/classes/pdfpage": {
         "title": "PDFPage",
         "sidebar_label": "PDFPage"
       },
-      "api/classes/pdfpageleaf": {
-        "title": "PDFPageLeaf",
-        "sidebar_label": "PDFPageLeaf"
-      },
-      "api/classes/pdfpagetree": {
-        "title": "PDFPageTree",
-        "sidebar_label": "PDFPageTree"
-      },
-      "api/classes/pdfparser": {
-        "title": "PDFParser",
-        "sidebar_label": "PDFParser"
-      },
-      "api/classes/pdfparsingerror": {
-        "title": "PDFParsingError",
-        "sidebar_label": "PDFParsingError"
-      },
-      "api/classes/pdfrawstream": {
-        "title": "PDFRawStream",
-        "sidebar_label": "PDFRawStream"
-      },
-      "api/classes/pdfref": {
-        "title": "PDFRef",
-        "sidebar_label": "PDFRef"
-      },
-      "api/classes/pdfstream": {
-        "title": "PDFStream",
-        "sidebar_label": "PDFStream"
-      },
-      "api/classes/pdfstreamparsingerror": {
-        "title": "PDFStreamParsingError",
-        "sidebar_label": "PDFStreamParsingError"
-      },
-      "api/classes/pdfstreamwriter": {
-        "title": "PDFStreamWriter",
-        "sidebar_label": "PDFStreamWriter"
-      },
-      "api/classes/pdfstring": {
-        "title": "PDFString",
-        "sidebar_label": "PDFString"
-      },
-      "api/classes/pdftrailer": {
-        "title": "PDFTrailer",
-        "sidebar_label": "PDFTrailer"
-      },
-      "api/classes/pdftrailerdict": {
-        "title": "PDFTrailerDict",
-        "sidebar_label": "PDFTrailerDict"
-      },
-      "api/classes/pdfwriter": {
-        "title": "PDFWriter",
-        "sidebar_label": "PDFWriter"
-      },
-      "api/classes/pdfxrefstreamparser": {
-        "title": "PDFXRefStreamParser",
-        "sidebar_label": "PDFXRefStreamParser"
-      },
-      "api/classes/pngembedder": {
-        "title": "PngEmbedder",
-        "sidebar_label": "PngEmbedder"
-      },
-      "api/classes/privateconstructorerror": {
-        "title": "PrivateConstructorError",
-        "sidebar_label": "PrivateConstructorError"
-      },
       "api/classes/removepagefromemptydocumenterror": {
         "title": "RemovePageFromEmptyDocumentError",
         "sidebar_label": "RemovePageFromEmptyDocumentError"
       },
-      "api/classes/reparseerror": {
-        "title": "ReparseError",
-        "sidebar_label": "ReparseError"
-      },
-      "api/classes/runlengthstream": {
-        "title": "RunLengthStream",
-        "sidebar_label": "RunLengthStream"
-      },
-      "api/classes/stalledparsererror": {
-        "title": "StalledParserError",
-        "sidebar_label": "StalledParserError"
-      },
-      "api/classes/standardfontembedder": {
-        "title": "StandardFontEmbedder",
-        "sidebar_label": "StandardFontEmbedder"
-      },
-      "api/classes/stream": {
-        "title": "Stream",
-        "sidebar_label": "Stream"
-      },
-      "api/classes/unbalancedparenthesiserror": {
-        "title": "UnbalancedParenthesisError",
-        "sidebar_label": "UnbalancedParenthesisError"
-      },
-      "api/classes/unexpectedobjecttypeerror": {
-        "title": "UnexpectedObjectTypeError",
-        "sidebar_label": "UnexpectedObjectTypeError"
-      },
-      "api/classes/unsupportedencodingerror": {
-        "title": "UnsupportedEncodingError",
-        "sidebar_label": "UnsupportedEncodingError"
-      },
-      "api/enums/charcodes": {
-        "title": "CharCodes",
-        "sidebar_label": "CharCodes"
-      },
-      "api/enums/colorspace": {
-        "title": "ColorSpace",
-        "sidebar_label": "ColorSpace"
-      },
       "api/enums/colortypes": {
         "title": "ColorTypes",
         "sidebar_label": "ColorTypes"
-      },
-      "api/enums/entrytype": {
-        "title": "EntryType",
-        "sidebar_label": "EntryType"
       },
       "api/enums/linecapstyle": {
         "title": "LineCapStyle",
@@ -320,10 +52,6 @@
       "api/enums/parsespeeds": {
         "title": "ParseSpeeds",
         "sidebar_label": "ParseSpeeds"
-      },
-      "api/enums/pdfoperatornames": {
-        "title": "PDFOperatorNames",
-        "sidebar_label": "PDFOperatorNames"
       },
       "api/enums/rotationtypes": {
         "title": "RotationTypes",
@@ -349,17 +77,9 @@
         "title": "CMYK",
         "sidebar_label": "CMYK"
       },
-      "api/interfaces/compressedentry": {
-        "title": "CompressedEntry",
-        "sidebar_label": "CompressedEntry"
-      },
       "api/interfaces/degrees": {
         "title": "Degrees",
         "sidebar_label": "Degrees"
-      },
-      "api/interfaces/deletedentry": {
-        "title": "DeletedEntry",
-        "sidebar_label": "DeletedEntry"
       },
       "api/interfaces/drawlinesoftextoptions": {
         "title": "DrawLinesOfTextOptions",
@@ -369,17 +89,9 @@
         "title": "DrawTextOptions",
         "sidebar_label": "DrawTextOptions"
       },
-      "api/interfaces/entry": {
-        "title": "Entry",
-        "sidebar_label": "Entry"
-      },
       "api/interfaces/font": {
         "title": "Font",
         "sidebar_label": "Font"
-      },
-      "api/interfaces/fontflagoptions": {
-        "title": "FontFlagOptions",
-        "sidebar_label": "FontFlagOptions"
       },
       "api/interfaces/fontkit": {
         "title": "Fontkit",
@@ -400,14 +112,6 @@
       "api/interfaces/grayscale": {
         "title": "Grayscale",
         "sidebar_label": "Grayscale"
-      },
-      "api/interfaces/literalarray": {
-        "title": "LiteralArray",
-        "sidebar_label": "LiteralArray"
-      },
-      "api/interfaces/literalobject": {
-        "title": "LiteralObject",
-        "sidebar_label": "LiteralObject"
       },
       "api/interfaces/path": {
         "title": "Path",
@@ -437,10 +141,6 @@
         "title": "PDFPageDrawTextOptions",
         "sidebar_label": "PDFPageDrawTextOptions"
       },
-      "api/interfaces/position": {
-        "title": "Position",
-        "sidebar_label": "Position"
-      },
       "api/interfaces/radians": {
         "title": "Radians",
         "sidebar_label": "Radians"
@@ -453,14 +153,6 @@
         "title": "SaveOptions",
         "sidebar_label": "SaveOptions"
       },
-      "api/interfaces/serializationinfo": {
-        "title": "SerializationInfo",
-        "sidebar_label": "SerializationInfo"
-      },
-      "api/interfaces/streamtype": {
-        "title": "StreamType",
-        "sidebar_label": "StreamType"
-      },
       "api/interfaces/subset": {
         "title": "Subset",
         "sidebar_label": "Subset"
@@ -468,26 +160,6 @@
       "api/interfaces/subsetstream": {
         "title": "SubsetStream",
         "sidebar_label": "SubsetStream"
-      },
-      "api/interfaces/uncompressedentry": {
-        "title": "UncompressedEntry",
-        "sidebar_label": "UncompressedEntry"
-      },
-      "doc1": {
-        "title": "Latin-ish",
-        "sidebar_label": "Example Page"
-      },
-      "doc2": {
-        "title": "document number 2"
-      },
-      "doc3": {
-        "title": "This is document number 3"
-      },
-      "doc4": {
-        "title": "Other Document"
-      },
-      "doc5": {
-        "title": "Fifth Document"
       }
     },
     "links": {
