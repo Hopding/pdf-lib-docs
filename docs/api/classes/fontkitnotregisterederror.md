@@ -31,7 +31,7 @@ sidebar_label: FontkitNotRegisteredError
 
 \+ **new FontkitNotRegisteredError**(): *[FontkitNotRegisteredError](fontkitnotregisterederror.md)*
 
-*Defined in [api/errors.ts:13](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/errors.ts#L13)*
+*Defined in [api/errors.ts:13](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/errors.ts#L13)*
 
 **Returns:** *[FontkitNotRegisteredError](fontkitnotregisterederror.md)*
 

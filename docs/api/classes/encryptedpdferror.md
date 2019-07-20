@@ -31,7 +31,7 @@ sidebar_label: EncryptedPDFError
 
 \+ **new EncryptedPDFError**(): *[EncryptedPDFError](encryptedpdferror.md)*
 
-*Defined in [api/errors.ts:4](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/errors.ts#L4)*
+*Defined in [api/errors.ts:4](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/errors.ts#L4)*
 
 **Returns:** *[EncryptedPDFError](encryptedpdferror.md)*
 

@@ -58,7 +58,7 @@ sidebar_label: PDFPage
 
 • **doc**: *[PDFDocument](pdfdocument.md)*
 
-*Defined in [api/PDFPage.ts:57](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L57)*
+*Defined in [api/PDFPage.ts:57](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L57)*
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 • **node**: *`PDFPageLeaf`*
 
-*Defined in [api/PDFPage.ts:55](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L55)*
+*Defined in [api/PDFPage.ts:55](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L55)*
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 • **ref**: *`PDFRef`*
 
-*Defined in [api/PDFPage.ts:56](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L56)*
+*Defined in [api/PDFPage.ts:56](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L56)*
 
 ## Methods
 
@@ -82,7 +82,7 @@ ___
 
 ▸ **drawCircle**(`options`: [PDFPageDrawCircleOptions](../interfaces/pdfpagedrawcircleoptions.md)): *void*
 
-*Defined in [api/PDFPage.ts:357](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L357)*
+*Defined in [api/PDFPage.ts:357](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L357)*
 
 **Parameters:**
 
@@ -98,7 +98,7 @@ ___
 
 ▸ **drawEllipse**(`options`: [PDFPageDrawEllipseOptions](../interfaces/pdfpagedrawellipseoptions.md)): *void*
 
-*Defined in [api/PDFPage.ts:329](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L329)*
+*Defined in [api/PDFPage.ts:329](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L329)*
 
 **Parameters:**
 
@@ -114,7 +114,7 @@ ___
 
 ▸ **drawImage**(`image`: [PDFImage](pdfimage.md), `options`: [PDFPageDrawImageOptions](../interfaces/pdfpagedrawimageoptions.md)): *void*
 
-*Defined in [api/PDFPage.ts:262](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L262)*
+*Defined in [api/PDFPage.ts:262](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L262)*
 
 **Parameters:**
 
@@ -131,7 +131,7 @@ ___
 
 ▸ **drawRectangle**(`options`: [PDFPageDrawRectangleOptions](../interfaces/pdfpagedrawrectangleoptions.md)): *void*
 
-*Defined in [api/PDFPage.ts:289](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L289)*
+*Defined in [api/PDFPage.ts:289](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L289)*
 
 **Parameters:**
 
@@ -147,7 +147,7 @@ ___
 
 ▸ **drawSquare**(`options`: [PDFPageDrawSquareOptions](../interfaces/pdfpagedrawsquareoptions.md)): *void*
 
-*Defined in [api/PDFPage.ts:323](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L323)*
+*Defined in [api/PDFPage.ts:323](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L323)*
 
 **Parameters:**
 
@@ -163,7 +163,7 @@ ___
 
 ▸ **drawText**(`text`: string, `options`: [PDFPageDrawTextOptions](../interfaces/pdfpagedrawtextoptions.md)): *void*
 
-*Defined in [api/PDFPage.ts:221](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L221)*
+*Defined in [api/PDFPage.ts:221](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L221)*
 
 **Parameters:**
 
@@ -180,7 +180,7 @@ ___
 
 ▸ **getHeight**(): *number*
 
-*Defined in [api/PDFPage.ts:124](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L124)*
+*Defined in [api/PDFPage.ts:124](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L124)*
 
 **Returns:** *number*
 
@@ -190,7 +190,7 @@ ___
 
 ▸ **getPosition**(): *object*
 
-*Defined in [api/PDFPage.ts:176](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L176)*
+*Defined in [api/PDFPage.ts:176](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L176)*
 
 **Returns:** *object*
 
@@ -204,7 +204,7 @@ ___
 
 ▸ **getRotation**(): *number*
 
-*Defined in [api/PDFPage.ts:85](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L85)*
+*Defined in [api/PDFPage.ts:85](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L85)*
 
 **Returns:** *number*
 
@@ -214,7 +214,7 @@ ___
 
 ▸ **getSize**(): *object*
 
-*Defined in [api/PDFPage.ts:109](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L109)*
+*Defined in [api/PDFPage.ts:109](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L109)*
 
 **Returns:** *object*
 
@@ -228,7 +228,7 @@ ___
 
 ▸ **getWidth**(): *number*
 
-*Defined in [api/PDFPage.ts:120](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L120)*
+*Defined in [api/PDFPage.ts:120](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L120)*
 
 **Returns:** *number*
 
@@ -238,7 +238,7 @@ ___
 
 ▸ **getX**(): *number*
 
-*Defined in [api/PDFPage.ts:180](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L180)*
+*Defined in [api/PDFPage.ts:180](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L180)*
 
 **Returns:** *number*
 
@@ -248,7 +248,7 @@ ___
 
 ▸ **getY**(): *number*
 
-*Defined in [api/PDFPage.ts:184](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L184)*
+*Defined in [api/PDFPage.ts:184](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L184)*
 
 **Returns:** *number*
 
@@ -258,7 +258,7 @@ ___
 
 ▸ **moveDown**(`yDecrease`: number): *void*
 
-*Defined in [api/PDFPage.ts:195](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L195)*
+*Defined in [api/PDFPage.ts:195](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L195)*
 
 **Parameters:**
 
@@ -274,7 +274,7 @@ ___
 
 ▸ **moveLeft**(`xDecrease`: number): *void*
 
-*Defined in [api/PDFPage.ts:205](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L205)*
+*Defined in [api/PDFPage.ts:205](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L205)*
 
 **Parameters:**
 
@@ -290,7 +290,7 @@ ___
 
 ▸ **moveRight**(`xIncrease`: number): *void*
 
-*Defined in [api/PDFPage.ts:210](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L210)*
+*Defined in [api/PDFPage.ts:210](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L210)*
 
 **Parameters:**
 
@@ -306,7 +306,7 @@ ___
 
 ▸ **moveTo**(`x`: number, `y`: number): *void*
 
-*Defined in [api/PDFPage.ts:188](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L188)*
+*Defined in [api/PDFPage.ts:188](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L188)*
 
 **Parameters:**
 
@@ -323,7 +323,7 @@ ___
 
 ▸ **moveUp**(`yIncrease`: number): *void*
 
-*Defined in [api/PDFPage.ts:200](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L200)*
+*Defined in [api/PDFPage.ts:200](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L200)*
 
 **Parameters:**
 
@@ -339,7 +339,7 @@ ___
 
 ▸ **pushOperators**(...`operator`: `PDFOperator`[]): *void*
 
-*Defined in [api/PDFPage.ts:215](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L215)*
+*Defined in [api/PDFPage.ts:215](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L215)*
 
 **Parameters:**
 
@@ -355,7 +355,7 @@ ___
 
 ▸ **resetPosition**(): *void*
 
-*Defined in [api/PDFPage.ts:147](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L147)*
+*Defined in [api/PDFPage.ts:147](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L147)*
 
 **Returns:** *void*
 
@@ -365,7 +365,7 @@ ___
 
 ▸ **setFont**(`font`: [PDFFont](pdffont.md)): *void*
 
-*Defined in [api/PDFPage.ts:154](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L154)*
+*Defined in [api/PDFPage.ts:154](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L154)*
 
 **Parameters:**
 
@@ -381,7 +381,7 @@ ___
 
 ▸ **setFontColor**(`fontColor`: [Color](../index.md#color)): *void*
 
-*Defined in [api/PDFPage.ts:166](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L166)*
+*Defined in [api/PDFPage.ts:166](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L166)*
 
 **Parameters:**
 
@@ -397,7 +397,7 @@ ___
 
 ▸ **setFontSize**(`fontSize`: number): *void*
 
-*Defined in [api/PDFPage.ts:161](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L161)*
+*Defined in [api/PDFPage.ts:161](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L161)*
 
 **Parameters:**
 
@@ -413,7 +413,7 @@ ___
 
 ▸ **setHeight**(`height`: number): *void*
 
-*Defined in [api/PDFPage.ts:104](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L104)*
+*Defined in [api/PDFPage.ts:104](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L104)*
 
 **Parameters:**
 
@@ -429,7 +429,7 @@ ___
 
 ▸ **setLineHeight**(`lineHeight`: number): *void*
 
-*Defined in [api/PDFPage.ts:171](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L171)*
+*Defined in [api/PDFPage.ts:171](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L171)*
 
 **Parameters:**
 
@@ -445,7 +445,7 @@ ___
 
 ▸ **setRotation**(`angle`: [Rotation](../index.md#rotation)): *void*
 
-*Defined in [api/PDFPage.ts:79](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L79)*
+*Defined in [api/PDFPage.ts:79](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L79)*
 
 **Parameters:**
 
@@ -461,7 +461,7 @@ ___
 
 ▸ **setSize**(`width`: number, `height`: number): *void*
 
-*Defined in [api/PDFPage.ts:90](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L90)*
+*Defined in [api/PDFPage.ts:90](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L90)*
 
 **Parameters:**
 
@@ -478,7 +478,7 @@ ___
 
 ▸ **setWidth**(`width`: number): *void*
 
-*Defined in [api/PDFPage.ts:99](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L99)*
+*Defined in [api/PDFPage.ts:99](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L99)*
 
 **Parameters:**
 
@@ -494,7 +494,7 @@ ___
 
 ▸ **translateContent**(`x`: number, `y`: number): *void*
 
-*Defined in [api/PDFPage.ts:128](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L128)*
+*Defined in [api/PDFPage.ts:128](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L128)*
 
 **Parameters:**
 
@@ -511,7 +511,7 @@ ___
 
 ▸ **create**(`doc`: [PDFDocument](pdfdocument.md)): *[PDFPage](pdfpage.md)*
 
-*Defined in [api/PDFPage.ts:47](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L47)*
+*Defined in [api/PDFPage.ts:47](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L47)*
 
 **Parameters:**
 
@@ -527,7 +527,7 @@ ___
 
 ▸ **of**(`leafNode`: `PDFPageLeaf`, `ref`: `PDFRef`, `doc`: [PDFDocument](pdfdocument.md)): *[PDFPage](pdfpage.md)*
 
-*Defined in [api/PDFPage.ts:44](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/PDFPage.ts#L44)*
+*Defined in [api/PDFPage.ts:44](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFPage.ts#L44)*
 
 **Parameters:**
 

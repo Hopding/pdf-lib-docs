@@ -31,7 +31,7 @@ sidebar_label: ForeignPageError
 
 \+ **new ForeignPageError**(): *[ForeignPageError](foreignpageerror.md)*
 
-*Defined in [api/errors.ts:22](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/errors.ts#L22)*
+*Defined in [api/errors.ts:22](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/errors.ts#L22)*
 
 **Returns:** *[ForeignPageError](foreignpageerror.md)*
 

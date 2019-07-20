@@ -42,7 +42,7 @@ include the following API.
 
 • **advanceWidth**: *number*
 
-*Defined in [types/fontkit.ts:117](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L117)*
+*Defined in [types/fontkit.ts:117](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L117)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **bbox**: *[BoundingBox](boundingbox.md)*
 
-*Defined in [types/fontkit.ts:108](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L108)*
+*Defined in [types/fontkit.ts:108](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L108)*
 
 The Glyph’s bounding box, i.e. the rectangle that encloses the glyph
 outline as tightly as possible.
@@ -61,7 +61,7 @@ ___
 
 • **cbox**: *[BoundingBox](boundingbox.md)*
 
-*Defined in [types/fontkit.ts:116](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L116)*
+*Defined in [types/fontkit.ts:116](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L116)*
 
 The Glyph’s control box. This is often the same as the bounding box, but is
 faster to compute. Because of the way bezier curves are defined, some of
@@ -75,7 +75,7 @@ ___
 
 • **codePoints**: *number[]*
 
-*Defined in [types/fontkit.ts:102](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L102)*
+*Defined in [types/fontkit.ts:102](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L102)*
 
 An array of unicode code points that are represented by this glyph. There
 can be multiple code points in the case of ligatures and other glyphs that
@@ -87,7 +87,7 @@ ___
 
 • **id**: *number*
 
-*Defined in [types/fontkit.ts:96](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L96)*
+*Defined in [types/fontkit.ts:96](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L96)*
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 • **layers**: *any[]*
 
-*Defined in [types/fontkit.ts:123](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L123)*
+*Defined in [types/fontkit.ts:123](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L123)*
 
 For COLR glyphs, which are vector based, this returns an array of objects
 representing the glyphs and colors for each layer in render order.
@@ -106,7 +106,7 @@ ___
 
 • **path**: *[Path](path.md)*
 
-*Defined in [types/fontkit.ts:103](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L103)*
+*Defined in [types/fontkit.ts:103](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L103)*
 
 ## Methods
 
@@ -114,7 +114,7 @@ ___
 
 ▸ **getImageForSize**(`size`: number): *`Uint8Array`*
 
-*Defined in [types/fontkit.ts:138](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L138)*
+*Defined in [types/fontkit.ts:138](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L138)*
 
 For SBIX glyphs, which are bitmap based, this returns an object containing
 some properties about the image, along with the image data itself
@@ -134,7 +134,7 @@ ___
 
 ▸ **render**(`context`: any, `size`: number): *void*
 
-*Defined in [types/fontkit.ts:130](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L130)*
+*Defined in [types/fontkit.ts:130](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L130)*
 
 Renders the glyph to the given graphics context, at the specified
 font size.

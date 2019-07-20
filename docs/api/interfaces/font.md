@@ -58,7 +58,7 @@ and have the same public API.
 
 • **OS/2**: *object*
 
-*Defined in [types/fontkit.ts:276](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L276)*
+*Defined in [types/fontkit.ts:276](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L276)*
 
 #### Type declaration:
 
@@ -70,7 +70,7 @@ ___
 
 • **ascent**: *number*
 
-*Defined in [types/fontkit.ts:261](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L261)*
+*Defined in [types/fontkit.ts:261](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L261)*
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 • **availableFeatures**: *any[]*
 
-*Defined in [types/fontkit.ts:274](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L274)*
+*Defined in [types/fontkit.ts:274](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L274)*
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 • **bbox**: *[BoundingBox](boundingbox.md)*
 
-*Defined in [types/fontkit.ts:269](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L269)*
+*Defined in [types/fontkit.ts:269](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L269)*
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 • **capHeight**: *number*
 
-*Defined in [types/fontkit.ts:267](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L267)*
+*Defined in [types/fontkit.ts:267](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L267)*
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 • **cff**: *any*
 
-*Defined in [types/fontkit.ts:275](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L275)*
+*Defined in [types/fontkit.ts:275](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L275)*
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 • **characterSet**: *number[]*
 
-*Defined in [types/fontkit.ts:273](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L273)*
+*Defined in [types/fontkit.ts:273](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L273)*
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 • **copyright**: *string | null*
 
-*Defined in [types/fontkit.ts:256](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L256)*
+*Defined in [types/fontkit.ts:256](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L256)*
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 • **descent**: *number*
 
-*Defined in [types/fontkit.ts:262](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L262)*
+*Defined in [types/fontkit.ts:262](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L262)*
 
 ___
 
@@ -134,7 +134,7 @@ ___
 
 • **familyName**: *string | null*
 
-*Defined in [types/fontkit.ts:254](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L254)*
+*Defined in [types/fontkit.ts:254](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L254)*
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 • **fullName**: *string | null*
 
-*Defined in [types/fontkit.ts:253](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L253)*
+*Defined in [types/fontkit.ts:253](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L253)*
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 • **head**: *object*
 
-*Defined in [types/fontkit.ts:277](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L277)*
+*Defined in [types/fontkit.ts:277](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L277)*
 
 #### Type declaration:
 
@@ -164,7 +164,7 @@ ___
 
 • **italicAngle**: *number*
 
-*Defined in [types/fontkit.ts:266](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L266)*
+*Defined in [types/fontkit.ts:266](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L266)*
 
 ___
 
@@ -172,7 +172,7 @@ ___
 
 • **lineGap**: *number*
 
-*Defined in [types/fontkit.ts:263](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L263)*
+*Defined in [types/fontkit.ts:263](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L263)*
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 • **numGlyphs**: *number*
 
-*Defined in [types/fontkit.ts:272](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L272)*
+*Defined in [types/fontkit.ts:272](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L272)*
 
 ___
 
@@ -188,7 +188,7 @@ ___
 
 • **post**: *object*
 
-*Defined in [types/fontkit.ts:278](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L278)*
+*Defined in [types/fontkit.ts:278](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L278)*
 
 #### Type declaration:
 
@@ -200,7 +200,7 @@ ___
 
 • **postscriptName**: *string | null*
 
-*Defined in [types/fontkit.ts:252](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L252)*
+*Defined in [types/fontkit.ts:252](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L252)*
 
 ___
 
@@ -208,7 +208,7 @@ ___
 
 • **subfamilyName**: *string | null*
 
-*Defined in [types/fontkit.ts:255](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L255)*
+*Defined in [types/fontkit.ts:255](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L255)*
 
 ___
 
@@ -216,7 +216,7 @@ ___
 
 • **underlinePosition**: *number*
 
-*Defined in [types/fontkit.ts:264](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L264)*
+*Defined in [types/fontkit.ts:264](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L264)*
 
 ___
 
@@ -224,7 +224,7 @@ ___
 
 • **underlineThickness**: *number*
 
-*Defined in [types/fontkit.ts:265](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L265)*
+*Defined in [types/fontkit.ts:265](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L265)*
 
 ___
 
@@ -232,7 +232,7 @@ ___
 
 • **unitsPerEm**: *number*
 
-*Defined in [types/fontkit.ts:260](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L260)*
+*Defined in [types/fontkit.ts:260](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L260)*
 
 ___
 
@@ -240,7 +240,7 @@ ___
 
 • **version**: *string | null*
 
-*Defined in [types/fontkit.ts:257](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L257)*
+*Defined in [types/fontkit.ts:257](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L257)*
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 • **xHeight**: *number*
 
-*Defined in [types/fontkit.ts:268](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L268)*
+*Defined in [types/fontkit.ts:268](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L268)*
 
 ## Methods
 
@@ -256,7 +256,7 @@ ___
 
 ▸ **createSubset**(): *[Subset](subset.md)*
 
-*Defined in [types/fontkit.ts:333](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L333)*
+*Defined in [types/fontkit.ts:333](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L333)*
 
 Returns a Subset object for this font.
 
@@ -268,7 +268,7 @@ ___
 
 ▸ **getGlyph**(`glyphId`: number, `codePoints?`: number[]): *[Glyph](glyph.md)*
 
-*Defined in [types/fontkit.ts:328](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L328)*
+*Defined in [types/fontkit.ts:328](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L328)*
 
 Returns a glyph object for the given glyph id. You can pass the array of
 code points this glyph represents for your use later, and it will be
@@ -289,7 +289,7 @@ ___
 
 ▸ **glyphForCodePoint**(`codePoint`: number): *[Glyph](glyph.md)*
 
-*Defined in [types/fontkit.ts:286](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L286)*
+*Defined in [types/fontkit.ts:286](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L286)*
 
 Maps a single unicode code point (number) to a Glyph object.
 Does not perform any advanced substitutions (there is no context to do so).
@@ -308,7 +308,7 @@ ___
 
 ▸ **glyphsForString**(`str`: string): *[Glyph](glyph.md)[]*
 
-*Defined in [types/fontkit.ts:300](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L300)*
+*Defined in [types/fontkit.ts:300](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L300)*
 
 This method returns an array of Glyph objects for the given string.
 This is only a one-to-one mapping from characters to glyphs. For most uses,
@@ -329,7 +329,7 @@ ___
 
 ▸ **hasGlyphForCodePoint**(`codePoint`: number): *boolean*
 
-*Defined in [types/fontkit.ts:292](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L292)*
+*Defined in [types/fontkit.ts:292](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L292)*
 
 Returns whether there is glyph in the font for the given
 unicode code point.
@@ -348,7 +348,7 @@ ___
 
 ▸ **layout**(`str`: string, `features?`: any[]): *[GlyphRun](glyphrun.md)*
 
-*Defined in [types/fontkit.ts:319](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L319)*
+*Defined in [types/fontkit.ts:319](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L319)*
 
 This method returns a GlyphRun object, which includes an array of Glyphs
 and GlyphPositions for the given string. Glyph objects are described below.
@@ -374,7 +374,7 @@ ___
 
 ▸ **widthOfGlyph**(`glyphId`: number): *number*
 
-*Defined in [types/fontkit.ts:307](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L307)*
+*Defined in [types/fontkit.ts:307](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L307)*
 
 Returns the advance width (described above) for a single glyph id.
 

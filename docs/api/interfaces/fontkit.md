@@ -22,7 +22,7 @@ sidebar_label: Fontkit
 
 ▸ **create**(`buffer`: `Uint8Array`, `postscriptName?`: undefined | string): *[Font](font.md)*
 
-*Defined in [types/fontkit.ts:337](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L337)*
+*Defined in [types/fontkit.ts:337](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L337)*
 
 **Parameters:**
 

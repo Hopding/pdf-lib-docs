@@ -25,7 +25,7 @@ sidebar_label: TextRenderingMode
 
 • **Clip**: = 7
 
-*Defined in [api/operators.ts:216](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/operators.ts#L216)*
+*Defined in [api/operators.ts:216](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/operators.ts#L216)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **Fill**: = 0
 
-*Defined in [api/operators.ts:209](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/operators.ts#L209)*
+*Defined in [api/operators.ts:209](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/operators.ts#L209)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **FillAndClip**: = 4
 
-*Defined in [api/operators.ts:213](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/operators.ts#L213)*
+*Defined in [api/operators.ts:213](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/operators.ts#L213)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 • **FillAndOutline**: = 2
 
-*Defined in [api/operators.ts:211](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/operators.ts#L211)*
+*Defined in [api/operators.ts:211](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/operators.ts#L211)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 • **FillAndOutlineAndClip**: = 6
 
-*Defined in [api/operators.ts:215](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/operators.ts#L215)*
+*Defined in [api/operators.ts:215](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/operators.ts#L215)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 • **Invisible**: = 3
 
-*Defined in [api/operators.ts:212](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/operators.ts#L212)*
+*Defined in [api/operators.ts:212](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/operators.ts#L212)*
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 • **Outline**: = 1
 
-*Defined in [api/operators.ts:210](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/operators.ts#L210)*
+*Defined in [api/operators.ts:210](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/operators.ts#L210)*
 
 ___
 
@@ -81,4 +81,4 @@ ___
 
 • **OutlineAndClip**: = 5
 
-*Defined in [api/operators.ts:214](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/operators.ts#L214)*
+*Defined in [api/operators.ts:214](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/operators.ts#L214)*

@@ -29,7 +29,7 @@ Represents a glyph bounding box
 
 • **height**: *number*
 
-*Defined in [types/fontkit.ts:10](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L10)*
+*Defined in [types/fontkit.ts:10](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L10)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **maxX**: *number*
 
-*Defined in [types/fontkit.ts:7](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L7)*
+*Defined in [types/fontkit.ts:7](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L7)*
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 • **maxY**: *number*
 
-*Defined in [types/fontkit.ts:8](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L8)*
+*Defined in [types/fontkit.ts:8](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L8)*
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 • **minX**: *number*
 
-*Defined in [types/fontkit.ts:5](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L5)*
+*Defined in [types/fontkit.ts:5](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L5)*
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 • **minY**: *number*
 
-*Defined in [types/fontkit.ts:6](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L6)*
+*Defined in [types/fontkit.ts:6](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L6)*
 
 ___
 
@@ -69,4 +69,4 @@ ___
 
 • **width**: *number*
 
-*Defined in [types/fontkit.ts:9](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L9)*
+*Defined in [types/fontkit.ts:9](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L9)*

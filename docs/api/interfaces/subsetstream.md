@@ -22,7 +22,7 @@ sidebar_label: SubsetStream
 
 • **on**: *function*
 
-*Defined in [types/fontkit.ts:225](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L225)*
+*Defined in [types/fontkit.ts:225](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L225)*
 
 #### Type declaration:
 

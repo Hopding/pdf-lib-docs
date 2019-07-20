@@ -1,8 +1,9 @@
 {
   "scripts": {
     "start": "cd website && yarn && yarn start",
-    "pull:pdf-lib": "git remote add pdf-lib git@github.com:Hopding/pdf-lib.git; git fetch pdf-lib Rewrite && git subtree pull --prefix=pdf-lib pdf-lib Rewrite --squash",
-    "docs": "rm -rf ./docs/api && cd pdf-lib && ../node_modules/typedoc/bin/typedoc --options ../typedoc.json"
+    "pdf-lib:clone": "git clone git@github.com:Hopding/pdf-lib.git",
+    "pdf-lib:pull": "cd pdf-lib && git pull",
+    "docs": "rm -rf ./docs/api && cd pdf-lib && git checkout Rewrite && ../node_modules/typedoc/bin/typedoc --options ../typedoc.json"
   },
   "devDependencies": {
     "docusaurus-init": "^1.11.1",

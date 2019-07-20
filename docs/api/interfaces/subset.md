@@ -23,7 +23,7 @@ sidebar_label: Subset
 
 ▸ **encodeStream**(): *[SubsetStream](subsetstream.md)*
 
-*Defined in [types/fontkit.ts:242](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L242)*
+*Defined in [types/fontkit.ts:242](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L242)*
 
 Returns a stream containing the encoded font file that can be piped to a
 destination, such as a file.
@@ -36,7 +36,7 @@ ___
 
 ▸ **includeGlyph**(`glyph`: number | [Glyph](glyph.md)): *number*
 
-*Defined in [types/fontkit.ts:236](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L236)*
+*Defined in [types/fontkit.ts:236](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L236)*
 
 Includes the given glyph object or glyph ID in the subset.
 Returns the glyph's new ID in the subset.

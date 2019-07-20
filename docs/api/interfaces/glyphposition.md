@@ -27,7 +27,7 @@ Represents positioning information for a glyph in a GlyphRun.
 
 • **xAdvance**: *number*
 
-*Defined in [types/fontkit.ts:149](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L149)*
+*Defined in [types/fontkit.ts:149](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L149)*
 
 The amount to move the virtual pen in the X direction after rendering
 this glyph.
@@ -38,7 +38,7 @@ ___
 
 • **xOffset**: *number*
 
-*Defined in [types/fontkit.ts:161](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L161)*
+*Defined in [types/fontkit.ts:161](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L161)*
 
 The offset from the pen position in the X direction at which to render
 this glyph.
@@ -49,7 +49,7 @@ ___
 
 • **yAdvance**: *number*
 
-*Defined in [types/fontkit.ts:155](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L155)*
+*Defined in [types/fontkit.ts:155](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L155)*
 
 The amount to move the virtual pen in the Y direction after rendering
 this glyph.
@@ -60,7 +60,7 @@ ___
 
 • **yOffset**: *number*
 
-*Defined in [types/fontkit.ts:167](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/types/fontkit.ts#L167)*
+*Defined in [types/fontkit.ts:167](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/types/fontkit.ts#L167)*
 
 The offset from the pen position in the Y direction at which to render
 this glyph.

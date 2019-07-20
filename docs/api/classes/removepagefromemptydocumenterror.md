@@ -31,7 +31,7 @@ sidebar_label: RemovePageFromEmptyDocumentError
 
 \+ **new RemovePageFromEmptyDocumentError**(): *[RemovePageFromEmptyDocumentError](removepagefromemptydocumenterror.md)*
 
-*Defined in [api/errors.ts:31](https://github.com/Hopding/pdf-lib-docs/blob/36487a6/pdf-lib/src/api/errors.ts#L31)*
+*Defined in [api/errors.ts:31](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/errors.ts#L31)*
 
 **Returns:** *[RemovePageFromEmptyDocumentError](removepagefromemptydocumenterror.md)*
 
