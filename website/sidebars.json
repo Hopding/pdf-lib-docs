@@ -21,14 +21,10 @@
       "api/index"
     ],
     "Classes": [
-      "api/classes/encryptedpdferror",
-      "api/classes/fontkitnotregisterederror",
-      "api/classes/foreignpageerror",
       "api/classes/pdfdocument",
       "api/classes/pdffont",
       "api/classes/pdfimage",
-      "api/classes/pdfpage",
-      "api/classes/removepagefromemptydocumenterror"
+      "api/classes/pdfpage"
     ],
     "Enums": [
       "api/enums/colortypes",
@@ -40,16 +36,10 @@
     ],
     "Interfaces": [
       "api/interfaces/base64saveoptions",
-      "api/interfaces/boundingbox",
       "api/interfaces/cmyk",
       "api/interfaces/degrees",
       "api/interfaces/drawlinesoftextoptions",
       "api/interfaces/drawtextoptions",
-      "api/interfaces/font",
-      "api/interfaces/fontkit",
-      "api/interfaces/glyph",
-      "api/interfaces/glyphposition",
-      "api/interfaces/glyphrun",
       "api/interfaces/grayscale",
       "api/interfaces/pdfpagedrawcircleoptions",
       "api/interfaces/pdfpagedrawellipseoptions",
@@ -57,12 +47,9 @@
       "api/interfaces/pdfpagedrawrectangleoptions",
       "api/interfaces/pdfpagedrawsquareoptions",
       "api/interfaces/pdfpagedrawtextoptions",
-      "api/interfaces/path",
       "api/interfaces/rgb",
       "api/interfaces/radians",
-      "api/interfaces/saveoptions",
-      "api/interfaces/subset",
-      "api/interfaces/subsetstream"
+      "api/interfaces/saveoptions"
     ]
   }
 }

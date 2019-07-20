@@ -169,7 +169,7 @@ const Pdf = ({ id = Math.round(Math.random() * 10000000), url }) => (
     <iframe id={id} className="card" />
     <script
       dangerouslySetInnerHTML={{
-        __html: `document.getElementById('${id}').src = '/viewer?url=${url}'`,
+        __html: `document.getElementById('${id}').src = '/pdf-lib/viewer?url=/pdf-lib/${url}'`,
       }}
     />
   </React.Fragment>
@@ -184,16 +184,6 @@ const Pdf = ({ id = Math.round(Math.random() * 10000000), url }) => (
 class Index extends React.Component {
   render() {
     let language = this.props.language || 'en';
-    const showcase = siteConfig.users.map(user => {
-      return (
-        <a href={user.infoLink} key={user.infoLink}>
-          <img
-            src={`${siteConfig.baseUrl}${user.image}`}
-            title={user.caption}
-          />
-        </a>
-      );
-    });
 
     return (
       <div>

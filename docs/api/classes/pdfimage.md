@@ -32,7 +32,7 @@ sidebar_label: PDFImage
 
 • **doc**: *[PDFDocument](pdfdocument.md)*
 
-*Defined in [api/PDFImage.ts:12](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFImage.ts#L12)*
+*Defined in [PDFImage.ts:12](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFImage.ts#L12)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **height**: *number*
 
-*Defined in [api/PDFImage.ts:14](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFImage.ts#L14)*
+*Defined in [PDFImage.ts:14](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFImage.ts#L14)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **ref**: *`PDFRef`*
 
-*Defined in [api/PDFImage.ts:11](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFImage.ts#L11)*
+*Defined in [PDFImage.ts:11](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFImage.ts#L11)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **width**: *number*
 
-*Defined in [api/PDFImage.ts:13](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFImage.ts#L13)*
+*Defined in [PDFImage.ts:13](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFImage.ts#L13)*
 
 ## Methods
 
@@ -64,7 +64,7 @@ ___
 
 ▸ **embed**(): *`Promise<void>`*
 
-*Defined in [api/PDFImage.ts:44](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFImage.ts#L44)*
+*Defined in [PDFImage.ts:44](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFImage.ts#L44)*
 
 **Returns:** *`Promise<void>`*
 
@@ -74,7 +74,7 @@ ___
 
 ▸ **scale**(`factor`: number): *object*
 
-*Defined in [api/PDFImage.ts:35](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFImage.ts#L35)*
+*Defined in [PDFImage.ts:35](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFImage.ts#L35)*
 
 **Parameters:**
 
@@ -84,23 +84,15 @@ Name | Type |
 
 **Returns:** *object*
 
-* **height**: *number* =  this.height * factor
-
-* **width**: *number* =  this.width * factor
-
 ___
 
 ###  size
 
 ▸ **size**(): *object*
 
-*Defined in [api/PDFImage.ts:40](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFImage.ts#L40)*
+*Defined in [PDFImage.ts:40](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFImage.ts#L40)*
 
 **Returns:** *object*
-
-* **height**: *number* =  this.height * factor
-
-* **width**: *number* =  this.width * factor
 
 ___
 
@@ -108,7 +100,7 @@ ___
 
 ▸ **of**(`ref`: `PDFRef`, `doc`: [PDFDocument](pdfdocument.md), `embedder`: [ImageEmbedder](../index.md#imageembedder)): *[PDFImage](pdfimage.md)*
 
-*Defined in [api/PDFImage.ts:8](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFImage.ts#L8)*
+*Defined in [PDFImage.ts:8](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFImage.ts#L8)*
 
 **Parameters:**
 

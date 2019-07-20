@@ -26,7 +26,7 @@ sidebar_label: SaveOptions
 
 • **addDefaultPage**? : *undefined | false | true*
 
-*Defined in [api/PDFDocument.ts:48](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFDocument.ts#L48)*
+*Defined in [PDFDocument.ts:48](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFDocument.ts#L48)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **objectsPerTick**? : *undefined | number*
 
-*Defined in [api/PDFDocument.ts:49](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFDocument.ts#L49)*
+*Defined in [PDFDocument.ts:49](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFDocument.ts#L49)*
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 • **useObjectStreams**? : *undefined | false | true*
 
-*Defined in [api/PDFDocument.ts:47](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFDocument.ts#L47)*
+*Defined in [PDFDocument.ts:47](https://github.com/Hopding/pdf-lib/blob/57dc8a4/src/api/PDFDocument.ts#L47)*

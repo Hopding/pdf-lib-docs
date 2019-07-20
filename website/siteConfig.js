@@ -8,64 +8,26 @@
 // See https://docusaurus.io/docs/site-config for all the possible
 // site configuration options.
 
-const examples = [
-  {
-    name: 'Hacker News',
-    image: 'img/examples/hacker-news.png',
-    link: 'https://github.com/reasonml-community/reason-react-hacker-news',
-  },
-  {
-    name: 'Maze',
-    image: 'img/examples/maze.png',
-    link: 'https://github.com/jaredly/reason-maze',
-  },
-  {
-    name: 'TodoMVC',
-    image: 'img/examples/todomvc.png',
-    link:
-      'https://github.com/reasonml-community/reason-react-example/tree/master/src/todomvc',
-  },
-  {
-    name: 'Mareo',
-    image: 'img/examples/mareo.png',
-    link: 'https://github.com/reasonml-community/Mareo',
-  },
-];
-
-// List of projects/orgs using your project for the users page.
-const users = [
-  {
-    caption: 'User1',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
-    pinned: true,
-  },
-];
-
-// let reasonHighlightJs = require('reason-highlightjs');
-
 const siteConfig = {
-  examples,
   highlight: {
     theme: 'github',
     //   // hljs: function (hljs) {
     //   //   hljs.registerLanguage('reason', reasonHighlightJs)
     //   // }
   },
+  separateCss: ['/viewer'],
 
   title: 'PDF-LIB', // Title for your website.
   tagline: ' Create and modify PDF documents in any JavaScript environment.',
-  url: 'https://your-docusaurus-test-site.com', // Your website URL
-  baseUrl: '/', // Base URL for your project */
+  url: 'https://Hopding.github.io', // Your website URL
+  baseUrl: '/pdf-lib/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
   projectName: 'pdf-lib',
-  organizationName: 'facebook',
+  organizationName: 'Hopding',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
@@ -73,13 +35,10 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     { doc: 'api/index', label: 'API' },
-    { page: 'help', label: 'Help' },
+    { page: 'docs/help', label: 'Help' },
     { href: 'https://github.com/Hopding/pdf-lib', label: 'GitHub' },
     { search: true },
   ],
-
-  // If you have users set above, you add it here:
-  users,
 
   /* path to images for header/footer */
   // headerIcon: 'img/logo-outline.svg',
@@ -107,7 +66,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
+  copyright: `Copyright © ${new Date().getFullYear()} Andrew Dillon`,
 
   // highlight: {
   // Highlight.js theme to use for syntax highlighting in code blocks.

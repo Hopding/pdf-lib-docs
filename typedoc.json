@@ -3,9 +3,15 @@
   "mode": "file",
   "tsconfig": "./tsconfig.json",
   "out": "../docs/api",
-  "exclude": ["./src/core/**/*", "./src/utils/**/*"],
+  "exclude": [
+    "./src/core/**/*",
+    "./src/utils/**/*",
+    "./src/api/errors.ts",
+    "./src/types/fontkit.ts"
+  ],
   "excludePrivate": true,
   "excludeProtected": true,
+  "excludeNotExported": true,
   "ignoreCompilerErrors": true,
   "readme": "none",
   "theme": "markdown",

@@ -5,18 +5,6 @@
     "previous": "Previous",
     "tagline": " Create and modify PDF documents in any JavaScript environment.",
     "docs": {
-      "api/classes/encryptedpdferror": {
-        "title": "EncryptedPDFError",
-        "sidebar_label": "EncryptedPDFError"
-      },
-      "api/classes/fontkitnotregisterederror": {
-        "title": "FontkitNotRegisteredError",
-        "sidebar_label": "FontkitNotRegisteredError"
-      },
-      "api/classes/foreignpageerror": {
-        "title": "ForeignPageError",
-        "sidebar_label": "ForeignPageError"
-      },
       "api/classes/pdfdocument": {
         "title": "PDFDocument",
         "sidebar_label": "PDFDocument"
@@ -32,10 +20,6 @@
       "api/classes/pdfpage": {
         "title": "PDFPage",
         "sidebar_label": "PDFPage"
-      },
-      "api/classes/removepagefromemptydocumenterror": {
-        "title": "RemovePageFromEmptyDocumentError",
-        "sidebar_label": "RemovePageFromEmptyDocumentError"
       },
       "api/enums/colortypes": {
         "title": "ColorTypes",
@@ -69,10 +53,6 @@
         "title": "Base64SaveOptions",
         "sidebar_label": "Base64SaveOptions"
       },
-      "api/interfaces/boundingbox": {
-        "title": "BoundingBox",
-        "sidebar_label": "BoundingBox"
-      },
       "api/interfaces/cmyk": {
         "title": "CMYK",
         "sidebar_label": "CMYK"
@@ -89,33 +69,9 @@
         "title": "DrawTextOptions",
         "sidebar_label": "DrawTextOptions"
       },
-      "api/interfaces/font": {
-        "title": "Font",
-        "sidebar_label": "Font"
-      },
-      "api/interfaces/fontkit": {
-        "title": "Fontkit",
-        "sidebar_label": "Fontkit"
-      },
-      "api/interfaces/glyph": {
-        "title": "Glyph",
-        "sidebar_label": "Glyph"
-      },
-      "api/interfaces/glyphposition": {
-        "title": "GlyphPosition",
-        "sidebar_label": "GlyphPosition"
-      },
-      "api/interfaces/glyphrun": {
-        "title": "GlyphRun",
-        "sidebar_label": "GlyphRun"
-      },
       "api/interfaces/grayscale": {
         "title": "Grayscale",
         "sidebar_label": "Grayscale"
-      },
-      "api/interfaces/path": {
-        "title": "Path",
-        "sidebar_label": "Path"
       },
       "api/interfaces/pdfpagedrawcircleoptions": {
         "title": "PDFPageDrawCircleOptions",
@@ -153,13 +109,9 @@
         "title": "SaveOptions",
         "sidebar_label": "SaveOptions"
       },
-      "api/interfaces/subset": {
-        "title": "Subset",
-        "sidebar_label": "Subset"
-      },
-      "api/interfaces/subsetstream": {
-        "title": "SubsetStream",
-        "sidebar_label": "SubsetStream"
+      "help": {
+        "title": "Need Help?",
+        "sidebar_label": "Help"
       }
     },
     "links": {
