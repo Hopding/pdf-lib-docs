@@ -169,7 +169,7 @@ const Pdf = ({ id = Math.round(Math.random() * 10000000), url }) => (
     <iframe id={id} className="card" />
     <script
       dangerouslySetInnerHTML={{
-        __html: `document.getElementById('${id}').src = '/pdf-lib/viewer?url=/pdf-lib/${url}'`,
+        __html: `document.getElementById('${id}').src = '/viewer?url=${url}'`,
       }}
     />
   </React.Fragment>

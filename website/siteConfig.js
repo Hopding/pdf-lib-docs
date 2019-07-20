@@ -9,6 +9,8 @@
 // site configuration options.
 
 const siteConfig = {
+  cname: 'pdf-lib.js.org',
+
   highlight: {
     theme: 'github',
     //   // hljs: function (hljs) {
@@ -20,7 +22,7 @@ const siteConfig = {
   title: 'PDF-LIB', // Title for your website.
   tagline: ' Create and modify PDF documents in any JavaScript environment.',
   url: 'https://Hopding.github.io', // Your website URL
-  baseUrl: '/pdf-lib/', // Base URL for your project */
+  baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
