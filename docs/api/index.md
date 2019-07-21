@@ -13,6 +13,7 @@ sidebar_label: Globals
 * [LineJoinStyle](enums/linejoinstyle.md)
 * [ParseSpeeds](enums/parsespeeds.md)
 * [RotationTypes](enums/rotationtypes.md)
+* [StandardFonts](enums/standardfonts.md)
 * [TextRenderingMode](enums/textrenderingmode.md)
 
 ### Classes
@@ -166,12 +167,12 @@ ___
 
 Name | Type |
 ------ | ------ |
-`x1` | number \| `PDFNumber` |
-`y1` | number \| `PDFNumber` |
-`x2` | number \| `PDFNumber` |
-`y2` | number \| `PDFNumber` |
-`x3` | number \| `PDFNumber` |
-`y3` | number \| `PDFNumber` |
+`x1` | number &#124; `PDFNumber` |
+`y1` | number &#124; `PDFNumber` |
+`x2` | number &#124; `PDFNumber` |
+`y2` | number &#124; `PDFNumber` |
+`x3` | number &#124; `PDFNumber` |
+`y3` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -187,7 +188,7 @@ ___
 
 Name | Type |
 ------ | ------ |
-`num` | number \| `PDFNumber` |
+`num` | number &#124; `PDFNumber` |
 
 **Returns:** *number*
 
@@ -203,7 +204,7 @@ ___
 
 Name | Type |
 ------ | ------ |
-`name` | string \| `PDFName` |
+`name` | string &#124; `PDFName` |
 
 **Returns:** *`PDFName`*
 
@@ -219,7 +220,7 @@ ___
 
 Name | Type |
 ------ | ------ |
-`num` | number \| `PDFNumber` |
+`num` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFNumber`*
 
@@ -294,12 +295,12 @@ ___
 
 Name | Type |
 ------ | ------ |
-`a` | number \| `PDFNumber` |
-`b` | number \| `PDFNumber` |
-`c` | number \| `PDFNumber` |
-`d` | number \| `PDFNumber` |
-`e` | number \| `PDFNumber` |
-`f` | number \| `PDFNumber` |
+`a` | number &#124; `PDFNumber` |
+`b` | number &#124; `PDFNumber` |
+`c` | number &#124; `PDFNumber` |
+`d` | number &#124; `PDFNumber` |
+`e` | number &#124; `PDFNumber` |
+`f` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -379,7 +380,7 @@ ___
 
 Name | Type |
 ------ | ------ |
-`name` | string \| `PDFName` |
+`name` | string &#124; `PDFName` |
 `options` | object |
 
 **Returns:** *`PDFOperator`[]*
@@ -413,7 +414,7 @@ ___
 
 Name | Type |
 ------ | ------ |
-`name` | string \| `PDFName` |
+`name` | string &#124; `PDFName` |
 
 **Returns:** *`PDFOperator`*
 
@@ -518,8 +519,8 @@ ___
 
 Name | Type |
 ------ | ------ |
-`xPos` | number \| `PDFNumber` |
-`yPos` | number \| `PDFNumber` |
+`xPos` | number &#124; `PDFNumber` |
+`yPos` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -535,8 +536,8 @@ ___
 
 Name | Type |
 ------ | ------ |
-`x` | number \| `PDFNumber` |
-`y` | number \| `PDFNumber` |
+`x` | number &#124; `PDFNumber` |
+`y` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -552,8 +553,8 @@ ___
 
 Name | Type |
 ------ | ------ |
-`xPos` | number \| `PDFNumber` |
-`yPos` | number \| `PDFNumber` |
+`xPos` | number &#124; `PDFNumber` |
+`yPos` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -631,10 +632,10 @@ ___
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`xPos` | number \| `PDFNumber` | x coordinate for the lower left corner of the rectangle |
-`yPos` | number \| `PDFNumber` | y coordinate for the lower left corner of the rectangle |
-`width` | number \| `PDFNumber` | width of the rectangle |
-`height` | number \| `PDFNumber` | height of the rectangle  |
+`xPos` | number &#124; `PDFNumber` | x coordinate for the lower left corner of the rectangle |
+`yPos` | number &#124; `PDFNumber` | y coordinate for the lower left corner of the rectangle |
+`width` | number &#124; `PDFNumber` | width of the rectangle |
+`height` | number &#124; `PDFNumber` | height of the rectangle  |
 
 **Returns:** *`PDFOperator`*
 
@@ -678,11 +679,11 @@ ___
 
 Name | Type |
 ------ | ------ |
-`rotationAngle` | number \| `PDFNumber` |
-`xSkewAngle` | number \| `PDFNumber` |
-`ySkewAngle` | number \| `PDFNumber` |
-`x` | number \| `PDFNumber` |
-`y` | number \| `PDFNumber` |
+`rotationAngle` | number &#124; `PDFNumber` |
+`xSkewAngle` | number &#124; `PDFNumber` |
+`ySkewAngle` | number &#124; `PDFNumber` |
+`x` | number &#124; `PDFNumber` |
+`y` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -698,11 +699,11 @@ ___
 
 Name | Type |
 ------ | ------ |
-`rotationAngle` | number \| `PDFNumber` |
-`xSkewAngle` | number \| `PDFNumber` |
-`ySkewAngle` | number \| `PDFNumber` |
-`x` | number \| `PDFNumber` |
-`y` | number \| `PDFNumber` |
+`rotationAngle` | number &#124; `PDFNumber` |
+`xSkewAngle` | number &#124; `PDFNumber` |
+`ySkewAngle` | number &#124; `PDFNumber` |
+`x` | number &#124; `PDFNumber` |
+`y` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -718,7 +719,7 @@ ___
 
 Name | Type |
 ------ | ------ |
-`angle` | number \| `PDFNumber` |
+`angle` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -734,7 +735,7 @@ ___
 
 Name | Type |
 ------ | ------ |
-`angle` | number \| `PDFNumber` |
+`angle` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -750,8 +751,8 @@ ___
 
 Name | Type |
 ------ | ------ |
-`xPos` | number \| `PDFNumber` |
-`yPos` | number \| `PDFNumber` |
+`xPos` | number &#124; `PDFNumber` |
+`yPos` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -767,7 +768,7 @@ ___
 
 Name | Type |
 ------ | ------ |
-`spacing` | number \| `PDFNumber` |
+`spacing` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -783,7 +784,7 @@ ___
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`squeeze` | number \| `PDFNumber` | horizontal character spacing |
+`squeeze` | number &#124; `PDFNumber` | horizontal character spacing |
 
 **Returns:** *`PDFOperator`*
 
@@ -799,8 +800,8 @@ ___
 
 Name | Type |
 ------ | ------ |
-`dashArray` | number \| `PDFNumber`[] |
-`dashPhase` | number \| `PDFNumber` |
+`dashArray` | number &#124; `PDFNumber`[] |
+`dashPhase` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -816,10 +817,10 @@ ___
 
 Name | Type |
 ------ | ------ |
-`cyan` | number \| `PDFNumber` |
-`magenta` | number \| `PDFNumber` |
-`yellow` | number \| `PDFNumber` |
-`key` | number \| `PDFNumber` |
+`cyan` | number &#124; `PDFNumber` |
+`magenta` | number &#124; `PDFNumber` |
+`yellow` | number &#124; `PDFNumber` |
+`key` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -851,7 +852,7 @@ ___
 
 Name | Type |
 ------ | ------ |
-`gray` | number \| `PDFNumber` |
+`gray` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -867,9 +868,9 @@ ___
 
 Name | Type |
 ------ | ------ |
-`red` | number \| `PDFNumber` |
-`green` | number \| `PDFNumber` |
-`blue` | number \| `PDFNumber` |
+`red` | number &#124; `PDFNumber` |
+`green` | number &#124; `PDFNumber` |
+`blue` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -885,8 +886,8 @@ ___
 
 Name | Type |
 ------ | ------ |
-`name` | string \| `PDFName` |
-`size` | number \| `PDFNumber` |
+`name` | string &#124; `PDFName` |
+`size` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -918,7 +919,7 @@ ___
 
 Name | Type |
 ------ | ------ |
-`lineHeight` | number \| `PDFNumber` |
+`lineHeight` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -950,7 +951,7 @@ ___
 
 Name | Type |
 ------ | ------ |
-`width` | number \| `PDFNumber` |
+`width` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -966,10 +967,10 @@ ___
 
 Name | Type |
 ------ | ------ |
-`cyan` | number \| `PDFNumber` |
-`magenta` | number \| `PDFNumber` |
-`yellow` | number \| `PDFNumber` |
-`key` | number \| `PDFNumber` |
+`cyan` | number &#124; `PDFNumber` |
+`magenta` | number &#124; `PDFNumber` |
+`yellow` | number &#124; `PDFNumber` |
+`key` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -1001,7 +1002,7 @@ ___
 
 Name | Type |
 ------ | ------ |
-`gray` | number \| `PDFNumber` |
+`gray` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -1017,9 +1018,9 @@ ___
 
 Name | Type |
 ------ | ------ |
-`red` | number \| `PDFNumber` |
-`green` | number \| `PDFNumber` |
-`blue` | number \| `PDFNumber` |
+`red` | number &#124; `PDFNumber` |
+`green` | number &#124; `PDFNumber` |
+`blue` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -1035,12 +1036,12 @@ ___
 
 Name | Type |
 ------ | ------ |
-`a` | number \| `PDFNumber` |
-`b` | number \| `PDFNumber` |
-`c` | number \| `PDFNumber` |
-`d` | number \| `PDFNumber` |
-`e` | number \| `PDFNumber` |
-`f` | number \| `PDFNumber` |
+`a` | number &#124; `PDFNumber` |
+`b` | number &#124; `PDFNumber` |
+`c` | number &#124; `PDFNumber` |
+`d` | number &#124; `PDFNumber` |
+`e` | number &#124; `PDFNumber` |
+`f` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -1072,7 +1073,7 @@ ___
 
 Name | Type |
 ------ | ------ |
-`rise` | number \| `PDFNumber` |
+`rise` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -1088,7 +1089,7 @@ ___
 
 Name | Type |
 ------ | ------ |
-`spacing` | number \| `PDFNumber` |
+`spacing` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -1120,8 +1121,8 @@ ___
 
 Name | Type |
 ------ | ------ |
-`xSkewAngle` | number \| `PDFNumber` |
-`ySkewAngle` | number \| `PDFNumber` |
+`xSkewAngle` | number &#124; `PDFNumber` |
+`ySkewAngle` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -1137,8 +1138,8 @@ ___
 
 Name | Type |
 ------ | ------ |
-`xSkewAngle` | number \| `PDFNumber` |
-`ySkewAngle` | number \| `PDFNumber` |
+`xSkewAngle` | number &#124; `PDFNumber` |
+`ySkewAngle` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -1214,8 +1215,8 @@ ___
 
 Name | Type |
 ------ | ------ |
-`xPos` | number \| `PDFNumber` |
-`yPos` | number \| `PDFNumber` |
+`xPos` | number &#124; `PDFNumber` |
+`yPos` | number &#124; `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 

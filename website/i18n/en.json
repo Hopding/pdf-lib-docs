@@ -41,6 +41,10 @@
         "title": "RotationTypes",
         "sidebar_label": "RotationTypes"
       },
+      "api/enums/standardfonts": {
+        "title": "StandardFonts",
+        "sidebar_label": "StandardFonts"
+      },
       "api/enums/textrenderingmode": {
         "title": "TextRenderingMode",
         "sidebar_label": "TextRenderingMode"

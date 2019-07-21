@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "postinstall": "cat node_modules/typedoc-plugin-markdown/dist/theme/helpers/parameter-table.js | sed 's/\\\\\\\\|/\\&#124;/g' > /tmp/parameter-table.js && mv /tmp/parameter-table.js node_modules/typedoc-plugin-markdown/dist/theme/helpers/parameter-table.js",
     "start": "cd website && yarn && yarn start",
     "pdf-lib:clone": "git clone git@github.com:Hopding/pdf-lib.git",
     "pdf-lib:pull": "cd pdf-lib && git pull",

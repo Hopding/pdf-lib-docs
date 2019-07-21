@@ -74,7 +74,7 @@ ___
 
 Name | Type |
 ------ | ------ |
-`page?` | [PDFPage](pdfpage.md) \| [number, number] |
+`page?` | [PDFPage](pdfpage.md) &#124; [number, number] |
 
 **Returns:** *[PDFPage](pdfpage.md)*
 
@@ -99,7 +99,7 @@ ___
 
 ###  embedFont
 
-▸ **embedFont**(`font`: `StandardFonts` | string | `Uint8Array` | `ArrayBuffer`, `options`: object): *`Promise<PDFFont>`*
+▸ **embedFont**(`font`: [StandardFonts](../enums/standardfonts.md) | string | `Uint8Array` | `ArrayBuffer`, `options`: object): *`Promise<PDFFont>`*
 
 *Defined in [PDFDocument.ts:185](https://github.com/Hopding/pdf-lib/blob/14e8645/src/api/PDFDocument.ts#L185)*
 
@@ -107,7 +107,7 @@ ___
 
 Name | Type | Default |
 ------ | ------ | ------ |
-`font` | `StandardFonts` \| string \| `Uint8Array` \| `ArrayBuffer` | - |
+`font` | [StandardFonts](../enums/standardfonts.md) &#124; string &#124; `Uint8Array` &#124; `ArrayBuffer` | - |
 `options` | object |  {} |
 
 **Returns:** *`Promise<PDFFont>`*
@@ -124,7 +124,7 @@ ___
 
 Name | Type |
 ------ | ------ |
-`jpg` | string \| `Uint8Array` \| `ArrayBuffer` |
+`jpg` | string &#124; `Uint8Array` &#124; `ArrayBuffer` |
 
 **Returns:** *`Promise<PDFImage>`*
 
@@ -140,7 +140,7 @@ ___
 
 Name | Type |
 ------ | ------ |
-`png` | string \| `Uint8Array` \| `ArrayBuffer` |
+`png` | string &#124; `Uint8Array` &#124; `ArrayBuffer` |
 
 **Returns:** *`Promise<PDFImage>`*
 
@@ -148,7 +148,7 @@ ___
 
 ###  embedStandardFont
 
-▸ **embedStandardFont**(`font`: `StandardFonts`): *[PDFFont](pdffont.md)*
+▸ **embedStandardFont**(`font`: [StandardFonts](../enums/standardfonts.md)): *[PDFFont](pdffont.md)*
 
 *Defined in [PDFDocument.ts:216](https://github.com/Hopding/pdf-lib/blob/14e8645/src/api/PDFDocument.ts#L216)*
 
@@ -156,7 +156,7 @@ ___
 
 Name | Type |
 ------ | ------ |
-`font` | `StandardFonts` |
+`font` | [StandardFonts](../enums/standardfonts.md) |
 
 **Returns:** *[PDFFont](pdffont.md)*
 
@@ -213,7 +213,7 @@ ___
 Name | Type |
 ------ | ------ |
 `index` | number |
-`page?` | [PDFPage](pdfpage.md) \| [number, number] |
+`page?` | [PDFPage](pdfpage.md) &#124; [number, number] |
 
 **Returns:** *[PDFPage](pdfpage.md)*
 
@@ -303,7 +303,7 @@ ___
 
 Name | Type | Default |
 ------ | ------ | ------ |
-`pdf` | string \| `Uint8Array` \| `ArrayBuffer` | - |
+`pdf` | string &#124; `Uint8Array` &#124; `ArrayBuffer` | - |
 `options` | object |  {} |
 
 **Returns:** *`Promise<PDFDocument>`*
