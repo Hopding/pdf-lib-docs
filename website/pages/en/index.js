@@ -123,7 +123,7 @@ const modifyDocumentSnippet = `${pre}js
 import { degrees, PDFDocument, rgb, StandardFonts } from 'pdf-lib';
 
 async function modifyPdf() {
-  const url = 'https://pdf-lib.js.org/assets/pdfs/with_update_sections.pdf'
+  const url = 'https://pdf-lib.js.org/assets/with_update_sections.pdf'
   const existingPdfBytes = await fetch(url).then(res => res.arrayBuffer())
 
   const pdfDoc = await PDFDocument.load(existingPdfBytes)
@@ -139,6 +139,108 @@ async function modifyPdf() {
     font: helveticaFont,
     color: rgb(0.95, 0.1, 0.1),
     rotate: degrees(-45),
+  })
+
+  const pdfBytes = await pdfDoc.save()
+}
+${pre}`;
+
+const copyPagesSnippet = `${pre}js
+import { PDFDocument } from 'pdf-lib'
+
+async function copyPages() {
+  const url1 = 'https://pdf-lib.js.org/assets/with_update_sections.pdf'
+  const url2 = 'https://pdf-lib.js.org/assets/with_large_page_count.pdf'
+
+  const firstDonorPdfBytes = await fetch(url1).then(res => res.arrayBuffer())
+  const secondDonorPdfBytes = await fetch(url2).then(res => res.arrayBuffer())
+
+  const firstDonorPdfDoc = await PDFDocument.load(firstDonorPdfBytes)
+  const secondDonorPdfDoc = await PDFDocument.load(secondDonorPdfBytes)
+
+  const pdfDoc = await PDFDocument.create();
+
+  const [firstDonorPage] = await pdfDoc.copyPages(firstDonorPdfDoc, [0])
+  const [secondDonorPage] = await pdfDoc.copyPages(secondDonorPdfDoc, [742])
+
+  pdfDoc.addPage(firstDonorPage)
+  pdfDoc.insertPage(0, secondDonorPage)
+
+  const pdfBytes = await pdfDoc.save()
+}
+${pre}`;
+
+const embedPngAndJpegImagesSnippet = `${pre}js
+import { PDFDocument } from 'pdf-lib'
+
+async function embedImages() {
+  const jpgUrl = 'https://pdf-lib.js.org/assets/cat_riding_unicorn.jpg'
+  const pngUrl = 'https://pdf-lib.js.org/assets/minions_banana_alpha.png'
+
+  const jpgImageBytes = await fetch(jpgUrl).then((res) => res.arrayBuffer())
+  const pngImageBytes = await fetch(pngUrl).then((res) => res.arrayBuffer())
+
+  const pdfDoc = await PDFDocument.create()
+
+  const jpgImage = await pdfDoc.embedJpg(jpgImageBytes)
+  const pngImage = await pdfDoc.embedPng(pngImageBytes)
+
+  const jpgDims = jpgImage.scale(0.5)
+  const pngDims = pngImage.scale(0.5)
+
+  const page = pdfDoc.addPage()
+
+  page.drawImage(jpgImage, {
+    x: page.getWidth() / 2 - jpgDims.width / 2,
+    y: page.getHeight() / 2 - jpgDims.height / 2 + 250,
+    width: jpgDims.width,
+    height: jpgDims.height,
+  })
+  page.drawImage(pngImage, {
+    x: page.getWidth() / 2 - pngDims.width / 2 + 75,
+    y: page.getHeight() / 2 - pngDims.height + 250,
+    width: pngDims.width,
+    height: pngDims.height,
+  })
+
+  const pdfBytes = await pdfDoc.save()
+}
+${pre}`;
+
+const embedFontAndMeasureTextSnippet = `${pre}js
+import { PDFDocument, rgb } from 'pdf-lib'
+import fontkit from '@pdf-lib/fontkit'
+
+async function embedFontAndMeasureText() {
+  const url = 'https://pdf-lib.js.org/assets/ubuntu/Ubuntu-R.ttf'
+  const fontBytes = await fetch(url).then(res => res.arrayBuffer())
+
+  const pdfDoc = await PDFDocument.create()
+
+  pdfDoc.registerFontkit(fontkit)
+  const customFont = await pdfDoc.embedFont(fontBytes)
+
+  const page = pdfDoc.addPage()
+
+  const text = 'This is text in an embedded font!'
+  const textSize = 35
+  const textWidth = customFont.widthOfTextAtSize(text, textSize)
+  const textHeight = customFont.heightAtSize(textSize)
+
+  page.drawText(text, {
+    x: 40,
+    y: 450,
+    size: textSize,
+    font: customFont,
+    color: rgb(0, 0.53, 0.71),
+  })
+  page.drawRectangle({
+    x: 40,
+    y: 450,
+    width: textWidth,
+    height: textHeight,
+    borderColor: rgb(1, 0, 0),
+    borderWidth: 1.5,
   })
 
   const pdfBytes = await pdfDoc.save()
@@ -225,7 +327,7 @@ class Index extends React.Component {
                     <translate>
                       Create PDF documents from scratch, or modify existing PDF
                       documents. Draw text, images, and vector graphics. Even
-                      embed your own fonts!
+                      embed your own fonts.
                     </translate>
                   ),
                 },
@@ -265,7 +367,7 @@ class Index extends React.Component {
               <MarkdownBlock>{quickStart}</MarkdownBlock>
               <translate>
                 Save this snippet as an HTML file and load it in your browser to
-                get up and running with pdf-lib as quickly as possible!
+                get up and running with pdf-lib as quickly as possible.
               </translate>
             </div>
 
@@ -320,10 +422,27 @@ class Index extends React.Component {
                 <h2>Create Document</h2>
                 <MarkdownBlock>{createDocumentSnippet}</MarkdownBlock>
                 <Pdf url="/assets/create_document.pdf" />
-
                 <h2>Modify Document</h2>
                 <MarkdownBlock>{modifyDocumentSnippet}</MarkdownBlock>
                 <Pdf url="/assets/modify_document.pdf" />
+                <h2>Copy Pages</h2>
+                <MarkdownBlock>{copyPagesSnippet}</MarkdownBlock>
+                <Pdf url="/assets/copy_pages.pdf" />
+                <h2>Embed PNG and JPEG Images</h2>
+                <MarkdownBlock>{embedPngAndJpegImagesSnippet}</MarkdownBlock>
+                <Pdf url="/assets/embed_png_and_jpeg_images.pdf" />
+                <h2>Embed Font and Measure Text</h2>
+                <p>
+                  <a href="https://github.com/Hopding/pdf-lib/tree/Rewrite#fontkit-installation">
+                    <translate>The </translate>
+                    <code>@pdf-lib/fontkit</code> {}
+                    <translate>
+                      module must be installed to embed custom fonts.
+                    </translate>
+                  </a>
+                </p>
+                <MarkdownBlock>{embedFontAndMeasureTextSnippet}</MarkdownBlock>
+                <Pdf url="/assets/embed_font_and_measure_text.pdf" />
               </div>
             </div>
           </Container>
