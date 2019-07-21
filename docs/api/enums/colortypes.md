@@ -20,7 +20,7 @@ sidebar_label: ColorTypes
 
 • **CMYK**: = "CMYK"
 
-*Defined in [colors.ts:14](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/colors.ts#L14)*
+*Defined in [colors.ts:14](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/colors.ts#L14)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **Grayscale**: = "Grayscale"
 
-*Defined in [colors.ts:12](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/colors.ts#L12)*
+*Defined in [colors.ts:12](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/colors.ts#L12)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **RGB**: = "RGB"
 
-*Defined in [colors.ts:13](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/colors.ts#L13)*
+*Defined in [colors.ts:13](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/colors.ts#L13)*

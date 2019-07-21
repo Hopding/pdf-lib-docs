@@ -6,6 +6,8 @@ sidebar_label: PDFImage
 
 [PDFImage](pdfimage.md) /
 
+Represents an image that has been embedded in a [PDFDocument](pdfdocument.md).
+
 ## Hierarchy
 
 * **PDFImage**
@@ -32,7 +34,9 @@ sidebar_label: PDFImage
 
 • **doc**: *[PDFDocument](pdfdocument.md)*
 
-*Defined in [PDFImage.ts:12](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFImage.ts#L12)*
+*Defined in [PDFImage.ts:29](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFImage.ts#L29)*
+
+The document to which this image belongs.
 
 ___
 
@@ -40,7 +44,9 @@ ___
 
 • **height**: *number*
 
-*Defined in [PDFImage.ts:14](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFImage.ts#L14)*
+*Defined in [PDFImage.ts:35](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFImage.ts#L35)*
+
+The height of this image in pixels.
 
 ___
 
@@ -48,7 +54,9 @@ ___
 
 • **ref**: *`PDFRef`*
 
-*Defined in [PDFImage.ts:11](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFImage.ts#L11)*
+*Defined in [PDFImage.ts:26](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFImage.ts#L26)*
+
+The unique reference assigned to this image within the document.
 
 ___
 
@@ -56,7 +64,9 @@ ___
 
 • **width**: *number*
 
-*Defined in [PDFImage.ts:13](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFImage.ts#L13)*
+*Defined in [PDFImage.ts:32](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFImage.ts#L32)*
+
+The width of this image in pixels.
 
 ## Methods
 
@@ -64,9 +74,17 @@ ___
 
 ▸ **embed**(): *`Promise<void>`*
 
-*Defined in [PDFImage.ts:44](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFImage.ts#L44)*
+*Defined in [PDFImage.ts:97](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFImage.ts#L97)*
+
+> **NOTE:** You probably don't need to call this method directly. The
+> [PDFDocument.save](pdfdocument.md#save) and [PDFDocument.saveAsBase64](pdfdocument.md#saveasbase64) methods will
+> automatically ensure all images get embedded.
+
+Embed this image in its document.
 
 **Returns:** *`Promise<void>`*
+
+Resolves when the embedding is complete.
 
 ___
 
@@ -74,15 +92,30 @@ ___
 
 ▸ **scale**(`factor`: number): *object*
 
-*Defined in [PDFImage.ts:35](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFImage.ts#L35)*
+*Defined in [PDFImage.ts:72](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFImage.ts#L72)*
+
+Compute the width and height of this image after being scaled by the
+given `factor`. For example:
+```js
+image.width  // => 500
+image.height // => 250
+
+const scaled = image.scale(0.5)
+scaled.width  // => 250
+scaled.height // => 125
+```
+This operation is often useful before drawing an image with
+[PDFPage.drawImage](pdfpage.md#drawimage) to compute the `width` and `height` options.
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`factor` | number |
+Name | Type | Description |
+------ | ------ | ------ |
+`factor` | number | The factor by which this image should be scaled. |
 
 **Returns:** *object*
+
+The width and height of the image after being scaled.
 
 ___
 
@@ -90,9 +123,16 @@ ___
 
 ▸ **size**(): *object*
 
-*Defined in [PDFImage.ts:40](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFImage.ts#L40)*
+*Defined in [PDFImage.ts:84](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFImage.ts#L84)*
+
+Get the width and height of this image. For example:
+```js
+const { width, height } = image.size()
+```
 
 **Returns:** *object*
+
+The width and height of the image.
 
 ___
 
@@ -100,14 +140,20 @@ ___
 
 ▸ **of**(`ref`: `PDFRef`, `doc`: [PDFDocument](pdfdocument.md), `embedder`: [ImageEmbedder](../index.md#imageembedder)): *[PDFImage](pdfimage.md)*
 
-*Defined in [PDFImage.ts:8](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFImage.ts#L8)*
+*Defined in [PDFImage.ts:22](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFImage.ts#L22)*
+
+> **NOTE:** You probably don't want to call this method directly. Instead,
+> consider using the [PDFDocument.embedPng](pdfdocument.md#embedpng) and [PDFDocument.embedJpg](pdfdocument.md#embedjpg)
+> methods, which will create instances of [PDFImage](pdfimage.md) for you.
+
+Create an instance of [PDFImage](pdfimage.md) from an existing ref and embedder
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`ref` | `PDFRef` |
-`doc` | [PDFDocument](pdfdocument.md) |
-`embedder` | [ImageEmbedder](../index.md#imageembedder) |
+Name | Type | Description |
+------ | ------ | ------ |
+`ref` | `PDFRef` | The unique reference for this image. |
+`doc` | [PDFDocument](pdfdocument.md) | The document to which the image will belong. |
+`embedder` | [ImageEmbedder](../index.md#imageembedder) | The embedder that will be used to embed the image.  |
 
 **Returns:** *[PDFImage](pdfimage.md)*

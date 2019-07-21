@@ -44,7 +44,7 @@ sidebar_label: PDFDocument
 
 • **catalog**: *`PDFCatalog`*
 
-*Defined in [PDFDocument.ts:88](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFDocument.ts#L88)*
+*Defined in [PDFDocument.ts:88](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L88)*
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 • **context**: *`PDFContext`*
 
-*Defined in [PDFDocument.ts:87](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFDocument.ts#L87)*
+*Defined in [PDFDocument.ts:87](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L87)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 • **isEncrypted**: *boolean*
 
-*Defined in [PDFDocument.ts:89](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFDocument.ts#L89)*
+*Defined in [PDFDocument.ts:89](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L89)*
 
 ## Methods
 
@@ -68,7 +68,7 @@ ___
 
 ▸ **addPage**(`page?`: [PDFPage](pdfpage.md) | [number, number]): *[PDFPage](pdfpage.md)*
 
-*Defined in [PDFDocument.ts:140](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFDocument.ts#L140)*
+*Defined in [PDFDocument.ts:140](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L140)*
 
 **Parameters:**
 
@@ -84,7 +84,7 @@ ___
 
 ▸ **copyPages**(`srcDoc`: [PDFDocument](pdfdocument.md), `indices`: number[]): *`Promise<PDFPage[]>`*
 
-*Defined in [PDFDocument.ts:169](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFDocument.ts#L169)*
+*Defined in [PDFDocument.ts:169](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L169)*
 
 **Parameters:**
 
@@ -101,7 +101,7 @@ ___
 
 ▸ **embedFont**(`font`: [StandardFonts](../enums/standardfonts.md) | string | `Uint8Array` | `ArrayBuffer`, `options`: object): *`Promise<PDFFont>`*
 
-*Defined in [PDFDocument.ts:185](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFDocument.ts#L185)*
+*Defined in [PDFDocument.ts:185](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L185)*
 
 **Parameters:**
 
@@ -118,7 +118,7 @@ ___
 
 ▸ **embedJpg**(`jpg`: string | `Uint8Array` | `ArrayBuffer`): *`Promise<PDFImage>`*
 
-*Defined in [PDFDocument.ts:231](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFDocument.ts#L231)*
+*Defined in [PDFDocument.ts:231](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L231)*
 
 **Parameters:**
 
@@ -134,7 +134,7 @@ ___
 
 ▸ **embedPng**(`png`: string | `Uint8Array` | `ArrayBuffer`): *`Promise<PDFImage>`*
 
-*Defined in [PDFDocument.ts:241](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFDocument.ts#L241)*
+*Defined in [PDFDocument.ts:241](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L241)*
 
 **Parameters:**
 
@@ -150,7 +150,7 @@ ___
 
 ▸ **embedStandardFont**(`font`: [StandardFonts](../enums/standardfonts.md)): *[PDFFont](pdffont.md)*
 
-*Defined in [PDFDocument.ts:216](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFDocument.ts#L216)*
+*Defined in [PDFDocument.ts:216](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L216)*
 
 **Parameters:**
 
@@ -166,7 +166,7 @@ ___
 
 ▸ **flush**(): *`Promise<void>`*
 
-*Defined in [PDFDocument.ts:251](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFDocument.ts#L251)*
+*Defined in [PDFDocument.ts:251](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L251)*
 
 **Returns:** *`Promise<void>`*
 
@@ -176,7 +176,7 @@ ___
 
 ▸ **getPageCount**(): *number*
 
-*Defined in [PDFDocument.ts:120](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFDocument.ts#L120)*
+*Defined in [PDFDocument.ts:120](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L120)*
 
 **Returns:** *number*
 
@@ -186,7 +186,7 @@ ___
 
 ▸ **getPageIndices**(): *number[]*
 
-*Defined in [PDFDocument.ts:128](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFDocument.ts#L128)*
+*Defined in [PDFDocument.ts:128](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L128)*
 
 **Returns:** *number[]*
 
@@ -196,7 +196,7 @@ ___
 
 ▸ **getPages**(): *[PDFPage](pdfpage.md)[]*
 
-*Defined in [PDFDocument.ts:124](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFDocument.ts#L124)*
+*Defined in [PDFDocument.ts:124](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L124)*
 
 **Returns:** *[PDFPage](pdfpage.md)[]*
 
@@ -206,7 +206,7 @@ ___
 
 ▸ **insertPage**(`index`: number, `page?`: [PDFPage](pdfpage.md) | [number, number]): *[PDFPage](pdfpage.md)*
 
-*Defined in [PDFDocument.ts:147](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFDocument.ts#L147)*
+*Defined in [PDFDocument.ts:147](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L147)*
 
 **Parameters:**
 
@@ -223,7 +223,7 @@ ___
 
 ▸ **registerFontkit**(`fontkit`: `Fontkit`): *void*
 
-*Defined in [PDFDocument.ts:116](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFDocument.ts#L116)*
+*Defined in [PDFDocument.ts:116](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L116)*
 
 **Parameters:**
 
@@ -239,7 +239,7 @@ ___
 
 ▸ **removePage**(`index`: number): *void*
 
-*Defined in [PDFDocument.ts:132](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFDocument.ts#L132)*
+*Defined in [PDFDocument.ts:132](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L132)*
 
 **Parameters:**
 
@@ -255,7 +255,7 @@ ___
 
 ▸ **save**(`options`: [SaveOptions](../interfaces/saveoptions.md)): *`Promise<Uint8Array>`*
 
-*Defined in [PDFDocument.ts:265](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFDocument.ts#L265)*
+*Defined in [PDFDocument.ts:265](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L265)*
 
 **Parameters:**
 
@@ -271,7 +271,7 @@ ___
 
 ▸ **saveAsBase64**(`options`: [Base64SaveOptions](../interfaces/base64saveoptions.md)): *`Promise<string>`*
 
-*Defined in [PDFDocument.ts:283](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFDocument.ts#L283)*
+*Defined in [PDFDocument.ts:283](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L283)*
 
 **Parameters:**
 
@@ -287,7 +287,7 @@ ___
 
 ▸ **create**(): *`Promise<PDFDocument>`*
 
-*Defined in [PDFDocument.ts:78](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFDocument.ts#L78)*
+*Defined in [PDFDocument.ts:78](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L78)*
 
 **Returns:** *`Promise<PDFDocument>`*
 
@@ -297,7 +297,7 @@ ___
 
 ▸ **load**(`pdf`: string | `Uint8Array` | `ArrayBuffer`, `options`: object): *`Promise<PDFDocument>`*
 
-*Defined in [PDFDocument.ts:57](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFDocument.ts#L57)*
+*Defined in [PDFDocument.ts:57](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L57)*
 
 **Parameters:**
 
