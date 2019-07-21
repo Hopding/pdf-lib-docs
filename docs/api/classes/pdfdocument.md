@@ -6,6 +6,8 @@ sidebar_label: PDFDocument
 
 [PDFDocument](pdfdocument.md) /
 
+Represents a PDF document.
+
 ## Hierarchy
 
 * **PDFDocument**
@@ -44,7 +46,7 @@ sidebar_label: PDFDocument
 
 • **catalog**: *`PDFCatalog`*
 
-*Defined in [PDFDocument.ts:88](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L88)*
+*Defined in [PDFDocument.ts:115](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L115)*
 
 ___
 
@@ -52,7 +54,7 @@ ___
 
 • **context**: *`PDFContext`*
 
-*Defined in [PDFDocument.ts:87](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L87)*
+*Defined in [PDFDocument.ts:114](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L114)*
 
 ___
 
@@ -60,7 +62,7 @@ ___
 
 • **isEncrypted**: *boolean*
 
-*Defined in [PDFDocument.ts:89](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L89)*
+*Defined in [PDFDocument.ts:116](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L116)*
 
 ## Methods
 
@@ -68,7 +70,7 @@ ___
 
 ▸ **addPage**(`page?`: [PDFPage](pdfpage.md) | [number, number]): *[PDFPage](pdfpage.md)*
 
-*Defined in [PDFDocument.ts:140](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L140)*
+*Defined in [PDFDocument.ts:167](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L167)*
 
 **Parameters:**
 
@@ -84,7 +86,7 @@ ___
 
 ▸ **copyPages**(`srcDoc`: [PDFDocument](pdfdocument.md), `indices`: number[]): *`Promise<PDFPage[]>`*
 
-*Defined in [PDFDocument.ts:169](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L169)*
+*Defined in [PDFDocument.ts:196](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L196)*
 
 **Parameters:**
 
@@ -101,7 +103,7 @@ ___
 
 ▸ **embedFont**(`font`: [StandardFonts](../enums/standardfonts.md) | string | `Uint8Array` | `ArrayBuffer`, `options`: object): *`Promise<PDFFont>`*
 
-*Defined in [PDFDocument.ts:185](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L185)*
+*Defined in [PDFDocument.ts:212](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L212)*
 
 **Parameters:**
 
@@ -118,7 +120,7 @@ ___
 
 ▸ **embedJpg**(`jpg`: string | `Uint8Array` | `ArrayBuffer`): *`Promise<PDFImage>`*
 
-*Defined in [PDFDocument.ts:231](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L231)*
+*Defined in [PDFDocument.ts:258](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L258)*
 
 **Parameters:**
 
@@ -134,7 +136,7 @@ ___
 
 ▸ **embedPng**(`png`: string | `Uint8Array` | `ArrayBuffer`): *`Promise<PDFImage>`*
 
-*Defined in [PDFDocument.ts:241](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L241)*
+*Defined in [PDFDocument.ts:268](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L268)*
 
 **Parameters:**
 
@@ -150,7 +152,7 @@ ___
 
 ▸ **embedStandardFont**(`font`: [StandardFonts](../enums/standardfonts.md)): *[PDFFont](pdffont.md)*
 
-*Defined in [PDFDocument.ts:216](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L216)*
+*Defined in [PDFDocument.ts:243](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L243)*
 
 **Parameters:**
 
@@ -166,7 +168,7 @@ ___
 
 ▸ **flush**(): *`Promise<void>`*
 
-*Defined in [PDFDocument.ts:251](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L251)*
+*Defined in [PDFDocument.ts:278](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L278)*
 
 **Returns:** *`Promise<void>`*
 
@@ -176,7 +178,7 @@ ___
 
 ▸ **getPageCount**(): *number*
 
-*Defined in [PDFDocument.ts:120](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L120)*
+*Defined in [PDFDocument.ts:147](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L147)*
 
 **Returns:** *number*
 
@@ -186,7 +188,7 @@ ___
 
 ▸ **getPageIndices**(): *number[]*
 
-*Defined in [PDFDocument.ts:128](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L128)*
+*Defined in [PDFDocument.ts:155](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L155)*
 
 **Returns:** *number[]*
 
@@ -196,7 +198,7 @@ ___
 
 ▸ **getPages**(): *[PDFPage](pdfpage.md)[]*
 
-*Defined in [PDFDocument.ts:124](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L124)*
+*Defined in [PDFDocument.ts:151](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L151)*
 
 **Returns:** *[PDFPage](pdfpage.md)[]*
 
@@ -206,7 +208,7 @@ ___
 
 ▸ **insertPage**(`index`: number, `page?`: [PDFPage](pdfpage.md) | [number, number]): *[PDFPage](pdfpage.md)*
 
-*Defined in [PDFDocument.ts:147](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L147)*
+*Defined in [PDFDocument.ts:174](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L174)*
 
 **Parameters:**
 
@@ -223,7 +225,7 @@ ___
 
 ▸ **registerFontkit**(`fontkit`: `Fontkit`): *void*
 
-*Defined in [PDFDocument.ts:116](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L116)*
+*Defined in [PDFDocument.ts:143](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L143)*
 
 **Parameters:**
 
@@ -239,7 +241,7 @@ ___
 
 ▸ **removePage**(`index`: number): *void*
 
-*Defined in [PDFDocument.ts:132](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L132)*
+*Defined in [PDFDocument.ts:159](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L159)*
 
 **Parameters:**
 
@@ -255,7 +257,7 @@ ___
 
 ▸ **save**(`options`: [SaveOptions](../interfaces/saveoptions.md)): *`Promise<Uint8Array>`*
 
-*Defined in [PDFDocument.ts:265](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L265)*
+*Defined in [PDFDocument.ts:292](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L292)*
 
 **Parameters:**
 
@@ -271,7 +273,7 @@ ___
 
 ▸ **saveAsBase64**(`options`: [Base64SaveOptions](../interfaces/base64saveoptions.md)): *`Promise<string>`*
 
-*Defined in [PDFDocument.ts:283](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L283)*
+*Defined in [PDFDocument.ts:310](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L310)*
 
 **Parameters:**
 
@@ -287,7 +289,7 @@ ___
 
 ▸ **create**(): *`Promise<PDFDocument>`*
 
-*Defined in [PDFDocument.ts:78](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L78)*
+*Defined in [PDFDocument.ts:105](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L105)*
 
 **Returns:** *`Promise<PDFDocument>`*
 
@@ -295,15 +297,34 @@ ___
 
 ### `Static` load
 
-▸ **load**(`pdf`: string | `Uint8Array` | `ArrayBuffer`, `options`: object): *`Promise<PDFDocument>`*
+▸ **load**(`pdf`: string | `Uint8Array` | `ArrayBuffer`, `options`: [LoadOptions](../interfaces/loadoptions.md)): *`Promise<PDFDocument>`*
 
-*Defined in [PDFDocument.ts:57](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L57)*
+*Defined in [PDFDocument.ts:87](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L87)*
+
+Load an existing [PDFDocument](pdfdocument.md). The input data can be provided in three
+different formats:
+
+| Type          | Contents                                               |
+| ------------- | ------------------------------------------------------ |
+| `string`      | A base64 encoded string (or data URI) containing a PDF |
+| `Uint8Array`  | The raw bytes of a PDF                                 |
+| `ArrayBuffer` | The raw bytes of a PDF                                 |
+
+For example:
+```js
+import { PDFDocument } from 'pdf-lib'
+
+const pdfDoc = PDFDocument.load('JVBERi0xLjcKJYGBgYEKCjUgMCBvYmoKPDwKL0ZpbHRlciAvRmxhdGVEZWNvZGUKL0xlbmd0aCAxMDQKPj4Kc3RyZWFtCniccwrhMlAAwaJ0Ln2P1Jyy1JLM5ERdc0MjCwUjE4WQNC4Q6cNlCFZkqGCqYGSqEJLLZWNuYGZiZmbkYuZsZmlmZGRgZmluDCQNzc3NTM2NzdzMXMxMjQztFEKyuEK0uFxDuAAOERdVCmVuZHN0cmVhbQplbmRvYmoKCjYgMCBvYmoKPDwKL0ZpbHRlciAvRmxhdGVEZWNvZGUKL1R5cGUgL09ialN0bQovTiA0Ci9GaXJzdCAyMAovTGVuZ3RoIDIxNQo+PgpzdHJlYW0KeJxVj9GqwjAMhu/zFHkBzTo3nCCCiiKIHPEICuJF3cKoSCu2E8/b20wPIr1p8v9/8kVhgilmGfawX2CGaVrgcAi0/bsy0lrX7IGWpvJ4iJYEN3gEmrrGBlQwGsHHO9VBX1wNrxAqMX87RBD5xpJuddqwd82tjAHxzV1U5LPgy52DKXWnr1Lheg+j/c/pzGVriqV0VlwZPXGPCJjElw/ybkwUmeoWgxesDXGhHJC/D/iikp1Av80ptKU0FdBEe25pPihAM1u6ytgaaWfs2Hrz35CJT1+EWmAKZW5kc3RyZWFtCmVuZG9iagoKNyAwIG9iago8PAovU2l6ZSA4Ci9Sb290IDIgMCBSCi9GaWx0ZXIgL0ZsYXRlRGVjb2RlCi9UeXBlIC9YUmVmCi9MZW5ndGggMzgKL1cgWyAxIDIgMiBdCi9JbmRleCBbIDAgOCBdCj4+CnN0cmVhbQp4nBXEwREAEBAEsCwz3vrvRmOOyyOoGhZdutHN2MT55fIAVocD+AplbmRzdHJlYW0KZW5kb2JqCgpzdGFydHhyZWYKNTEwCiUlRU9G')
+const pdfDoc = PDFDocument.load('data:application/pdf;base64,JVBERi0xLjcKJYGBgYEKCjUgMCBvYmoKPDwKL0ZpbHRlciAvRmxhdGVEZWNvZGUKL0xlbmd0aCAxMDQKPj4Kc3RyZWFtCniccwrhMlAAwaJ0Ln2P1Jyy1JLM5ERdc2NzQwUjE4WQNC4Q6cNlCFZkqGCqYGSqEJLLZWNuYGZiZmbkYuZsZmlmZGRgZmluDCQNzc3NTM2NzdzMXMxMjQztFEKyuEK0uFxDuAAOGhdVCmVuZHN0cmVhbQplbmRvYmoKCjYgMCBvYmoKPDwKL0ZpbHRlciAvRmxhdGVEZWNvZGUKL1R5cGUgL09ialN0bQovTiA0Ci9GaXJzdCAyMAovTGVuZ3RoIDIxNwo+PgpzdHJlYW0KeJxVT9tqwkAQfZ+vmB+ok40JiSBClZZCKRUVLIgPazKELbJb3E1p/96ZqIjsy865zJxjMMMciwLHWNVYYJ7XOJ0Cbf5/GGlpO45A766NuBNJhivcAy1C7xMamM3grl3YZI+hg4sJjYofFUoofWJ1DzytOIb+1IhBda9BGP288fGXk2vsUzWujOS6LqOvz8M3N4NIRkU+uHV2Hv4kYCavnJQj6VAXZlRPLmF9koNaoLwWeEilN4HW/SENo4IGaG4jD2nuUYBefBNa5zukrfPPProboBvPX41aYAplbmRzdHJlYW0KZW5kb2JqCgo3IDAgb2JqCjw8Ci9TaXplIDgKL1Jvb3QgMiAwIFIKL0ZpbHRlciAvRmxhdGVEZWNvZGUKL1R5cGUgL1hSZWYKL0xlbmd0aCAzNwovVyBbIDEgMiAyIF0KL0luZGV4IFsgMCA4IF0KPj4Kc3RyZWFtCnicFcixDQAwCAMwQ6XO/f+bXgbK4sGYaZdQocMpj/IlWVORAvsKZW5kc3RyZWFtCmVuZG9iagoKc3RhcnR4cmVmCjUxMgolJUVPRg==')
+```
 
 **Parameters:**
 
-Name | Type | Default |
------- | ------ | ------ |
-`pdf` | string &#124; `Uint8Array` &#124; `ArrayBuffer` | - |
-`options` | object |  {} |
+Name | Type | Default | Description |
+------ | ------ | ------ | ------ |
+`pdf` | string &#124; `Uint8Array` &#124; `ArrayBuffer` | - | The input data containing a PDF document. |
+`options` | [LoadOptions](../interfaces/loadoptions.md) |  {} | The options to be used when loading the document. |
 
 **Returns:** *`Promise<PDFDocument>`*
+
+The document loaded from the input.

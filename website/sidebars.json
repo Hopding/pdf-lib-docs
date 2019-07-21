@@ -42,6 +42,7 @@
       "api/interfaces/drawlinesoftextoptions",
       "api/interfaces/drawtextoptions",
       "api/interfaces/grayscale",
+      "api/interfaces/loadoptions",
       "api/interfaces/pdfpagedrawcircleoptions",
       "api/interfaces/pdfpagedrawellipseoptions",
       "api/interfaces/pdfpagedrawimageoptions",

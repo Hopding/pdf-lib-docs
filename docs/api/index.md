@@ -31,6 +31,7 @@ sidebar_label: Globals
 * [DrawLinesOfTextOptions](interfaces/drawlinesoftextoptions.md)
 * [DrawTextOptions](interfaces/drawtextoptions.md)
 * [Grayscale](interfaces/grayscale.md)
+* [LoadOptions](interfaces/loadoptions.md)
 * [PDFPageDrawCircleOptions](interfaces/pdfpagedrawcircleoptions.md)
 * [PDFPageDrawEllipseOptions](interfaces/pdfpagedrawellipseoptions.md)
 * [PDFPageDrawImageOptions](interfaces/pdfpagedrawimageoptions.md)
