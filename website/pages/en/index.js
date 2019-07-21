@@ -102,9 +102,8 @@ import { PDFDocument, StandardFonts, rgb } from 'pdf-lib'
 
 async function createPdf() {
   const pdfDoc = await PDFDocument.create()
-  const timesRomanFont = await pdfDoc.embedFont(
-    StandardFonts.TimesRoman
-  )
+  const timesRomanFont = await pdfDoc.embedFont(StandardFonts.TimesRoman)
+
   const page = pdfDoc.addPage()
   const { width, height } = page.getSize()
   const fontSize = 30
@@ -115,6 +114,33 @@ async function createPdf() {
     font: timesRomanFont,
     color: rgb(0, 0.53, 0.71),
   })
+
+  const pdfBytes = await pdfDoc.save()
+}
+${pre}`;
+
+const modifyDocumentSnippet = `${pre}js
+import { degrees, PDFDocument, rgb, StandardFonts } from 'pdf-lib';
+
+async function modifyPdf() {
+  const url = 'https://pdf-lib.js.org/assets/pdfs/with_update_sections.pdf'
+  const existingPdfBytes = await fetch(url).then(res => res.arrayBuffer())
+
+  const pdfDoc = await PDFDocument.load(existingPdfBytes)
+  const helveticaFont = await pdfDoc.embedFont(StandardFonts.Helvetica)
+
+  const pages = pdfDoc.getPages()
+  const firstPage = pages[0]
+  const { width, height } = firstPage.getSize()
+  firstPage.drawText('This text was added with JavaScript!', {
+    x: 5,
+    y: height / 2 + 300,
+    size: 50,
+    font: helveticaFont,
+    color: rgb(0.95, 0.1, 0.1),
+    rotate: degrees(-45),
+  })
+
   const pdfBytes = await pdfDoc.save()
 }
 ${pre}`;
@@ -295,9 +321,9 @@ class Index extends React.Component {
                 <MarkdownBlock>{createDocumentSnippet}</MarkdownBlock>
                 <Pdf url="/assets/create_document.pdf" />
 
-                <h2>Copy Pages</h2>
-                <MarkdownBlock>{createDocumentSnippet}</MarkdownBlock>
-                <Pdf url="/assets/copy_pages.pdf" />
+                <h2>Modify Document</h2>
+                <MarkdownBlock>{modifyDocumentSnippet}</MarkdownBlock>
+                <Pdf url="/assets/modify_document.pdf" />
               </div>
             </div>
           </Container>
