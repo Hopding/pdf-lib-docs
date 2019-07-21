@@ -34,7 +34,7 @@ sidebar_label: PDFFont
 
 • **doc**: *[PDFDocument](pdfdocument.md)*
 
-*Defined in [PDFFont.ts:17](https://github.com/Hopding/pdf-lib/blob/14e8645/src/api/PDFFont.ts#L17)*
+*Defined in [PDFFont.ts:17](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFFont.ts#L17)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [PDFFont.ts:18](https://github.com/Hopding/pdf-lib/blob/14e8645/src/api/PDFFont.ts#L18)*
+*Defined in [PDFFont.ts:18](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFFont.ts#L18)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **ref**: *`PDFRef`*
 
-*Defined in [PDFFont.ts:16](https://github.com/Hopding/pdf-lib/blob/14e8645/src/api/PDFFont.ts#L16)*
+*Defined in [PDFFont.ts:16](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFFont.ts#L16)*
 
 ## Methods
 
@@ -58,7 +58,7 @@ ___
 
 ▸ **embed**(): *`Promise<void>`*
 
-*Defined in [PDFFont.ts:72](https://github.com/Hopding/pdf-lib/blob/14e8645/src/api/PDFFont.ts#L72)*
+*Defined in [PDFFont.ts:72](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFFont.ts#L72)*
 
 **Returns:** *`Promise<void>`*
 
@@ -68,7 +68,7 @@ ___
 
 ▸ **encodeText**(`text`: string): *`PDFHexString`*
 
-*Defined in [PDFFont.ts:38](https://github.com/Hopding/pdf-lib/blob/14e8645/src/api/PDFFont.ts#L38)*
+*Defined in [PDFFont.ts:38](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFFont.ts#L38)*
 
 **Parameters:**
 
@@ -84,7 +84,7 @@ ___
 
 ▸ **getCharacterSet**(): *number[]*
 
-*Defined in [PDFFont.ts:60](https://github.com/Hopding/pdf-lib/blob/14e8645/src/api/PDFFont.ts#L60)*
+*Defined in [PDFFont.ts:60](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFFont.ts#L60)*
 
 **Returns:** *number[]*
 
@@ -94,7 +94,7 @@ ___
 
 ▸ **heightAtSize**(`size`: number): *number*
 
-*Defined in [PDFFont.ts:50](https://github.com/Hopding/pdf-lib/blob/14e8645/src/api/PDFFont.ts#L50)*
+*Defined in [PDFFont.ts:50](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFFont.ts#L50)*
 
 **Parameters:**
 
@@ -110,7 +110,7 @@ ___
 
 ▸ **sizeAtHeight**(`height`: number): *number*
 
-*Defined in [PDFFont.ts:55](https://github.com/Hopding/pdf-lib/blob/14e8645/src/api/PDFFont.ts#L55)*
+*Defined in [PDFFont.ts:55](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFFont.ts#L55)*
 
 **Parameters:**
 
@@ -126,7 +126,7 @@ ___
 
 ▸ **widthOfTextAtSize**(`text`: string, `size`: number): *number*
 
-*Defined in [PDFFont.ts:44](https://github.com/Hopding/pdf-lib/blob/14e8645/src/api/PDFFont.ts#L44)*
+*Defined in [PDFFont.ts:44](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFFont.ts#L44)*
 
 **Parameters:**
 
@@ -143,7 +143,7 @@ ___
 
 ▸ **of**(`ref`: `PDFRef`, `doc`: [PDFDocument](pdfdocument.md), `embedder`: [FontEmbedder](../index.md#fontembedder)): *[PDFFont](pdffont.md)*
 
-*Defined in [PDFFont.ts:13](https://github.com/Hopding/pdf-lib/blob/14e8645/src/api/PDFFont.ts#L13)*
+*Defined in [PDFFont.ts:13](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/PDFFont.ts#L13)*
 
 **Parameters:**
 

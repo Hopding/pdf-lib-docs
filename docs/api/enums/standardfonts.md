@@ -31,7 +31,7 @@ sidebar_label: StandardFonts
 
 • **Courier**: = "Courier"
 
-Defined in StandardFonts.ts:6
+*Defined in [StandardFonts.ts:2](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/StandardFonts.ts#L2)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **CourierBold**: = "Courier-Bold"
 
-Defined in StandardFonts.ts:7
+*Defined in [StandardFonts.ts:3](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/StandardFonts.ts#L3)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **CourierBoldOblique**: = "Courier-BoldOblique"
 
-Defined in StandardFonts.ts:9
+*Defined in [StandardFonts.ts:5](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/StandardFonts.ts#L5)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **CourierOblique**: = "Courier-Oblique"
 
-Defined in StandardFonts.ts:8
+*Defined in [StandardFonts.ts:4](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/StandardFonts.ts#L4)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 • **Helvetica**: = "Helvetica"
 
-Defined in StandardFonts.ts:10
+*Defined in [StandardFonts.ts:6](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/StandardFonts.ts#L6)*
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 • **HelveticaBold**: = "Helvetica-Bold"
 
-Defined in StandardFonts.ts:11
+*Defined in [StandardFonts.ts:7](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/StandardFonts.ts#L7)*
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 • **HelveticaBoldOblique**: = "Helvetica-BoldOblique"
 
-Defined in StandardFonts.ts:13
+*Defined in [StandardFonts.ts:9](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/StandardFonts.ts#L9)*
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 • **HelveticaOblique**: = "Helvetica-Oblique"
 
-Defined in StandardFonts.ts:12
+*Defined in [StandardFonts.ts:8](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/StandardFonts.ts#L8)*
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 • **Symbol**: = "Symbol"
 
-Defined in StandardFonts.ts:18
+*Defined in [StandardFonts.ts:14](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/StandardFonts.ts#L14)*
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 • **TimesRoman**: = "Times-Roman"
 
-Defined in StandardFonts.ts:14
+*Defined in [StandardFonts.ts:10](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/StandardFonts.ts#L10)*
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 • **TimesRomanBold**: = "Times-Bold"
 
-Defined in StandardFonts.ts:15
+*Defined in [StandardFonts.ts:11](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/StandardFonts.ts#L11)*
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 • **TimesRomanBoldItalic**: = "Times-BoldItalic"
 
-Defined in StandardFonts.ts:17
+*Defined in [StandardFonts.ts:13](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/StandardFonts.ts#L13)*
 
 ___
 
@@ -127,7 +127,7 @@ ___
 
 • **TimesRomanItalic**: = "Times-Italic"
 
-Defined in StandardFonts.ts:16
+*Defined in [StandardFonts.ts:12](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/StandardFonts.ts#L12)*
 
 ___
 
@@ -135,4 +135,4 @@ ___
 
 • **ZapfDingbats**: = "ZapfDingbats"
 
-Defined in StandardFonts.ts:19
+*Defined in [StandardFonts.ts:15](https://github.com/Hopding/pdf-lib/blob/20bb5ab/src/api/StandardFonts.ts#L15)*
