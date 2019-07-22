@@ -77,6 +77,10 @@
         "title": "Grayscale",
         "sidebar_label": "Grayscale"
       },
+      "api/interfaces/loadoptions": {
+        "title": "LoadOptions",
+        "sidebar_label": "LoadOptions"
+      },
       "api/interfaces/pdfpagedrawcircleoptions": {
         "title": "PDFPageDrawCircleOptions",
         "sidebar_label": "PDFPageDrawCircleOptions"

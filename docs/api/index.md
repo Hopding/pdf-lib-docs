@@ -30,6 +30,7 @@ sidebar_label: Globals
 * [Degrees](interfaces/degrees.md)
 * [DrawLinesOfTextOptions](interfaces/drawlinesoftextoptions.md)
 * [DrawTextOptions](interfaces/drawtextoptions.md)
+* [EmbedFontOptions](interfaces/embedfontoptions.md)
 * [Grayscale](interfaces/grayscale.md)
 * [LoadOptions](interfaces/loadoptions.md)
 * [PDFPageDrawCircleOptions](interfaces/pdfpagedrawcircleoptions.md)

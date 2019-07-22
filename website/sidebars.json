@@ -41,6 +41,7 @@
       "api/interfaces/degrees",
       "api/interfaces/drawlinesoftextoptions",
       "api/interfaces/drawtextoptions",
+      "api/interfaces/embedfontoptions",
       "api/interfaces/grayscale",
       "api/interfaces/loadoptions",
       "api/interfaces/pdfpagedrawcircleoptions",

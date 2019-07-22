@@ -46,7 +46,9 @@ Represents a PDF document.
 
 • **catalog**: *`PDFCatalog`*
 
-*Defined in [PDFDocument.ts:115](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L115)*
+*Defined in [PDFDocument.ts:152](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L152)*
+
+The catalog of this document.
 
 ___
 
@@ -54,7 +56,9 @@ ___
 
 • **context**: *`PDFContext`*
 
-*Defined in [PDFDocument.ts:114](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L114)*
+*Defined in [PDFDocument.ts:149](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L149)*
+
+The low-level context of this document.
 
 ___
 
@@ -62,7 +66,9 @@ ___
 
 • **isEncrypted**: *boolean*
 
-*Defined in [PDFDocument.ts:116](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L116)*
+*Defined in [PDFDocument.ts:155](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L155)*
+
+Whether or not this document is encrypted.
 
 ## Methods
 
@@ -70,15 +76,44 @@ ___
 
 ▸ **addPage**(`page?`: [PDFPage](pdfpage.md) | [number, number]): *[PDFPage](pdfpage.md)*
 
-*Defined in [PDFDocument.ts:167](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L167)*
+*Defined in [PDFDocument.ts:288](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L288)*
+
+Add a page to the end of this document. This method accepts three
+different value types for the `page` parameter:
+
+| Type               | Behavior                                                                            |
+| ------------------ | ----------------------------------------------------------------------------------- |
+| `undefined`        | Create a new page and add it to the end of this document                            |
+| `[number, number]` | Create a new page with the given dimensions and add it to the end of this document  |
+| `PDFPage`          | Add the existing page to the end of this document                                   |
+
+For example:
+```js
+// page=undefined
+const newPage = pdfDoc.addPage()
+
+// page=[number, number]
+import { PageSizes } from 'pdf-lib'
+const newPage1 = pdfDoc.addPage(PageSizes.A7)
+const newPage2 = pdfDoc.addPage(PageSizes.Letter)
+const newPage3 = pdfDoc.addPage([500, 750])
+
+// page=PDFPage
+const pdfDoc1 = await PDFDocument.create()
+const pdfDoc2 = await PDFDocument.load(...)
+const [existingPage] = await pdfDoc1.copyPages(pdfDoc2, [0])
+pdfDoc1.addPage(existingPage)
+```
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`page?` | [PDFPage](pdfpage.md) &#124; [number, number] |
+Name | Type | Description |
+------ | ------ | ------ |
+`page?` | [PDFPage](pdfpage.md) &#124; [number, number] | Optionally, the desired dimensions or existing page. |
 
 **Returns:** *[PDFPage](pdfpage.md)*
+
+The newly created (or existing) page.
 
 ___
 
@@ -86,33 +121,81 @@ ___
 
 ▸ **copyPages**(`srcDoc`: [PDFDocument](pdfdocument.md), `indices`: number[]): *`Promise<PDFPage[]>`*
 
-*Defined in [PDFDocument.ts:196](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L196)*
+*Defined in [PDFDocument.ts:367](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L367)*
+
+Copy pages from a source document into this document. Allows pages to be
+copied between different [PDFDocument](pdfdocument.md) instances. For example:
+```js
+const pdfDoc = await PDFDocument.create()
+const srcDoc = await PDFDocument.load(...)
+
+const copiedPages = await pdfDoc.copyPages(srcDoc, [0, 3, 89])
+const [firstPage, fourthPage, ninetiethPage] = copiedPages;
+
+pdfDoc.addPage(fourthPage)
+pdfDoc.insertPage(0, ninetiethPage)
+pdfDoc.addPage(firstPage)
+```
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`srcDoc` | [PDFDocument](pdfdocument.md) |
-`indices` | number[] |
+Name | Type | Description |
+------ | ------ | ------ |
+`srcDoc` | [PDFDocument](pdfdocument.md) | The document from which pages should be copied. |
+`indices` | number[] | The indices of the pages that should be copied. |
 
 **Returns:** *`Promise<PDFPage[]>`*
+
+Resolves with an array of pages copied into this document.
 
 ___
 
 ###  embedFont
 
-▸ **embedFont**(`font`: [StandardFonts](../enums/standardfonts.md) | string | `Uint8Array` | `ArrayBuffer`, `options`: object): *`Promise<PDFFont>`*
+▸ **embedFont**(`font`: [StandardFonts](../enums/standardfonts.md) | string | `Uint8Array` | `ArrayBuffer`, `options`: [EmbedFontOptions](../interfaces/embedfontoptions.md)): *`Promise<PDFFont>`*
 
-*Defined in [PDFDocument.ts:212](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L212)*
+*Defined in [PDFDocument.ts:418](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L418)*
+
+Embed a font into this document. The input data can be provided in multiple
+formats:
+
+| Type            | Contents                                                |
+| --------------- | ------------------------------------------------------- |
+| `StandardFonts` | One of the standard 14 fonts                            |
+| `string`        | A base64 encoded string (or data URI) containing a font |
+| `Uint8Array`    | The raw bytes of a font                                 |
+| `ArrayBuffer`   | The raw bytes of a font                                 |
+
+For example:
+```js
+// font=StandardFonts
+import { StandardFonts } from 'pdf-lib'
+const font1 = await pdfDoc.embedFont(StandardFonts.Helvetica)
+
+// font=string
+const font2 = await pdfDoc.embedFont('AAEAAAAVAQAABABQRFNJRx/upe...')
+const font3 = await pdfDoc.embedFont('data:font/truetype;base64,AAEAAA...')
+
+// font=Uint8Array
+import fs from 'fs'
+const font4 = await pdfDoc.embedFont(fs.readFileSync('Ubuntu-R.ttf'))
+
+// font=ArrayBuffer
+const url = 'https://pdf-lib.js.org/assets/ubuntu/Ubuntu-R.ttf'
+const ubuntuBytes = await fetch(url).then(res => res.arrayBuffer())
+const font5 = await pdfDoc.embedFont(ubuntuBytes)
+```
 
 **Parameters:**
 
-Name | Type | Default |
------- | ------ | ------ |
-`font` | [StandardFonts](../enums/standardfonts.md) &#124; string &#124; `Uint8Array` &#124; `ArrayBuffer` | - |
-`options` | object |  {} |
+Name | Type | Default | Description |
+------ | ------ | ------ | ------ |
+`font` | [StandardFonts](../enums/standardfonts.md) &#124; string &#124; `Uint8Array` &#124; `ArrayBuffer` | - | The input data for a font. |
+`options` | [EmbedFontOptions](../interfaces/embedfontoptions.md) |  {} | The options to be used when embedding the font. |
 
 **Returns:** *`Promise<PDFFont>`*
+
+Resolves with the embedded font.
 
 ___
 
@@ -120,7 +203,7 @@ ___
 
 ▸ **embedJpg**(`jpg`: string | `Uint8Array` | `ArrayBuffer`): *`Promise<PDFImage>`*
 
-*Defined in [PDFDocument.ts:258](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L258)*
+*Defined in [PDFDocument.ts:464](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L464)*
 
 **Parameters:**
 
@@ -136,7 +219,7 @@ ___
 
 ▸ **embedPng**(`png`: string | `Uint8Array` | `ArrayBuffer`): *`Promise<PDFImage>`*
 
-*Defined in [PDFDocument.ts:268](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L268)*
+*Defined in [PDFDocument.ts:474](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L474)*
 
 **Parameters:**
 
@@ -152,7 +235,7 @@ ___
 
 ▸ **embedStandardFont**(`font`: [StandardFonts](../enums/standardfonts.md)): *[PDFFont](pdffont.md)*
 
-*Defined in [PDFDocument.ts:243](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L243)*
+*Defined in [PDFDocument.ts:449](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L449)*
 
 **Parameters:**
 
@@ -168,7 +251,7 @@ ___
 
 ▸ **flush**(): *`Promise<void>`*
 
-*Defined in [PDFDocument.ts:278](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L278)*
+*Defined in [PDFDocument.ts:484](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L484)*
 
 **Returns:** *`Promise<void>`*
 
@@ -178,9 +261,16 @@ ___
 
 ▸ **getPageCount**(): *number*
 
-*Defined in [PDFDocument.ts:147](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L147)*
+*Defined in [PDFDocument.ts:199](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L199)*
+
+Get the number of pages contained in this document. For example:
+```js
+const totalPages = pdfDoc.getPageCount();
+```
 
 **Returns:** *number*
+
+The number of pages in this document.
 
 ___
 
@@ -188,9 +278,24 @@ ___
 
 ▸ **getPageIndices**(): *number[]*
 
-*Defined in [PDFDocument.ts:155](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L155)*
+*Defined in [PDFDocument.ts:234](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L234)*
+
+Get an array of indices for all the pages contained in this document. The
+array will contain a range of integers from
+`0..pdfDoc.getPageCount() - 1`. For example:
+```js
+const pdfDoc = await PDFDocument.create()
+pdfDoc.addPage()
+pdfDoc.addPage()
+pdfDoc.addPage()
+
+const indices = pdfDoc.getPageIndices()
+indices // => [0, 1, 2]
+```
 
 **Returns:** *number[]*
+
+An array of indices for all pages contained in this document.
 
 ___
 
@@ -198,9 +303,21 @@ ___
 
 ▸ **getPages**(): *[PDFPage](pdfpage.md)[]*
 
-*Defined in [PDFDocument.ts:151](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L151)*
+*Defined in [PDFDocument.ts:215](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L215)*
+
+Get an array of all the pages contained in this document. The pages are
+stored in the array in the same order that they are rendered in the
+document. For example:
+```js
+const pages = pdfDoc.getPages()
+pages[0]   // The first page of the document
+pages[2]   // The third page of the document
+pages[197] // The 198th page of the document
+```
 
 **Returns:** *[PDFPage](pdfpage.md)[]*
+
+An array of all the pages contained in this document.
 
 ___
 
@@ -208,16 +325,45 @@ ___
 
 ▸ **insertPage**(`index`: number, `page?`: [PDFPage](pdfpage.md) | [number, number]): *[PDFPage](pdfpage.md)*
 
-*Defined in [PDFDocument.ts:174](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L174)*
+*Defined in [PDFDocument.ts:327](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L327)*
+
+Insert a page at a given index within this document. This method accepts
+three different value types for the `page` parameter:
+
+| Type               | Behavior                                                                       |
+| ------------------ | ------------------------------------------------------------------------------ |
+| `undefined`        | Create a new page and insert it into this document                             |
+| `[number, number]` | Create a new page with the given dimensions and insert it into this document   |
+| `PDFPage`          | Insert the existing page into this document                                    |
+
+For example:
+```js
+// page=undefined
+const newPage = pdfDoc.insertPage(2)
+
+// page=[number, number]
+import { PageSizes } from 'pdf-lib'
+const newPage1 = pdfDoc.insertPage(2, PageSizes.A7)
+const newPage2 = pdfDoc.insertPage(0, PageSizes.Letter)
+const newPage3 = pdfDoc.insertPage(198, [500, 750])
+
+// page=PDFPage
+const pdfDoc1 = await PDFDocument.create()
+const pdfDoc2 = await PDFDocument.load(...)
+const [existingPage] = await pdfDoc1.copyPages(pdfDoc2, [0])
+pdfDoc1.insertPage(0, existingPage)
+```
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`index` | number |
-`page?` | [PDFPage](pdfpage.md) &#124; [number, number] |
+Name | Type | Description |
+------ | ------ | ------ |
+`index` | number | The index at which the page should be inserted (zero-based). |
+`page?` | [PDFPage](pdfpage.md) &#124; [number, number] | Optionally, the desired dimensions or existing page. |
 
 **Returns:** *[PDFPage](pdfpage.md)*
+
+The newly created (or existing) page.
 
 ___
 
@@ -225,13 +371,17 @@ ___
 
 ▸ **registerFontkit**(`fontkit`: `Fontkit`): *void*
 
-*Defined in [PDFDocument.ts:143](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L143)*
+*Defined in [PDFDocument.ts:188](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L188)*
+
+Register a fontkit instance. This must be done before custom fonts can
+be embedded. See [here](https://github.com/Hopding/pdf-lib/tree/Rewrite#fontkit-installation)
+for instructions on how to install and register a fontkit instance.
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`fontkit` | `Fontkit` |
+Name | Type | Description |
+------ | ------ | ------ |
+`fontkit` | `Fontkit` | The fontkit instance to be registered.  |
 
 **Returns:** *void*
 
@@ -241,13 +391,22 @@ ___
 
 ▸ **removePage**(`index`: number): *void*
 
-*Defined in [PDFDocument.ts:159](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L159)*
+*Defined in [PDFDocument.ts:249](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L249)*
+
+Remove the page at a given index from this document. For example:
+```js
+pdfDoc.removePage(0)   // Remove the first page of the document
+pdfDoc.removePage(2)   // Remove the third page of the document
+pdfDoc.removePage(197) // Remove the 198th page of the document
+```
+Once a page has been removed, it will no longer be rendered at that index
+in the document.
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`index` | number |
+Name | Type | Description |
+------ | ------ | ------ |
+`index` | number | The index of the page to be removed.  |
 
 **Returns:** *void*
 
@@ -257,7 +416,7 @@ ___
 
 ▸ **save**(`options`: [SaveOptions](../interfaces/saveoptions.md)): *`Promise<Uint8Array>`*
 
-*Defined in [PDFDocument.ts:292](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L292)*
+*Defined in [PDFDocument.ts:498](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L498)*
 
 **Parameters:**
 
@@ -273,7 +432,7 @@ ___
 
 ▸ **saveAsBase64**(`options`: [Base64SaveOptions](../interfaces/base64saveoptions.md)): *`Promise<string>`*
 
-*Defined in [PDFDocument.ts:310](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L310)*
+*Defined in [PDFDocument.ts:516](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L516)*
 
 **Parameters:**
 
@@ -289,9 +448,13 @@ ___
 
 ▸ **create**(): *`Promise<PDFDocument>`*
 
-*Defined in [PDFDocument.ts:105](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L105)*
+*Defined in [PDFDocument.ts:139](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L139)*
+
+Create a new [PDFDocument](pdfdocument.md).
 
 **Returns:** *`Promise<PDFDocument>`*
+
+Resolves with the newly created document.
 
 ___
 
@@ -299,10 +462,10 @@ ___
 
 ▸ **load**(`pdf`: string | `Uint8Array` | `ArrayBuffer`, `options`: [LoadOptions](../interfaces/loadoptions.md)): *`Promise<PDFDocument>`*
 
-*Defined in [PDFDocument.ts:87](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L87)*
+*Defined in [PDFDocument.ts:117](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L117)*
 
-Load an existing [PDFDocument](pdfdocument.md). The input data can be provided in three
-different formats:
+Load an existing [PDFDocument](pdfdocument.md). The input data can be provided in
+multiple formats:
 
 | Type          | Contents                                               |
 | ------------- | ------------------------------------------------------ |
@@ -313,9 +476,35 @@ different formats:
 For example:
 ```js
 import { PDFDocument } from 'pdf-lib'
+import fs from 'fs'
 
-const pdfDoc = PDFDocument.load('JVBERi0xLjcKJYGBgYEKCjUgMCBvYmoKPDwKL0ZpbHRlciAvRmxhdGVEZWNvZGUKL0xlbmd0aCAxMDQKPj4Kc3RyZWFtCniccwrhMlAAwaJ0Ln2P1Jyy1JLM5ERdc0MjCwUjE4WQNC4Q6cNlCFZkqGCqYGSqEJLLZWNuYGZiZmbkYuZsZmlmZGRgZmluDCQNzc3NTM2NzdzMXMxMjQztFEKyuEK0uFxDuAAOERdVCmVuZHN0cmVhbQplbmRvYmoKCjYgMCBvYmoKPDwKL0ZpbHRlciAvRmxhdGVEZWNvZGUKL1R5cGUgL09ialN0bQovTiA0Ci9GaXJzdCAyMAovTGVuZ3RoIDIxNQo+PgpzdHJlYW0KeJxVj9GqwjAMhu/zFHkBzTo3nCCCiiKIHPEICuJF3cKoSCu2E8/b20wPIr1p8v9/8kVhgilmGfawX2CGaVrgcAi0/bsy0lrX7IGWpvJ4iJYEN3gEmrrGBlQwGsHHO9VBX1wNrxAqMX87RBD5xpJuddqwd82tjAHxzV1U5LPgy52DKXWnr1Lheg+j/c/pzGVriqV0VlwZPXGPCJjElw/ybkwUmeoWgxesDXGhHJC/D/iikp1Av80ptKU0FdBEe25pPihAM1u6ytgaaWfs2Hrz35CJT1+EWmAKZW5kc3RyZWFtCmVuZG9iagoKNyAwIG9iago8PAovU2l6ZSA4Ci9Sb290IDIgMCBSCi9GaWx0ZXIgL0ZsYXRlRGVjb2RlCi9UeXBlIC9YUmVmCi9MZW5ndGggMzgKL1cgWyAxIDIgMiBdCi9JbmRleCBbIDAgOCBdCj4+CnN0cmVhbQp4nBXEwREAEBAEsCwz3vrvRmOOyyOoGhZdutHN2MT55fIAVocD+AplbmRzdHJlYW0KZW5kb2JqCgpzdGFydHhyZWYKNTEwCiUlRU9G')
-const pdfDoc = PDFDocument.load('data:application/pdf;base64,JVBERi0xLjcKJYGBgYEKCjUgMCBvYmoKPDwKL0ZpbHRlciAvRmxhdGVEZWNvZGUKL0xlbmd0aCAxMDQKPj4Kc3RyZWFtCniccwrhMlAAwaJ0Ln2P1Jyy1JLM5ERdc2NzQwUjE4WQNC4Q6cNlCFZkqGCqYGSqEJLLZWNuYGZiZmbkYuZsZmlmZGRgZmluDCQNzc3NTM2NzdzMXMxMjQztFEKyuEK0uFxDuAAOGhdVCmVuZHN0cmVhbQplbmRvYmoKCjYgMCBvYmoKPDwKL0ZpbHRlciAvRmxhdGVEZWNvZGUKL1R5cGUgL09ialN0bQovTiA0Ci9GaXJzdCAyMAovTGVuZ3RoIDIxNwo+PgpzdHJlYW0KeJxVT9tqwkAQfZ+vmB+ok40JiSBClZZCKRUVLIgPazKELbJb3E1p/96ZqIjsy865zJxjMMMciwLHWNVYYJ7XOJ0Cbf5/GGlpO45A766NuBNJhivcAy1C7xMamM3grl3YZI+hg4sJjYofFUoofWJ1DzytOIb+1IhBda9BGP288fGXk2vsUzWujOS6LqOvz8M3N4NIRkU+uHV2Hv4kYCavnJQj6VAXZlRPLmF9koNaoLwWeEilN4HW/SENo4IGaG4jD2nuUYBefBNa5zukrfPPProboBvPX41aYAplbmRzdHJlYW0KZW5kb2JqCgo3IDAgb2JqCjw8Ci9TaXplIDgKL1Jvb3QgMiAwIFIKL0ZpbHRlciAvRmxhdGVEZWNvZGUKL1R5cGUgL1hSZWYKL0xlbmd0aCAzNwovVyBbIDEgMiAyIF0KL0luZGV4IFsgMCA4IF0KPj4Kc3RyZWFtCnicFcixDQAwCAMwQ6XO/f+bXgbK4sGYaZdQocMpj/IlWVORAvsKZW5kc3RyZWFtCmVuZG9iagoKc3RhcnR4cmVmCjUxMgolJUVPRg==')
+const base64 =
+ 'JVBERi0xLjcKJYGBgYEKCjUgMCBvYmoKPDwKL0ZpbHRlciAvRmxhdGVEZWNvZGUKL0xlbm' +
+ 'd0aCAxMDQKPj4Kc3RyZWFtCniccwrhMlAAwaJ0Ln2P1Jyy1JLM5ERdc0MjCwUjE4WQNC4Q' +
+ '6cNlCFZkqGCqYGSqEJLLZWNuYGZiZmbkYuZsZmlmZGRgZmluDCQNzc3NTM2NzdzMXMxMjQ' +
+ 'ztFEKyuEK0uFxDuAAOERdVCmVuZHN0cmVhbQplbmRvYmoKCjYgMCBvYmoKPDwKL0ZpbHRl' +
+ 'ciAvRmxhdGVEZWNvZGUKL1R5cGUgL09ialN0bQovTiA0Ci9GaXJzdCAyMAovTGVuZ3RoID' +
+ 'IxNQo+PgpzdHJlYW0KeJxVj9GqwjAMhu/zFHkBzTo3nCCCiiKIHPEICuJF3cKoSCu2E8/b' +
+ '20wPIr1p8v9/8kVhgilmGfawX2CGaVrgcAi0/bsy0lrX7IGWpvJ4iJYEN3gEmrrGBlQwGs' +
+ 'HHO9VBX1wNrxAqMX87RBD5xpJuddqwd82tjAHxzV1U5LPgy52DKXWnr1Lheg+j/c/pzGVr' +
+ 'iqV0VlwZPXGPCJjElw/ybkwUmeoWgxesDXGhHJC/D/iikp1Av80ptKU0FdBEe25pPihAM1' +
+ 'u6ytgaaWfs2Hrz35CJT1+EWmAKZW5kc3RyZWFtCmVuZG9iagoKNyAwIG9iago8PAovU2l6' +
+ 'ZSA4Ci9Sb290IDIgMCBSCi9GaWx0ZXIgL0ZsYXRlRGVjb2RlCi9UeXBlIC9YUmVmCi9MZW' +
+ '5ndGggMzgKL1cgWyAxIDIgMiBdCi9JbmRleCBbIDAgOCBdCj4+CnN0cmVhbQp4nBXEwREA' +
+ 'EBAEsCwz3vrvRmOOyyOoGhZdutHN2MT55fIAVocD+AplbmRzdHJlYW0KZW5kb2JqCgpzdG' +
+ 'FydHhyZWYKNTEwCiUlRU9G'
+
+const dataUri = 'data:application/pdf;base64,' + base64
+
+const url = 'https://pdf-lib.js.org/assets/with_update_sections.pdf'
+const arrayBuffer = await fetch(url).then(res => res.arrayBuffer())
+
+const uint8Array = fs.readFileSync('with_update_sections.pdf')
+
+const pdfDoc1 = await PDFDocument.load(base64)
+const pdfDoc2 = await PDFDocument.load(dataUri)
+const pdfDoc3 = await PDFDocument.load(arrayBuffer)
+const pdfDoc4 = await PDFDocument.load(uint8Array)
 ```
 
 **Parameters:**
@@ -327,4 +516,4 @@ Name | Type | Default | Description |
 
 **Returns:** *`Promise<PDFDocument>`*
 
-The document loaded from the input.
+Resolves with a document loaded from the input.
