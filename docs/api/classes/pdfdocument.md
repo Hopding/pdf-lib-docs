@@ -46,7 +46,7 @@ Represents a PDF document.
 
 • **catalog**: *`PDFCatalog`*
 
-*Defined in [PDFDocument.ts:152](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L152)*
+*Defined in [PDFDocument.ts:156](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFDocument.ts#L156)*
 
 The catalog of this document.
 
@@ -56,7 +56,7 @@ ___
 
 • **context**: *`PDFContext`*
 
-*Defined in [PDFDocument.ts:149](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L149)*
+*Defined in [PDFDocument.ts:153](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFDocument.ts#L153)*
 
 The low-level context of this document.
 
@@ -66,7 +66,7 @@ ___
 
 • **isEncrypted**: *boolean*
 
-*Defined in [PDFDocument.ts:155](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L155)*
+*Defined in [PDFDocument.ts:159](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFDocument.ts#L159)*
 
 Whether or not this document is encrypted.
 
@@ -76,7 +76,7 @@ Whether or not this document is encrypted.
 
 ▸ **addPage**(`page?`: [PDFPage](pdfpage.md) | [number, number]): *[PDFPage](pdfpage.md)*
 
-*Defined in [PDFDocument.ts:288](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L288)*
+*Defined in [PDFDocument.ts:295](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFDocument.ts#L295)*
 
 Add a page to the end of this document. This method accepts three
 different value types for the `page` parameter:
@@ -121,7 +121,7 @@ ___
 
 ▸ **copyPages**(`srcDoc`: [PDFDocument](pdfdocument.md), `indices`: number[]): *`Promise<PDFPage[]>`*
 
-*Defined in [PDFDocument.ts:367](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L367)*
+*Defined in [PDFDocument.ts:374](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFDocument.ts#L374)*
 
 Copy pages from a source document into this document. Allows pages to be
 copied between different [PDFDocument](pdfdocument.md) instances. For example:
@@ -154,7 +154,7 @@ ___
 
 ▸ **embedFont**(`font`: [StandardFonts](../enums/standardfonts.md) | string | `Uint8Array` | `ArrayBuffer`, `options`: [EmbedFontOptions](../interfaces/embedfontoptions.md)): *`Promise<PDFFont>`*
 
-*Defined in [PDFDocument.ts:418](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L418)*
+*Defined in [PDFDocument.ts:425](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFDocument.ts#L425)*
 
 Embed a font into this document. The input data can be provided in multiple
 formats:
@@ -174,7 +174,7 @@ const font1 = await pdfDoc.embedFont(StandardFonts.Helvetica)
 
 // font=string
 const font2 = await pdfDoc.embedFont('AAEAAAAVAQAABABQRFNJRx/upe...')
-const font3 = await pdfDoc.embedFont('data:font/truetype;base64,AAEAAA...')
+const font3 = await pdfDoc.embedFont('data:font/opentype;base64,AAEAAA...')
 
 // font=Uint8Array
 import fs from 'fs'
@@ -185,6 +185,7 @@ const url = 'https://pdf-lib.js.org/assets/ubuntu/Ubuntu-R.ttf'
 const ubuntuBytes = await fetch(url).then(res => res.arrayBuffer())
 const font5 = await pdfDoc.embedFont(ubuntuBytes)
 ```
+See also: [registerFontkit](pdfdocument.md#registerfontkit)
 
 **Parameters:**
 
@@ -203,15 +204,43 @@ ___
 
 ▸ **embedJpg**(`jpg`: string | `Uint8Array` | `ArrayBuffer`): *`Promise<PDFImage>`*
 
-*Defined in [PDFDocument.ts:464](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L464)*
+*Defined in [PDFDocument.ts:511](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFDocument.ts#L511)*
+
+Embed a JPEG image into this document. The input data can be provided in
+multiple formats:
+
+| Type          | Contents                                                      |
+| ------------- | ------------------------------------------------------------- |
+| `string`      | A base64 encoded string (or data URI) containing a JPEG image |
+| `Uint8Array`  | The raw bytes of a JPEG image                                 |
+| `ArrayBuffer` | The raw bytes of a JPEG image                                 |
+
+For example:
+```js
+// jpg=string
+const image1 = await pdfDoc.embedJpg('/9j/4AAQSkZJRgABAQAAAQABAAD/2wBD...')
+const image2 = await pdfDoc.embedJpg('data:image/jpeg;base64,/9j/4AAQ...')
+
+// jpg=Uint8Array
+import fs from 'fs'
+const uint8Array = fs.readFileSync('cat_riding_unicorn.jpg')
+const image3 = await pdfDoc.embedJpg(uint8Array)
+
+// jpg=ArrayBuffer
+const url = 'https://pdf-lib.js.org/assets/cat_riding_unicorn.jpg'
+const arrayBuffer = await fetch(url).then(res => res.arrayBuffer())
+const image4 = await pdfDoc.embedJpg(arrayBuffer)
+```
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`jpg` | string &#124; `Uint8Array` &#124; `ArrayBuffer` |
+Name | Type | Description |
+------ | ------ | ------ |
+`jpg` | string &#124; `Uint8Array` &#124; `ArrayBuffer` | The input data for a JPEG image. |
 
 **Returns:** *`Promise<PDFImage>`*
+
+Resolves with the embedded image.
 
 ___
 
@@ -219,15 +248,43 @@ ___
 
 ▸ **embedPng**(`png`: string | `Uint8Array` | `ArrayBuffer`): *`Promise<PDFImage>`*
 
-*Defined in [PDFDocument.ts:474](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L474)*
+*Defined in [PDFDocument.ts:551](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFDocument.ts#L551)*
+
+Embed a PNG image into this document. The input data can be provided in
+multiple formats:
+
+| Type          | Contents                                                     |
+| ------------- | ------------------------------------------------------------ |
+| `string`      | A base64 encoded string (or data URI) containing a PNG image |
+| `Uint8Array`  | The raw bytes of a PNG image                                 |
+| `ArrayBuffer` | The raw bytes of a PNG image                                 |
+
+For example:
+```js
+// png=string
+const image1 = await pdfDoc.embedPng('iVBORw0KGgoAAAANSUhEUgAAAlgAAAF3...')
+const image2 = await pdfDoc.embedPng('data:image/png;base64,iVBORw0KGg...')
+
+// png=Uint8Array
+import fs from 'fs'
+const uint8Array = fs.readFileSync('small_mario.png')
+const image3 = await pdfDoc.embedPng(uint8Array)
+
+// png=ArrayBuffer
+const url = 'https://pdf-lib.js.org/assets/small_mario.png'
+const arrayBuffer = await fetch(url).then(res => res.arrayBuffer())
+const image4 = await pdfDoc.embedPng(arrayBuffer)
+```
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`png` | string &#124; `Uint8Array` &#124; `ArrayBuffer` |
+Name | Type | Description |
+------ | ------ | ------ |
+`png` | string &#124; `Uint8Array` &#124; `ArrayBuffer` | The input data for a PNG image. |
 
 **Returns:** *`Promise<PDFImage>`*
+
+Resolves with the embedded image.
 
 ___
 
@@ -235,15 +292,24 @@ ___
 
 ▸ **embedStandardFont**(`font`: [StandardFonts](../enums/standardfonts.md)): *[PDFFont](pdffont.md)*
 
-*Defined in [PDFDocument.ts:449](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L449)*
+*Defined in [PDFDocument.ts:466](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFDocument.ts#L466)*
+
+Embed a standard font into this document.
+For example:
+```js
+import { StandardFonts } from 'pdf-lib'
+const helveticaFont = pdfDoc.embedFont(StandardFonts.Helvetica)
+```
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`font` | [StandardFonts](../enums/standardfonts.md) |
+Name | Type | Description |
+------ | ------ | ------ |
+`font` | [StandardFonts](../enums/standardfonts.md) | The standard font to be embedded. |
 
 **Returns:** *[PDFFont](pdffont.md)*
+
+The embedded font.
 
 ___
 
@@ -251,9 +317,17 @@ ___
 
 ▸ **flush**(): *`Promise<void>`*
 
-*Defined in [PDFDocument.ts:484](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L484)*
+*Defined in [PDFDocument.ts:570](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFDocument.ts#L570)*
+
+> **NOTE:** You shouldn't need to call this method directly. The [save](pdfdocument.md#save)
+> and [saveAsBase64](pdfdocument.md#saveasbase64) methods will automatically ensure that all embedded
+> assets are flushed before serializing the document.
+
+Flush all embedded fonts and images to this document's [context](pdfdocument.md#context).
 
 **Returns:** *`Promise<void>`*
+
+Resolves when the flush is complete.
 
 ___
 
@@ -261,7 +335,7 @@ ___
 
 ▸ **getPageCount**(): *number*
 
-*Defined in [PDFDocument.ts:199](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L199)*
+*Defined in [PDFDocument.ts:206](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFDocument.ts#L206)*
 
 Get the number of pages contained in this document. For example:
 ```js
@@ -278,7 +352,7 @@ ___
 
 ▸ **getPageIndices**(): *number[]*
 
-*Defined in [PDFDocument.ts:234](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L234)*
+*Defined in [PDFDocument.ts:241](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFDocument.ts#L241)*
 
 Get an array of indices for all the pages contained in this document. The
 array will contain a range of integers from
@@ -303,7 +377,7 @@ ___
 
 ▸ **getPages**(): *[PDFPage](pdfpage.md)[]*
 
-*Defined in [PDFDocument.ts:215](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L215)*
+*Defined in [PDFDocument.ts:222](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFDocument.ts#L222)*
 
 Get an array of all the pages contained in this document. The pages are
 stored in the array in the same order that they are rendered in the
@@ -325,7 +399,7 @@ ___
 
 ▸ **insertPage**(`index`: number, `page?`: [PDFPage](pdfpage.md) | [number, number]): *[PDFPage](pdfpage.md)*
 
-*Defined in [PDFDocument.ts:327](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L327)*
+*Defined in [PDFDocument.ts:334](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFDocument.ts#L334)*
 
 Insert a page at a given index within this document. This method accepts
 three different value types for the `page` parameter:
@@ -371,11 +445,13 @@ ___
 
 ▸ **registerFontkit**(`fontkit`: `Fontkit`): *void*
 
-*Defined in [PDFDocument.ts:188](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L188)*
+*Defined in [PDFDocument.ts:195](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFDocument.ts#L195)*
 
 Register a fontkit instance. This must be done before custom fonts can
 be embedded. See [here](https://github.com/Hopding/pdf-lib/tree/Rewrite#fontkit-installation)
 for instructions on how to install and register a fontkit instance.
+
+> You do **not** need to call this method to embed standard fonts.
 
 **Parameters:**
 
@@ -391,7 +467,7 @@ ___
 
 ▸ **removePage**(`index`: number): *void*
 
-*Defined in [PDFDocument.ts:249](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L249)*
+*Defined in [PDFDocument.ts:256](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFDocument.ts#L256)*
 
 Remove the page at a given index from this document. For example:
 ```js
@@ -416,15 +492,29 @@ ___
 
 ▸ **save**(`options`: [SaveOptions](../interfaces/saveoptions.md)): *`Promise<Uint8Array>`*
 
-*Defined in [PDFDocument.ts:498](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L498)*
+*Defined in [PDFDocument.ts:600](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFDocument.ts#L600)*
+
+Serialize this document to an array of bytes making up a PDF file.
+For example:
+```js
+const pdfBytes = await pdfDoc.save()
+```
+
+There are a number of things you can do with the serialized document,
+depending on the JavaScript environment you're running in:
+* Write it to a file in Node or React Native
+* Download it as a Blob in the browser
+* Render it in an `iframe`
 
 **Parameters:**
 
-Name | Type | Default |
------- | ------ | ------ |
-`options` | [SaveOptions](../interfaces/saveoptions.md) |  {} |
+Name | Type | Default | Description |
+------ | ------ | ------ | ------ |
+`options` | [SaveOptions](../interfaces/saveoptions.md) |  {} | The options to be used when saving the document. |
 
 **Returns:** *`Promise<Uint8Array>`*
+
+Resolves with the bytes of the serialized document.
 
 ___
 
@@ -432,15 +522,28 @@ ___
 
 ▸ **saveAsBase64**(`options`: [Base64SaveOptions](../interfaces/base64saveoptions.md)): *`Promise<string>`*
 
-*Defined in [PDFDocument.ts:516](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L516)*
+*Defined in [PDFDocument.ts:633](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFDocument.ts#L633)*
+
+Serialize this document to a base64 encoded string or data URI making up a
+PDF file. For example:
+```js
+const base64String = await pdfDoc.saveAsBase64()
+base64String // => 'JVBERi0xLjcKJYGBgYEKC...'
+
+const base64DataUri = await pdfDoc.saveAsBase64({ dataUri: true })
+base64DataUri // => 'data:application/pdf;base64,JVBERi0xLjcKJYGBgYEKC...'
+```
 
 **Parameters:**
 
-Name | Type | Default |
------- | ------ | ------ |
-`options` | [Base64SaveOptions](../interfaces/base64saveoptions.md) |  {} |
+Name | Type | Default | Description |
+------ | ------ | ------ | ------ |
+`options` | [Base64SaveOptions](../interfaces/base64saveoptions.md) |  {} | The options to be used when saving the document. |
 
 **Returns:** *`Promise<string>`*
+
+Resolves with a base64 encoded string or data URI of the
+         serialized document.
 
 ___
 
@@ -448,7 +551,7 @@ ___
 
 ▸ **create**(): *`Promise<PDFDocument>`*
 
-*Defined in [PDFDocument.ts:139](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L139)*
+*Defined in [PDFDocument.ts:143](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFDocument.ts#L143)*
 
 Create a new [PDFDocument](pdfdocument.md).
 
@@ -462,7 +565,7 @@ ___
 
 ▸ **load**(`pdf`: string | `Uint8Array` | `ArrayBuffer`, `options`: [LoadOptions](../interfaces/loadoptions.md)): *`Promise<PDFDocument>`*
 
-*Defined in [PDFDocument.ts:117](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFDocument.ts#L117)*
+*Defined in [PDFDocument.ts:121](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFDocument.ts#L121)*
 
 Load an existing [PDFDocument](pdfdocument.md). The input data can be provided in
 multiple formats:
@@ -476,8 +579,8 @@ multiple formats:
 For example:
 ```js
 import { PDFDocument } from 'pdf-lib'
-import fs from 'fs'
 
+// pdf=string
 const base64 =
  'JVBERi0xLjcKJYGBgYEKCjUgMCBvYmoKPDwKL0ZpbHRlciAvRmxhdGVEZWNvZGUKL0xlbm' +
  'd0aCAxMDQKPj4Kc3RyZWFtCniccwrhMlAAwaJ0Ln2P1Jyy1JLM5ERdc0MjCwUjE4WQNC4Q' +
@@ -496,15 +599,19 @@ const base64 =
 
 const dataUri = 'data:application/pdf;base64,' + base64
 
-const url = 'https://pdf-lib.js.org/assets/with_update_sections.pdf'
-const arrayBuffer = await fetch(url).then(res => res.arrayBuffer())
-
-const uint8Array = fs.readFileSync('with_update_sections.pdf')
-
 const pdfDoc1 = await PDFDocument.load(base64)
 const pdfDoc2 = await PDFDocument.load(dataUri)
-const pdfDoc3 = await PDFDocument.load(arrayBuffer)
-const pdfDoc4 = await PDFDocument.load(uint8Array)
+
+// pdf=Uint8Array
+import fs from 'fs'
+const uint8Array = fs.readFileSync('with_update_sections.pdf')
+const pdfDoc3 = await PDFDocument.load(uint8Array)
+
+// pdf=ArrayBuffer
+const url = 'https://pdf-lib.js.org/assets/with_update_sections.pdf'
+const arrayBuffer = await fetch(url).then(res => res.arrayBuffer())
+const pdfDoc4 = await PDFDocument.load(arrayBuffer)
+
 ```
 
 **Parameters:**

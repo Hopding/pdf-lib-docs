@@ -23,7 +23,7 @@ sidebar_label: Degrees
 
 • **angle**: *number*
 
-*Defined in [rotations.ts:15](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/rotations.ts#L15)*
+*Defined in [rotations.ts:15](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/rotations.ts#L15)*
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 • **type**: *[Degrees](../enums/rotationtypes.md#degrees)*
 
-*Defined in [rotations.ts:14](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/rotations.ts#L14)*
+*Defined in [rotations.ts:14](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/rotations.ts#L14)*

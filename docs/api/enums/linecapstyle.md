@@ -20,7 +20,7 @@ sidebar_label: LineCapStyle
 
 • **Butt**: = 0
 
-*Defined in [operators.ts:90](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/operators.ts#L90)*
+*Defined in [operators.ts:90](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/operators.ts#L90)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **Projecting**: = 2
 
-*Defined in [operators.ts:92](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/operators.ts#L92)*
+*Defined in [operators.ts:92](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/operators.ts#L92)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **Round**: = 1
 
-*Defined in [operators.ts:91](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/operators.ts#L91)*
+*Defined in [operators.ts:91](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/operators.ts#L91)*

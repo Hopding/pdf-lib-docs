@@ -27,7 +27,7 @@ sidebar_label: PDFPageDrawCircleOptions
 
 • **borderColor**? : *[Color](../index.md#color)*
 
-*Defined in [PDFPageOptions.ts:67](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFPageOptions.ts#L67)*
+*Defined in [PDFPageOptions.ts:67](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFPageOptions.ts#L67)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **borderWidth**? : *undefined | number*
 
-*Defined in [PDFPageOptions.ts:68](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFPageOptions.ts#L68)*
+*Defined in [PDFPageOptions.ts:68](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFPageOptions.ts#L68)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **color**? : *[Color](../index.md#color)*
 
-*Defined in [PDFPageOptions.ts:66](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFPageOptions.ts#L66)*
+*Defined in [PDFPageOptions.ts:66](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFPageOptions.ts#L66)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **size**? : *undefined | number*
 
-*Defined in [PDFPageOptions.ts:65](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFPageOptions.ts#L65)*
+*Defined in [PDFPageOptions.ts:65](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFPageOptions.ts#L65)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 • **x**? : *undefined | number*
 
-*Defined in [PDFPageOptions.ts:63](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFPageOptions.ts#L63)*
+*Defined in [PDFPageOptions.ts:63](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFPageOptions.ts#L63)*
 
 ___
 
@@ -67,4 +67,4 @@ ___
 
 • **y**? : *undefined | number*
 
-*Defined in [PDFPageOptions.ts:64](https://github.com/Hopding/pdf-lib/blob/4a46ddb/src/api/PDFPageOptions.ts#L64)*
+*Defined in [PDFPageOptions.ts:64](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFPageOptions.ts#L64)*

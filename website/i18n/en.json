@@ -73,6 +73,10 @@
         "title": "DrawTextOptions",
         "sidebar_label": "DrawTextOptions"
       },
+      "api/interfaces/embedfontoptions": {
+        "title": "EmbedFontOptions",
+        "sidebar_label": "EmbedFontOptions"
+      },
       "api/interfaces/grayscale": {
         "title": "Grayscale",
         "sidebar_label": "Grayscale"
