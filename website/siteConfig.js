@@ -99,7 +99,7 @@ const siteConfig = {
   //   repoUrl: 'https://github.com/facebook/test-site',
 
   algolia: {
-    apiKey: '8b43e0374ae7123101a06b90cca8f4ed',
+    apiKey: '9cd7747a43c6b7e9c2554939d34db33f',
     indexName: 'pdf-lib',
     algoliaOptions: {}, // Optional, if provided by Algolia
   },
