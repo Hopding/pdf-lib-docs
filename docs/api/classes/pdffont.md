@@ -36,7 +36,7 @@ Represents a font that has been embedded in a [PDFDocument](pdfdocument.md).
 
 • **doc**: *[PDFDocument](pdfdocument.md)*
 
-*Defined in [PDFFont.ts:35](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFFont.ts#L35)*
+*Defined in [PDFFont.ts:35](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/PDFFont.ts#L35)*
 
 The document to which this font belongs.
 
@@ -46,7 +46,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [PDFFont.ts:38](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFFont.ts#L38)*
+*Defined in [PDFFont.ts:38](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/PDFFont.ts#L38)*
 
 The name of this font.
 
@@ -56,7 +56,7 @@ ___
 
 • **ref**: *`PDFRef`*
 
-*Defined in [PDFFont.ts:32](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFFont.ts#L32)*
+*Defined in [PDFFont.ts:32](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/PDFFont.ts#L32)*
 
 The unique reference assigned to this font within the document.
 
@@ -66,7 +66,7 @@ The unique reference assigned to this font within the document.
 
 ▸ **embed**(): *`Promise<void>`*
 
-*Defined in [PDFFont.ts:141](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFFont.ts#L141)*
+*Defined in [PDFFont.ts:141](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/PDFFont.ts#L141)*
 
 > **NOTE:** You probably don't need to call this method directly. The
 > [PDFDocument.save](pdfdocument.md#save) and [PDFDocument.saveAsBase64](pdfdocument.md#saveasbase64) methods will
@@ -84,7 +84,7 @@ ___
 
 ▸ **encodeText**(`text`: string): *`PDFHexString`*
 
-*Defined in [PDFFont.ts:68](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFFont.ts#L68)*
+*Defined in [PDFFont.ts:68](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/PDFFont.ts#L68)*
 
 > **NOTE:** You probably don't need to call this method directly. The
 > [PDFPage.drawText](pdfpage.md#drawtext) method will automatically encode the text it is
@@ -108,7 +108,7 @@ ___
 
 ▸ **getCharacterSet**(): *number[]*
 
-*Defined in [PDFFont.ts:121](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFFont.ts#L121)*
+*Defined in [PDFFont.ts:121](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/PDFFont.ts#L121)*
 
 Get the set of unicode code points that can be represented by this font.
 
@@ -122,7 +122,7 @@ ___
 
 ▸ **heightAtSize**(`size`: number): *number*
 
-*Defined in [PDFFont.ts:99](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFFont.ts#L99)*
+*Defined in [PDFFont.ts:99](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/PDFFont.ts#L99)*
 
 Measure the height of this font at a given size. For example:
 ```js
@@ -145,7 +145,7 @@ ___
 
 ▸ **sizeAtHeight**(`height`: number): *number*
 
-*Defined in [PDFFont.ts:112](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFFont.ts#L112)*
+*Defined in [PDFFont.ts:112](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/PDFFont.ts#L112)*
 
 Compute the font size at which this font is a given height. For example:
 ```js
@@ -168,7 +168,7 @@ ___
 
 ▸ **widthOfTextAtSize**(`text`: string, `size`: number): *number*
 
-*Defined in [PDFFont.ts:85](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFFont.ts#L85)*
+*Defined in [PDFFont.ts:85](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/PDFFont.ts#L85)*
 
 Measure the width of a string of text drawn in this font at a given size.
 For example:
@@ -194,7 +194,7 @@ ___
 
 ▸ **of**(`ref`: `PDFRef`, `doc`: [PDFDocument](pdfdocument.md), `embedder`: [FontEmbedder](../index.md#fontembedder)): *[PDFFont](pdffont.md)*
 
-*Defined in [PDFFont.ts:28](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/PDFFont.ts#L28)*
+*Defined in [PDFFont.ts:28](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/PDFFont.ts#L28)*
 
 > **NOTE:** You probably don't want to call this method directly. Instead,
 > consider using the [PDFDocument.embedFont](pdfdocument.md#embedfont) and

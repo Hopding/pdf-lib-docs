@@ -68,7 +68,7 @@ const quickStart = `${pre}html
 <html>
   <head>
     <meta charset="utf-8" />
-    <script src="https://unpkg.com/pdf-lib@beta"></script>
+    <script src="https://unpkg.com/pdf-lib"></script>
   </head>
 
   <body>

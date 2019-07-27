@@ -3,7 +3,7 @@
     "start": "cd website && yarn && yarn start",
     "pdf-lib:clone": "git clone git@github.com:Hopding/pdf-lib.git",
     "pdf-lib:pull": "cd pdf-lib && git pull",
-    "docs": "rm -rf ./docs/api && cd pdf-lib && git checkout Rewrite && ../node_modules/typedoc/bin/typedoc --options ../typedoc.json",
+    "docs": "rm -rf ./docs/api && cd pdf-lib && ../node_modules/typedoc/bin/typedoc --options ../typedoc.json",
     "release": "cd website && GIT_USER=Hopding CURRENT_BRANCH=master USE_SSH=true yarn publish-gh-pages"
   },
   "devDependencies": {

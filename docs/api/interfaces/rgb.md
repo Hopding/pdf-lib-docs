@@ -25,7 +25,7 @@ sidebar_label: RGB
 
 • **blue**: *number*
 
-*Defined in [colors.ts:26](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/colors.ts#L26)*
+*Defined in [colors.ts:26](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/colors.ts#L26)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **green**: *number*
 
-*Defined in [colors.ts:25](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/colors.ts#L25)*
+*Defined in [colors.ts:25](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/colors.ts#L25)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **red**: *number*
 
-*Defined in [colors.ts:24](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/colors.ts#L24)*
+*Defined in [colors.ts:24](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/colors.ts#L24)*
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 • **type**: *[RGB](../enums/colortypes.md#rgb)*
 
-*Defined in [colors.ts:23](https://github.com/Hopding/pdf-lib/blob/f878b0e/src/api/colors.ts#L23)*
+*Defined in [colors.ts:23](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/colors.ts#L23)*
