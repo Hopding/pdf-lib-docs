@@ -31,7 +31,6 @@ Button.defaultProps = {
 };
 const pre = '```';
 
-// fake, static, responsive refmt, lol. See reason.css homeCodeSnippet logic
 const codeExampleSmallScreen = `${pre}js
 import { PDFDocument } from 'pdf-lib'
 
@@ -247,6 +246,61 @@ async function embedFontAndMeasureText() {
 }
 ${pre}`;
 
+const setDocumentMetadataSnippet = `${pre}js
+import { PDFDocument, StandardFonts } from 'pdf-lib'
+
+async function setDocumentMetadata() {
+  const pdfDoc = await PDFDocument.create()
+  const timesRomanFont = await pdfDoc.embedFont(StandardFonts.TimesRoman)
+  
+  const page = pdfDoc.addPage([500, 600])
+  page.setFont(timesRomanFont)
+  page.drawText('The Life of an Egg', { x: 60, y: 500, size: 50 })
+  page.drawText('An Epic Tale of Woe', { x: 125, y: 460, size: 25 })
+  
+  // Note that these fields are visible in the "Document Properties" section of 
+  // most PDF readers.
+  pdfDoc.setTitle('🥚 The Life of an Egg 🍳')
+  pdfDoc.setAuthor('Humpty Dumpty')
+  pdfDoc.setSubject('📘 An Epic Tale of Woe 📖')
+  pdfDoc.setKeywords(['eggs', 'wall', 'fall', 'king', 'horses', 'men'])
+  pdfDoc.setProducer('PDF App 9000 🤖')
+  pdfDoc.setCreator('pdf-lib (https://github.com/Hopding/pdf-lib)')
+  pdfDoc.setCreationDate(new Date('2018-06-24T01:58:37.228Z'))
+  pdfDoc.setModificationDate(new Date('2019-12-21T07:00:11.000Z'))
+  
+  const pdfBytes = await pdfDoc.save()
+}
+${pre}`;
+
+const drawSvgPathsSnippet = `${pre}js
+import { PDFDocument, rgb } from 'pdf-lib'
+
+async function drawSvgPaths() {
+  const svgPath =
+    'M 0,20 L 100,160 Q 130,200 150,120 C 190,-40 200,200 300,150 L 400,90'
+  
+  const pdfDoc = await PDFDocument.create()
+  
+  const page = pdfDoc.addPage()
+  page.moveTo(100, page.getHeight() - 5)
+  
+  page.moveDown(25)
+  page.drawSvgPath(svgPath)
+  
+  page.moveDown(200)
+  page.drawSvgPath(svgPath, { borderColor: rgb(0, 1, 0), borderWidth: 5 })
+  
+  page.moveDown(200)
+  page.drawSvgPath(svgPath, { color: rgb(1, 0, 0) })
+  
+  page.moveDown(200)
+  page.drawSvgPath(svgPath, { scale: 0.5 })
+  
+  const pdfBytes = await pdfDoc.save()
+}
+${pre}`;
+
 class HomeSplash extends React.Component {
   render() {
     let promoSection = (
@@ -422,15 +476,19 @@ class Index extends React.Component {
                 <h2>Create Document</h2>
                 <MarkdownBlock>{createDocumentSnippet}</MarkdownBlock>
                 <Pdf url="/assets/create_document.pdf" />
+
                 <h2>Modify Document</h2>
                 <MarkdownBlock>{modifyDocumentSnippet}</MarkdownBlock>
                 <Pdf url="/assets/modify_document.pdf" />
+
                 <h2>Copy Pages</h2>
                 <MarkdownBlock>{copyPagesSnippet}</MarkdownBlock>
                 <Pdf url="/assets/copy_pages.pdf" />
+
                 <h2>Embed PNG and JPEG Images</h2>
                 <MarkdownBlock>{embedPngAndJpegImagesSnippet}</MarkdownBlock>
                 <Pdf url="/assets/embed_png_and_jpeg_images.pdf" />
+
                 <h2>Embed Font and Measure Text</h2>
                 <p>
                   <a href="https://github.com/Hopding/pdf-lib/tree/Rewrite#fontkit-installation">
@@ -443,6 +501,14 @@ class Index extends React.Component {
                 </p>
                 <MarkdownBlock>{embedFontAndMeasureTextSnippet}</MarkdownBlock>
                 <Pdf url="/assets/embed_font_and_measure_text.pdf" />
+
+                <h2>Set Document Metadata</h2>
+                <MarkdownBlock>{setDocumentMetadataSnippet}</MarkdownBlock>
+                <Pdf url="/assets/set_document_metadata.pdf" />
+
+                <h2>Draw SVG Paths</h2>
+                <MarkdownBlock>{drawSvgPathsSnippet}</MarkdownBlock>
+                <Pdf url="/assets/draw_svg_paths.pdf" />
               </div>
             </div>
           </Container>
