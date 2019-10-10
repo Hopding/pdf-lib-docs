@@ -36,7 +36,9 @@ sidebar_label: Globals
 * [PDFPageDrawCircleOptions](interfaces/pdfpagedrawcircleoptions.md)
 * [PDFPageDrawEllipseOptions](interfaces/pdfpagedrawellipseoptions.md)
 * [PDFPageDrawImageOptions](interfaces/pdfpagedrawimageoptions.md)
+* [PDFPageDrawLineOptions](interfaces/pdfpagedrawlineoptions.md)
 * [PDFPageDrawRectangleOptions](interfaces/pdfpagedrawrectangleoptions.md)
+* [PDFPageDrawSVGOptions](interfaces/pdfpagedrawsvgoptions.md)
 * [PDFPageDrawSquareOptions](interfaces/pdfpagedrawsquareoptions.md)
 * [PDFPageDrawTextOptions](interfaces/pdfpagedrawtextoptions.md)
 * [RGB](interfaces/rgb.md)
@@ -53,6 +55,7 @@ sidebar_label: Globals
 ### Functions
 
 * [appendBezierCurve](index.md#const-appendbeziercurve)
+* [appendQuadraticCurve](index.md#const-appendquadraticcurve)
 * [asNumber](index.md#const-asnumber)
 * [asPDFName](index.md#const-aspdfname)
 * [asPDFNumber](index.md#const-aspdfnumber)
@@ -67,9 +70,11 @@ sidebar_label: Globals
 * [drawEllipse](index.md#const-drawellipse)
 * [drawEllipsePath](index.md#const-drawellipsepath)
 * [drawImage](index.md#const-drawimage)
+* [drawLine](index.md#const-drawline)
 * [drawLinesOfText](index.md#const-drawlinesoftext)
 * [drawObject](index.md#const-drawobject)
 * [drawRectangle](index.md#const-drawrectangle)
+* [drawSvgPath](index.md#const-drawsvgpath)
 * [drawText](index.md#const-drawtext)
 * [endPath](index.md#const-endpath)
 * [endText](index.md#const-endtext)
@@ -117,6 +122,7 @@ sidebar_label: Globals
 * [skewRadians](index.md#const-skewradians)
 * [square](index.md#const-square)
 * [stroke](index.md#const-stroke)
+* [svgPathToOperators](index.md#const-svgpathtooperators)
 * [toDegrees](index.md#const-todegrees)
 * [toRadians](index.md#const-toradians)
 * [translate](index.md#const-translate)
@@ -131,7 +137,7 @@ sidebar_label: Globals
 
 Ƭ **Color**: *[Grayscale](interfaces/grayscale.md) | [RGB](interfaces/rgb.md) | [CMYK](interfaces/cmyk.md)*
 
-*Defined in [colors.ts:37](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/colors.ts#L37)*
+*Defined in [colors.ts:37](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/colors.ts#L37)*
 
 ___
 
@@ -139,7 +145,7 @@ ___
 
 Ƭ **FontEmbedder**: *`CustomFontEmbedder` | `StandardFontEmbedder`*
 
-*Defined in [PDFFont.ts:10](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/PDFFont.ts#L10)*
+*Defined in [PDFFont.ts:10](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFFont.ts#L10)*
 
 ___
 
@@ -147,7 +153,7 @@ ___
 
 Ƭ **ImageEmbedder**: *`JpegEmbedder` | `PngEmbedder`*
 
-*Defined in [PDFImage.ts:5](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/PDFImage.ts#L5)*
+*Defined in [PDFImage.ts:5](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFImage.ts#L5)*
 
 ___
 
@@ -155,7 +161,7 @@ ___
 
 Ƭ **Rotation**: *[Radians](interfaces/radians.md) | [Degrees](interfaces/degrees.md)*
 
-*Defined in [rotations.ts:18](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/rotations.ts#L18)*
+*Defined in [rotations.ts:18](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/rotations.ts#L18)*
 
 ## Functions
 
@@ -163,18 +169,37 @@ ___
 
 ▸ **appendBezierCurve**(`x1`: number | `PDFNumber`, `y1`: number | `PDFNumber`, `x2`: number | `PDFNumber`, `y2`: number | `PDFNumber`, `x3`: number | `PDFNumber`, `y3`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:116](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L116)*
+*Defined in [operators.ts:116](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L116)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`x1` | number &#124; `PDFNumber` |
-`y1` | number &#124; `PDFNumber` |
-`x2` | number &#124; `PDFNumber` |
-`y2` | number &#124; `PDFNumber` |
-`x3` | number &#124; `PDFNumber` |
-`y3` | number &#124; `PDFNumber` |
+`x1` | number \| `PDFNumber` |
+`y1` | number \| `PDFNumber` |
+`x2` | number \| `PDFNumber` |
+`y2` | number \| `PDFNumber` |
+`x3` | number \| `PDFNumber` |
+`y3` | number \| `PDFNumber` |
+
+**Returns:** *`PDFOperator`*
+
+___
+
+### `Const` appendQuadraticCurve
+
+▸ **appendQuadraticCurve**(`x1`: number | `PDFNumber`, `y1`: number | `PDFNumber`, `x2`: number | `PDFNumber`, `y2`: number | `PDFNumber`): *`PDFOperator`*
+
+*Defined in [operators.ts:133](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L133)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`x1` | number \| `PDFNumber` |
+`y1` | number \| `PDFNumber` |
+`x2` | number \| `PDFNumber` |
+`y2` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -184,13 +209,13 @@ ___
 
 ▸ **asNumber**(`num`: number | `PDFNumber`): *number*
 
-*Defined in [objects.ts:9](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/objects.ts#L9)*
+*Defined in [objects.ts:9](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/objects.ts#L9)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`num` | number &#124; `PDFNumber` |
+`num` | number \| `PDFNumber` |
 
 **Returns:** *number*
 
@@ -200,13 +225,13 @@ ___
 
 ▸ **asPDFName**(`name`: string | `PDFName`): *`PDFName`*
 
-*Defined in [objects.ts:3](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/objects.ts#L3)*
+*Defined in [objects.ts:3](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/objects.ts#L3)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`name` | string &#124; `PDFName` |
+`name` | string \| `PDFName` |
 
 **Returns:** *`PDFName`*
 
@@ -216,13 +241,13 @@ ___
 
 ▸ **asPDFNumber**(`num`: number | `PDFNumber`): *`PDFNumber`*
 
-*Defined in [objects.ts:6](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/objects.ts#L6)*
+*Defined in [objects.ts:6](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/objects.ts#L6)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`num` | number &#124; `PDFNumber` |
+`num` | number \| `PDFNumber` |
 
 **Returns:** *`PDFNumber`*
 
@@ -232,7 +257,7 @@ ___
 
 ▸ **beginText**(): *`PDFOperator`*
 
-*Defined in [operators.ts:192](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L192)*
+*Defined in [operators.ts:205](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L205)*
 
 **Returns:** *`PDFOperator`*
 
@@ -242,7 +267,7 @@ ___
 
 ▸ **clip**(): *`PDFOperator`*
 
-*Defined in [operators.ts:13](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L13)*
+*Defined in [operators.ts:13](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L13)*
 
 **Returns:** *`PDFOperator`*
 
@@ -252,7 +277,7 @@ ___
 
 ▸ **clipEvenOdd**(): *`PDFOperator`*
 
-*Defined in [operators.ts:14](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L14)*
+*Defined in [operators.ts:14](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L14)*
 
 **Returns:** *`PDFOperator`*
 
@@ -262,7 +287,7 @@ ___
 
 ▸ **closePath**(): *`PDFOperator`*
 
-*Defined in [operators.ts:133](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L133)*
+*Defined in [operators.ts:146](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L146)*
 
 **Returns:** *`PDFOperator`*
 
@@ -272,7 +297,7 @@ ___
 
 ▸ **cmyk**(`cyan`: number, `magenta`: number, `yellow`: number, `key`: number): *[CMYK](interfaces/cmyk.md)*
 
-*Defined in [colors.ts:51](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/colors.ts#L51)*
+*Defined in [colors.ts:51](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/colors.ts#L51)*
 
 **Parameters:**
 
@@ -291,18 +316,18 @@ ___
 
 ▸ **concatTransformationMatrix**(`a`: number | `PDFNumber`, `b`: number | `PDFNumber`, `c`: number | `PDFNumber`, `d`: number | `PDFNumber`, `e`: number | `PDFNumber`, `f`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:20](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L20)*
+*Defined in [operators.ts:20](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L20)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`a` | number &#124; `PDFNumber` |
-`b` | number &#124; `PDFNumber` |
-`c` | number &#124; `PDFNumber` |
-`d` | number &#124; `PDFNumber` |
-`e` | number &#124; `PDFNumber` |
-`f` | number &#124; `PDFNumber` |
+`a` | number \| `PDFNumber` |
+`b` | number \| `PDFNumber` |
+`c` | number \| `PDFNumber` |
+`d` | number \| `PDFNumber` |
+`e` | number \| `PDFNumber` |
+`f` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -312,7 +337,7 @@ ___
 
 ▸ **degrees**(`degreeAngle`: number): *[Degrees](interfaces/degrees.md)*
 
-*Defined in [rotations.ts:25](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/rotations.ts#L25)*
+*Defined in [rotations.ts:25](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/rotations.ts#L25)*
 
 **Parameters:**
 
@@ -328,7 +353,7 @@ ___
 
 ▸ **degreesToRadians**(`degree`: number): *number*
 
-*Defined in [rotations.ts:32](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/rotations.ts#L32)*
+*Defined in [rotations.ts:32](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/rotations.ts#L32)*
 
 **Parameters:**
 
@@ -344,7 +369,7 @@ ___
 
 ▸ **drawEllipse**(`options`: object): *`PDFOperator`[]*
 
-*Defined in [operations.ts:179](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operations.ts#L179)*
+*Defined in [operations.ts:196](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operations.ts#L196)*
 
 **Parameters:**
 
@@ -360,7 +385,7 @@ ___
 
 ▸ **drawEllipsePath**(`config`: object): *`PDFOperator`[]*
 
-*Defined in [operations.ts:147](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operations.ts#L147)*
+*Defined in [operations.ts:164](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operations.ts#L164)*
 
 **Parameters:**
 
@@ -376,13 +401,29 @@ ___
 
 ▸ **drawImage**(`name`: string | `PDFName`, `options`: object): *`PDFOperator`[]*
 
-*Defined in [operations.ts:89](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operations.ts#L89)*
+*Defined in [operations.ts:90](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operations.ts#L90)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`name` | string &#124; `PDFName` |
+`name` | string \| `PDFName` |
+`options` | object |
+
+**Returns:** *`PDFOperator`[]*
+
+___
+
+### `Const` drawLine
+
+▸ **drawLine**(`options`: object): *`PDFOperator`[]*
+
+*Defined in [operations.ts:111](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operations.ts#L111)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
 `options` | object |
 
 **Returns:** *`PDFOperator`[]*
@@ -393,7 +434,7 @@ ___
 
 ▸ **drawLinesOfText**(`lines`: `PDFHexString`[], `options`: [DrawLinesOfTextOptions](interfaces/drawlinesoftextoptions.md)): *`PDFOperator`[]*
 
-*Defined in [operations.ts:63](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operations.ts#L63)*
+*Defined in [operations.ts:64](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operations.ts#L64)*
 
 **Parameters:**
 
@@ -410,13 +451,13 @@ ___
 
 ▸ **drawObject**(`name`: string | `PDFName`): *`PDFOperator`*
 
-*Defined in [operators.ts:280](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L280)*
+*Defined in [operators.ts:293](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L293)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`name` | string &#124; `PDFName` |
+`name` | string \| `PDFName` |
 
 **Returns:** *`PDFOperator`*
 
@@ -426,7 +467,7 @@ ___
 
 ▸ **drawRectangle**(`options`: object): *`PDFOperator`[]*
 
-*Defined in [operations.ts:110](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operations.ts#L110)*
+*Defined in [operations.ts:127](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operations.ts#L127)*
 
 **Parameters:**
 
@@ -438,11 +479,28 @@ Name | Type |
 
 ___
 
+### `Const` drawSvgPath
+
+▸ **drawSvgPath**(`path`: string, `options`: object): *`PDFOperator`[]*
+
+*Defined in [operations.ts:226](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operations.ts#L226)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`path` | string |
+`options` | object |
+
+**Returns:** *`PDFOperator`[]*
+
+___
+
 ### `Const` drawText
 
 ▸ **drawText**(`line`: `PDFHexString`, `options`: [DrawTextOptions](interfaces/drawtextoptions.md)): *`PDFOperator`[]*
 
-*Defined in [operations.ts:41](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operations.ts#L41)*
+*Defined in [operations.ts:42](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operations.ts#L42)*
 
 **Parameters:**
 
@@ -459,7 +517,7 @@ ___
 
 ▸ **endPath**(): *`PDFOperator`*
 
-*Defined in [operators.ts:176](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L176)*
+*Defined in [operators.ts:189](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L189)*
 
 **Returns:** *`PDFOperator`*
 
@@ -469,7 +527,7 @@ ___
 
 ▸ **endText**(): *`PDFOperator`*
 
-*Defined in [operators.ts:193](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L193)*
+*Defined in [operators.ts:206](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L206)*
 
 **Returns:** *`PDFOperator`*
 
@@ -479,7 +537,7 @@ ___
 
 ▸ **fill**(): *`PDFOperator`*
 
-*Defined in [operators.ts:172](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L172)*
+*Defined in [operators.ts:185](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L185)*
 
 **Returns:** *`PDFOperator`*
 
@@ -489,7 +547,7 @@ ___
 
 ▸ **fillAndStroke**(): *`PDFOperator`*
 
-*Defined in [operators.ts:174](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L174)*
+*Defined in [operators.ts:187](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L187)*
 
 **Returns:** *`PDFOperator`*
 
@@ -499,7 +557,7 @@ ___
 
 ▸ **grayscale**(`gray`: number): *[Grayscale](interfaces/grayscale.md)*
 
-*Defined in [colors.ts:39](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/colors.ts#L39)*
+*Defined in [colors.ts:39](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/colors.ts#L39)*
 
 **Parameters:**
 
@@ -515,14 +573,14 @@ ___
 
 ▸ **lineTo**(`xPos`: number | `PDFNumber`, `yPos`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:138](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L138)*
+*Defined in [operators.ts:151](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L151)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`xPos` | number &#124; `PDFNumber` |
-`yPos` | number &#124; `PDFNumber` |
+`xPos` | number \| `PDFNumber` |
+`yPos` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -532,14 +590,14 @@ ___
 
 ▸ **moveText**(`x`: number | `PDFNumber`, `y`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:182](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L182)*
+*Defined in [operators.ts:195](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L195)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`x` | number &#124; `PDFNumber` |
-`y` | number &#124; `PDFNumber` |
+`x` | number \| `PDFNumber` |
+`y` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -549,14 +607,14 @@ ___
 
 ▸ **moveTo**(`xPos`: number | `PDFNumber`, `yPos`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:135](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L135)*
+*Defined in [operators.ts:148](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L148)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`xPos` | number &#124; `PDFNumber` |
-`yPos` | number &#124; `PDFNumber` |
+`xPos` | number \| `PDFNumber` |
+`yPos` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -566,7 +624,7 @@ ___
 
 ▸ **nextLine**(): *`PDFOperator`*
 
-*Defined in [operators.ts:180](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L180)*
+*Defined in [operators.ts:193](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L193)*
 
 **Returns:** *`PDFOperator`*
 
@@ -576,7 +634,7 @@ ___
 
 ▸ **popGraphicsState**(): *`PDFOperator`*
 
-*Defined in [operators.ts:109](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L109)*
+*Defined in [operators.ts:109](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L109)*
 
 **Returns:** *`PDFOperator`*
 
@@ -586,7 +644,7 @@ ___
 
 ▸ **pushGraphicsState**(): *`PDFOperator`*
 
-*Defined in [operators.ts:107](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L107)*
+*Defined in [operators.ts:107](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L107)*
 
 **Returns:** *`PDFOperator`*
 
@@ -596,7 +654,7 @@ ___
 
 ▸ **radians**(`radianAngle`: number): *[Radians](interfaces/radians.md)*
 
-*Defined in [rotations.ts:20](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/rotations.ts#L20)*
+*Defined in [rotations.ts:20](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/rotations.ts#L20)*
 
 **Parameters:**
 
@@ -612,7 +670,7 @@ ___
 
 ▸ **radiansToDegrees**(`radian`: number): *number*
 
-*Defined in [rotations.ts:33](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/rotations.ts#L33)*
+*Defined in [rotations.ts:33](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/rotations.ts#L33)*
 
 **Parameters:**
 
@@ -628,16 +686,16 @@ ___
 
 ▸ **rectangle**(`xPos`: number | `PDFNumber`, `yPos`: number | `PDFNumber`, `width`: number | `PDFNumber`, `height`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:147](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L147)*
+*Defined in [operators.ts:160](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L160)*
 
 **Parameters:**
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`xPos` | number &#124; `PDFNumber` | x coordinate for the lower left corner of the rectangle |
-`yPos` | number &#124; `PDFNumber` | y coordinate for the lower left corner of the rectangle |
-`width` | number &#124; `PDFNumber` | width of the rectangle |
-`height` | number &#124; `PDFNumber` | height of the rectangle  |
+`xPos` | number \| `PDFNumber` | x coordinate for the lower left corner of the rectangle |
+`yPos` | number \| `PDFNumber` | y coordinate for the lower left corner of the rectangle |
+`width` | number \| `PDFNumber` | width of the rectangle |
+`height` | number \| `PDFNumber` | height of the rectangle  |
 
 **Returns:** *`PDFOperator`*
 
@@ -647,7 +705,7 @@ ___
 
 ▸ **restoreDashPattern**(): *`PDFOperator`*
 
-*Defined in [operators.ts:87](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L87)*
+*Defined in [operators.ts:87](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L87)*
 
 **Returns:** *`PDFOperator`*
 
@@ -657,7 +715,7 @@ ___
 
 ▸ **rgb**(`red`: number, `green`: number, `blue`: number): *[RGB](interfaces/rgb.md)*
 
-*Defined in [colors.ts:44](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/colors.ts#L44)*
+*Defined in [colors.ts:44](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/colors.ts#L44)*
 
 **Parameters:**
 
@@ -675,17 +733,17 @@ ___
 
 ▸ **rotateAndSkewTextDegreesAndTranslate**(`rotationAngle`: number | `PDFNumber`, `xSkewAngle`: number | `PDFNumber`, `ySkewAngle`: number | `PDFNumber`, `x`: number | `PDFNumber`, `y`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:263](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L263)*
+*Defined in [operators.ts:276](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L276)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`rotationAngle` | number &#124; `PDFNumber` |
-`xSkewAngle` | number &#124; `PDFNumber` |
-`ySkewAngle` | number &#124; `PDFNumber` |
-`x` | number &#124; `PDFNumber` |
-`y` | number &#124; `PDFNumber` |
+`rotationAngle` | number \| `PDFNumber` |
+`xSkewAngle` | number \| `PDFNumber` |
+`ySkewAngle` | number \| `PDFNumber` |
+`x` | number \| `PDFNumber` |
+`y` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -695,17 +753,17 @@ ___
 
 ▸ **rotateAndSkewTextRadiansAndTranslate**(`rotationAngle`: number | `PDFNumber`, `xSkewAngle`: number | `PDFNumber`, `ySkewAngle`: number | `PDFNumber`, `x`: number | `PDFNumber`, `y`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:247](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L247)*
+*Defined in [operators.ts:260](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L260)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`rotationAngle` | number &#124; `PDFNumber` |
-`xSkewAngle` | number &#124; `PDFNumber` |
-`ySkewAngle` | number &#124; `PDFNumber` |
-`x` | number &#124; `PDFNumber` |
-`y` | number &#124; `PDFNumber` |
+`rotationAngle` | number \| `PDFNumber` |
+`xSkewAngle` | number \| `PDFNumber` |
+`ySkewAngle` | number \| `PDFNumber` |
+`x` | number \| `PDFNumber` |
+`y` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -715,13 +773,13 @@ ___
 
 ▸ **rotateDegrees**(`angle`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:53](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L53)*
+*Defined in [operators.ts:53](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L53)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`angle` | number &#124; `PDFNumber` |
+`angle` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -731,13 +789,13 @@ ___
 
 ▸ **rotateRadians**(`angle`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:43](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L43)*
+*Defined in [operators.ts:43](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L43)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`angle` | number &#124; `PDFNumber` |
+`angle` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -747,14 +805,14 @@ ___
 
 ▸ **scale**(`xPos`: number | `PDFNumber`, `yPos`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:40](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L40)*
+*Defined in [operators.ts:40](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L40)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`xPos` | number &#124; `PDFNumber` |
-`yPos` | number &#124; `PDFNumber` |
+`xPos` | number \| `PDFNumber` |
+`yPos` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -764,13 +822,13 @@ ___
 
 ▸ **setCharacterSpacing**(`spacing`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:200](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L200)*
+*Defined in [operators.ts:213](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L213)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`spacing` | number &#124; `PDFNumber` |
+`spacing` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -780,13 +838,13 @@ ___
 
 ▸ **setCharacterSqueeze**(`squeeze`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:207](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L207)*
+*Defined in [operators.ts:220](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L220)*
 
 **Parameters:**
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`squeeze` | number &#124; `PDFNumber` | horizontal character spacing |
+`squeeze` | number \| `PDFNumber` | horizontal character spacing |
 
 **Returns:** *`PDFOperator`*
 
@@ -796,14 +854,14 @@ ___
 
 ▸ **setDashPattern**(`dashArray`: `Array<number | PDFNumber>`, `dashPhase`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:78](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L78)*
+*Defined in [operators.ts:78](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L78)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`dashArray` | `Array<number &#124; PDFNumber>` |
-`dashPhase` | number &#124; `PDFNumber` |
+`dashArray` | `Array<number \| PDFNumber>` |
+`dashPhase` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -813,16 +871,16 @@ ___
 
 ▸ **setFillingCmykColor**(`cyan`: number | `PDFNumber`, `magenta`: number | `PDFNumber`, `yellow`: number | `PDFNumber`, `key`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:313](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L313)*
+*Defined in [operators.ts:326](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L326)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`cyan` | number &#124; `PDFNumber` |
-`magenta` | number &#124; `PDFNumber` |
-`yellow` | number &#124; `PDFNumber` |
-`key` | number &#124; `PDFNumber` |
+`cyan` | number \| `PDFNumber` |
+`magenta` | number \| `PDFNumber` |
+`yellow` | number \| `PDFNumber` |
+`key` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -832,7 +890,7 @@ ___
 
 ▸ **setFillingColor**(`color`: [Color](index.md#color)): *`PDFOperator`*
 
-*Defined in [colors.ts:67](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/colors.ts#L67)*
+*Defined in [colors.ts:67](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/colors.ts#L67)*
 
 **Parameters:**
 
@@ -848,13 +906,13 @@ ___
 
 ▸ **setFillingGrayscaleColor**(`gray`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:285](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L285)*
+*Defined in [operators.ts:298](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L298)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`gray` | number &#124; `PDFNumber` |
+`gray` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -864,15 +922,15 @@ ___
 
 ▸ **setFillingRgbColor**(`red`: number | `PDFNumber`, `green`: number | `PDFNumber`, `blue`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:291](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L291)*
+*Defined in [operators.ts:304](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L304)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`red` | number &#124; `PDFNumber` |
-`green` | number &#124; `PDFNumber` |
-`blue` | number &#124; `PDFNumber` |
+`red` | number \| `PDFNumber` |
+`green` | number \| `PDFNumber` |
+`blue` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -882,14 +940,14 @@ ___
 
 ▸ **setFontAndSize**(`name`: string | `PDFName`, `size`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:195](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L195)*
+*Defined in [operators.ts:208](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L208)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`name` | string &#124; `PDFName` |
-`size` | number &#124; `PDFNumber` |
+`name` | string \| `PDFName` |
+`size` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -899,7 +957,7 @@ ___
 
 ▸ **setLineCap**(`style`: [LineCapStyle](enums/linecapstyle.md)): *`PDFOperator`*
 
-*Defined in [operators.ts:95](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L95)*
+*Defined in [operators.ts:95](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L95)*
 
 **Parameters:**
 
@@ -915,13 +973,13 @@ ___
 
 ▸ **setLineHeight**(`lineHeight`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:210](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L210)*
+*Defined in [operators.ts:223](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L223)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`lineHeight` | number &#124; `PDFNumber` |
+`lineHeight` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -931,7 +989,7 @@ ___
 
 ▸ **setLineJoin**(`style`: [LineJoinStyle](enums/linejoinstyle.md)): *`PDFOperator`*
 
-*Defined in [operators.ts:104](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L104)*
+*Defined in [operators.ts:104](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L104)*
 
 **Parameters:**
 
@@ -947,13 +1005,13 @@ ___
 
 ▸ **setLineWidth**(`width`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:111](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L111)*
+*Defined in [operators.ts:111](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L111)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`width` | number &#124; `PDFNumber` |
+`width` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -963,16 +1021,16 @@ ___
 
 ▸ **setStrokingCmykColor**(`cyan`: number | `PDFNumber`, `magenta`: number | `PDFNumber`, `yellow`: number | `PDFNumber`, `key`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:326](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L326)*
+*Defined in [operators.ts:339](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L339)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`cyan` | number &#124; `PDFNumber` |
-`magenta` | number &#124; `PDFNumber` |
-`yellow` | number &#124; `PDFNumber` |
-`key` | number &#124; `PDFNumber` |
+`cyan` | number \| `PDFNumber` |
+`magenta` | number \| `PDFNumber` |
+`yellow` | number \| `PDFNumber` |
+`key` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -982,7 +1040,7 @@ ___
 
 ▸ **setStrokingColor**(`color`: [Color](index.md#color)): *`PDFOperator`*
 
-*Defined in [colors.ts:74](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/colors.ts#L74)*
+*Defined in [colors.ts:74](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/colors.ts#L74)*
 
 **Parameters:**
 
@@ -998,13 +1056,13 @@ ___
 
 ▸ **setStrokingGrayscaleColor**(`gray`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:288](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L288)*
+*Defined in [operators.ts:301](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L301)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`gray` | number &#124; `PDFNumber` |
+`gray` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -1014,15 +1072,15 @@ ___
 
 ▸ **setStrokingRgbColor**(`red`: number | `PDFNumber`, `green`: number | `PDFNumber`, `blue`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:302](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L302)*
+*Defined in [operators.ts:315](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L315)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`red` | number &#124; `PDFNumber` |
-`green` | number &#124; `PDFNumber` |
-`blue` | number &#124; `PDFNumber` |
+`red` | number \| `PDFNumber` |
+`green` | number \| `PDFNumber` |
+`blue` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -1032,18 +1090,18 @@ ___
 
 ▸ **setTextMatrix**(`a`: number | `PDFNumber`, `b`: number | `PDFNumber`, `c`: number | `PDFNumber`, `d`: number | `PDFNumber`, `e`: number | `PDFNumber`, `f`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:230](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L230)*
+*Defined in [operators.ts:243](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L243)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`a` | number &#124; `PDFNumber` |
-`b` | number &#124; `PDFNumber` |
-`c` | number &#124; `PDFNumber` |
-`d` | number &#124; `PDFNumber` |
-`e` | number &#124; `PDFNumber` |
-`f` | number &#124; `PDFNumber` |
+`a` | number \| `PDFNumber` |
+`b` | number \| `PDFNumber` |
+`c` | number \| `PDFNumber` |
+`d` | number \| `PDFNumber` |
+`e` | number \| `PDFNumber` |
+`f` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -1053,7 +1111,7 @@ ___
 
 ▸ **setTextRenderingMode**(`mode`: [TextRenderingMode](enums/textrenderingmode.md)): *`PDFOperator`*
 
-*Defined in [operators.ts:227](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L227)*
+*Defined in [operators.ts:240](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L240)*
 
 **Parameters:**
 
@@ -1069,13 +1127,13 @@ ___
 
 ▸ **setTextRise**(`rise`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:213](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L213)*
+*Defined in [operators.ts:226](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L226)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`rise` | number &#124; `PDFNumber` |
+`rise` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -1085,13 +1143,13 @@ ___
 
 ▸ **setWordSpacing**(`spacing`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:203](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L203)*
+*Defined in [operators.ts:216](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L216)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`spacing` | number &#124; `PDFNumber` |
+`spacing` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -1101,7 +1159,7 @@ ___
 
 ▸ **showText**(`text`: `PDFHexString`): *`PDFOperator`*
 
-*Defined in [operators.ts:187](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L187)*
+*Defined in [operators.ts:200](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L200)*
 
 **Parameters:**
 
@@ -1117,14 +1175,14 @@ ___
 
 ▸ **skewDegrees**(`xSkewAngle`: number | `PDFNumber`, `ySkewAngle`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:69](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L69)*
+*Defined in [operators.ts:69](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L69)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`xSkewAngle` | number &#124; `PDFNumber` |
-`ySkewAngle` | number &#124; `PDFNumber` |
+`xSkewAngle` | number \| `PDFNumber` |
+`ySkewAngle` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -1134,14 +1192,14 @@ ___
 
 ▸ **skewRadians**(`xSkewAngle`: number | `PDFNumber`, `ySkewAngle`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:56](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L56)*
+*Defined in [operators.ts:56](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L56)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`xSkewAngle` | number &#124; `PDFNumber` |
-`ySkewAngle` | number &#124; `PDFNumber` |
+`xSkewAngle` | number \| `PDFNumber` |
+`ySkewAngle` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -1151,7 +1209,7 @@ ___
 
 ▸ **square**(`xPos`: number, `yPos`: number, `size`: number): *`PDFOperator`*
 
-*Defined in [operators.ts:165](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L165)*
+*Defined in [operators.ts:178](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L178)*
 
 **Parameters:**
 
@@ -1169,9 +1227,25 @@ ___
 
 ▸ **stroke**(): *`PDFOperator`*
 
-*Defined in [operators.ts:170](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L170)*
+*Defined in [operators.ts:183](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L183)*
 
 **Returns:** *`PDFOperator`*
+
+___
+
+### `Const` svgPathToOperators
+
+▸ **svgPathToOperators**(`path`: string): *`PDFOperator`[]*
+
+*Defined in [svgPath.ts:489](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/svgPath.ts#L489)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`path` | string |
+
+**Returns:** *`PDFOperator`[]*
 
 ___
 
@@ -1179,7 +1253,7 @@ ___
 
 ▸ **toDegrees**(`rotation`: [Rotation](index.md#rotation)): *number*
 
-*Defined in [rotations.ts:42](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/rotations.ts#L42)*
+*Defined in [rotations.ts:42](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/rotations.ts#L42)*
 
 **Parameters:**
 
@@ -1195,7 +1269,7 @@ ___
 
 ▸ **toRadians**(`rotation`: [Rotation](index.md#rotation)): *number*
 
-*Defined in [rotations.ts:36](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/rotations.ts#L36)*
+*Defined in [rotations.ts:36](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/rotations.ts#L36)*
 
 **Parameters:**
 
@@ -1211,14 +1285,14 @@ ___
 
 ▸ **translate**(`xPos`: number | `PDFNumber`, `yPos`: number | `PDFNumber`): *`PDFOperator`*
 
-*Defined in [operators.ts:37](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L37)*
+*Defined in [operators.ts:37](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L37)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`xPos` | number &#124; `PDFNumber` |
-`yPos` | number &#124; `PDFNumber` |
+`xPos` | number \| `PDFNumber` |
+`yPos` | number \| `PDFNumber` |
 
 **Returns:** *`PDFOperator`*
 
@@ -1228,304 +1302,304 @@ Name | Type |
 
 ### ▪ **PageSizes**: *object*
 
-*Defined in [sizes.ts:1](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L1)*
+*Defined in [sizes.ts:1](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L1)*
 
 ###  2A0
 
 • **2A0**: *[number, number]* =  [3370.39, 4767.87] as [number, number]
 
-*Defined in [sizes.ts:3](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L3)*
+*Defined in [sizes.ts:3](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L3)*
 
 ###  4A0
 
 • **4A0**: *[number, number]* =  [4767.87, 6740.79] as [number, number]
 
-*Defined in [sizes.ts:2](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L2)*
+*Defined in [sizes.ts:2](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L2)*
 
 ###  A0
 
 • **A0**: *[number, number]* =  [2383.94, 3370.39] as [number, number]
 
-*Defined in [sizes.ts:4](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L4)*
+*Defined in [sizes.ts:4](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L4)*
 
 ###  A1
 
 • **A1**: *[number, number]* =  [1683.78, 2383.94] as [number, number]
 
-*Defined in [sizes.ts:5](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L5)*
+*Defined in [sizes.ts:5](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L5)*
 
 ###  A10
 
 • **A10**: *[number, number]* =  [73.7, 104.88] as [number, number]
 
-*Defined in [sizes.ts:14](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L14)*
+*Defined in [sizes.ts:14](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L14)*
 
 ###  A2
 
 • **A2**: *[number, number]* =  [1190.55, 1683.78] as [number, number]
 
-*Defined in [sizes.ts:6](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L6)*
+*Defined in [sizes.ts:6](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L6)*
 
 ###  A3
 
 • **A3**: *[number, number]* =  [841.89, 1190.55] as [number, number]
 
-*Defined in [sizes.ts:7](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L7)*
+*Defined in [sizes.ts:7](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L7)*
 
 ###  A4
 
 • **A4**: *[number, number]* =  [595.28, 841.89] as [number, number]
 
-*Defined in [sizes.ts:8](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L8)*
+*Defined in [sizes.ts:8](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L8)*
 
 ###  A5
 
 • **A5**: *[number, number]* =  [419.53, 595.28] as [number, number]
 
-*Defined in [sizes.ts:9](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L9)*
+*Defined in [sizes.ts:9](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L9)*
 
 ###  A6
 
 • **A6**: *[number, number]* =  [297.64, 419.53] as [number, number]
 
-*Defined in [sizes.ts:10](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L10)*
+*Defined in [sizes.ts:10](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L10)*
 
 ###  A7
 
 • **A7**: *[number, number]* =  [209.76, 297.64] as [number, number]
 
-*Defined in [sizes.ts:11](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L11)*
+*Defined in [sizes.ts:11](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L11)*
 
 ###  A8
 
 • **A8**: *[number, number]* =  [147.4, 209.76] as [number, number]
 
-*Defined in [sizes.ts:12](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L12)*
+*Defined in [sizes.ts:12](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L12)*
 
 ###  A9
 
 • **A9**: *[number, number]* =  [104.88, 147.4] as [number, number]
 
-*Defined in [sizes.ts:13](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L13)*
+*Defined in [sizes.ts:13](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L13)*
 
 ###  B0
 
 • **B0**: *[number, number]* =  [2834.65, 4008.19] as [number, number]
 
-*Defined in [sizes.ts:15](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L15)*
+*Defined in [sizes.ts:15](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L15)*
 
 ###  B1
 
 • **B1**: *[number, number]* =  [2004.09, 2834.65] as [number, number]
 
-*Defined in [sizes.ts:16](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L16)*
+*Defined in [sizes.ts:16](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L16)*
 
 ###  B10
 
 • **B10**: *[number, number]* =  [87.87, 124.72] as [number, number]
 
-*Defined in [sizes.ts:25](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L25)*
+*Defined in [sizes.ts:25](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L25)*
 
 ###  B2
 
 • **B2**: *[number, number]* =  [1417.32, 2004.09] as [number, number]
 
-*Defined in [sizes.ts:17](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L17)*
+*Defined in [sizes.ts:17](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L17)*
 
 ###  B3
 
 • **B3**: *[number, number]* =  [1000.63, 1417.32] as [number, number]
 
-*Defined in [sizes.ts:18](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L18)*
+*Defined in [sizes.ts:18](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L18)*
 
 ###  B4
 
 • **B4**: *[number, number]* =  [708.66, 1000.63] as [number, number]
 
-*Defined in [sizes.ts:19](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L19)*
+*Defined in [sizes.ts:19](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L19)*
 
 ###  B5
 
 • **B5**: *[number, number]* =  [498.9, 708.66] as [number, number]
 
-*Defined in [sizes.ts:20](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L20)*
+*Defined in [sizes.ts:20](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L20)*
 
 ###  B6
 
 • **B6**: *[number, number]* =  [354.33, 498.9] as [number, number]
 
-*Defined in [sizes.ts:21](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L21)*
+*Defined in [sizes.ts:21](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L21)*
 
 ###  B7
 
 • **B7**: *[number, number]* =  [249.45, 354.33] as [number, number]
 
-*Defined in [sizes.ts:22](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L22)*
+*Defined in [sizes.ts:22](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L22)*
 
 ###  B8
 
 • **B8**: *[number, number]* =  [175.75, 249.45] as [number, number]
 
-*Defined in [sizes.ts:23](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L23)*
+*Defined in [sizes.ts:23](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L23)*
 
 ###  B9
 
 • **B9**: *[number, number]* =  [124.72, 175.75] as [number, number]
 
-*Defined in [sizes.ts:24](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L24)*
+*Defined in [sizes.ts:24](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L24)*
 
 ###  C0
 
 • **C0**: *[number, number]* =  [2599.37, 3676.54] as [number, number]
 
-*Defined in [sizes.ts:26](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L26)*
+*Defined in [sizes.ts:26](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L26)*
 
 ###  C1
 
 • **C1**: *[number, number]* =  [1836.85, 2599.37] as [number, number]
 
-*Defined in [sizes.ts:27](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L27)*
+*Defined in [sizes.ts:27](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L27)*
 
 ###  C10
 
 • **C10**: *[number, number]* =  [79.37, 113.39] as [number, number]
 
-*Defined in [sizes.ts:36](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L36)*
+*Defined in [sizes.ts:36](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L36)*
 
 ###  C2
 
 • **C2**: *[number, number]* =  [1298.27, 1836.85] as [number, number]
 
-*Defined in [sizes.ts:28](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L28)*
+*Defined in [sizes.ts:28](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L28)*
 
 ###  C3
 
 • **C3**: *[number, number]* =  [918.43, 1298.27] as [number, number]
 
-*Defined in [sizes.ts:29](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L29)*
+*Defined in [sizes.ts:29](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L29)*
 
 ###  C4
 
 • **C4**: *[number, number]* =  [649.13, 918.43] as [number, number]
 
-*Defined in [sizes.ts:30](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L30)*
+*Defined in [sizes.ts:30](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L30)*
 
 ###  C5
 
 • **C5**: *[number, number]* =  [459.21, 649.13] as [number, number]
 
-*Defined in [sizes.ts:31](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L31)*
+*Defined in [sizes.ts:31](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L31)*
 
 ###  C6
 
 • **C6**: *[number, number]* =  [323.15, 459.21] as [number, number]
 
-*Defined in [sizes.ts:32](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L32)*
+*Defined in [sizes.ts:32](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L32)*
 
 ###  C7
 
 • **C7**: *[number, number]* =  [229.61, 323.15] as [number, number]
 
-*Defined in [sizes.ts:33](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L33)*
+*Defined in [sizes.ts:33](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L33)*
 
 ###  C8
 
 • **C8**: *[number, number]* =  [161.57, 229.61] as [number, number]
 
-*Defined in [sizes.ts:34](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L34)*
+*Defined in [sizes.ts:34](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L34)*
 
 ###  C9
 
 • **C9**: *[number, number]* =  [113.39, 161.57] as [number, number]
 
-*Defined in [sizes.ts:35](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L35)*
+*Defined in [sizes.ts:35](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L35)*
 
 ###  Executive
 
 • **Executive**: *[number, number]* =  [521.86, 756.0] as [number, number]
 
-*Defined in [sizes.ts:47](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L47)*
+*Defined in [sizes.ts:47](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L47)*
 
 ###  Folio
 
 • **Folio**: *[number, number]* =  [612.0, 936.0] as [number, number]
 
-*Defined in [sizes.ts:48](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L48)*
+*Defined in [sizes.ts:48](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L48)*
 
 ###  Legal
 
 • **Legal**: *[number, number]* =  [612.0, 1008.0] as [number, number]
 
-*Defined in [sizes.ts:49](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L49)*
+*Defined in [sizes.ts:49](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L49)*
 
 ###  Letter
 
 • **Letter**: *[number, number]* =  [612.0, 792.0] as [number, number]
 
-*Defined in [sizes.ts:50](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L50)*
+*Defined in [sizes.ts:50](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L50)*
 
 ###  RA0
 
 • **RA0**: *[number, number]* =  [2437.8, 3458.27] as [number, number]
 
-*Defined in [sizes.ts:37](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L37)*
+*Defined in [sizes.ts:37](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L37)*
 
 ###  RA1
 
 • **RA1**: *[number, number]* =  [1729.13, 2437.8] as [number, number]
 
-*Defined in [sizes.ts:38](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L38)*
+*Defined in [sizes.ts:38](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L38)*
 
 ###  RA2
 
 • **RA2**: *[number, number]* =  [1218.9, 1729.13] as [number, number]
 
-*Defined in [sizes.ts:39](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L39)*
+*Defined in [sizes.ts:39](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L39)*
 
 ###  RA3
 
 • **RA3**: *[number, number]* =  [864.57, 1218.9] as [number, number]
 
-*Defined in [sizes.ts:40](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L40)*
+*Defined in [sizes.ts:40](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L40)*
 
 ###  RA4
 
 • **RA4**: *[number, number]* =  [609.45, 864.57] as [number, number]
 
-*Defined in [sizes.ts:41](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L41)*
+*Defined in [sizes.ts:41](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L41)*
 
 ###  SRA0
 
 • **SRA0**: *[number, number]* =  [2551.18, 3628.35] as [number, number]
 
-*Defined in [sizes.ts:42](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L42)*
+*Defined in [sizes.ts:42](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L42)*
 
 ###  SRA1
 
 • **SRA1**: *[number, number]* =  [1814.17, 2551.18] as [number, number]
 
-*Defined in [sizes.ts:43](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L43)*
+*Defined in [sizes.ts:43](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L43)*
 
 ###  SRA2
 
 • **SRA2**: *[number, number]* =  [1275.59, 1814.17] as [number, number]
 
-*Defined in [sizes.ts:44](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L44)*
+*Defined in [sizes.ts:44](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L44)*
 
 ###  SRA3
 
 • **SRA3**: *[number, number]* =  [907.09, 1275.59] as [number, number]
 
-*Defined in [sizes.ts:45](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L45)*
+*Defined in [sizes.ts:45](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L45)*
 
 ###  SRA4
 
 • **SRA4**: *[number, number]* =  [637.8, 907.09] as [number, number]
 
-*Defined in [sizes.ts:46](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L46)*
+*Defined in [sizes.ts:46](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L46)*
 
 ###  Tabloid
 
 • **Tabloid**: *[number, number]* =  [792.0, 1224.0] as [number, number]
 
-*Defined in [sizes.ts:51](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/sizes.ts#L51)*
+*Defined in [sizes.ts:51](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/sizes.ts#L51)*

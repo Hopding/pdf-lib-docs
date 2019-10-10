@@ -21,7 +21,7 @@ sidebar_label: ParseSpeeds
 
 • **Fast**: = 1500
 
-*Defined in [PDFDocument.ts:41](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/PDFDocument.ts#L41)*
+*Defined in [PDFDocument.ts:45](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFDocument.ts#L45)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **Fastest**: =  Infinity
 
-*Defined in [PDFDocument.ts:40](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/PDFDocument.ts#L40)*
+*Defined in [PDFDocument.ts:44](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFDocument.ts#L44)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **Medium**: = 500
 
-*Defined in [PDFDocument.ts:42](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/PDFDocument.ts#L42)*
+*Defined in [PDFDocument.ts:46](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFDocument.ts#L46)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **Slow**: = 100
 
-*Defined in [PDFDocument.ts:43](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/PDFDocument.ts#L43)*
+*Defined in [PDFDocument.ts:47](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFDocument.ts#L47)*

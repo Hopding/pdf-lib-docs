@@ -25,7 +25,7 @@ sidebar_label: TextRenderingMode
 
 • **Clip**: = 7
 
-*Defined in [operators.ts:224](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L224)*
+*Defined in [operators.ts:237](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L237)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **Fill**: = 0
 
-*Defined in [operators.ts:217](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L217)*
+*Defined in [operators.ts:230](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L230)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **FillAndClip**: = 4
 
-*Defined in [operators.ts:221](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L221)*
+*Defined in [operators.ts:234](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L234)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 • **FillAndOutline**: = 2
 
-*Defined in [operators.ts:219](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L219)*
+*Defined in [operators.ts:232](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L232)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 • **FillAndOutlineAndClip**: = 6
 
-*Defined in [operators.ts:223](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L223)*
+*Defined in [operators.ts:236](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L236)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 • **Invisible**: = 3
 
-*Defined in [operators.ts:220](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L220)*
+*Defined in [operators.ts:233](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L233)*
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 • **Outline**: = 1
 
-*Defined in [operators.ts:218](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L218)*
+*Defined in [operators.ts:231](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L231)*
 
 ___
 
@@ -81,4 +81,4 @@ ___
 
 • **OutlineAndClip**: = 5
 
-*Defined in [operators.ts:222](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/operators.ts#L222)*
+*Defined in [operators.ts:235](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operators.ts#L235)*

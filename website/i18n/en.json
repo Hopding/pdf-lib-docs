@@ -97,6 +97,10 @@
         "title": "PDFPageDrawImageOptions",
         "sidebar_label": "PDFPageDrawImageOptions"
       },
+      "api/interfaces/pdfpagedrawlineoptions": {
+        "title": "PDFPageDrawLineOptions",
+        "sidebar_label": "PDFPageDrawLineOptions"
+      },
       "api/interfaces/pdfpagedrawrectangleoptions": {
         "title": "PDFPageDrawRectangleOptions",
         "sidebar_label": "PDFPageDrawRectangleOptions"
@@ -104,6 +108,10 @@
       "api/interfaces/pdfpagedrawsquareoptions": {
         "title": "PDFPageDrawSquareOptions",
         "sidebar_label": "PDFPageDrawSquareOptions"
+      },
+      "api/interfaces/pdfpagedrawsvgoptions": {
+        "title": "PDFPageDrawSVGOptions",
+        "sidebar_label": "PDFPageDrawSVGOptions"
       },
       "api/interfaces/pdfpagedrawtextoptions": {
         "title": "PDFPageDrawTextOptions",

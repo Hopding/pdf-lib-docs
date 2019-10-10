@@ -23,7 +23,7 @@ sidebar_label: Radians
 
 • **angle**: *number*
 
-*Defined in [rotations.ts:10](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/rotations.ts#L10)*
+*Defined in [rotations.ts:10](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/rotations.ts#L10)*
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 • **type**: *[Radians](../enums/rotationtypes.md#radians)*
 
-*Defined in [rotations.ts:9](https://github.com/Hopding/pdf-lib/blob/17b4036/src/api/rotations.ts#L9)*
+*Defined in [rotations.ts:9](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/rotations.ts#L9)*
