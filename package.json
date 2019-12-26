@@ -7,8 +7,8 @@
     "release": "cd website && GIT_USER=Hopding CURRENT_BRANCH=master USE_SSH=true yarn publish-gh-pages"
   },
   "devDependencies": {
-    "docusaurus-init": "^1.11.1",
-    "typedoc": "^0.14.2",
-    "typedoc-plugin-markdown": "^2.0.11"
+    "docusaurus-init": "^1.14.1",
+    "typedoc": "^0.15.5",
+    "typedoc-plugin-markdown": "^2.2.14"
   }
 }
