@@ -1,10 +1,10 @@
 ---
-id: grayscale
-title: Grayscale
-sidebar_label: Grayscale
+id: "grayscale"
+title: "Grayscale"
+sidebar_label: "Grayscale"
 ---
 
-[Grayscale](grayscale.md) /
+[pdf-lib](../index.md) › [Grayscale](grayscale.md)
 
 ## Hierarchy
 
@@ -23,7 +23,7 @@ sidebar_label: Grayscale
 
 • **gray**: *number*
 
-*Defined in [colors.ts:19](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/colors.ts#L19)*
+*Defined in [colors.ts:19](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/colors.ts#L19)*
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 • **type**: *[Grayscale](../enums/colortypes.md#grayscale)*
 
-*Defined in [colors.ts:18](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/colors.ts#L18)*
+*Defined in [colors.ts:18](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/colors.ts#L18)*

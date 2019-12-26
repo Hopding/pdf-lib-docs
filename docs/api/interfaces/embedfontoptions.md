@@ -1,10 +1,10 @@
 ---
-id: embedfontoptions
-title: EmbedFontOptions
-sidebar_label: EmbedFontOptions
+id: "embedfontoptions"
+title: "EmbedFontOptions"
+sidebar_label: "EmbedFontOptions"
 ---
 
-[EmbedFontOptions](embedfontoptions.md) /
+[pdf-lib](../index.md) › [EmbedFontOptions](embedfontoptions.md)
 
 ## Hierarchy
 
@@ -22,4 +22,4 @@ sidebar_label: EmbedFontOptions
 
 • **subset**? : *undefined | false | true*
 
-*Defined in [PDFDocument.ts:66](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFDocument.ts#L66)*
+*Defined in [PDFDocument.ts:67](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFDocument.ts#L67)*

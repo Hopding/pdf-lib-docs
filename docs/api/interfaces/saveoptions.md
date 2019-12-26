@@ -1,16 +1,16 @@
 ---
-id: saveoptions
-title: SaveOptions
-sidebar_label: SaveOptions
+id: "saveoptions"
+title: "SaveOptions"
+sidebar_label: "SaveOptions"
 ---
 
-[SaveOptions](saveoptions.md) /
+[pdf-lib](../index.md) › [SaveOptions](saveoptions.md)
 
 ## Hierarchy
 
 * **SaveOptions**
 
-  * [Base64SaveOptions](base64saveoptions.md)
+  ↳ [Base64SaveOptions](base64saveoptions.md)
 
 ## Index
 
@@ -26,7 +26,7 @@ sidebar_label: SaveOptions
 
 • **addDefaultPage**? : *undefined | false | true*
 
-*Defined in [PDFDocument.ts:52](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFDocument.ts#L52)*
+*Defined in [PDFDocument.ts:52](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFDocument.ts#L52)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **objectsPerTick**? : *undefined | number*
 
-*Defined in [PDFDocument.ts:53](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFDocument.ts#L53)*
+*Defined in [PDFDocument.ts:53](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFDocument.ts#L53)*
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 • **useObjectStreams**? : *undefined | false | true*
 
-*Defined in [PDFDocument.ts:51](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFDocument.ts#L51)*
+*Defined in [PDFDocument.ts:51](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFDocument.ts#L51)*

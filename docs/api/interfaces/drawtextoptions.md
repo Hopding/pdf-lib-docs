@@ -1,16 +1,16 @@
 ---
-id: drawtextoptions
-title: DrawTextOptions
-sidebar_label: DrawTextOptions
+id: "drawtextoptions"
+title: "DrawTextOptions"
+sidebar_label: "DrawTextOptions"
 ---
 
-[DrawTextOptions](drawtextoptions.md) /
+[pdf-lib](../index.md) › [DrawTextOptions](drawtextoptions.md)
 
 ## Hierarchy
 
 * **DrawTextOptions**
 
-  * [DrawLinesOfTextOptions](drawlinesoftextoptions.md)
+  ↳ [DrawLinesOfTextOptions](drawlinesoftextoptions.md)
 
 ## Index
 
@@ -31,15 +31,15 @@ sidebar_label: DrawTextOptions
 
 • **color**: *[Color](../index.md#color)*
 
-*Defined in [operations.ts:32](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operations.ts#L32)*
+*Defined in [operations.ts:32](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/operations.ts#L32)*
 
 ___
 
 ###  font
 
-• **font**: *string | `PDFName`*
+• **font**: *string | PDFName*
 
-*Defined in [operations.ts:33](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operations.ts#L33)*
+*Defined in [operations.ts:33](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/operations.ts#L33)*
 
 ___
 
@@ -47,23 +47,23 @@ ___
 
 • **rotate**: *[Rotation](../index.md#rotation)*
 
-*Defined in [operations.ts:35](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operations.ts#L35)*
+*Defined in [operations.ts:35](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/operations.ts#L35)*
 
 ___
 
 ###  size
 
-• **size**: *number | `PDFNumber`*
+• **size**: *number | PDFNumber*
 
-*Defined in [operations.ts:34](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operations.ts#L34)*
+*Defined in [operations.ts:34](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/operations.ts#L34)*
 
 ___
 
 ###  x
 
-• **x**: *number | `PDFNumber`*
+• **x**: *number | PDFNumber*
 
-*Defined in [operations.ts:38](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operations.ts#L38)*
+*Defined in [operations.ts:38](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/operations.ts#L38)*
 
 ___
 
@@ -71,15 +71,15 @@ ___
 
 • **xSkew**: *[Rotation](../index.md#rotation)*
 
-*Defined in [operations.ts:36](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operations.ts#L36)*
+*Defined in [operations.ts:36](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/operations.ts#L36)*
 
 ___
 
 ###  y
 
-• **y**: *number | `PDFNumber`*
+• **y**: *number | PDFNumber*
 
-*Defined in [operations.ts:39](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operations.ts#L39)*
+*Defined in [operations.ts:39](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/operations.ts#L39)*
 
 ___
 
@@ -87,4 +87,4 @@ ___
 
 • **ySkew**: *[Rotation](../index.md#rotation)*
 
-*Defined in [operations.ts:37](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/operations.ts#L37)*
+*Defined in [operations.ts:37](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/operations.ts#L37)*

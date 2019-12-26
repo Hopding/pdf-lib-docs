@@ -1,10 +1,10 @@
 ---
-id: pdfimage
-title: PDFImage
-sidebar_label: PDFImage
+id: "pdfimage"
+title: "PDFImage"
+sidebar_label: "PDFImage"
 ---
 
-[PDFImage](pdfimage.md) /
+[pdf-lib](../index.md) › [PDFImage](pdfimage.md)
 
 Represents an image that has been embedded in a [PDFDocument](pdfdocument.md).
 
@@ -34,7 +34,7 @@ Represents an image that has been embedded in a [PDFDocument](pdfdocument.md).
 
 • **doc**: *[PDFDocument](pdfdocument.md)*
 
-*Defined in [PDFImage.ts:29](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFImage.ts#L29)*
+*Defined in [PDFImage.ts:29](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFImage.ts#L29)*
 
 The document to which this image belongs.
 
@@ -44,7 +44,7 @@ ___
 
 • **height**: *number*
 
-*Defined in [PDFImage.ts:35](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFImage.ts#L35)*
+*Defined in [PDFImage.ts:35](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFImage.ts#L35)*
 
 The height of this image in pixels.
 
@@ -52,9 +52,9 @@ ___
 
 ###  ref
 
-• **ref**: *`PDFRef`*
+• **ref**: *PDFRef*
 
-*Defined in [PDFImage.ts:26](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFImage.ts#L26)*
+*Defined in [PDFImage.ts:26](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFImage.ts#L26)*
 
 The unique reference assigned to this image within the document.
 
@@ -64,7 +64,7 @@ ___
 
 • **width**: *number*
 
-*Defined in [PDFImage.ts:32](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFImage.ts#L32)*
+*Defined in [PDFImage.ts:32](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFImage.ts#L32)*
 
 The width of this image in pixels.
 
@@ -72,9 +72,9 @@ The width of this image in pixels.
 
 ###  embed
 
-▸ **embed**(): *`Promise<void>`*
+▸ **embed**(): *Promise‹void›*
 
-*Defined in [PDFImage.ts:97](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFImage.ts#L97)*
+*Defined in [PDFImage.ts:97](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFImage.ts#L97)*
 
 > **NOTE:** You probably don't need to call this method directly. The
 > [PDFDocument.save](pdfdocument.md#save) and [PDFDocument.saveAsBase64](pdfdocument.md#saveasbase64) methods will
@@ -82,7 +82,7 @@ The width of this image in pixels.
 
 Embed this image in its document.
 
-**Returns:** *`Promise<void>`*
+**Returns:** *Promise‹void›*
 
 Resolves when the embedding is complete.
 
@@ -92,7 +92,7 @@ ___
 
 ▸ **scale**(`factor`: number): *object*
 
-*Defined in [PDFImage.ts:72](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFImage.ts#L72)*
+*Defined in [PDFImage.ts:72](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFImage.ts#L72)*
 
 Compute the width and height of this image after being scaled by the
 given `factor`. For example:
@@ -123,7 +123,7 @@ ___
 
 ▸ **size**(): *object*
 
-*Defined in [PDFImage.ts:84](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFImage.ts#L84)*
+*Defined in [PDFImage.ts:84](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFImage.ts#L84)*
 
 Get the width and height of this image. For example:
 ```js
@@ -138,9 +138,9 @@ ___
 
 ### `Static` of
 
-▸ **of**(`ref`: `PDFRef`, `doc`: [PDFDocument](pdfdocument.md), `embedder`: [ImageEmbedder](../index.md#imageembedder)): *[PDFImage](pdfimage.md)*
+▸ **of**(`ref`: PDFRef, `doc`: [PDFDocument](pdfdocument.md), `embedder`: [ImageEmbedder](../index.md#imageembedder)): *[PDFImage](pdfimage.md)‹›*
 
-*Defined in [PDFImage.ts:22](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFImage.ts#L22)*
+*Defined in [PDFImage.ts:22](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFImage.ts#L22)*
 
 > **NOTE:** You probably don't want to call this method directly. Instead,
 > consider using the [PDFDocument.embedPng](pdfdocument.md#embedpng) and [PDFDocument.embedJpg](pdfdocument.md#embedjpg)
@@ -152,8 +152,8 @@ Create an instance of [PDFImage](pdfimage.md) from an existing ref and embedder
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`ref` | `PDFRef` | The unique reference for this image. |
+`ref` | PDFRef | The unique reference for this image. |
 `doc` | [PDFDocument](pdfdocument.md) | The document to which the image will belong. |
 `embedder` | [ImageEmbedder](../index.md#imageembedder) | The embedder that will be used to embed the image.  |
 
-**Returns:** *[PDFImage](pdfimage.md)*
+**Returns:** *[PDFImage](pdfimage.md)‹›*

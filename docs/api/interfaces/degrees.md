@@ -1,10 +1,10 @@
 ---
-id: degrees
-title: Degrees
-sidebar_label: Degrees
+id: "degrees"
+title: "Degrees"
+sidebar_label: "Degrees"
 ---
 
-[Degrees](degrees.md) /
+[pdf-lib](../index.md) › [Degrees](degrees.md)
 
 ## Hierarchy
 
@@ -23,7 +23,7 @@ sidebar_label: Degrees
 
 • **angle**: *number*
 
-*Defined in [rotations.ts:15](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/rotations.ts#L15)*
+*Defined in [rotations.ts:15](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/rotations.ts#L15)*
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 • **type**: *[Degrees](../enums/rotationtypes.md#degrees)*
 
-*Defined in [rotations.ts:14](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/rotations.ts#L14)*
+*Defined in [rotations.ts:14](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/rotations.ts#L14)*

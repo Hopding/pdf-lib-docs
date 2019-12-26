@@ -1,10 +1,10 @@
 ---
-id: pdfpagedrawsvgoptions
-title: PDFPageDrawSVGOptions
-sidebar_label: PDFPageDrawSVGOptions
+id: "pdfpagedrawsvgoptions"
+title: "PDFPageDrawSVGOptions"
+sidebar_label: "PDFPageDrawSVGOptions"
 ---
 
-[PDFPageDrawSVGOptions](pdfpagedrawsvgoptions.md) /
+[pdf-lib](../index.md) › [PDFPageDrawSVGOptions](pdfpagedrawsvgoptions.md)
 
 ## Hierarchy
 
@@ -27,7 +27,7 @@ sidebar_label: PDFPageDrawSVGOptions
 
 • **borderColor**? : *[Color](../index.md#color)*
 
-*Defined in [PDFPageOptions.ts:86](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFPageOptions.ts#L86)*
+*Defined in [PDFPageOptions.ts:86](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFPageOptions.ts#L86)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **borderWidth**? : *undefined | number*
 
-*Defined in [PDFPageOptions.ts:84](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFPageOptions.ts#L84)*
+*Defined in [PDFPageOptions.ts:84](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFPageOptions.ts#L84)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **color**? : *[Color](../index.md#color)*
 
-*Defined in [PDFPageOptions.ts:85](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFPageOptions.ts#L85)*
+*Defined in [PDFPageOptions.ts:85](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFPageOptions.ts#L85)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **scale**? : *undefined | number*
 
-*Defined in [PDFPageOptions.ts:83](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFPageOptions.ts#L83)*
+*Defined in [PDFPageOptions.ts:83](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFPageOptions.ts#L83)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 • **x**? : *undefined | number*
 
-*Defined in [PDFPageOptions.ts:81](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFPageOptions.ts#L81)*
+*Defined in [PDFPageOptions.ts:81](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFPageOptions.ts#L81)*
 
 ___
 
@@ -67,4 +67,4 @@ ___
 
 • **y**? : *undefined | number*
 
-*Defined in [PDFPageOptions.ts:82](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFPageOptions.ts#L82)*
+*Defined in [PDFPageOptions.ts:82](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFPageOptions.ts#L82)*

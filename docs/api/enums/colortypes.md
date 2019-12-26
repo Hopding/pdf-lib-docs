@@ -1,10 +1,10 @@
 ---
-id: colortypes
-title: ColorTypes
-sidebar_label: ColorTypes
+id: "colortypes"
+title: "ColorTypes"
+sidebar_label: "ColorTypes"
 ---
 
-[ColorTypes](colortypes.md) /
+[pdf-lib](../index.md) › [ColorTypes](colortypes.md)
 
 ## Index
 
@@ -20,7 +20,7 @@ sidebar_label: ColorTypes
 
 • **CMYK**: = "CMYK"
 
-*Defined in [colors.ts:14](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/colors.ts#L14)*
+*Defined in [colors.ts:14](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/colors.ts#L14)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **Grayscale**: = "Grayscale"
 
-*Defined in [colors.ts:12](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/colors.ts#L12)*
+*Defined in [colors.ts:12](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/colors.ts#L12)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **RGB**: = "RGB"
 
-*Defined in [colors.ts:13](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/colors.ts#L13)*
+*Defined in [colors.ts:13](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/colors.ts#L13)*

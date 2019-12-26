@@ -1,10 +1,10 @@
 ---
-id: loadoptions
-title: LoadOptions
-sidebar_label: LoadOptions
+id: "loadoptions"
+title: "LoadOptions"
+sidebar_label: "LoadOptions"
 ---
 
-[LoadOptions](loadoptions.md) /
+[pdf-lib](../index.md) › [LoadOptions](loadoptions.md)
 
 ## Hierarchy
 
@@ -16,6 +16,7 @@ sidebar_label: LoadOptions
 
 * [ignoreEncryption](loadoptions.md#optional-ignoreencryption)
 * [parseSpeed](loadoptions.md#optional-parsespeed)
+* [throwOnInvalidObject](loadoptions.md#optional-throwoninvalidobject)
 
 ## Properties
 
@@ -23,7 +24,7 @@ sidebar_label: LoadOptions
 
 • **ignoreEncryption**? : *undefined | false | true*
 
-*Defined in [PDFDocument.ts:61](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFDocument.ts#L61)*
+*Defined in [PDFDocument.ts:61](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFDocument.ts#L61)*
 
 ___
 
@@ -31,4 +32,12 @@ ___
 
 • **parseSpeed**? : *[ParseSpeeds](../enums/parsespeeds.md) | number*
 
-*Defined in [PDFDocument.ts:62](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFDocument.ts#L62)*
+*Defined in [PDFDocument.ts:62](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFDocument.ts#L62)*
+
+___
+
+### `Optional` throwOnInvalidObject
+
+• **throwOnInvalidObject**? : *undefined | false | true*
+
+*Defined in [PDFDocument.ts:63](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFDocument.ts#L63)*

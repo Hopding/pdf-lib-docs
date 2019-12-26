@@ -1,10 +1,10 @@
 ---
-id: pdfpagedrawcircleoptions
-title: PDFPageDrawCircleOptions
-sidebar_label: PDFPageDrawCircleOptions
+id: "pdfpagedrawcircleoptions"
+title: "PDFPageDrawCircleOptions"
+sidebar_label: "PDFPageDrawCircleOptions"
 ---
 
-[PDFPageDrawCircleOptions](pdfpagedrawcircleoptions.md) /
+[pdf-lib](../index.md) › [PDFPageDrawCircleOptions](pdfpagedrawcircleoptions.md)
 
 ## Hierarchy
 
@@ -27,7 +27,7 @@ sidebar_label: PDFPageDrawCircleOptions
 
 • **borderColor**? : *[Color](../index.md#color)*
 
-*Defined in [PDFPageOptions.ts:76](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFPageOptions.ts#L76)*
+*Defined in [PDFPageOptions.ts:76](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFPageOptions.ts#L76)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **borderWidth**? : *undefined | number*
 
-*Defined in [PDFPageOptions.ts:77](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFPageOptions.ts#L77)*
+*Defined in [PDFPageOptions.ts:77](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFPageOptions.ts#L77)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **color**? : *[Color](../index.md#color)*
 
-*Defined in [PDFPageOptions.ts:75](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFPageOptions.ts#L75)*
+*Defined in [PDFPageOptions.ts:75](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFPageOptions.ts#L75)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **size**? : *undefined | number*
 
-*Defined in [PDFPageOptions.ts:74](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFPageOptions.ts#L74)*
+*Defined in [PDFPageOptions.ts:74](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFPageOptions.ts#L74)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 • **x**? : *undefined | number*
 
-*Defined in [PDFPageOptions.ts:72](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFPageOptions.ts#L72)*
+*Defined in [PDFPageOptions.ts:72](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFPageOptions.ts#L72)*
 
 ___
 
@@ -67,4 +67,4 @@ ___
 
 • **y**? : *undefined | number*
 
-*Defined in [PDFPageOptions.ts:73](https://github.com/Hopding/pdf-lib/blob/f17521b/src/api/PDFPageOptions.ts#L73)*
+*Defined in [PDFPageOptions.ts:73](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFPageOptions.ts#L73)*
