@@ -29,7 +29,7 @@ sidebar_label: "Base64SaveOptions"
 
 *Inherited from [SaveOptions](saveoptions.md).[addDefaultPage](saveoptions.md#optional-adddefaultpage)*
 
-*Defined in [api/PDFDocument.ts:59](https://github.com/Hopding/pdf-lib/blob/e16420f/src/api/PDFDocument.ts#L59)*
+*Defined in [api/PDFDocument.ts:59](https://github.com/Hopding/pdf-lib/blob/b693c81/src/api/PDFDocument.ts#L59)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **dataUri**? : *undefined | false | true*
 
-*Defined in [api/PDFDocument.ts:64](https://github.com/Hopding/pdf-lib/blob/e16420f/src/api/PDFDocument.ts#L64)*
+*Defined in [api/PDFDocument.ts:64](https://github.com/Hopding/pdf-lib/blob/b693c81/src/api/PDFDocument.ts#L64)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 *Inherited from [SaveOptions](saveoptions.md).[objectsPerTick](saveoptions.md#optional-objectspertick)*
 
-*Defined in [api/PDFDocument.ts:60](https://github.com/Hopding/pdf-lib/blob/e16420f/src/api/PDFDocument.ts#L60)*
+*Defined in [api/PDFDocument.ts:60](https://github.com/Hopding/pdf-lib/blob/b693c81/src/api/PDFDocument.ts#L60)*
 
 ___
 
@@ -57,4 +57,4 @@ ___
 
 *Inherited from [SaveOptions](saveoptions.md).[useObjectStreams](saveoptions.md#optional-useobjectstreams)*
 
-*Defined in [api/PDFDocument.ts:58](https://github.com/Hopding/pdf-lib/blob/e16420f/src/api/PDFDocument.ts#L58)*
+*Defined in [api/PDFDocument.ts:58](https://github.com/Hopding/pdf-lib/blob/b693c81/src/api/PDFDocument.ts#L58)*
