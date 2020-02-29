@@ -550,7 +550,8 @@ class Index extends React.Component {
               <p>
                 If you aren't using a package manager, UMD modules are available
                 on the {}
-                <a href="https://unpkg.com/#/">unpkg</a> CDN:
+                <a href="https://unpkg.com/#/">unpkg</a> and{' '}
+                <a href="https://www.jsdelivr.com/">jsDelivr</a> CDNs:
                 <ul>
                   <li>
                     <a href="https://unpkg.com/pdf-lib/dist/pdf-lib.js">
@@ -562,8 +563,35 @@ class Index extends React.Component {
                       https://unpkg.com/pdf-lib/dist/pdf-lib.min.js
                     </a>
                   </li>
+                  <li>
+                    <a href="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.js">
+                      https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.js
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js">
+                      https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js
+                    </a>
+                  </li>
                 </ul>
               </p>
+              <blockquote>
+                <strong>NOTE:</strong> if you are using the CDN scripts in
+                production, you should include a specific version number in the
+                URL, for example:
+                <ul>
+                  <li>
+                    <a href="https://unpkg.com/pdf-lib@1.4.0/dist/pdf-lib.min.js">
+                      https://unpkg.com/pdf-lib@1.4.0/dist/pdf-lib.min.js
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://cdn.jsdelivr.net/npm/pdf-lib@1.4.0/dist/pdf-lib.min.js">
+                      https://cdn.jsdelivr.net/npm/pdf-lib@1.4.0/dist/pdf-lib.min.js
+                    </a>
+                  </li>
+                </ul>
+              </blockquote>
             </div>
           </Container>
 
@@ -572,42 +600,42 @@ class Index extends React.Component {
               <div className="examplesInnerContainer">
                 <ExampleHeader
                   title="Create Document"
-                  jsFiddleUrl="https://jsfiddle.net/Hopding/rxwsc8f5/12/"
+                  jsFiddleUrl="https://jsfiddle.net/Hopding/rxwsc8f5/13/"
                 />
                 <MarkdownBlock>{createDocumentSnippet}</MarkdownBlock>
                 <Pdf url="/assets/create_document.pdf" />
 
                 <ExampleHeader
                   title="Modify Document"
-                  jsFiddleUrl="https://jsfiddle.net/Hopding/64zajhge/"
+                  jsFiddleUrl="https://jsfiddle.net/Hopding/64zajhge/1/"
                 />
                 <MarkdownBlock>{modifyDocumentSnippet}</MarkdownBlock>
                 <Pdf url="/assets/modify_document.pdf" />
 
                 <ExampleHeader
                   title="Copy Pages"
-                  jsFiddleUrl="https://jsfiddle.net/Hopding/ybank8s9/1/"
+                  jsFiddleUrl="https://jsfiddle.net/Hopding/ybank8s9/2/"
                 />
                 <MarkdownBlock>{copyPagesSnippet}</MarkdownBlock>
                 <Pdf url="/assets/copy_pages.pdf" />
 
                 <ExampleHeader
                   title="Embed PNG and JPEG Images"
-                  jsFiddleUrl="https://jsfiddle.net/Hopding/bcya43ju/2/"
+                  jsFiddleUrl="https://jsfiddle.net/Hopding/bcya43ju/5/"
                 />
                 <MarkdownBlock>{embedPngAndJpegImagesSnippet}</MarkdownBlock>
                 <Pdf url="/assets/embed_png_and_jpeg_images.pdf" />
 
                 <ExampleHeader
                   title="Embed PDF Pages"
-                  // jsFiddleUrl="https://jsfiddle.net/Hopding/bcya43ju/2/"
+                  jsFiddleUrl="https://jsfiddle.net/Hopding/Lyb16ocj/10/"
                 />
                 <MarkdownBlock>{embedPdfPagesSnippet}</MarkdownBlock>
                 <Pdf url="/assets/embed_pdf_pages.pdf" />
 
                 <ExampleHeader
                   title="Embed Font and Measure Text"
-                  jsFiddleUrl="https://jsfiddle.net/Hopding/rgu6ca59/1/"
+                  jsFiddleUrl="https://jsfiddle.net/Hopding/rgu6ca59/2/"
                 />
                 <p>
                   <a href="https://github.com/Hopding/pdf-lib/tree/Rewrite#fontkit-installation">
@@ -623,14 +651,14 @@ class Index extends React.Component {
 
                 <ExampleHeader
                   title="Set Document Metadata"
-                  jsFiddleUrl="https://jsfiddle.net/Hopding/vcwmfnbe/1/"
+                  jsFiddleUrl="https://jsfiddle.net/Hopding/vcwmfnbe/2/"
                 />
                 <MarkdownBlock>{setDocumentMetadataSnippet}</MarkdownBlock>
                 <Pdf url="/assets/set_document_metadata.pdf" />
 
                 <ExampleHeader
                   title="Draw SVG Paths"
-                  jsFiddleUrl="https://jsfiddle.net/Hopding/bwaomr9h/1/"
+                  jsFiddleUrl="https://jsfiddle.net/Hopding/bwaomr9h/2/"
                 />
                 <MarkdownBlock>{drawSvgPathsSnippet}</MarkdownBlock>
                 <Pdf url="/assets/draw_svg_paths.pdf" />
