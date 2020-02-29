@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "docusaurus-init": "^1.14.1",
-    "typedoc": "^0.15.5",
-    "typedoc-plugin-markdown": "^2.2.14"
+    "typedoc": "^0.16.11",
+    "typedoc-plugin-markdown": "^2.2.17"
   }
 }

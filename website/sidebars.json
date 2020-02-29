@@ -1,25 +1,14 @@
 {
   "docs": {
-    "Docusaurus": [
-      "doc1"
-    ],
-    "First Category": [
-      "doc2"
-    ],
-    "Second Category": [
-      "doc3"
-    ]
+    "Docusaurus": ["doc1"],
+    "First Category": ["doc2"],
+    "Second Category": ["doc3"]
   },
   "docs-other": {
-    "First Category": [
-      "doc4",
-      "doc5"
-    ]
+    "First Category": ["doc4", "doc5"]
   },
   "pdf-lib": {
-    "Introduction": [
-      "api/index"
-    ],
+    "Introduction": ["api/index"],
     "Classes": [
       "api/classes/pdfdocument",
       "api/classes/pdffont",
@@ -55,87 +44,6 @@
       "api/interfaces/rgb",
       "api/interfaces/radians",
       "api/interfaces/saveoptions"
-    ]
-  },
-  "typescript": {
-    "Introduction": [
-      "api/index"
-    ],
-    "Classes": [
-      "api/classes/eventemitter",
-      "api/classes/font",
-      "api/classes/pdfdocument",
-      "api/classes/pdffont",
-      "api/classes/pdfimage",
-      "api/classes/pdfpage",
-      "api/classes/png"
-    ],
-    "Enums": [
-      "api/enums/colortypes",
-      "api/enums/fontnames",
-      "api/enums/linecapstyle",
-      "api/enums/linejoinstyle",
-      "api/enums/parsespeeds",
-      "api/enums/rotationtypes",
-      "api/enums/textrenderingmode"
-    ],
-    "Interfaces": [
-      "api/interfaces/base64saveoptions",
-      "api/interfaces/cmyk",
-      "api/interfaces/catfunction",
-      "api/interfaces/chmodfunction",
-      "api/interfaces/copyfunction",
-      "api/interfaces/copyoptions",
-      "api/interfaces/copyoptionssync",
-      "api/interfaces/degrees",
-      "api/interfaces/dirsfunction",
-      "api/interfaces/drawlinesoftextoptions",
-      "api/interfaces/drawtextoptions",
-      "api/interfaces/echofunction",
-      "api/interfaces/ensureoptions",
-      "api/interfaces/execfunction",
-      "api/interfaces/execoptions",
-      "api/interfaces/execoutputreturnvalue",
-      "api/interfaces/findfunction",
-      "api/interfaces/grayscale",
-      "api/interfaces/grepfunction",
-      "api/interfaces/headfunction",
-      "api/interfaces/headoptions",
-      "api/interfaces/icharmetrics",
-      "api/interfaces/linkfunction",
-      "api/interfaces/listfunction",
-      "api/interfaces/mkdirfunction",
-      "api/interfaces/movefunction",
-      "api/interfaces/moveoptions",
-      "api/interfaces/pdfpagedrawcircleoptions",
-      "api/interfaces/pdfpagedrawellipseoptions",
-      "api/interfaces/pdfpagedrawimageoptions",
-      "api/interfaces/pdfpagedrawrectangleoptions",
-      "api/interfaces/pdfpagedrawsquareoptions",
-      "api/interfaces/pdfpagedrawtextoptions",
-      "api/interfaces/pathentry",
-      "api/interfaces/pathentrystream",
-      "api/interfaces/popdirfunction",
-      "api/interfaces/pushdirfunction",
-      "api/interfaces/rgb",
-      "api/interfaces/radians",
-      "api/interfaces/readoptions",
-      "api/interfaces/readresult",
-      "api/interfaces/removefunction",
-      "api/interfaces/saveoptions",
-      "api/interfaces/sedfunction",
-      "api/interfaces/shellconfig",
-      "api/interfaces/shellreturnvalue",
-      "api/interfaces/shellstringconstructor",
-      "api/interfaces/sortfunction",
-      "api/interfaces/tailfunction",
-      "api/interfaces/tailoptions",
-      "api/interfaces/touchfunction",
-      "api/interfaces/touchoptionsarray",
-      "api/interfaces/uniqfunction",
-      "api/interfaces/writefileoptions",
-      "api/interfaces/writeoptions",
-      "api/interfaces/writeresult"
     ]
   }
 }
