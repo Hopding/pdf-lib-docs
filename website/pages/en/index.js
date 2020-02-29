@@ -206,6 +206,50 @@ async function embedImages() {
 }
 ${pre}`;
 
+const embedPdfPagesSnippet = `${pre}js
+import { PDFDocument } from 'pdf-lib'
+
+async function embedPdfPages() {
+  const flagUrl = 'https://pdf-lib.js.org/assets/american_flag.pdf';
+  const constitutionUrl = 'https://pdf-lib.js.org/assets/us_constitution.pdf';
+
+  const flagPdfBytes = await fetch(flagUrl).then((res) => res.arrayBuffer());
+  const constitutionPdfBytes = await fetch(constitutionUrl).then((res) =>
+    res.arrayBuffer(),
+  );
+
+  const pdfDoc = await PDFDocument.create();
+
+  const [americanFlag] = await pdfDoc.embedPdf(flagPdfBytes);
+
+  const usConstitutionPdf = await PDFDocument.load(constitutionPdfBytes);
+  const preamble = await pdfDoc.embedPage(usConstitutionPdf.getPages()[1], {
+    left: 55,
+    bottom: 485,
+    right: 300,
+    top: 575,
+  });
+
+  const americanFlagDims = americanFlag.scale(0.3);
+  const preambleDims = preamble.scale(2.25);
+
+  const page = pdfDoc.addPage();
+
+  page.drawPage(americanFlag, {
+    ...americanFlagDims,
+    x: page.getWidth() / 2 - americanFlagDims.width / 2,
+    y: page.getHeight() - americanFlagDims.height - 150,
+  });
+  page.drawPage(preamble, {
+    ...preambleDims,
+    x: page.getWidth() / 2 - preambleDims.width / 2,
+    y: page.getHeight() / 2 - preambleDims.height / 2 - 50,
+  });
+
+  const pdfBytes = await pdfDoc.save();
+}
+${pre}`;
+
 const embedFontAndMeasureTextSnippet = `${pre}js
 import { PDFDocument, rgb } from 'pdf-lib'
 import fontkit from '@pdf-lib/fontkit'
@@ -412,7 +456,7 @@ const ExampleHeader = ({ title, jsFiddleUrl }) => (
     }}
   >
     <h2>{title}</h2>
-    <JsFiddle url={jsFiddleUrl} />
+    {jsFiddleUrl && <JsFiddle url={jsFiddleUrl} />}
   </div>
 );
 
@@ -553,6 +597,13 @@ class Index extends React.Component {
                 />
                 <MarkdownBlock>{embedPngAndJpegImagesSnippet}</MarkdownBlock>
                 <Pdf url="/assets/embed_png_and_jpeg_images.pdf" />
+
+                <ExampleHeader
+                  title="Embed PDF Pages"
+                  // jsFiddleUrl="https://jsfiddle.net/Hopding/bcya43ju/2/"
+                />
+                <MarkdownBlock>{embedPdfPagesSnippet}</MarkdownBlock>
+                <Pdf url="/assets/embed_pdf_pages.pdf" />
 
                 <ExampleHeader
                   title="Embed Font and Measure Text"

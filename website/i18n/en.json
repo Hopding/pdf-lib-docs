@@ -61,14 +61,6 @@
         "title": "Base64SaveOptions",
         "sidebar_label": "Base64SaveOptions"
       },
-      "api/interfaces/cmd": {
-        "title": "Cmd",
-        "sidebar_label": "Cmd"
-      },
-      "api/interfaces/cmdtooperatorsmap": {
-        "title": "CmdToOperatorsMap",
-        "sidebar_label": "CmdToOperatorsMap"
-      },
       "api/interfaces/cmyk": {
         "title": "CMYK",
         "sidebar_label": "CMYK"
