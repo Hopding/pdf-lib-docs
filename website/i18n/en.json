@@ -9,6 +9,10 @@
         "title": "PDFDocument",
         "sidebar_label": "PDFDocument"
       },
+      "api/classes/pdfembeddedpage": {
+        "title": "PDFEmbeddedPage",
+        "sidebar_label": "PDFEmbeddedPage"
+      },
       "api/classes/pdffont": {
         "title": "PDFFont",
         "sidebar_label": "PDFFont"
@@ -57,6 +61,14 @@
         "title": "Base64SaveOptions",
         "sidebar_label": "Base64SaveOptions"
       },
+      "api/interfaces/cmd": {
+        "title": "Cmd",
+        "sidebar_label": "Cmd"
+      },
+      "api/interfaces/cmdtooperatorsmap": {
+        "title": "CmdToOperatorsMap",
+        "sidebar_label": "CmdToOperatorsMap"
+      },
       "api/interfaces/cmyk": {
         "title": "CMYK",
         "sidebar_label": "CMYK"
@@ -72,6 +84,10 @@
       "api/interfaces/drawtextoptions": {
         "title": "DrawTextOptions",
         "sidebar_label": "DrawTextOptions"
+      },
+      "api/interfaces/embeddable": {
+        "title": "Embeddable",
+        "sidebar_label": "Embeddable"
       },
       "api/interfaces/embedfontoptions": {
         "title": "EmbedFontOptions",
@@ -100,6 +116,10 @@
       "api/interfaces/pdfpagedrawlineoptions": {
         "title": "PDFPageDrawLineOptions",
         "sidebar_label": "PDFPageDrawLineOptions"
+      },
+      "api/interfaces/pdfpagedrawpageoptions": {
+        "title": "PDFPageDrawPageOptions",
+        "sidebar_label": "PDFPageDrawPageOptions"
       },
       "api/interfaces/pdfpagedrawrectangleoptions": {
         "title": "PDFPageDrawRectangleOptions",

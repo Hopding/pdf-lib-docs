@@ -7,6 +7,7 @@
     "./src/core/**/*",
     "./src/utils/**/*",
     "./src/api/errors.ts",
+    "./src/api/svgPath.ts",
     "./src/types/fontkit.ts"
   ],
   "excludePrivate": true,

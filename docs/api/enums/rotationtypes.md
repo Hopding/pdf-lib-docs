@@ -19,7 +19,7 @@ sidebar_label: "RotationTypes"
 
 • **Degrees**: = "degrees"
 
-*Defined in [rotations.ts:4](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/rotations.ts#L4)*
+*Defined in [api/rotations.ts:4](https://github.com/Hopding/pdf-lib/blob/e16420f/src/api/rotations.ts#L4)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **Radians**: = "radians"
 
-*Defined in [rotations.ts:5](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/rotations.ts#L5)*
+*Defined in [api/rotations.ts:5](https://github.com/Hopding/pdf-lib/blob/e16420f/src/api/rotations.ts#L5)*

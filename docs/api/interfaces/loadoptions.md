@@ -24,7 +24,7 @@ sidebar_label: "LoadOptions"
 
 • **ignoreEncryption**? : *undefined | false | true*
 
-*Defined in [PDFDocument.ts:61](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFDocument.ts#L61)*
+*Defined in [api/PDFDocument.ts:68](https://github.com/Hopding/pdf-lib/blob/e16420f/src/api/PDFDocument.ts#L68)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **parseSpeed**? : *[ParseSpeeds](../enums/parsespeeds.md) | number*
 
-*Defined in [PDFDocument.ts:62](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFDocument.ts#L62)*
+*Defined in [api/PDFDocument.ts:69](https://github.com/Hopding/pdf-lib/blob/e16420f/src/api/PDFDocument.ts#L69)*
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 • **throwOnInvalidObject**? : *undefined | false | true*
 
-*Defined in [PDFDocument.ts:63](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFDocument.ts#L63)*
+*Defined in [api/PDFDocument.ts:70](https://github.com/Hopding/pdf-lib/blob/e16420f/src/api/PDFDocument.ts#L70)*

@@ -1,16 +1,28 @@
 {
   "docs": {
-    "Docusaurus": ["doc1"],
-    "First Category": ["doc2"],
-    "Second Category": ["doc3"]
+    "Docusaurus": [
+      "doc1"
+    ],
+    "First Category": [
+      "doc2"
+    ],
+    "Second Category": [
+      "doc3"
+    ]
   },
   "docs-other": {
-    "First Category": ["doc4", "doc5"]
+    "First Category": [
+      "doc4",
+      "doc5"
+    ]
   },
   "pdf-lib": {
-    "Introduction": ["api/index"],
+    "Introduction": [
+      "api/index"
+    ],
     "Classes": [
       "api/classes/pdfdocument",
+      "api/classes/pdfembeddedpage",
       "api/classes/pdffont",
       "api/classes/pdfimage",
       "api/classes/pdfpage"
@@ -31,12 +43,14 @@
       "api/interfaces/drawlinesoftextoptions",
       "api/interfaces/drawtextoptions",
       "api/interfaces/embedfontoptions",
+      "api/interfaces/embeddable",
       "api/interfaces/grayscale",
       "api/interfaces/loadoptions",
       "api/interfaces/pdfpagedrawcircleoptions",
       "api/interfaces/pdfpagedrawellipseoptions",
       "api/interfaces/pdfpagedrawimageoptions",
       "api/interfaces/pdfpagedrawlineoptions",
+      "api/interfaces/pdfpagedrawpageoptions",
       "api/interfaces/pdfpagedrawrectangleoptions",
       "api/interfaces/pdfpagedrawsvgoptions",
       "api/interfaces/pdfpagedrawsquareoptions",

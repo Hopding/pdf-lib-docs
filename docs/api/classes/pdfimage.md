@@ -12,6 +12,10 @@ Represents an image that has been embedded in a [PDFDocument](pdfdocument.md).
 
 * **PDFImage**
 
+## Implements
+
+* [Embeddable](../interfaces/embeddable.md)
+
 ## Index
 
 ### Properties
@@ -34,7 +38,7 @@ Represents an image that has been embedded in a [PDFDocument](pdfdocument.md).
 
 • **doc**: *[PDFDocument](pdfdocument.md)*
 
-*Defined in [PDFImage.ts:29](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFImage.ts#L29)*
+*Defined in [api/PDFImage.ts:30](https://github.com/Hopding/pdf-lib/blob/e16420f/src/api/PDFImage.ts#L30)*
 
 The document to which this image belongs.
 
@@ -44,7 +48,7 @@ ___
 
 • **height**: *number*
 
-*Defined in [PDFImage.ts:35](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFImage.ts#L35)*
+*Defined in [api/PDFImage.ts:36](https://github.com/Hopding/pdf-lib/blob/e16420f/src/api/PDFImage.ts#L36)*
 
 The height of this image in pixels.
 
@@ -54,7 +58,7 @@ ___
 
 • **ref**: *PDFRef*
 
-*Defined in [PDFImage.ts:26](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFImage.ts#L26)*
+*Defined in [api/PDFImage.ts:27](https://github.com/Hopding/pdf-lib/blob/e16420f/src/api/PDFImage.ts#L27)*
 
 The unique reference assigned to this image within the document.
 
@@ -64,7 +68,7 @@ ___
 
 • **width**: *number*
 
-*Defined in [PDFImage.ts:32](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFImage.ts#L32)*
+*Defined in [api/PDFImage.ts:33](https://github.com/Hopding/pdf-lib/blob/e16420f/src/api/PDFImage.ts#L33)*
 
 The width of this image in pixels.
 
@@ -74,7 +78,7 @@ The width of this image in pixels.
 
 ▸ **embed**(): *Promise‹void›*
 
-*Defined in [PDFImage.ts:97](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFImage.ts#L97)*
+*Defined in [api/PDFImage.ts:98](https://github.com/Hopding/pdf-lib/blob/e16420f/src/api/PDFImage.ts#L98)*
 
 > **NOTE:** You probably don't need to call this method directly. The
 > [PDFDocument.save](pdfdocument.md#save) and [PDFDocument.saveAsBase64](pdfdocument.md#saveasbase64) methods will
@@ -92,7 +96,7 @@ ___
 
 ▸ **scale**(`factor`: number): *object*
 
-*Defined in [PDFImage.ts:72](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFImage.ts#L72)*
+*Defined in [api/PDFImage.ts:73](https://github.com/Hopding/pdf-lib/blob/e16420f/src/api/PDFImage.ts#L73)*
 
 Compute the width and height of this image after being scaled by the
 given `factor`. For example:
@@ -117,13 +121,17 @@ Name | Type | Description |
 
 The width and height of the image after being scaled.
 
+* **height**: *number* = this.height * factor
+
+* **width**: *number* = this.width * factor
+
 ___
 
 ###  size
 
 ▸ **size**(): *object*
 
-*Defined in [PDFImage.ts:84](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFImage.ts#L84)*
+*Defined in [api/PDFImage.ts:85](https://github.com/Hopding/pdf-lib/blob/e16420f/src/api/PDFImage.ts#L85)*
 
 Get the width and height of this image. For example:
 ```js
@@ -134,13 +142,17 @@ const { width, height } = image.size()
 
 The width and height of the image.
 
+* **height**: *number* = this.height * factor
+
+* **width**: *number* = this.width * factor
+
 ___
 
 ### `Static` of
 
 ▸ **of**(`ref`: PDFRef, `doc`: [PDFDocument](pdfdocument.md), `embedder`: [ImageEmbedder](../index.md#imageembedder)): *[PDFImage](pdfimage.md)‹›*
 
-*Defined in [PDFImage.ts:22](https://github.com/Hopding/pdf-lib/blob/645a530/src/api/PDFImage.ts#L22)*
+*Defined in [api/PDFImage.ts:23](https://github.com/Hopding/pdf-lib/blob/e16420f/src/api/PDFImage.ts#L23)*
 
 > **NOTE:** You probably don't want to call this method directly. Instead,
 > consider using the [PDFDocument.embedPng](pdfdocument.md#embedpng) and [PDFDocument.embedJpg](pdfdocument.md#embedjpg)
