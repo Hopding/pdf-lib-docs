@@ -661,7 +661,7 @@ class Index extends React.Component {
 
                 <ExampleHeader
                   title="Embed PDF Pages"
-                  jsFiddleUrl="https://jsfiddle.net/Hopding/Lyb16ocj/10/"
+                  jsFiddleUrl="https://jsfiddle.net/Hopding/Lyb16ocj/13/"
                 />
                 <MarkdownBlock>{embedPdfPagesSnippet}</MarkdownBlock>
                 <Pdf url="/assets/embed_pdf_pages.pdf" />
@@ -691,7 +691,7 @@ class Index extends React.Component {
 
                 <ExampleHeader
                   title="Read Document Metadata"
-                  // jsFiddleUrl="https://jsfiddle.net/Hopding/vcwmfnbe/2/"
+                  jsFiddleUrl="https://jsfiddle.net/Hopding/eg8rfz3k/16/"
                 />
                 <MarkdownBlock>{readDocumentMetadataSnippet}</MarkdownBlock>
                 <p>This script outputs the following:</p>
