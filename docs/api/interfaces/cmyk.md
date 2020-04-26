@@ -26,7 +26,7 @@ sidebar_label: "CMYK"
 
 • **cyan**: *number*
 
-*Defined in [api/colors.ts:31](https://github.com/Hopding/pdf-lib/blob/b693c81/src/api/colors.ts#L31)*
+*Defined in [api/colors.ts:31](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/colors.ts#L31)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **key**: *number*
 
-*Defined in [api/colors.ts:34](https://github.com/Hopding/pdf-lib/blob/b693c81/src/api/colors.ts#L34)*
+*Defined in [api/colors.ts:34](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/colors.ts#L34)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **magenta**: *number*
 
-*Defined in [api/colors.ts:32](https://github.com/Hopding/pdf-lib/blob/b693c81/src/api/colors.ts#L32)*
+*Defined in [api/colors.ts:32](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/colors.ts#L32)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **type**: *[CMYK](../enums/colortypes.md#cmyk)*
 
-*Defined in [api/colors.ts:30](https://github.com/Hopding/pdf-lib/blob/b693c81/src/api/colors.ts#L30)*
+*Defined in [api/colors.ts:30](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/colors.ts#L30)*
 
 ___
 
@@ -58,4 +58,4 @@ ___
 
 • **yellow**: *number*
 
-*Defined in [api/colors.ts:33](https://github.com/Hopding/pdf-lib/blob/b693c81/src/api/colors.ts#L33)*
+*Defined in [api/colors.ts:33](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/colors.ts#L33)*

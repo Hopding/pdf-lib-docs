@@ -17,6 +17,7 @@ sidebar_label: "LoadOptions"
 * [ignoreEncryption](loadoptions.md#optional-ignoreencryption)
 * [parseSpeed](loadoptions.md#optional-parsespeed)
 * [throwOnInvalidObject](loadoptions.md#optional-throwoninvalidobject)
+* [updateMetadata](loadoptions.md#optional-updatemetadata)
 
 ## Properties
 
@@ -24,7 +25,7 @@ sidebar_label: "LoadOptions"
 
 • **ignoreEncryption**? : *undefined | false | true*
 
-*Defined in [api/PDFDocument.ts:68](https://github.com/Hopding/pdf-lib/blob/b693c81/src/api/PDFDocument.ts#L68)*
+*Defined in [api/PDFDocument.ts:70](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/PDFDocument.ts#L70)*
 
 ___
 
@@ -32,7 +33,7 @@ ___
 
 • **parseSpeed**? : *[ParseSpeeds](../enums/parsespeeds.md) | number*
 
-*Defined in [api/PDFDocument.ts:69](https://github.com/Hopding/pdf-lib/blob/b693c81/src/api/PDFDocument.ts#L69)*
+*Defined in [api/PDFDocument.ts:71](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/PDFDocument.ts#L71)*
 
 ___
 
@@ -40,4 +41,12 @@ ___
 
 • **throwOnInvalidObject**? : *undefined | false | true*
 
-*Defined in [api/PDFDocument.ts:70](https://github.com/Hopding/pdf-lib/blob/b693c81/src/api/PDFDocument.ts#L70)*
+*Defined in [api/PDFDocument.ts:72](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/PDFDocument.ts#L72)*
+
+___
+
+### `Optional` updateMetadata
+
+• **updateMetadata**? : *undefined | false | true*
+
+*Defined in [api/PDFDocument.ts:73](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/PDFDocument.ts#L73)*

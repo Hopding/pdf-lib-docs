@@ -39,6 +39,7 @@
     "Interfaces": [
       "api/interfaces/base64saveoptions",
       "api/interfaces/cmyk",
+      "api/interfaces/createoptions",
       "api/interfaces/degrees",
       "api/interfaces/drawlinesoftextoptions",
       "api/interfaces/drawtextoptions",

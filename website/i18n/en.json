@@ -65,6 +65,10 @@
         "title": "CMYK",
         "sidebar_label": "CMYK"
       },
+      "api/interfaces/createoptions": {
+        "title": "CreateOptions",
+        "sidebar_label": "CreateOptions"
+      },
       "api/interfaces/degrees": {
         "title": "Degrees",
         "sidebar_label": "Degrees"
