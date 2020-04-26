@@ -317,6 +317,39 @@ async function setDocumentMetadata() {
 }
 ${pre}`;
 
+const readDocumentMetadataSnippet = `${pre}js
+import { PDFDocument } from 'pdf-lib'
+
+async function readDocumentMetadata() {
+  const url = 'https://pdf-lib.js.org/assets/with_cropbox.pdf'
+  const existingPdfBytes = await fetch(url).then(res => res.arrayBuffer())
+
+  const pdfDoc = await PDFDocument.load(existingPdfBytes, { 
+    updateMetadata: false 
+  })
+  
+  console.log('Title:', pdfDoc.getTitle())
+  console.log('Author:', pdfDoc.getAuthor())
+  console.log('Subject:', pdfDoc.getSubject())
+  console.log('Creator:', pdfDoc.getCreator())
+  console.log('Keywords:', pdfDoc.getKeywords())
+  console.log('Producer:', pdfDoc.getProducer())
+  console.log('Creation Date:', pdfDoc.getCreationDate())
+  console.log('Modification Date:', pdfDoc.getModificationDate())
+}
+${pre}`;
+
+const readDocumentMetadataOutput = `${pre}
+Title: Microsoft Word - Basic Curriculum Vitae example.doc
+Author: Administrator
+Subject: undefined
+Creator: PScript5.dll Version 5.2
+Keywords: undefined
+Producer: Acrobat Distiller 8.1.0 (Windows)
+Creation Date: 2010-07-29T14:26:00.000Z
+Modification Date: 2010-07-29T14:26:00.000Z
+${pre}`;
+
 const drawSvgPathsSnippet = `${pre}js
 import { PDFDocument, rgb } from 'pdf-lib'
 
@@ -655,6 +688,14 @@ class Index extends React.Component {
                 />
                 <MarkdownBlock>{setDocumentMetadataSnippet}</MarkdownBlock>
                 <Pdf url="/assets/set_document_metadata.pdf" />
+
+                <ExampleHeader
+                  title="Read Document Metadata"
+                  // jsFiddleUrl="https://jsfiddle.net/Hopding/vcwmfnbe/2/"
+                />
+                <MarkdownBlock>{readDocumentMetadataSnippet}</MarkdownBlock>
+                <p>This script outputs the following:</p>
+                <MarkdownBlock>{readDocumentMetadataOutput}</MarkdownBlock>
 
                 <ExampleHeader
                   title="Draw SVG Paths"
