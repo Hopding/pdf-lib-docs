@@ -14,6 +14,7 @@ sidebar_label: "LoadOptions"
 
 ### Properties
 
+* [capNumbers](loadoptions.md#optional-capnumbers)
 * [ignoreEncryption](loadoptions.md#optional-ignoreencryption)
 * [parseSpeed](loadoptions.md#optional-parsespeed)
 * [throwOnInvalidObject](loadoptions.md#optional-throwoninvalidobject)
@@ -21,11 +22,19 @@ sidebar_label: "LoadOptions"
 
 ## Properties
 
+### `Optional` capNumbers
+
+• **capNumbers**? : *undefined | false | true*
+
+*Defined in [api/PDFDocumentOptions.ts:27](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocumentOptions.ts#L27)*
+
+___
+
 ### `Optional` ignoreEncryption
 
 • **ignoreEncryption**? : *undefined | false | true*
 
-*Defined in [api/PDFDocument.ts:70](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/PDFDocument.ts#L70)*
+*Defined in [api/PDFDocumentOptions.ts:23](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocumentOptions.ts#L23)*
 
 ___
 
@@ -33,7 +42,7 @@ ___
 
 • **parseSpeed**? : *[ParseSpeeds](../enums/parsespeeds.md) | number*
 
-*Defined in [api/PDFDocument.ts:71](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/PDFDocument.ts#L71)*
+*Defined in [api/PDFDocumentOptions.ts:24](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocumentOptions.ts#L24)*
 
 ___
 
@@ -41,7 +50,7 @@ ___
 
 • **throwOnInvalidObject**? : *undefined | false | true*
 
-*Defined in [api/PDFDocument.ts:72](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/PDFDocument.ts#L72)*
+*Defined in [api/PDFDocumentOptions.ts:25](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocumentOptions.ts#L25)*
 
 ___
 
@@ -49,4 +58,4 @@ ___
 
 • **updateMetadata**? : *undefined | false | true*
 
-*Defined in [api/PDFDocument.ts:73](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/PDFDocument.ts#L73)*
+*Defined in [api/PDFDocumentOptions.ts:26](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocumentOptions.ts#L26)*

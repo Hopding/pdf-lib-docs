@@ -9,6 +9,10 @@
         "title": "PDFDocument",
         "sidebar_label": "PDFDocument"
       },
+      "api/classes/pdfembeddedfile": {
+        "title": "PDFEmbeddedFile",
+        "sidebar_label": "PDFEmbeddedFile"
+      },
       "api/classes/pdfembeddedpage": {
         "title": "PDFEmbeddedPage",
         "sidebar_label": "PDFEmbeddedPage"
@@ -56,6 +60,10 @@
       "api/index": {
         "title": "pdf-lib",
         "sidebar_label": "Globals"
+      },
+      "api/interfaces/attachmentoptions": {
+        "title": "AttachmentOptions",
+        "sidebar_label": "AttachmentOptions"
       },
       "api/interfaces/base64saveoptions": {
         "title": "Base64SaveOptions",

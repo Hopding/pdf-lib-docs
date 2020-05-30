@@ -31,7 +31,7 @@ sidebar_label: "PDFPageDrawRectangleOptions"
 
 • **borderColor**? : *[Color](../index.md#color)*
 
-*Defined in [api/PDFPageOptions.ts:51](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/PDFPageOptions.ts#L51)*
+*Defined in [api/PDFPageOptions.ts:52](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFPageOptions.ts#L52)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **borderWidth**? : *undefined | number*
 
-*Defined in [api/PDFPageOptions.ts:49](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/PDFPageOptions.ts#L49)*
+*Defined in [api/PDFPageOptions.ts:50](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFPageOptions.ts#L50)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **color**? : *[Color](../index.md#color)*
 
-*Defined in [api/PDFPageOptions.ts:50](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/PDFPageOptions.ts#L50)*
+*Defined in [api/PDFPageOptions.ts:51](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFPageOptions.ts#L51)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **height**? : *undefined | number*
 
-*Defined in [api/PDFPageOptions.ts:45](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/PDFPageOptions.ts#L45)*
+*Defined in [api/PDFPageOptions.ts:46](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFPageOptions.ts#L46)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 • **rotate**? : *[Rotation](../index.md#rotation)*
 
-*Defined in [api/PDFPageOptions.ts:46](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/PDFPageOptions.ts#L46)*
+*Defined in [api/PDFPageOptions.ts:47](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFPageOptions.ts#L47)*
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 • **width**? : *undefined | number*
 
-*Defined in [api/PDFPageOptions.ts:44](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/PDFPageOptions.ts#L44)*
+*Defined in [api/PDFPageOptions.ts:45](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFPageOptions.ts#L45)*
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 • **x**? : *undefined | number*
 
-*Defined in [api/PDFPageOptions.ts:42](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/PDFPageOptions.ts#L42)*
+*Defined in [api/PDFPageOptions.ts:43](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFPageOptions.ts#L43)*
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 • **xSkew**? : *[Rotation](../index.md#rotation)*
 
-*Defined in [api/PDFPageOptions.ts:47](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/PDFPageOptions.ts#L47)*
+*Defined in [api/PDFPageOptions.ts:48](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFPageOptions.ts#L48)*
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 • **y**? : *undefined | number*
 
-*Defined in [api/PDFPageOptions.ts:43](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/PDFPageOptions.ts#L43)*
+*Defined in [api/PDFPageOptions.ts:44](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFPageOptions.ts#L44)*
 
 ___
 
@@ -103,4 +103,4 @@ ___
 
 • **ySkew**? : *[Rotation](../index.md#rotation)*
 
-*Defined in [api/PDFPageOptions.ts:48](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/PDFPageOptions.ts#L48)*
+*Defined in [api/PDFPageOptions.ts:49](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFPageOptions.ts#L49)*

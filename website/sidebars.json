@@ -22,6 +22,7 @@
     ],
     "Classes": [
       "api/classes/pdfdocument",
+      "api/classes/pdfembeddedfile",
       "api/classes/pdfembeddedpage",
       "api/classes/pdffont",
       "api/classes/pdfimage",
@@ -37,6 +38,7 @@
       "api/enums/textrenderingmode"
     ],
     "Interfaces": [
+      "api/interfaces/attachmentoptions",
       "api/interfaces/base64saveoptions",
       "api/interfaces/cmyk",
       "api/interfaces/createoptions",

@@ -16,6 +16,7 @@ sidebar_label: "PDFPageDrawLineOptions"
 
 * [color](pdfpagedrawlineoptions.md#optional-color)
 * [end](pdfpagedrawlineoptions.md#end)
+* [lineCap](pdfpagedrawlineoptions.md#optional-linecap)
 * [start](pdfpagedrawlineoptions.md#start)
 * [thickness](pdfpagedrawlineoptions.md#optional-thickness)
 
@@ -25,7 +26,7 @@ sidebar_label: "PDFPageDrawLineOptions"
 
 • **color**? : *[Color](../index.md#color)*
 
-*Defined in [api/PDFPageOptions.ts:58](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/PDFPageOptions.ts#L58)*
+*Defined in [api/PDFPageOptions.ts:59](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFPageOptions.ts#L59)*
 
 ___
 
@@ -33,7 +34,7 @@ ___
 
 • **end**: *object*
 
-*Defined in [api/PDFPageOptions.ts:56](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/PDFPageOptions.ts#L56)*
+*Defined in [api/PDFPageOptions.ts:57](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFPageOptions.ts#L57)*
 
 #### Type declaration:
 
@@ -43,11 +44,19 @@ ___
 
 ___
 
+### `Optional` lineCap
+
+• **lineCap**? : *[LineCapStyle](../enums/linecapstyle.md)*
+
+*Defined in [api/PDFPageOptions.ts:60](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFPageOptions.ts#L60)*
+
+___
+
 ###  start
 
 • **start**: *object*
 
-*Defined in [api/PDFPageOptions.ts:55](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/PDFPageOptions.ts#L55)*
+*Defined in [api/PDFPageOptions.ts:56](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFPageOptions.ts#L56)*
 
 #### Type declaration:
 
@@ -61,4 +70,4 @@ ___
 
 • **thickness**? : *undefined | number*
 
-*Defined in [api/PDFPageOptions.ts:57](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/PDFPageOptions.ts#L57)*
+*Defined in [api/PDFPageOptions.ts:58](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFPageOptions.ts#L58)*

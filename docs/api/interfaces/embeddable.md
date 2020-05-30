@@ -15,6 +15,7 @@ document before saving.
 
 ## Implemented by
 
+* [PDFEmbeddedFile](../classes/pdfembeddedfile.md)
 * [PDFEmbeddedPage](../classes/pdfembeddedpage.md)
 * [PDFFont](../classes/pdffont.md)
 * [PDFImage](../classes/pdfimage.md)
@@ -31,7 +32,7 @@ document before saving.
 
 • **embed**: *function*
 
-*Defined in [api/Embeddable.ts:6](https://github.com/Hopding/pdf-lib/blob/e1fccea/src/api/Embeddable.ts#L6)*
+*Defined in [api/Embeddable.ts:6](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/Embeddable.ts#L6)*
 
 #### Type declaration:
 
