@@ -88,6 +88,10 @@ const quickStart = `${pre}html
 </html>
 ${pre}`;
 
+const denoQuickStart = `${pre}bash
+$ deno run --allow-write https://pdf-lib.js.org/deno/quick_start.ts
+${pre}`;
+
 const installNpmModule = `${pre}sh
 # With npm
 npm install --save pdf-lib
@@ -290,6 +294,39 @@ async function embedFontAndMeasureText() {
 }
 ${pre}`;
 
+const addAttachmentsSnippet = `${pre}js
+import { PDFDocument } from 'pdf-lib'
+
+async function addAttachments() {
+  const jpgUrl = 'https://pdf-lib.js.org/assets/cat_riding_unicorn.jpg'
+  const pdfUrl = 'https://pdf-lib.js.org/assets/us_constitution.pdf';
+
+  const jpgAttachmentBytes = await fetch(jpgUrl).then(res => res.arrayBuffer())
+  const pdfAttachmentBytes = await fetch(pdfUrl).then(res => res.arrayBuffer())
+  
+  const pdfDoc = await PDFDocument.create()
+  
+  await pdfDoc.attach(jpgAttachmentBytes, 'cat_riding_unicorn.jpg', {
+    mimeType: 'image/jpeg',
+    description: 'Cool cat riding a unicorn! 🦄🐈🕶️',
+    creationDate: new Date('2019/12/01'),
+    modificationDate: new Date('2020/04/19'),
+  })
+  
+  await pdfDoc.attach(pdfAttachmentBytes, 'us_constitution.pdf', {
+    mimeType: 'application/pdf',
+    description: 'Constitution of the United States 🇺🇸🦅',
+    creationDate: new Date('1787/09/17'),
+    modificationDate: new Date('1992/05/07'),
+  })
+  
+  const page = pdfDoc.addPage();
+  page.drawText('This PDF has two attachments', { x: 135, y: 415 })
+  
+  const pdfBytes = await pdfDoc.save()
+}
+${pre}`;
+
 const setDocumentMetadataSnippet = `${pre}js
 import { PDFDocument, StandardFonts } from 'pdf-lib'
 
@@ -478,6 +515,22 @@ const JsFiddleSvg = () => (
   </svg>
 );
 
+// prettier-ignore
+const SectionHeader = ({ type = 'h2', children = '' }) => {
+  const id = children.toLowerCase().replace(/\s+/g, '-');
+  const header = (
+      type === 'h2' ? <h2 className="sectionHeader">{children}</h2>
+    : type === 'h3' ? <h3 className="sectionHeader">{children}</h3> 
+    : null
+  );
+  return (
+    <div className="anchorContainer">
+      <div id={id} className="anchor" />
+      <a href={`#${id}`}>{header}</a>
+    </div>
+  );
+};
+
 const ExampleHeader = ({ title, jsFiddleUrl }) => (
   <div
     style={{
@@ -488,7 +541,7 @@ const ExampleHeader = ({ title, jsFiddleUrl }) => (
       flexWrap: 'wrap',
     }}
   >
-    <h2>{title}</h2>
+    <SectionHeader>{title}</SectionHeader>
     {jsFiddleUrl && <JsFiddle url={jsFiddleUrl} />}
   </div>
 );
@@ -510,8 +563,8 @@ class Index extends React.Component {
                   content: (
                     <translate>
                       Create PDF documents from scratch, or modify existing PDF
-                      documents. Draw text, images, and vector graphics. Even
-                      embed your own fonts.
+                      documents. Draw text, images, and vector graphics. Embed
+                      your own fonts. Even embed and draw pages from other PDFs.
                     </translate>
                   ),
                 },
@@ -521,7 +574,7 @@ class Index extends React.Component {
                     <translate>
                       Written in TypeScript and compiled to pure JavaScript with
                       no native dependencies. Works in any JavaScript runtime,
-                      including browsers, Node, and even React Native.
+                      including browsers, Node, Deno, and even React Native.
                     </translate>
                   ),
                 },
@@ -539,15 +592,26 @@ class Index extends React.Component {
               layout="threeColumn"
             />
           </Container>
+          <Container>
+            <blockquote>
+              <a
+                href="https://github.com/Hopding/pdf-lib#features"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <translate>View the full feature set</translate>
+              </a>
+            </blockquote>
+          </Container>
 
           <Container
             background="light"
             className="quickStartAndExamples homeCodeSnippet"
           >
             <div>
-              <h2>
+              <SectionHeader>
                 <translate>Quick Start</translate>
-              </h2>
+              </SectionHeader>
               <MarkdownBlock>{quickStart}</MarkdownBlock>
               <translate>
                 Save this snippet as an HTML file and load it in your browser to
@@ -560,26 +624,42 @@ class Index extends React.Component {
           </Container>
 
           <Container
+            background="light"
+            className="quickStartAndExamples homeCodeSnippet"
+          >
+            <div>
+              <SectionHeader>
+                <translate>Deno</translate>
+              </SectionHeader>
+              <MarkdownBlock>{denoQuickStart}</MarkdownBlock>
+              <translate>
+                If you are using Deno, then try running the above command in
+                your terminal to quickly create a PDF document! 🦕
+              </translate>
+            </div>
+          </Container>
+
+          <Container
             id="install"
             background="light"
             className="quickStartAndExamples homeCodeSnippet"
           >
             <div>
-              <h2>
+              <SectionHeader>
                 <translate>Install</translate>
-              </h2>
-              <h3>
+              </SectionHeader>
+              <SectionHeader type="h3">
                 <translate>NPM Module</translate>
-              </h3>
+              </SectionHeader>
               <p>
                 If you are using <a href="https://www.npmjs.com/">npm</a> or{' '}
                 <a href="https://yarnpkg.com/lang/en/">yarn</a> as your package
                 manager:
                 <MarkdownBlock>{installNpmModule}</MarkdownBlock>
               </p>
-              <h3>
+              <SectionHeader type="h3">
                 <translate>UMD Module</translate>
-              </h3>
+              </SectionHeader>
               <p>
                 If you aren't using a package manager, UMD modules are available
                 on the {}
@@ -681,6 +761,17 @@ class Index extends React.Component {
                 </p>
                 <MarkdownBlock>{embedFontAndMeasureTextSnippet}</MarkdownBlock>
                 <Pdf url="/assets/embed_font_and_measure_text.pdf" />
+
+                <ExampleHeader
+                  title="Add Attachments"
+                  jsFiddleUrl="https://jsfiddle.net/Hopding/9snL63wj/5/"
+                />
+                <MarkdownBlock>{addAttachmentsSnippet}</MarkdownBlock>
+                <blockquote>
+                  Note that only some PDF readers can view attachments. This
+                  includes Adobe Reader, Foxit Reader, and Firefox.
+                </blockquote>
+                <Pdf url="/assets/add_attachments.pdf" />
 
                 <ExampleHeader
                   title="Set Document Metadata"

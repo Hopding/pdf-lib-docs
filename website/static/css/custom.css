@@ -1,4 +1,24 @@
-/* your custom css */
+/* section anchors/headers */
+
+.anchorContainer {
+  position: relative;
+}
+
+.anchor {
+  position: absolute;
+  top: -65px;
+}
+
+.sectionHeader {
+  color: #24292e;
+}
+
+.sectionHeader:hover {
+  color: #d50000;
+  text-decoration: underline;
+}
+
+/* misc */
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
