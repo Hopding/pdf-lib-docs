@@ -1,19 +1,14 @@
 /* section anchors/headers */
 
-.anchorContainer {
+.splashAnchorContainer {
   position: relative;
 }
 
-.anchor {
-  position: absolute;
-  top: -65px;
-}
-
-.sectionHeader {
+.splashSectionHeader {
   color: #24292e;
 }
 
-.sectionHeader:hover {
+.splashSectionHeader:hover {
   color: #d50000;
   text-decoration: underline;
 }

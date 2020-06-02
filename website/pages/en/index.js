@@ -519,12 +519,12 @@ const JsFiddleSvg = () => (
 const SectionHeader = ({ type = 'h2', children = '' }) => {
   const id = children.toLowerCase().replace(/\s+/g, '-');
   const header = (
-      type === 'h2' ? <h2 className="sectionHeader">{children}</h2>
-    : type === 'h3' ? <h3 className="sectionHeader">{children}</h3> 
+      type === 'h2' ? <h2 className="splashSectionHeader">{children}</h2>
+    : type === 'h3' ? <h3 className="splashSectionHeader">{children}</h3> 
     : null
   );
   return (
-    <div className="anchorContainer">
+    <div className="splashAnchorContainer">
       <div id={id} className="anchor" />
       <a href={`#${id}`}>{header}</a>
     </div>
