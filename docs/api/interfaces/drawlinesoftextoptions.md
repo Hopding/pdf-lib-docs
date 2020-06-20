@@ -18,6 +18,7 @@ sidebar_label: "DrawLinesOfTextOptions"
 
 * [color](drawlinesoftextoptions.md#color)
 * [font](drawlinesoftextoptions.md#font)
+* [graphicsState](drawlinesoftextoptions.md#optional-graphicsstate)
 * [lineHeight](drawlinesoftextoptions.md#lineheight)
 * [rotate](drawlinesoftextoptions.md#rotate)
 * [size](drawlinesoftextoptions.md#size)
@@ -34,7 +35,7 @@ sidebar_label: "DrawLinesOfTextOptions"
 
 *Inherited from [DrawTextOptions](drawtextoptions.md).[color](drawtextoptions.md#color)*
 
-*Defined in [api/operations.ts:34](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/operations.ts#L34)*
+*Defined in [api/operations.ts:35](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/operations.ts#L35)*
 
 ___
 
@@ -44,7 +45,17 @@ ___
 
 *Inherited from [DrawTextOptions](drawtextoptions.md).[font](drawtextoptions.md#font)*
 
-*Defined in [api/operations.ts:35](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/operations.ts#L35)*
+*Defined in [api/operations.ts:36](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/operations.ts#L36)*
+
+___
+
+### `Optional` graphicsState
+
+• **graphicsState**? : *string | PDFName*
+
+*Inherited from [DrawTextOptions](drawtextoptions.md).[graphicsState](drawtextoptions.md#optional-graphicsstate)*
+
+*Defined in [api/operations.ts:43](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/operations.ts#L43)*
 
 ___
 
@@ -52,7 +63,7 @@ ___
 
 • **lineHeight**: *number | PDFNumber*
 
-*Defined in [api/operations.ts:63](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/operations.ts#L63)*
+*Defined in [api/operations.ts:69](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/operations.ts#L69)*
 
 ___
 
@@ -62,7 +73,7 @@ ___
 
 *Inherited from [DrawTextOptions](drawtextoptions.md).[rotate](drawtextoptions.md#rotate)*
 
-*Defined in [api/operations.ts:37](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/operations.ts#L37)*
+*Defined in [api/operations.ts:38](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/operations.ts#L38)*
 
 ___
 
@@ -72,7 +83,7 @@ ___
 
 *Inherited from [DrawTextOptions](drawtextoptions.md).[size](drawtextoptions.md#size)*
 
-*Defined in [api/operations.ts:36](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/operations.ts#L36)*
+*Defined in [api/operations.ts:37](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/operations.ts#L37)*
 
 ___
 
@@ -82,7 +93,7 @@ ___
 
 *Inherited from [DrawTextOptions](drawtextoptions.md).[x](drawtextoptions.md#x)*
 
-*Defined in [api/operations.ts:40](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/operations.ts#L40)*
+*Defined in [api/operations.ts:41](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/operations.ts#L41)*
 
 ___
 
@@ -92,7 +103,7 @@ ___
 
 *Inherited from [DrawTextOptions](drawtextoptions.md).[xSkew](drawtextoptions.md#xskew)*
 
-*Defined in [api/operations.ts:38](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/operations.ts#L38)*
+*Defined in [api/operations.ts:39](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/operations.ts#L39)*
 
 ___
 
@@ -102,7 +113,7 @@ ___
 
 *Inherited from [DrawTextOptions](drawtextoptions.md).[y](drawtextoptions.md#y)*
 
-*Defined in [api/operations.ts:41](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/operations.ts#L41)*
+*Defined in [api/operations.ts:42](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/operations.ts#L42)*
 
 ___
 
@@ -112,4 +123,4 @@ ___
 
 *Inherited from [DrawTextOptions](drawtextoptions.md).[ySkew](drawtextoptions.md#yskew)*
 
-*Defined in [api/operations.ts:39](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/operations.ts#L39)*
+*Defined in [api/operations.ts:40](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/operations.ts#L40)*

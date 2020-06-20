@@ -29,7 +29,7 @@ sidebar_label: "AttachmentOptions"
 
 *Inherited from [AttachmentOptions](attachmentoptions.md).[creationDate](attachmentoptions.md#optional-creationdate)*
 
-*Defined in [core/embedders/FileEmbedder.ts:9](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/core/embedders/FileEmbedder.ts#L9)*
+*Defined in [core/embedders/FileEmbedder.ts:9](https://github.com/Hopding/pdf-lib/blob/556c73c/src/core/embedders/FileEmbedder.ts#L9)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 *Inherited from [AttachmentOptions](attachmentoptions.md).[description](attachmentoptions.md#optional-description)*
 
-*Defined in [core/embedders/FileEmbedder.ts:8](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/core/embedders/FileEmbedder.ts#L8)*
+*Defined in [core/embedders/FileEmbedder.ts:8](https://github.com/Hopding/pdf-lib/blob/556c73c/src/core/embedders/FileEmbedder.ts#L8)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 *Inherited from [AttachmentOptions](attachmentoptions.md).[mimeType](attachmentoptions.md#optional-mimetype)*
 
-*Defined in [core/embedders/FileEmbedder.ts:7](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/core/embedders/FileEmbedder.ts#L7)*
+*Defined in [core/embedders/FileEmbedder.ts:7](https://github.com/Hopding/pdf-lib/blob/556c73c/src/core/embedders/FileEmbedder.ts#L7)*
 
 ___
 
@@ -59,4 +59,4 @@ ___
 
 *Inherited from [AttachmentOptions](attachmentoptions.md).[modificationDate](attachmentoptions.md#optional-modificationdate)*
 
-*Defined in [core/embedders/FileEmbedder.ts:10](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/core/embedders/FileEmbedder.ts#L10)*
+*Defined in [core/embedders/FileEmbedder.ts:10](https://github.com/Hopding/pdf-lib/blob/556c73c/src/core/embedders/FileEmbedder.ts#L10)*

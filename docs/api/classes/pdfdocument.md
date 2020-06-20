@@ -69,7 +69,7 @@ Represents a PDF document.
 
 • **catalog**: *PDFCatalog*
 
-*Defined in [api/PDFDocument.ts:167](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L167)*
+*Defined in [api/PDFDocument.ts:167](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L167)*
 
 The catalog of this document.
 
@@ -79,7 +79,7 @@ ___
 
 • **context**: *PDFContext*
 
-*Defined in [api/PDFDocument.ts:164](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L164)*
+*Defined in [api/PDFDocument.ts:164](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L164)*
 
 The low-level context of this document.
 
@@ -89,7 +89,7 @@ ___
 
 • **defaultWordBreaks**: *string[]* = [' ']
 
-*Defined in [api/PDFDocument.ts:173](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L173)*
+*Defined in [api/PDFDocument.ts:173](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L173)*
 
 The default word breaks used in PDFPage.drawText
 
@@ -99,7 +99,7 @@ ___
 
 • **isEncrypted**: *boolean*
 
-*Defined in [api/PDFDocument.ts:170](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L170)*
+*Defined in [api/PDFDocument.ts:170](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L170)*
 
 Whether or not this document is encrypted.
 
@@ -109,7 +109,7 @@ Whether or not this document is encrypted.
 
 ▸ **addPage**(`page?`: [PDFPage](pdfpage.md) | [number, number]): *[PDFPage](pdfpage.md)*
 
-*Defined in [api/PDFDocument.ts:585](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L585)*
+*Defined in [api/PDFDocument.ts:585](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L585)*
 
 Add a page to the end of this document. This method accepts three
 different value types for the `page` parameter:
@@ -154,7 +154,7 @@ ___
 
 ▸ **attach**(`attachment`: string | Uint8Array | ArrayBuffer, `name`: string, `options`: [AttachmentOptions](../interfaces/attachmentoptions.md)): *Promise‹void›*
 
-*Defined in [api/PDFDocument.ts:734](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L734)*
+*Defined in [api/PDFDocument.ts:734](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L734)*
 
 Add an attachment to this document. Attachments are visible in the
 "Attachments" panel of Adobe Acrobat and some other PDF readers. Any
@@ -224,7 +224,7 @@ ___
 
 ▸ **copyPages**(`srcDoc`: [PDFDocument](pdfdocument.md), `indices`: number[]): *Promise‹[PDFPage](pdfpage.md)[]›*
 
-*Defined in [api/PDFDocument.ts:663](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L663)*
+*Defined in [api/PDFDocument.ts:663](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L663)*
 
 Copy pages from a source document into this document. Allows pages to be
 copied between different [PDFDocument](pdfdocument.md) instances. For example:
@@ -257,7 +257,7 @@ ___
 
 ▸ **embedFont**(`font`: [StandardFonts](../enums/standardfonts.md) | string | Uint8Array | ArrayBuffer, `options`: [EmbedFontOptions](../interfaces/embedfontoptions.md)): *Promise‹[PDFFont](pdffont.md)›*
 
-*Defined in [api/PDFDocument.ts:791](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L791)*
+*Defined in [api/PDFDocument.ts:791](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L791)*
 
 Embed a font into this document. The input data can be provided in multiple
 formats:
@@ -307,7 +307,7 @@ ___
 
 ▸ **embedJpg**(`jpg`: string | Uint8Array | ArrayBuffer): *Promise‹[PDFImage](pdfimage.md)›*
 
-*Defined in [api/PDFDocument.ts:877](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L877)*
+*Defined in [api/PDFDocument.ts:877](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L877)*
 
 Embed a JPEG image into this document. The input data can be provided in
 multiple formats:
@@ -351,7 +351,7 @@ ___
 
 ▸ **embedPage**(`page`: [PDFPage](pdfpage.md), `boundingBox?`: PageBoundingBox, `transformationMatrix?`: [TransformationMatrix](../index.md#transformationmatrix)): *Promise‹[PDFEmbeddedPage](pdfembeddedpage.md)›*
 
-*Defined in [api/PDFDocument.ts:999](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L999)*
+*Defined in [api/PDFDocument.ts:999](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L999)*
 
 Embed a single PDF page into this document.
 
@@ -393,7 +393,7 @@ ___
 
 ▸ **embedPages**(`pages`: [PDFPage](pdfpage.md)[], `boundingBoxes`: undefined | PageBoundingBox[], `transformationMatrices`: undefined | [number, number, number, number, number, number][]): *Promise‹[PDFEmbeddedPage](pdfembeddedpage.md)‹›[]›*
 
-*Defined in [api/PDFDocument.ts:1041](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L1041)*
+*Defined in [api/PDFDocument.ts:1041](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L1041)*
 
 Embed one or more PDF pages into this document.
 
@@ -430,7 +430,7 @@ ___
 
 ▸ **embedPdf**(`pdf`: string | Uint8Array | ArrayBuffer | [PDFDocument](pdfdocument.md), `indices`: number[]): *Promise‹[PDFEmbeddedPage](pdfembeddedpage.md)[]›*
 
-*Defined in [api/PDFDocument.ts:947](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L947)*
+*Defined in [api/PDFDocument.ts:947](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L947)*
 
 Embed one or more PDF pages into this document.
 
@@ -464,7 +464,7 @@ ___
 
 ▸ **embedPng**(`png`: string | Uint8Array | ArrayBuffer): *Promise‹[PDFImage](pdfimage.md)›*
 
-*Defined in [api/PDFDocument.ts:917](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L917)*
+*Defined in [api/PDFDocument.ts:917](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L917)*
 
 Embed a PNG image into this document. The input data can be provided in
 multiple formats:
@@ -508,7 +508,7 @@ ___
 
 ▸ **embedStandardFont**(`font`: [StandardFonts](../enums/standardfonts.md)): *[PDFFont](pdffont.md)*
 
-*Defined in [api/PDFDocument.ts:832](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L832)*
+*Defined in [api/PDFDocument.ts:832](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L832)*
 
 Embed a standard font into this document.
 For example:
@@ -533,7 +533,7 @@ ___
 
 ▸ **flush**(): *Promise‹void›*
 
-*Defined in [api/PDFDocument.ts:1090](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L1090)*
+*Defined in [api/PDFDocument.ts:1090](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L1090)*
 
 > **NOTE:** You shouldn't need to call this method directly. The [save](pdfdocument.md#save)
 > and [saveAsBase64](pdfdocument.md#saveasbase64) methods will automatically ensure that all embedded
@@ -552,7 +552,7 @@ ___
 
 ▸ **getAuthor**(): *string | undefined*
 
-*Defined in [api/PDFDocument.ts:244](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L244)*
+*Defined in [api/PDFDocument.ts:244](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L244)*
 
 Get this document's author metadata. The author appears in the
 "Document Properties" section of most PDF readers. For example:
@@ -570,7 +570,7 @@ ___
 
 ▸ **getCreationDate**(): *Date | undefined*
 
-*Defined in [api/PDFDocument.ts:320](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L320)*
+*Defined in [api/PDFDocument.ts:320](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L320)*
 
 Get this document's creation date metadata. The creation date appears in
 the "Document Properties" section of most PDF readers. For example:
@@ -589,7 +589,7 @@ ___
 
 ▸ **getCreator**(): *string | undefined*
 
-*Defined in [api/PDFDocument.ts:289](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L289)*
+*Defined in [api/PDFDocument.ts:289](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L289)*
 
 Get this document's creator metadata. The creator appears in the
 "Document Properties" section of most PDF readers. For example:
@@ -607,7 +607,7 @@ ___
 
 ▸ **getKeywords**(): *string | undefined*
 
-*Defined in [api/PDFDocument.ts:274](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L274)*
+*Defined in [api/PDFDocument.ts:274](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L274)*
 
 Get this document's keywords metadata. The keywords appear in the
 "Document Properties" section of most PDF readers. For example:
@@ -625,7 +625,7 @@ ___
 
 ▸ **getModificationDate**(): *Date | undefined*
 
-*Defined in [api/PDFDocument.ts:337](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L337)*
+*Defined in [api/PDFDocument.ts:337](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L337)*
 
 Get this document's modification date metadata. The modification date
 appears in the "Document Properties" section of most PDF readers.
@@ -645,7 +645,7 @@ ___
 
 ▸ **getPage**(`index`: number): *[PDFPage](pdfpage.md)*
 
-*Defined in [api/PDFDocument.ts:510](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L510)*
+*Defined in [api/PDFDocument.ts:510](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L510)*
 
 Get the page rendered at a particular `index` of the document. For example:
 ```js
@@ -670,7 +670,7 @@ ___
 
 ▸ **getPageCount**(): *number*
 
-*Defined in [api/PDFDocument.ts:480](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L480)*
+*Defined in [api/PDFDocument.ts:480](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L480)*
 
 Get the number of pages contained in this document. For example:
 ```js
@@ -687,7 +687,7 @@ ___
 
 ▸ **getPageIndices**(): *number[]*
 
-*Defined in [api/PDFDocument.ts:531](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L531)*
+*Defined in [api/PDFDocument.ts:531](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L531)*
 
 Get an array of indices for all the pages contained in this document. The
 array will contain a range of integers from
@@ -712,7 +712,7 @@ ___
 
 ▸ **getPages**(): *[PDFPage](pdfpage.md)[]*
 
-*Defined in [api/PDFDocument.ts:497](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L497)*
+*Defined in [api/PDFDocument.ts:497](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L497)*
 
 Get an array of all the pages contained in this document. The pages are
 stored in the array in the same order that they are rendered in the
@@ -734,7 +734,7 @@ ___
 
 ▸ **getProducer**(): *string | undefined*
 
-*Defined in [api/PDFDocument.ts:304](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L304)*
+*Defined in [api/PDFDocument.ts:304](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L304)*
 
 Get this document's producer metadata. The producer appears in the
 "Document Properties" section of most PDF readers. For example:
@@ -752,7 +752,7 @@ ___
 
 ▸ **getSubject**(): *string | undefined*
 
-*Defined in [api/PDFDocument.ts:259](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L259)*
+*Defined in [api/PDFDocument.ts:259](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L259)*
 
 Get this document's subject metadata. The subject appears in the
 "Document Properties" section of most PDF readers. For example:
@@ -770,7 +770,7 @@ ___
 
 ▸ **getTitle**(): *string | undefined*
 
-*Defined in [api/PDFDocument.ts:229](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L229)*
+*Defined in [api/PDFDocument.ts:229](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L229)*
 
 Get this document's title metadata. The title appears in the
 "Document Properties" section of most PDF readers. For example:
@@ -788,7 +788,7 @@ ___
 
 ▸ **insertPage**(`index`: number, `page?`: [PDFPage](pdfpage.md) | [number, number]): *[PDFPage](pdfpage.md)*
 
-*Defined in [api/PDFDocument.ts:622](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L622)*
+*Defined in [api/PDFDocument.ts:622](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L622)*
 
 Insert a page at a given index within this document. This method accepts
 three different value types for the `page` parameter:
@@ -834,7 +834,7 @@ ___
 
 ▸ **registerFontkit**(`fontkit`: Fontkit): *void*
 
-*Defined in [api/PDFDocument.ts:217](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L217)*
+*Defined in [api/PDFDocument.ts:217](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L217)*
 
 Register a fontkit instance. This must be done before custom fonts can
 be embedded. See [here](https://github.com/Hopding/pdf-lib/tree/Rewrite#fontkit-installation)
@@ -856,7 +856,7 @@ ___
 
 ▸ **removePage**(`index`: number): *void*
 
-*Defined in [api/PDFDocument.ts:546](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L546)*
+*Defined in [api/PDFDocument.ts:546](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L546)*
 
 Remove the page at a given index from this document. For example:
 ```js
@@ -881,7 +881,7 @@ ___
 
 ▸ **save**(`options`: [SaveOptions](../interfaces/saveoptions.md)): *Promise‹Uint8Array›*
 
-*Defined in [api/PDFDocument.ts:1113](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L1113)*
+*Defined in [api/PDFDocument.ts:1113](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L1113)*
 
 Serialize this document to an array of bytes making up a PDF file.
 For example:
@@ -911,7 +911,7 @@ ___
 
 ▸ **saveAsBase64**(`options`: [Base64SaveOptions](../interfaces/base64saveoptions.md)): *Promise‹string›*
 
-*Defined in [api/PDFDocument.ts:1146](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L1146)*
+*Defined in [api/PDFDocument.ts:1146](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L1146)*
 
 Serialize this document to a base64 encoded string or data URI making up a
 PDF file. For example:
@@ -940,7 +940,7 @@ ___
 
 ▸ **setAuthor**(`author`: string): *void*
 
-*Defined in [api/PDFDocument.ts:366](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L366)*
+*Defined in [api/PDFDocument.ts:366](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L366)*
 
 Set this document's author metadata. The author will appear in the
 "Document Properties" section of most PDF readers. For example:
@@ -962,7 +962,7 @@ ___
 
 ▸ **setCreationDate**(`creationDate`: Date): *void*
 
-*Defined in [api/PDFDocument.ts:452](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L452)*
+*Defined in [api/PDFDocument.ts:452](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L452)*
 
 Set this document's creation date metadata. The creation date will appear
 in the "Document Properties" section of most PDF readers. For example:
@@ -984,7 +984,7 @@ ___
 
 ▸ **setCreator**(`creator`: string): *void*
 
-*Defined in [api/PDFDocument.ts:408](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L408)*
+*Defined in [api/PDFDocument.ts:408](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L408)*
 
 Set this document's creator metadata. The creator will appear in the
 "Document Properties" section of most PDF readers. For example:
@@ -1006,7 +1006,7 @@ ___
 
 ▸ **setKeywords**(`keywords`: string[]): *void*
 
-*Defined in [api/PDFDocument.ts:394](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L394)*
+*Defined in [api/PDFDocument.ts:394](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L394)*
 
 Set this document's keyword metadata. These keywords will appear in the
 "Document Properties" section of most PDF readers. For example:
@@ -1028,7 +1028,7 @@ ___
 
 ▸ **setLanguage**(`language`: string): *void*
 
-*Defined in [api/PDFDocument.ts:438](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L438)*
+*Defined in [api/PDFDocument.ts:438](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L438)*
 
 Set this document's language metadata. The language will appear in the
 "Document Properties" section of some PDF readers. For example:
@@ -1050,7 +1050,7 @@ ___
 
 ▸ **setModificationDate**(`modificationDate`: Date): *void*
 
-*Defined in [api/PDFDocument.ts:467](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L467)*
+*Defined in [api/PDFDocument.ts:467](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L467)*
 
 Set this document's modification date metadata. The modification date will
 appear in the "Document Properties" section of most PDF readers. For
@@ -1073,7 +1073,7 @@ ___
 
 ▸ **setProducer**(`producer`: string): *void*
 
-*Defined in [api/PDFDocument.ts:422](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L422)*
+*Defined in [api/PDFDocument.ts:422](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L422)*
 
 Set this document's producer metadata. The producer will appear in the
 "Document Properties" section of most PDF readers. For example:
@@ -1095,7 +1095,7 @@ ___
 
 ▸ **setSubject**(`subject`: string): *void*
 
-*Defined in [api/PDFDocument.ts:380](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L380)*
+*Defined in [api/PDFDocument.ts:380](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L380)*
 
 Set this document's subject metadata. The subject will appear in the
 "Document Properties" section of most PDF readers. For example:
@@ -1117,7 +1117,7 @@ ___
 
 ▸ **setTitle**(`title`: string): *void*
 
-*Defined in [api/PDFDocument.ts:352](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L352)*
+*Defined in [api/PDFDocument.ts:352](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L352)*
 
 Set this document's title metadata. The title will appear in the
 "Document Properties" section of most PDF readers. For example:
@@ -1139,7 +1139,7 @@ ___
 
 ▸ **create**(`options`: [CreateOptions](../interfaces/createoptions.md)): *Promise‹[PDFDocument](pdfdocument.md)‹››*
 
-*Defined in [api/PDFDocument.ts:151](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L151)*
+*Defined in [api/PDFDocument.ts:151](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L151)*
 
 Create a new [PDFDocument](pdfdocument.md).
 
@@ -1159,7 +1159,7 @@ ___
 
 ▸ **load**(`pdf`: string | Uint8Array | ArrayBuffer, `options`: [LoadOptions](../interfaces/loadoptions.md)): *Promise‹[PDFDocument](pdfdocument.md)‹››*
 
-*Defined in [api/PDFDocument.ts:120](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/PDFDocument.ts#L120)*
+*Defined in [api/PDFDocument.ts:120](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocument.ts#L120)*
 
 Load an existing [PDFDocument](pdfdocument.md). The input data can be provided in
 multiple formats:

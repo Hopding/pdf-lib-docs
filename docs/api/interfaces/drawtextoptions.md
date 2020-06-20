@@ -18,6 +18,7 @@ sidebar_label: "DrawTextOptions"
 
 * [color](drawtextoptions.md#color)
 * [font](drawtextoptions.md#font)
+* [graphicsState](drawtextoptions.md#optional-graphicsstate)
 * [rotate](drawtextoptions.md#rotate)
 * [size](drawtextoptions.md#size)
 * [x](drawtextoptions.md#x)
@@ -31,7 +32,7 @@ sidebar_label: "DrawTextOptions"
 
 • **color**: *[Color](../index.md#color)*
 
-*Defined in [api/operations.ts:34](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/operations.ts#L34)*
+*Defined in [api/operations.ts:35](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/operations.ts#L35)*
 
 ___
 
@@ -39,7 +40,15 @@ ___
 
 • **font**: *string | PDFName*
 
-*Defined in [api/operations.ts:35](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/operations.ts#L35)*
+*Defined in [api/operations.ts:36](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/operations.ts#L36)*
+
+___
+
+### `Optional` graphicsState
+
+• **graphicsState**? : *string | PDFName*
+
+*Defined in [api/operations.ts:43](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/operations.ts#L43)*
 
 ___
 
@@ -47,7 +56,7 @@ ___
 
 • **rotate**: *[Rotation](../index.md#rotation)*
 
-*Defined in [api/operations.ts:37](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/operations.ts#L37)*
+*Defined in [api/operations.ts:38](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/operations.ts#L38)*
 
 ___
 
@@ -55,7 +64,7 @@ ___
 
 • **size**: *number | PDFNumber*
 
-*Defined in [api/operations.ts:36](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/operations.ts#L36)*
+*Defined in [api/operations.ts:37](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/operations.ts#L37)*
 
 ___
 
@@ -63,7 +72,7 @@ ___
 
 • **x**: *number | PDFNumber*
 
-*Defined in [api/operations.ts:40](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/operations.ts#L40)*
+*Defined in [api/operations.ts:41](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/operations.ts#L41)*
 
 ___
 
@@ -71,7 +80,7 @@ ___
 
 • **xSkew**: *[Rotation](../index.md#rotation)*
 
-*Defined in [api/operations.ts:38](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/operations.ts#L38)*
+*Defined in [api/operations.ts:39](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/operations.ts#L39)*
 
 ___
 
@@ -79,7 +88,7 @@ ___
 
 • **y**: *number | PDFNumber*
 
-*Defined in [api/operations.ts:41](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/operations.ts#L41)*
+*Defined in [api/operations.ts:42](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/operations.ts#L42)*
 
 ___
 
@@ -87,4 +96,4 @@ ___
 
 • **ySkew**: *[Rotation](../index.md#rotation)*
 
-*Defined in [api/operations.ts:39](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/operations.ts#L39)*
+*Defined in [api/operations.ts:40](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/operations.ts#L40)*

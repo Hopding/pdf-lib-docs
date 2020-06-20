@@ -20,7 +20,7 @@ sidebar_label: "LineJoinStyle"
 
 • **Bevel**: = 2
 
-*Defined in [api/operators.ts:101](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/operators.ts#L101)*
+*Defined in [api/operators.ts:101](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/operators.ts#L101)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **Miter**: = 0
 
-*Defined in [api/operators.ts:99](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/operators.ts#L99)*
+*Defined in [api/operators.ts:99](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/operators.ts#L99)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **Round**: = 1
 
-*Defined in [api/operators.ts:100](https://github.com/Hopding/pdf-lib/blob/c47aae6/src/api/operators.ts#L100)*
+*Defined in [api/operators.ts:100](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/operators.ts#L100)*
