@@ -14,7 +14,11 @@ sidebar_label: "PDFPageDrawCircleOptions"
 
 ### Properties
 
+* [blendMode](pdfpagedrawcircleoptions.md#optional-blendmode)
 * [borderColor](pdfpagedrawcircleoptions.md#optional-bordercolor)
+* [borderDashArray](pdfpagedrawcircleoptions.md#optional-borderdasharray)
+* [borderDashPhase](pdfpagedrawcircleoptions.md#optional-borderdashphase)
+* [borderLineCap](pdfpagedrawcircleoptions.md#optional-borderlinecap)
 * [borderOpacity](pdfpagedrawcircleoptions.md#optional-borderopacity)
 * [borderWidth](pdfpagedrawcircleoptions.md#optional-borderwidth)
 * [color](pdfpagedrawcircleoptions.md#optional-color)
@@ -25,11 +29,43 @@ sidebar_label: "PDFPageDrawCircleOptions"
 
 ## Properties
 
+### `Optional` blendMode
+
+• **blendMode**? : *[BlendMode](../enums/blendmode.md)*
+
+*Defined in [api/PDFPageOptions.ts:155](https://github.com/Hopding/pdf-lib/blob/9862898/src/api/PDFPageOptions.ts#L155)*
+
+___
+
 ### `Optional` borderColor
 
 • **borderColor**? : *[Color](../index.md#color)*
 
-*Defined in [api/PDFPageOptions.ts:112](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFPageOptions.ts#L112)*
+*Defined in [api/PDFPageOptions.ts:149](https://github.com/Hopding/pdf-lib/blob/9862898/src/api/PDFPageOptions.ts#L149)*
+
+___
+
+### `Optional` borderDashArray
+
+• **borderDashArray**? : *number[]*
+
+*Defined in [api/PDFPageOptions.ts:152](https://github.com/Hopding/pdf-lib/blob/9862898/src/api/PDFPageOptions.ts#L152)*
+
+___
+
+### `Optional` borderDashPhase
+
+• **borderDashPhase**? : *undefined | number*
+
+*Defined in [api/PDFPageOptions.ts:153](https://github.com/Hopding/pdf-lib/blob/9862898/src/api/PDFPageOptions.ts#L153)*
+
+___
+
+### `Optional` borderLineCap
+
+• **borderLineCap**? : *[LineCapStyle](../enums/linecapstyle.md)*
+
+*Defined in [api/PDFPageOptions.ts:154](https://github.com/Hopding/pdf-lib/blob/9862898/src/api/PDFPageOptions.ts#L154)*
 
 ___
 
@@ -37,7 +73,7 @@ ___
 
 • **borderOpacity**? : *undefined | number*
 
-*Defined in [api/PDFPageOptions.ts:113](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFPageOptions.ts#L113)*
+*Defined in [api/PDFPageOptions.ts:150](https://github.com/Hopding/pdf-lib/blob/9862898/src/api/PDFPageOptions.ts#L150)*
 
 ___
 
@@ -45,7 +81,7 @@ ___
 
 • **borderWidth**? : *undefined | number*
 
-*Defined in [api/PDFPageOptions.ts:114](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFPageOptions.ts#L114)*
+*Defined in [api/PDFPageOptions.ts:151](https://github.com/Hopding/pdf-lib/blob/9862898/src/api/PDFPageOptions.ts#L151)*
 
 ___
 
@@ -53,7 +89,7 @@ ___
 
 • **color**? : *[Color](../index.md#color)*
 
-*Defined in [api/PDFPageOptions.ts:110](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFPageOptions.ts#L110)*
+*Defined in [api/PDFPageOptions.ts:147](https://github.com/Hopding/pdf-lib/blob/9862898/src/api/PDFPageOptions.ts#L147)*
 
 ___
 
@@ -61,7 +97,7 @@ ___
 
 • **opacity**? : *undefined | number*
 
-*Defined in [api/PDFPageOptions.ts:111](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFPageOptions.ts#L111)*
+*Defined in [api/PDFPageOptions.ts:148](https://github.com/Hopding/pdf-lib/blob/9862898/src/api/PDFPageOptions.ts#L148)*
 
 ___
 
@@ -69,7 +105,7 @@ ___
 
 • **size**? : *undefined | number*
 
-*Defined in [api/PDFPageOptions.ts:109](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFPageOptions.ts#L109)*
+*Defined in [api/PDFPageOptions.ts:146](https://github.com/Hopding/pdf-lib/blob/9862898/src/api/PDFPageOptions.ts#L146)*
 
 ___
 
@@ -77,7 +113,7 @@ ___
 
 • **x**? : *undefined | number*
 
-*Defined in [api/PDFPageOptions.ts:107](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFPageOptions.ts#L107)*
+*Defined in [api/PDFPageOptions.ts:144](https://github.com/Hopding/pdf-lib/blob/9862898/src/api/PDFPageOptions.ts#L144)*
 
 ___
 
@@ -85,4 +121,4 @@ ___
 
 • **y**? : *undefined | number*
 
-*Defined in [api/PDFPageOptions.ts:108](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFPageOptions.ts#L108)*
+*Defined in [api/PDFPageOptions.ts:145](https://github.com/Hopding/pdf-lib/blob/9862898/src/api/PDFPageOptions.ts#L145)*

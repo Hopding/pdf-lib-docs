@@ -29,6 +29,10 @@
         "title": "PDFPage",
         "sidebar_label": "PDFPage"
       },
+      "api/enums/blendmode": {
+        "title": "BlendMode",
+        "sidebar_label": "BlendMode"
+      },
       "api/enums/colortypes": {
         "title": "ColorTypes",
         "sidebar_label": "ColorTypes"

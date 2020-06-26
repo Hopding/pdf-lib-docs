@@ -29,6 +29,7 @@
       "api/classes/pdfpage"
     ],
     "Enums": [
+      "api/enums/blendmode",
       "api/enums/colortypes",
       "api/enums/linecapstyle",
       "api/enums/linejoinstyle",

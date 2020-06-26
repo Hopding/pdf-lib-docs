@@ -22,4 +22,4 @@ sidebar_label: "EmbedFontOptions"
 
 • **subset**? : *undefined | false | true*
 
-*Defined in [api/PDFDocumentOptions.ts:35](https://github.com/Hopding/pdf-lib/blob/556c73c/src/api/PDFDocumentOptions.ts#L35)*
+*Defined in [api/PDFDocumentOptions.ts:35](https://github.com/Hopding/pdf-lib/blob/9862898/src/api/PDFDocumentOptions.ts#L35)*
