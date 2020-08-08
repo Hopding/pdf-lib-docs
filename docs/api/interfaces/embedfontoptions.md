@@ -14,12 +14,21 @@ sidebar_label: "EmbedFontOptions"
 
 ### Properties
 
+* [customName](embedfontoptions.md#optional-customname)
 * [subset](embedfontoptions.md#optional-subset)
 
 ## Properties
+
+### `Optional` customName
+
+• **customName**? : *undefined | string*
+
+*Defined in [api/PDFDocumentOptions.ts:36](https://github.com/Hopding/pdf-lib/blob/6ac676a/src/api/PDFDocumentOptions.ts#L36)*
+
+___
 
 ### `Optional` subset
 
 • **subset**? : *undefined | false | true*
 
-*Defined in [api/PDFDocumentOptions.ts:35](https://github.com/Hopding/pdf-lib/blob/9862898/src/api/PDFDocumentOptions.ts#L35)*
+*Defined in [api/PDFDocumentOptions.ts:35](https://github.com/Hopding/pdf-lib/blob/6ac676a/src/api/PDFDocumentOptions.ts#L35)*
