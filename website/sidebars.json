@@ -1,32 +1,23 @@
 {
-  "docs": {
-    "Docusaurus": [
-      "doc1"
-    ],
-    "First Category": [
-      "doc2"
-    ],
-    "Second Category": [
-      "doc3"
-    ]
-  },
-  "docs-other": {
-    "First Category": [
-      "doc4",
-      "doc5"
-    ]
-  },
   "pdf-lib": {
     "Introduction": [
       "api/index"
     ],
     "Classes": [
+      "api/classes/pdfbutton",
+      "api/classes/pdfcheckbox",
       "api/classes/pdfdocument",
-      "api/classes/pdfembeddedfile",
+      "api/classes/pdfdropdown",
       "api/classes/pdfembeddedpage",
+      "api/classes/pdffield",
       "api/classes/pdffont",
+      "api/classes/pdfform",
       "api/classes/pdfimage",
-      "api/classes/pdfpage"
+      "api/classes/pdfoptionlist",
+      "api/classes/pdfpage",
+      "api/classes/pdfradiogroup",
+      "api/classes/pdfsignature",
+      "api/classes/pdftextfield"
     ],
     "Enums": [
       "api/enums/blendmode",
@@ -36,20 +27,29 @@
       "api/enums/parsespeeds",
       "api/enums/rotationtypes",
       "api/enums/standardfonts",
+      "api/enums/textalignment",
       "api/enums/textrenderingmode"
     ],
     "Interfaces": [
       "api/interfaces/attachmentoptions",
       "api/interfaces/base64saveoptions",
       "api/interfaces/cmyk",
+      "api/interfaces/combedtextlayout",
       "api/interfaces/createoptions",
       "api/interfaces/degrees",
       "api/interfaces/drawlinesoftextoptions",
+      "api/interfaces/drawtextlinesoptions",
       "api/interfaces/drawtextoptions",
       "api/interfaces/embedfontoptions",
       "api/interfaces/embeddable",
+      "api/interfaces/fieldappearanceoptions",
       "api/interfaces/grayscale",
+      "api/interfaces/layoutbounds",
+      "api/interfaces/layoutcombedtextoptions",
+      "api/interfaces/layoutsinglelinetextoptions",
+      "api/interfaces/layouttextoptions",
       "api/interfaces/loadoptions",
+      "api/interfaces/multilinetextlayout",
       "api/interfaces/pdfpagedrawcircleoptions",
       "api/interfaces/pdfpagedrawellipseoptions",
       "api/interfaces/pdfpagedrawimageoptions",
@@ -61,7 +61,9 @@
       "api/interfaces/pdfpagedrawtextoptions",
       "api/interfaces/rgb",
       "api/interfaces/radians",
-      "api/interfaces/saveoptions"
+      "api/interfaces/saveoptions",
+      "api/interfaces/singlelinetextlayout",
+      "api/interfaces/textposition"
     ]
   }
 }

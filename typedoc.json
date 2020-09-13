@@ -8,6 +8,7 @@
     "./src/utils/**/*",
     "./src/api/errors.ts",
     "./src/api/svgPath.ts",
+    "./src/api/PDFEmbeddedFile.ts",
     "./src/types/fontkit.ts"
   ],
   "excludePrivate": true,

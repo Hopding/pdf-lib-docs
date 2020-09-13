@@ -19,6 +19,7 @@ sidebar_label: "Base64SaveOptions"
 * [addDefaultPage](base64saveoptions.md#optional-adddefaultpage)
 * [dataUri](base64saveoptions.md#optional-datauri)
 * [objectsPerTick](base64saveoptions.md#optional-objectspertick)
+* [updateFieldAppearances](base64saveoptions.md#optional-updatefieldappearances)
 * [useObjectStreams](base64saveoptions.md#optional-useobjectstreams)
 
 ## Properties
@@ -29,7 +30,7 @@ sidebar_label: "Base64SaveOptions"
 
 *Inherited from [SaveOptions](saveoptions.md).[addDefaultPage](saveoptions.md#optional-adddefaultpage)*
 
-*Defined in [api/PDFDocumentOptions.ts:14](https://github.com/Hopding/pdf-lib/blob/6ac676a/src/api/PDFDocumentOptions.ts#L14)*
+*Defined in [api/PDFDocumentOptions.ts:14](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFDocumentOptions.ts#L14)*
 
 ___
 
@@ -37,7 +38,7 @@ ___
 
 • **dataUri**? : *undefined | false | true*
 
-*Defined in [api/PDFDocumentOptions.ts:19](https://github.com/Hopding/pdf-lib/blob/6ac676a/src/api/PDFDocumentOptions.ts#L19)*
+*Defined in [api/PDFDocumentOptions.ts:20](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFDocumentOptions.ts#L20)*
 
 ___
 
@@ -47,7 +48,17 @@ ___
 
 *Inherited from [SaveOptions](saveoptions.md).[objectsPerTick](saveoptions.md#optional-objectspertick)*
 
-*Defined in [api/PDFDocumentOptions.ts:15](https://github.com/Hopding/pdf-lib/blob/6ac676a/src/api/PDFDocumentOptions.ts#L15)*
+*Defined in [api/PDFDocumentOptions.ts:15](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFDocumentOptions.ts#L15)*
+
+___
+
+### `Optional` updateFieldAppearances
+
+• **updateFieldAppearances**? : *undefined | false | true*
+
+*Inherited from [SaveOptions](saveoptions.md).[updateFieldAppearances](saveoptions.md#optional-updatefieldappearances)*
+
+*Defined in [api/PDFDocumentOptions.ts:16](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFDocumentOptions.ts#L16)*
 
 ___
 
@@ -57,4 +68,4 @@ ___
 
 *Inherited from [SaveOptions](saveoptions.md).[useObjectStreams](saveoptions.md#optional-useobjectstreams)*
 
-*Defined in [api/PDFDocumentOptions.ts:13](https://github.com/Hopding/pdf-lib/blob/6ac676a/src/api/PDFDocumentOptions.ts#L13)*
+*Defined in [api/PDFDocumentOptions.ts:13](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFDocumentOptions.ts#L13)*

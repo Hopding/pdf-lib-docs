@@ -5,29 +5,61 @@
     "previous": "Previous",
     "tagline": " Create and modify PDF documents in any JavaScript environment.",
     "docs": {
+      "api/classes/pdfbutton": {
+        "title": "PDFButton",
+        "sidebar_label": "PDFButton"
+      },
+      "api/classes/pdfcheckbox": {
+        "title": "PDFCheckBox",
+        "sidebar_label": "PDFCheckBox"
+      },
       "api/classes/pdfdocument": {
         "title": "PDFDocument",
         "sidebar_label": "PDFDocument"
       },
-      "api/classes/pdfembeddedfile": {
-        "title": "PDFEmbeddedFile",
-        "sidebar_label": "PDFEmbeddedFile"
+      "api/classes/pdfdropdown": {
+        "title": "PDFDropdown",
+        "sidebar_label": "PDFDropdown"
       },
       "api/classes/pdfembeddedpage": {
         "title": "PDFEmbeddedPage",
         "sidebar_label": "PDFEmbeddedPage"
       },
+      "api/classes/pdffield": {
+        "title": "PDFField",
+        "sidebar_label": "PDFField"
+      },
       "api/classes/pdffont": {
         "title": "PDFFont",
         "sidebar_label": "PDFFont"
+      },
+      "api/classes/pdfform": {
+        "title": "PDFForm",
+        "sidebar_label": "PDFForm"
       },
       "api/classes/pdfimage": {
         "title": "PDFImage",
         "sidebar_label": "PDFImage"
       },
+      "api/classes/pdfoptionlist": {
+        "title": "PDFOptionList",
+        "sidebar_label": "PDFOptionList"
+      },
       "api/classes/pdfpage": {
         "title": "PDFPage",
         "sidebar_label": "PDFPage"
+      },
+      "api/classes/pdfradiogroup": {
+        "title": "PDFRadioGroup",
+        "sidebar_label": "PDFRadioGroup"
+      },
+      "api/classes/pdfsignature": {
+        "title": "PDFSignature",
+        "sidebar_label": "PDFSignature"
+      },
+      "api/classes/pdftextfield": {
+        "title": "PDFTextField",
+        "sidebar_label": "PDFTextField"
       },
       "api/enums/blendmode": {
         "title": "BlendMode",
@@ -57,6 +89,10 @@
         "title": "StandardFonts",
         "sidebar_label": "StandardFonts"
       },
+      "api/enums/textalignment": {
+        "title": "TextAlignment",
+        "sidebar_label": "TextAlignment"
+      },
       "api/enums/textrenderingmode": {
         "title": "TextRenderingMode",
         "sidebar_label": "TextRenderingMode"
@@ -77,6 +113,10 @@
         "title": "CMYK",
         "sidebar_label": "CMYK"
       },
+      "api/interfaces/combedtextlayout": {
+        "title": "CombedTextLayout",
+        "sidebar_label": "CombedTextLayout"
+      },
       "api/interfaces/createoptions": {
         "title": "CreateOptions",
         "sidebar_label": "CreateOptions"
@@ -88,6 +128,10 @@
       "api/interfaces/drawlinesoftextoptions": {
         "title": "DrawLinesOfTextOptions",
         "sidebar_label": "DrawLinesOfTextOptions"
+      },
+      "api/interfaces/drawtextlinesoptions": {
+        "title": "DrawTextLinesOptions",
+        "sidebar_label": "DrawTextLinesOptions"
       },
       "api/interfaces/drawtextoptions": {
         "title": "DrawTextOptions",
@@ -101,13 +145,37 @@
         "title": "EmbedFontOptions",
         "sidebar_label": "EmbedFontOptions"
       },
+      "api/interfaces/fieldappearanceoptions": {
+        "title": "FieldAppearanceOptions",
+        "sidebar_label": "FieldAppearanceOptions"
+      },
       "api/interfaces/grayscale": {
         "title": "Grayscale",
         "sidebar_label": "Grayscale"
       },
+      "api/interfaces/layoutbounds": {
+        "title": "LayoutBounds",
+        "sidebar_label": "LayoutBounds"
+      },
+      "api/interfaces/layoutcombedtextoptions": {
+        "title": "LayoutCombedTextOptions",
+        "sidebar_label": "LayoutCombedTextOptions"
+      },
+      "api/interfaces/layoutsinglelinetextoptions": {
+        "title": "LayoutSinglelineTextOptions",
+        "sidebar_label": "LayoutSinglelineTextOptions"
+      },
+      "api/interfaces/layouttextoptions": {
+        "title": "LayoutTextOptions",
+        "sidebar_label": "LayoutTextOptions"
+      },
       "api/interfaces/loadoptions": {
         "title": "LoadOptions",
         "sidebar_label": "LoadOptions"
+      },
+      "api/interfaces/multilinetextlayout": {
+        "title": "MultilineTextLayout",
+        "sidebar_label": "MultilineTextLayout"
       },
       "api/interfaces/pdfpagedrawcircleoptions": {
         "title": "PDFPageDrawCircleOptions",
@@ -157,9 +225,13 @@
         "title": "SaveOptions",
         "sidebar_label": "SaveOptions"
       },
-      "help": {
-        "title": "Need Help?",
-        "sidebar_label": "Help"
+      "api/interfaces/singlelinetextlayout": {
+        "title": "SinglelineTextLayout",
+        "sidebar_label": "SinglelineTextLayout"
+      },
+      "api/interfaces/textposition": {
+        "title": "TextPosition",
+        "sidebar_label": "TextPosition"
       }
     },
     "links": {
@@ -168,9 +240,6 @@
       "GitHub": "GitHub"
     },
     "categories": {
-      "Docusaurus": "Docusaurus",
-      "First Category": "First Category",
-      "Second Category": "Second Category",
       "Introduction": "Introduction",
       "Classes": "Classes",
       "Enums": "Enums",
