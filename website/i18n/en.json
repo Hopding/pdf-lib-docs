@@ -254,6 +254,8 @@
     "Written in TypeScript and compiled to pure JavaScript with no native dependencies. Works in any JavaScript runtime, including browsers, Node, Deno, and even React Native.|no description given": "Written in TypeScript and compiled to pure JavaScript with no native dependencies. Works in any JavaScript runtime, including browsers, Node, Deno, and even React Native.",
     "Split and Merge|no description given": "Split and Merge",
     "Add, insert, and remove pages. Split a single PDF into separate ones. Or merge multiple PDFs into a single document.|no description given": "Add, insert, and remove pages. Split a single PDF into separate ones. Or merge multiple PDFs into a single document.",
+    "Fill Forms|no description given": "Fill Forms",
+    "Create new forms or fill and read existing fields. Check boxes, buttons, radio groups, dropdowns, option lists, and text fields are all supported.|no description given": "Create new forms or fill and read existing fields. Check boxes, buttons, radio groups, dropdowns, option lists, and text fields are all supported.",
     "View the full feature set|no description given": "View the full feature set",
     "Quick Start|no description given": "Quick Start",
     "Save this snippet as an HTML file and load it in your browser to get up and running with pdf-lib as quickly as possible.|no description given": "Save this snippet as an HTML file and load it in your browser to get up and running with pdf-lib as quickly as possible.",
