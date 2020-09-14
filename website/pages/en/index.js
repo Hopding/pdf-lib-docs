@@ -909,14 +909,14 @@ class Index extends React.Component {
 
                 <ExampleHeader
                   title="Create Form"
-                  // jsFiddleUrl="https://jsfiddle.net/Hopding/rxwsc8f5/13/"
+                  jsFiddleUrl="https://jsfiddle.net/Hopding/bct7vngL/4/"
                 />
                 <MarkdownBlock>{createFormSnippet}</MarkdownBlock>
                 <Pdf url="/assets/create_form.pdf" />
 
                 <ExampleHeader
                   title="Fill Form"
-                  // jsFiddleUrl="https://jsfiddle.net/Hopding/rxwsc8f5/13/"
+                  jsFiddleUrl="https://jsfiddle.net/Hopding/0mwfqkv6/3/"
                 />
                 <MarkdownBlock>{fillFormSnippet}</MarkdownBlock>
                 <Pdf url="/assets/fill_form.pdf" />
