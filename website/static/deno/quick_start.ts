@@ -1,4 +1,4 @@
-import { PDFDocument } from 'https://cdn.pika.dev/pdf-lib@^1.7.0';
+import { PDFDocument } from 'https://cdn.skypack.dev/pdf-lib@^1.7.0';
 
 const pdfDoc = await PDFDocument.create();
 const page = pdfDoc.addPage([350, 400]);
