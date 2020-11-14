@@ -232,6 +232,10 @@
       "api/interfaces/textposition": {
         "title": "TextPosition",
         "sidebar_label": "TextPosition"
+      },
+      "help": {
+        "title": "Need Help?",
+        "sidebar_label": "Help"
       }
     },
     "links": {
