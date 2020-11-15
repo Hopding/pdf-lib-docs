@@ -41,6 +41,10 @@
         "title": "PDFImage",
         "sidebar_label": "PDFImage"
       },
+      "api/classes/pdfjavascript": {
+        "title": "PDFJavaScript",
+        "sidebar_label": "PDFJavaScript"
+      },
       "api/classes/pdfoptionlist": {
         "title": "PDFOptionList",
         "sidebar_label": "PDFOptionList"

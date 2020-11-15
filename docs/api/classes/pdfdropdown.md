@@ -78,7 +78,7 @@ choose an option from the list (see [PDFDropdown.isEditable](pdfdropdown.md#ised
 
 *Overrides [PDFField](pdffield.md).[acroField](pdffield.md#acrofield)*
 
-*Defined in [api/form/PDFDropdown.ts:55](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L55)*
+*Defined in [api/form/PDFDropdown.ts:55](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L55)*
 
 The low-level PDFAcroComboBox wrapped by this dropdown.
 
@@ -90,7 +90,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[doc](pdffield.md#doc)*
 
-*Defined in [api/form/PDFField.ts:80](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L80)*
+*Defined in [api/form/PDFField.ts:81](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L81)*
 
 The document to which this field belongs.
 
@@ -102,7 +102,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[ref](pdffield.md#ref)*
 
-*Defined in [api/form/PDFField.ts:77](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L77)*
+*Defined in [api/form/PDFField.ts:78](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L78)*
 
 The unique reference assigned to this field within the document.
 
@@ -112,7 +112,7 @@ The unique reference assigned to this field within the document.
 
 ▸ **addOptions**(`options`: string | string[]): *void*
 
-*Defined in [api/form/PDFDropdown.ts:157](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L157)*
+*Defined in [api/form/PDFDropdown.ts:157](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L157)*
 
 Add to the list of options that are available for this dropdown. Users
 will be able to select these values in a PDF reader. In addition to the
@@ -138,7 +138,7 @@ ___
 
 ▸ **addToPage**(`page`: [PDFPage](pdfpage.md), `options?`: [FieldAppearanceOptions](../interfaces/fieldappearanceoptions.md)): *void*
 
-*Defined in [api/form/PDFDropdown.ts:503](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L503)*
+*Defined in [api/form/PDFDropdown.ts:503](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L503)*
 
 Show this dropdown on the specified page. For example:
 ```js
@@ -180,7 +180,7 @@ ___
 
 ▸ **clear**(): *void*
 
-*Defined in [api/form/PDFDropdown.ts:261](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L261)*
+*Defined in [api/form/PDFDropdown.ts:261](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L261)*
 
 Clear all selected values for this dropdown. This operation is equivalent
 to selecting an empty list. This method will update the underlying state
@@ -203,7 +203,7 @@ ___
 
 *Overrides void*
 
-*Defined in [api/form/PDFDropdown.ts:572](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L572)*
+*Defined in [api/form/PDFDropdown.ts:572](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L572)*
 
 Update the appearance streams for each of this dropdown's widgets using
 the default appearance provider for dropdowns. For example:
@@ -227,7 +227,7 @@ ___
 
 ▸ **disableEditing**(): *void*
 
-*Defined in [api/form/PDFDropdown.ts:308](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L308)*
+*Defined in [api/form/PDFDropdown.ts:308](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L308)*
 
 Do not allow users to edit the selected value of this dropdown in PDF
 readers with their keyboard. This will constrain the selected value of
@@ -249,7 +249,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[disableExporting](pdffield.md#disableexporting)*
 
-*Defined in [api/form/PDFField.ts:235](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L235)*
+*Defined in [api/form/PDFField.ts:236](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L236)*
 
 Indicate that this field's value should **not** be exported when the form
 is submitted in a PDF reader. For example:
@@ -266,7 +266,7 @@ ___
 
 ▸ **disableMultiselect**(): *void*
 
-*Defined in [api/form/PDFDropdown.ts:387](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L387)*
+*Defined in [api/form/PDFDropdown.ts:387](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L387)*
 
 Do not allow users to select more than one option from this dropdown's
 option list. For example:
@@ -285,7 +285,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[disableReadOnly](pdffield.md#disablereadonly)*
 
-*Defined in [api/form/PDFField.ts:158](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L158)*
+*Defined in [api/form/PDFField.ts:159](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L159)*
 
 Allow users to interact with this field and change its value in PDF
 readers via mouse and keyboard input. For example:
@@ -304,7 +304,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[disableRequired](pdffield.md#disablerequired)*
 
-*Defined in [api/form/PDFField.ts:196](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L196)*
+*Defined in [api/form/PDFField.ts:197](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L197)*
 
 Do not require this field to have a value when the form is submitted.
 For example:
@@ -321,7 +321,7 @@ ___
 
 ▸ **disableSelectOnClick**(): *void*
 
-*Defined in [api/form/PDFDropdown.ts:471](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L471)*
+*Defined in [api/form/PDFDropdown.ts:471](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L471)*
 
 Wait to store the option selected by a user until they leave this dropdown
 field (by clicking outside of it - on another field, for example).
@@ -339,7 +339,7 @@ ___
 
 ▸ **disableSorting**(): *void*
 
-*Defined in [api/form/PDFDropdown.ts:349](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L349)*
+*Defined in [api/form/PDFDropdown.ts:349](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L349)*
 
 Do not always display the option list of this dropdown in alphabetical
 order. Instead, display the options in whichever order they were added
@@ -357,7 +357,7 @@ ___
 
 ▸ **disableSpellChecking**(): *void*
 
-*Defined in [api/form/PDFDropdown.ts:427](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L427)*
+*Defined in [api/form/PDFDropdown.ts:427](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L427)*
 
 Do not allow PDF readers to spell check the selected option of this
 dropdown. For example:
@@ -374,7 +374,7 @@ ___
 
 ▸ **enableEditing**(): *void*
 
-*Defined in [api/form/PDFDropdown.ts:293](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L293)*
+*Defined in [api/form/PDFDropdown.ts:293](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L293)*
 
 Allow users to edit the selected value of this dropdown in PDF readers
 with their keyboard. This means that the selected value of this dropdown
@@ -397,7 +397,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[enableExporting](pdffield.md#enableexporting)*
 
-*Defined in [api/form/PDFField.ts:223](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L223)*
+*Defined in [api/form/PDFField.ts:224](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L224)*
 
 Indicate that this field's value should be exported when the form is
 submitted in a PDF reader. For example:
@@ -414,7 +414,7 @@ ___
 
 ▸ **enableMultiselect**(): *void*
 
-*Defined in [api/form/PDFDropdown.ts:375](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L375)*
+*Defined in [api/form/PDFDropdown.ts:375](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L375)*
 
 Allow users to select more than one option from this dropdown's option
 list. For example:
@@ -433,7 +433,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[enableReadOnly](pdffield.md#enablereadonly)*
 
-*Defined in [api/form/PDFField.ts:146](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L146)*
+*Defined in [api/form/PDFField.ts:147](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L147)*
 
 Prevent PDF readers from allowing users to interact with this field or
 change its value. The field will not respond to mouse or keyboard input.
@@ -455,7 +455,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[enableRequired](pdffield.md#enablerequired)*
 
-*Defined in [api/form/PDFField.ts:184](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L184)*
+*Defined in [api/form/PDFField.ts:185](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L185)*
 
 Require this field to have a value when the form is submitted.
 For example:
@@ -472,7 +472,7 @@ ___
 
 ▸ **enableSelectOnClick**(): *void*
 
-*Defined in [api/form/PDFDropdown.ts:458](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L458)*
+*Defined in [api/form/PDFDropdown.ts:458](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L458)*
 
 Store the option selected by a user immediately after the user clicks the
 option. Do not wait for the user to leave this dropdown field (by clicking
@@ -490,7 +490,7 @@ ___
 
 ▸ **enableSorting**(): *void*
 
-*Defined in [api/form/PDFDropdown.ts:336](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L336)*
+*Defined in [api/form/PDFDropdown.ts:336](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L336)*
 
 Always display the option list of this dropdown in alphabetical order,
 irrespective of the order in which the options were added to this dropdown.
@@ -508,7 +508,7 @@ ___
 
 ▸ **enableSpellChecking**(): *void*
 
-*Defined in [api/form/PDFDropdown.ts:415](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L415)*
+*Defined in [api/form/PDFDropdown.ts:415](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L415)*
 
 Allow PDF readers to spell check the selected option of this dropdown.
 For example:
@@ -527,7 +527,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[getName](pdffield.md#getname)*
 
-*Defined in [api/form/PDFField.ts:116](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L116)*
+*Defined in [api/form/PDFField.ts:117](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L117)*
 
 Get the fully qualified name of this field. For example:
 ```js
@@ -557,7 +557,7 @@ ___
 
 ▸ **getOptions**(): *string[]*
 
-*Defined in [api/form/PDFDropdown.ts:82](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L82)*
+*Defined in [api/form/PDFDropdown.ts:82](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L82)*
 
 Get the list of available options for this dropdown. These options will be
 displayed to users who click on this dropdown in a PDF reader.
@@ -578,7 +578,7 @@ ___
 
 ▸ **getSelected**(): *string[]*
 
-*Defined in [api/form/PDFDropdown.ts:111](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L111)*
+*Defined in [api/form/PDFDropdown.ts:111](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L111)*
 
 Get the selected options for this dropdown. These are the values that were
 selected by a human user via a PDF reader, or programatically via
@@ -605,7 +605,7 @@ ___
 
 ▸ **isEditable**(): *boolean*
 
-*Defined in [api/form/PDFDropdown.ts:277](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L277)*
+*Defined in [api/form/PDFDropdown.ts:277](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L277)*
 
 Returns `true` if users are allowed to edit the selected value of this
 dropdown directly and are not constrained by the list of available
@@ -628,7 +628,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[isExported](pdffield.md#isexported)*
 
-*Defined in [api/form/PDFField.ts:211](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L211)*
+*Defined in [api/form/PDFField.ts:212](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L212)*
 
 Returns `true` if this field's value should be exported when the form is
 submitted. See [PDFField.enableExporting](pdffield.md#enableexporting) and
@@ -649,7 +649,7 @@ ___
 
 ▸ **isMultiselect**(): *boolean*
 
-*Defined in [api/form/PDFDropdown.ts:363](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L363)*
+*Defined in [api/form/PDFDropdown.ts:363](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L363)*
 
 Returns `true` if multiple options can be selected from this dropdown's
 option list. See [PDFDropdown.enableMultiselect](pdfdropdown.md#enablemultiselect) and
@@ -671,7 +671,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[isReadOnly](pdffield.md#isreadonly)*
 
-*Defined in [api/form/PDFField.ts:131](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L131)*
+*Defined in [api/form/PDFField.ts:132](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L132)*
 
 Returns `true` if this field is read only. This means that PDF readers
 will not allow users to interact with the field or change its value. See
@@ -694,7 +694,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[isRequired](pdffield.md#isrequired)*
 
-*Defined in [api/form/PDFField.ts:172](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L172)*
+*Defined in [api/form/PDFField.ts:173](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L173)*
 
 Returns `true` if this field must have a value when the form is submitted.
 See [PDFField.enableRequired](pdffield.md#enablerequired) and [PDFField.disableRequired](pdffield.md#disablerequired).
@@ -714,7 +714,7 @@ ___
 
 ▸ **isSelectOnClick**(): *boolean*
 
-*Defined in [api/form/PDFDropdown.ts:445](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L445)*
+*Defined in [api/form/PDFDropdown.ts:445](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L445)*
 
 Returns `true` if the option selected by a user is stored, or "committed",
 when the user clicks the option. The alternative is that the user's
@@ -738,7 +738,7 @@ ___
 
 ▸ **isSorted**(): *boolean*
 
-*Defined in [api/form/PDFDropdown.ts:323](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L323)*
+*Defined in [api/form/PDFDropdown.ts:323](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L323)*
 
 Returns `true` if the option list of this dropdown is always displayed
 in alphabetical order, irrespective of the order in which the options
@@ -759,7 +759,7 @@ ___
 
 ▸ **isSpellChecked**(): *boolean*
 
-*Defined in [api/form/PDFDropdown.ts:403](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L403)*
+*Defined in [api/form/PDFDropdown.ts:403](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L403)*
 
 Returns `true` if the selected option should be spell checked by PDF
 readers. Spell checking will only be performed if this dropdown allows
@@ -783,7 +783,7 @@ ___
 
 *Overrides void*
 
-*Defined in [api/form/PDFDropdown.ts:548](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L548)*
+*Defined in [api/form/PDFDropdown.ts:548](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L548)*
 
 Returns `true` if this dropdown has been marked as dirty, or if any of
 this dropdown's widgets do not have an appearance stream. For example:
@@ -802,7 +802,7 @@ ___
 
 ▸ **select**(`options`: string | string[], `merge`: boolean): *void*
 
-*Defined in [api/form/PDFDropdown.ts:218](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L218)*
+*Defined in [api/form/PDFDropdown.ts:218](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L218)*
 
 Select one or more values for this dropdown. This operation is analogous
 to a human user opening the dropdown in a PDF reader and clicking on a
@@ -858,7 +858,7 @@ ___
 
 ▸ **setOptions**(`options`: string[]): *void*
 
-*Defined in [api/form/PDFDropdown.ts:135](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L135)*
+*Defined in [api/form/PDFDropdown.ts:135](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L135)*
 
 Set the list of options that are available for this dropdown. These are
 the values that will be available for users to select when they view this
@@ -885,7 +885,7 @@ ___
 
 ▸ **updateAppearances**(`font`: [PDFFont](pdffont.md), `provider?`: [AppearanceProviderFor](../index.md#appearanceproviderfor)‹[PDFDropdown](pdfdropdown.md)›): *void*
 
-*Defined in [api/form/PDFDropdown.ts:593](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L593)*
+*Defined in [api/form/PDFDropdown.ts:593](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L593)*
 
 Update the appearance streams for each of this dropdown's widgets using
 the given appearance provider. If no `provider` is passed, the default
@@ -914,7 +914,7 @@ ___
 
 ▸ **of**(`acroComboBox`: PDFAcroComboBox, `ref`: PDFRef, `doc`: [PDFDocument](pdfdocument.md)): *[PDFDropdown](pdfdropdown.md)‹›*
 
-*Defined in [api/form/PDFDropdown.ts:51](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFDropdown.ts#L51)*
+*Defined in [api/form/PDFDropdown.ts:51](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFDropdown.ts#L51)*
 
 > **NOTE:** You probably don't want to call this method directly. Instead,
 > consider using the [PDFForm.getDropdown](pdfform.md#getdropdown) method, which will create an

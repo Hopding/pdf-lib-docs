@@ -73,7 +73,7 @@ Represents a single page of a [PDFDocument](pdfdocument.md).
 
 • **doc**: *[PDFDocument](pdfdocument.md)*
 
-*Defined in [api/PDFPage.ts:99](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L99)*
+*Defined in [api/PDFPage.ts:99](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L99)*
 
 The document to which this page belongs.
 
@@ -83,7 +83,7 @@ ___
 
 • **node**: *PDFPageLeaf*
 
-*Defined in [api/PDFPage.ts:93](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L93)*
+*Defined in [api/PDFPage.ts:93](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L93)*
 
 The low-level PDFDictionary wrapped by this page.
 
@@ -93,7 +93,7 @@ ___
 
 • **ref**: *PDFRef*
 
-*Defined in [api/PDFPage.ts:96](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L96)*
+*Defined in [api/PDFPage.ts:96](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L96)*
 
 The unique reference assigned to this page within the document.
 
@@ -103,7 +103,7 @@ The unique reference assigned to this page within the document.
 
 ▸ **drawCircle**(`options`: [PDFPageDrawCircleOptions](../interfaces/pdfpagedrawcircleoptions.md)): *void*
 
-*Defined in [api/PDFPage.ts:1447](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L1447)*
+*Defined in [api/PDFPage.ts:1447](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L1447)*
 
 Draw a circle on this page. For example:
 ```js
@@ -135,7 +135,7 @@ ___
 
 ▸ **drawEllipse**(`options`: [PDFPageDrawEllipseOptions](../interfaces/pdfpagedrawellipseoptions.md)): *void*
 
-*Defined in [api/PDFPage.ts:1370](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L1370)*
+*Defined in [api/PDFPage.ts:1370](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L1370)*
 
 Draw an ellipse on this page. For example:
 ```js
@@ -168,7 +168,7 @@ ___
 
 ▸ **drawImage**(`image`: [PDFImage](pdfimage.md), `options`: [PDFPageDrawImageOptions](../interfaces/pdfpagedrawimageoptions.md)): *void*
 
-*Defined in [api/PDFPage.ts:963](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L963)*
+*Defined in [api/PDFPage.ts:963](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L963)*
 
 Draw an image on this page. For example:
 ```js
@@ -207,7 +207,7 @@ ___
 
 ▸ **drawLine**(`options`: [PDFPageDrawLineOptions](../interfaces/pdfpagedrawlineoptions.md)): *void*
 
-*Defined in [api/PDFPage.ts:1199](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L1199)*
+*Defined in [api/PDFPage.ts:1199](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L1199)*
 
 Draw a line on this page. For example:
 ```js
@@ -236,7 +236,7 @@ ___
 
 ▸ **drawPage**(`embeddedPage`: [PDFEmbeddedPage](pdfembeddedpage.md), `options`: [PDFPageDrawPageOptions](../interfaces/pdfpagedrawpageoptions.md)): *void*
 
-*Defined in [api/PDFPage.ts:1031](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L1031)*
+*Defined in [api/PDFPage.ts:1031](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L1031)*
 
 Draw an embedded PDF page on this page. For example:
 ```js
@@ -281,7 +281,7 @@ ___
 
 ▸ **drawRectangle**(`options`: [PDFPageDrawRectangleOptions](../interfaces/pdfpagedrawrectangleoptions.md)): *void*
 
-*Defined in [api/PDFPage.ts:1262](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L1262)*
+*Defined in [api/PDFPage.ts:1262](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L1262)*
 
 Draw a rectangle on this page. For example:
 ```js
@@ -315,7 +315,7 @@ ___
 
 ▸ **drawSquare**(`options`: [PDFPageDrawSquareOptions](../interfaces/pdfpagedrawsquareoptions.md)): *void*
 
-*Defined in [api/PDFPage.ts:1345](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L1345)*
+*Defined in [api/PDFPage.ts:1345](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L1345)*
 
 Draw a square on this page. For example:
 ```js
@@ -348,7 +348,7 @@ ___
 
 ▸ **drawSvgPath**(`path`: string, `options`: [PDFPageDrawSVGOptions](../interfaces/pdfpagedrawsvgoptions.md)): *void*
 
-*Defined in [api/PDFPage.ts:1125](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L1125)*
+*Defined in [api/PDFPage.ts:1125](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L1125)*
 
 Draw an SVG path on this page. For example:
 ```js
@@ -399,7 +399,7 @@ ___
 
 ▸ **drawText**(`text`: string, `options`: [PDFPageDrawTextOptions](../interfaces/pdfpagedrawtextoptions.md)): *void*
 
-*Defined in [api/PDFPage.ts:880](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L880)*
+*Defined in [api/PDFPage.ts:880](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L880)*
 
 Draw one or more lines of text on this page. For example:
 ```js
@@ -450,7 +450,7 @@ ___
 
 ▸ **getArtBox**(): *object*
 
-*Defined in [api/PDFPage.ts:528](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L528)*
+*Defined in [api/PDFPage.ts:528](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L528)*
 
 Get the rectangle defining this page's ArtBox. For example:
 ```js
@@ -481,7 +481,7 @@ ___
 
 ▸ **getBleedBox**(): *object*
 
-*Defined in [api/PDFPage.ts:488](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L488)*
+*Defined in [api/PDFPage.ts:488](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L488)*
 
 Get the rectangle defining this page's BleedBox. For example:
 ```js
@@ -515,7 +515,7 @@ ___
 
 ▸ **getCropBox**(): *object*
 
-*Defined in [api/PDFPage.ts:466](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L466)*
+*Defined in [api/PDFPage.ts:466](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L466)*
 
 Get the rectangle defining this page's CropBox. For example:
 ```js
@@ -548,7 +548,7 @@ ___
 
 ▸ **getHeight**(): *number*
 
-*Defined in [api/PDFPage.ts:424](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L424)*
+*Defined in [api/PDFPage.ts:424](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L424)*
 
 Get this page's height. For example:
 ```js
@@ -567,7 +567,7 @@ ___
 
 ▸ **getMediaBox**(): *object*
 
-*Defined in [api/PDFPage.ts:445](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L445)*
+*Defined in [api/PDFPage.ts:445](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L445)*
 
 Get the rectangle defining this page's MediaBox. For example:
 ```js
@@ -601,7 +601,7 @@ ___
 
 ▸ **getPosition**(): *object*
 
-*Defined in [api/PDFPage.ts:688](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L688)*
+*Defined in [api/PDFPage.ts:688](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L688)*
 
 Get the default position of this page. For example:
 ```js
@@ -622,7 +622,7 @@ ___
 
 ▸ **getRotation**(): *[Rotation](../index.md#rotation)*
 
-*Defined in [api/PDFPage.ts:148](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L148)*
+*Defined in [api/PDFPage.ts:148](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L148)*
 
 Get this page's rotation angle in degrees. For example:
 ```js
@@ -640,7 +640,7 @@ ___
 
 ▸ **getSize**(): *object*
 
-*Defined in [api/PDFPage.ts:395](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L395)*
+*Defined in [api/PDFPage.ts:395](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L395)*
 
 Get this page's width and height. For example:
 ```js
@@ -664,7 +664,7 @@ ___
 
 ▸ **getTrimBox**(): *object*
 
-*Defined in [api/PDFPage.ts:509](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L509)*
+*Defined in [api/PDFPage.ts:509](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L509)*
 
 Get the rectangle defining this page's TrimBox. For example:
 ```js
@@ -697,7 +697,7 @@ ___
 
 ▸ **getWidth**(): *number*
 
-*Defined in [api/PDFPage.ts:410](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L410)*
+*Defined in [api/PDFPage.ts:410](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L410)*
 
 Get this page's width. For example:
 ```js
@@ -716,7 +716,7 @@ ___
 
 ▸ **getX**(): *number*
 
-*Defined in [api/PDFPage.ts:699](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L699)*
+*Defined in [api/PDFPage.ts:699](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L699)*
 
 Get the default x coordinate of this page. For example:
 ```js
@@ -733,7 +733,7 @@ ___
 
 ▸ **getY**(): *number*
 
-*Defined in [api/PDFPage.ts:710](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L710)*
+*Defined in [api/PDFPage.ts:710](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L710)*
 
 Get the default y coordinate of this page. For example:
 ```js
@@ -750,7 +750,7 @@ ___
 
 ▸ **moveDown**(`yDecrease`: number): *void*
 
-*Defined in [api/PDFPage.ts:749](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L749)*
+*Defined in [api/PDFPage.ts:749](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L749)*
 
 Change the default position of this page to be further down the y-axis.
 For example:
@@ -776,7 +776,7 @@ ___
 
 ▸ **moveLeft**(`xDecrease`: number): *void*
 
-*Defined in [api/PDFPage.ts:785](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L785)*
+*Defined in [api/PDFPage.ts:785](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L785)*
 
 Change the default position of this page to be further left on the x-axis.
 For example:
@@ -802,7 +802,7 @@ ___
 
 ▸ **moveRight**(`xIncrease`: number): *void*
 
-*Defined in [api/PDFPage.ts:803](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L803)*
+*Defined in [api/PDFPage.ts:803](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L803)*
 
 Change the default position of this page to be further right on the y-axis.
 For example:
@@ -828,7 +828,7 @@ ___
 
 ▸ **moveTo**(`x`: number, `y`: number): *void*
 
-*Defined in [api/PDFPage.ts:729](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L729)*
+*Defined in [api/PDFPage.ts:729](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L729)*
 
 Change the default position of this page. For example:
 ```js
@@ -857,7 +857,7 @@ ___
 
 ▸ **moveUp**(`yIncrease`: number): *void*
 
-*Defined in [api/PDFPage.ts:767](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L767)*
+*Defined in [api/PDFPage.ts:767](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L767)*
 
 Change the default position of this page to be further up the y-axis.
 For example:
@@ -883,7 +883,7 @@ ___
 
 ▸ **pushOperators**(...`operator`: PDFOperator[]): *void*
 
-*Defined in [api/PDFPage.ts:837](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L837)*
+*Defined in [api/PDFPage.ts:837](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L837)*
 
 Push one or more operators to the end of this page's current content
 stream. For example:
@@ -926,7 +926,7 @@ ___
 
 ▸ **resetPosition**(): *void*
 
-*Defined in [api/PDFPage.ts:586](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L586)*
+*Defined in [api/PDFPage.ts:586](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L586)*
 
 Reset the x and y coordinates of this page to `(0, 0)`. This operation is
 often useful after calling [translateContent](pdfpage.md#translatecontent). For example:
@@ -952,7 +952,7 @@ ___
 
 ▸ **setArtBox**(`x`: number, `y`: number, `width`: number, `height`: number): *void*
 
-*Defined in [api/PDFPage.ts:375](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L375)*
+*Defined in [api/PDFPage.ts:375](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L375)*
 
 Set the ArtBox of this page. For example:
 ```js
@@ -982,7 +982,7 @@ ___
 
 ▸ **setBleedBox**(`x`: number, `y`: number, `width`: number, `height`: number): *void*
 
-*Defined in [api/PDFPage.ts:323](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L323)*
+*Defined in [api/PDFPage.ts:323](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L323)*
 
 Set the BleedBox of this page. For example:
 ```js
@@ -1012,7 +1012,7 @@ ___
 
 ▸ **setCropBox**(`x`: number, `y`: number, `width`: number, `height`: number): *void*
 
-*Defined in [api/PDFPage.ts:297](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L297)*
+*Defined in [api/PDFPage.ts:297](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L297)*
 
 Set the CropBox of this page. For example:
 ```js
@@ -1042,7 +1042,7 @@ ___
 
 ▸ **setFont**(`font`: [PDFFont](pdffont.md)): *void*
 
-*Defined in [api/PDFPage.ts:612](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L612)*
+*Defined in [api/PDFPage.ts:612](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L612)*
 
 Choose a default font for this page. The default font will be used whenever
 text is drawn on this page and no font is specified. For example:
@@ -1076,7 +1076,7 @@ ___
 
 ▸ **setFontColor**(`fontColor`: [Color](../index.md#color)): *void*
 
-*Defined in [api/PDFPage.ts:655](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L655)*
+*Defined in [api/PDFPage.ts:655](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L655)*
 
 Choose a default font color for this page. The default font color will be
 used whenever text is drawn on this page and no font color is specified.
@@ -1105,7 +1105,7 @@ ___
 
 ▸ **setFontSize**(`fontSize`: number): *void*
 
-*Defined in [api/PDFPage.ts:634](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L634)*
+*Defined in [api/PDFPage.ts:634](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L634)*
 
 Choose a default font size for this page. The default font size will be
 used whenever text is drawn on this page and no font size is specified.
@@ -1132,7 +1132,7 @@ ___
 
 ▸ **setHeight**(`height`: number): *void*
 
-*Defined in [api/PDFPage.ts:249](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L249)*
+*Defined in [api/PDFPage.ts:249](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L249)*
 
 Resize this page by increasing or decreasing its height. For example:
 ```js
@@ -1157,7 +1157,7 @@ ___
 
 ▸ **setLineHeight**(`lineHeight`: number): *void*
 
-*Defined in [api/PDFPage.ts:676](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L676)*
+*Defined in [api/PDFPage.ts:676](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L676)*
 
 Choose a default line height for this page. The default line height will be
 used whenever text is drawn on this page and no line height is specified.
@@ -1186,7 +1186,7 @@ ___
 
 ▸ **setMediaBox**(`x`: number, `y`: number, `width`: number, `height`: number): *void*
 
-*Defined in [api/PDFPage.ts:271](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L271)*
+*Defined in [api/PDFPage.ts:271](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L271)*
 
 Set the MediaBox of this page. For example:
 ```js
@@ -1216,7 +1216,7 @@ ___
 
 ▸ **setRotation**(`angle`: [Rotation](../index.md#rotation)): *void*
 
-*Defined in [api/PDFPage.ts:134](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L134)*
+*Defined in [api/PDFPage.ts:134](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L134)*
 
 Rotate this page by a multiple of 90 degrees. For example:
 ```js
@@ -1243,7 +1243,7 @@ ___
 
 ▸ **setSize**(`width`: number, `height`: number): *void*
 
-*Defined in [api/PDFPage.ts:189](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L189)*
+*Defined in [api/PDFPage.ts:189](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L189)*
 
 Resize this page by increasing or decreasing its width and height. For
 example:
@@ -1292,7 +1292,7 @@ ___
 
 ▸ **setTrimBox**(`x`: number, `y`: number, `width`: number, `height`: number): *void*
 
-*Defined in [api/PDFPage.ts:349](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L349)*
+*Defined in [api/PDFPage.ts:349](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L349)*
 
 Set the TrimBox of this page. For example:
 ```js
@@ -1322,7 +1322,7 @@ ___
 
 ▸ **setWidth**(`width`: number): *void*
 
-*Defined in [api/PDFPage.ts:232](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L232)*
+*Defined in [api/PDFPage.ts:232](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L232)*
 
 Resize this page by increasing or decreasing its width. For example:
 ```js
@@ -1347,7 +1347,7 @@ ___
 
 ▸ **translateContent**(`x`: number, `y`: number): *void*
 
-*Defined in [api/PDFPage.ts:550](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L550)*
+*Defined in [api/PDFPage.ts:550](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L550)*
 
 Translate this page's content to a new location on the page. This operation
 is often useful after resizing the page with [setSize](pdfpage.md#setsize). For example:
@@ -1378,7 +1378,7 @@ ___
 
 ▸ **create**(`doc`: [PDFDocument](pdfdocument.md)): *[PDFPage](pdfpage.md)‹›*
 
-*Defined in [api/PDFPage.ts:84](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L84)*
+*Defined in [api/PDFPage.ts:84](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L84)*
 
 > **NOTE:** You probably don't want to call this method directly. Instead,
 > consider using the [PDFDocument.addPage](pdfdocument.md#addpage) and [PDFDocument.insertPage](pdfdocument.md#insertpage)
@@ -1400,7 +1400,7 @@ ___
 
 ▸ **of**(`leafNode`: PDFPageLeaf, `ref`: PDFRef, `doc`: [PDFDocument](pdfdocument.md)): *[PDFPage](pdfpage.md)‹›*
 
-*Defined in [api/PDFPage.ts:72](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/PDFPage.ts#L72)*
+*Defined in [api/PDFPage.ts:72](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFPage.ts#L72)*
 
 > **NOTE:** You probably don't want to call this method directly. Instead,
 > consider using the [PDFDocument.addPage](pdfdocument.md#addpage) and [PDFDocument.insertPage](pdfdocument.md#insertpage)

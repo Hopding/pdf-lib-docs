@@ -24,7 +24,7 @@ sidebar_label: "CombedTextLayout"
 
 • **bounds**: *[LayoutBounds](layoutbounds.md)*
 
-*Defined in [api/text/layout.ts:215](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/text/layout.ts#L215)*
+*Defined in [api/text/layout.ts:215](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/text/layout.ts#L215)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **cells**: *[TextPosition](textposition.md)[]*
 
-*Defined in [api/text/layout.ts:216](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/text/layout.ts#L216)*
+*Defined in [api/text/layout.ts:216](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/text/layout.ts#L216)*
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 • **fontSize**: *number*
 
-*Defined in [api/text/layout.ts:217](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/text/layout.ts#L217)*
+*Defined in [api/text/layout.ts:217](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/text/layout.ts#L217)*

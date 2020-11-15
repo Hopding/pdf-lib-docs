@@ -82,7 +82,7 @@ to be entered (see [PDFTextField.isMultiline](pdftextfield.md#ismultiline)).
 
 *Overrides [PDFField](pdffield.md).[acroField](pdffield.md#acrofield)*
 
-*Defined in [api/form/PDFTextField.ts:62](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L62)*
+*Defined in [api/form/PDFTextField.ts:62](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L62)*
 
 The low-level PDFAcroText wrapped by this text field.
 
@@ -94,7 +94,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[doc](pdffield.md#doc)*
 
-*Defined in [api/form/PDFField.ts:80](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L80)*
+*Defined in [api/form/PDFField.ts:81](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L81)*
 
 The document to which this field belongs.
 
@@ -106,7 +106,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[ref](pdffield.md#ref)*
 
-*Defined in [api/form/PDFField.ts:77](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L77)*
+*Defined in [api/form/PDFField.ts:78](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L78)*
 
 The unique reference assigned to this field within the document.
 
@@ -116,7 +116,7 @@ The unique reference assigned to this field within the document.
 
 ▸ **addToPage**(`page`: [PDFPage](pdfpage.md), `options?`: [FieldAppearanceOptions](../interfaces/fieldappearanceoptions.md)): *void*
 
-*Defined in [api/form/PDFTextField.ts:648](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L648)*
+*Defined in [api/form/PDFTextField.ts:648](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L648)*
 
 Show this text field on the specified page. For example:
 ```js
@@ -159,7 +159,7 @@ ___
 
 *Overrides void*
 
-*Defined in [api/form/PDFTextField.ts:717](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L717)*
+*Defined in [api/form/PDFTextField.ts:717](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L717)*
 
 Update the appearance streams for each of this text field's widgets using
 the default appearance provider for text fields. For example:
@@ -183,7 +183,7 @@ ___
 
 ▸ **disableCombing**(): *void*
 
-*Defined in [api/form/PDFTextField.ts:572](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L572)*
+*Defined in [api/form/PDFTextField.ts:572](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L572)*
 
 Turn off combing for this text field. For example:
 ```js
@@ -206,7 +206,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[disableExporting](pdffield.md#disableexporting)*
 
-*Defined in [api/form/PDFField.ts:235](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L235)*
+*Defined in [api/form/PDFField.ts:236](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L236)*
 
 Indicate that this field's value should **not** be exported when the form
 is submitted in a PDF reader. For example:
@@ -223,7 +223,7 @@ ___
 
 ▸ **disableFileSelection**(): *void*
 
-*Defined in [api/form/PDFTextField.ts:412](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L412)*
+*Defined in [api/form/PDFTextField.ts:412](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L412)*
 
 Indicate that this text field is **not** intended to store a file path.
 For example:
@@ -240,7 +240,7 @@ ___
 
 ▸ **disableMultiline**(): *void*
 
-*Defined in [api/form/PDFTextField.ts:324](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L324)*
+*Defined in [api/form/PDFTextField.ts:324](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L324)*
 
 Display each line of text on the same line when this field is displayed
 in a PDF reader. For example:
@@ -259,7 +259,7 @@ ___
 
 ▸ **disablePassword**(): *void*
 
-*Defined in [api/form/PDFTextField.ts:373](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L373)*
+*Defined in [api/form/PDFTextField.ts:373](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L373)*
 
 Indicate that this text field is **not** intended for storing a secure
 password. For example:
@@ -278,7 +278,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[disableReadOnly](pdffield.md#disablereadonly)*
 
-*Defined in [api/form/PDFField.ts:158](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L158)*
+*Defined in [api/form/PDFField.ts:159](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L159)*
 
 Allow users to interact with this field and change its value in PDF
 readers via mouse and keyboard input. For example:
@@ -297,7 +297,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[disableRequired](pdffield.md#disablerequired)*
 
-*Defined in [api/form/PDFField.ts:196](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L196)*
+*Defined in [api/form/PDFField.ts:197](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L197)*
 
 Do not require this field to have a value when the form is submitted.
 For example:
@@ -314,7 +314,7 @@ ___
 
 ▸ **disableRichFormatting**(): *void*
 
-*Defined in [api/form/PDFTextField.ts:617](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L617)*
+*Defined in [api/form/PDFTextField.ts:617](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L617)*
 
 Indicate that this is a standard text field that does not XFA data (rich
 text). For example:
@@ -331,7 +331,7 @@ ___
 
 ▸ **disableScrolling**(): *void*
 
-*Defined in [api/form/PDFTextField.ts:491](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L491)*
+*Defined in [api/form/PDFTextField.ts:491](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L491)*
 
 Do not allow PDF readers to present a scroll bar to the user when the
 contents of this text field do not fit within its view bounds. For example:
@@ -348,7 +348,7 @@ ___
 
 ▸ **disableSpellChecking**(): *void*
 
-*Defined in [api/form/PDFTextField.ts:450](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L450)*
+*Defined in [api/form/PDFTextField.ts:450](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L450)*
 
 Do not allow PDF readers to spell check the text entered in this field.
 For example:
@@ -365,7 +365,7 @@ ___
 
 ▸ **enableCombing**(): *void*
 
-*Defined in [api/form/PDFTextField.ts:545](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L545)*
+*Defined in [api/form/PDFTextField.ts:545](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L545)*
 
 Split this field into `n` equal size cells with one character in each
 (where `n` is equal to the max length of the text field). This will cause
@@ -397,7 +397,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[enableExporting](pdffield.md#enableexporting)*
 
-*Defined in [api/form/PDFField.ts:223](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L223)*
+*Defined in [api/form/PDFField.ts:224](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L224)*
 
 Indicate that this field's value should be exported when the form is
 submitted in a PDF reader. For example:
@@ -414,7 +414,7 @@ ___
 
 ▸ **enableFileSelection**(): *void*
 
-*Defined in [api/form/PDFTextField.ts:400](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L400)*
+*Defined in [api/form/PDFTextField.ts:400](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L400)*
 
 Indicate that this text field is intended to store a file path. The
 contents of the file stored at that path should be submitted as the value
@@ -432,7 +432,7 @@ ___
 
 ▸ **enableMultiline**(): *void*
 
-*Defined in [api/form/PDFTextField.ts:309](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L309)*
+*Defined in [api/form/PDFTextField.ts:309](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L309)*
 
 Display each line of text on a new line when this field is displayed in a
 PDF reader. For example:
@@ -451,7 +451,7 @@ ___
 
 ▸ **enablePassword**(): *void*
 
-*Defined in [api/form/PDFTextField.ts:361](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L361)*
+*Defined in [api/form/PDFTextField.ts:361](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L361)*
 
 Indicate that this text field is intended for storing a secure password.
 For example:
@@ -479,7 +479,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[enableReadOnly](pdffield.md#enablereadonly)*
 
-*Defined in [api/form/PDFField.ts:146](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L146)*
+*Defined in [api/form/PDFField.ts:147](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L147)*
 
 Prevent PDF readers from allowing users to interact with this field or
 change its value. The field will not respond to mouse or keyboard input.
@@ -501,7 +501,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[enableRequired](pdffield.md#enablerequired)*
 
-*Defined in [api/form/PDFField.ts:184](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L184)*
+*Defined in [api/form/PDFField.ts:185](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L185)*
 
 Require this field to have a value when the form is submitted.
 For example:
@@ -518,7 +518,7 @@ ___
 
 ▸ **enableRichFormatting**(): *void*
 
-*Defined in [api/form/PDFTextField.ts:605](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L605)*
+*Defined in [api/form/PDFTextField.ts:605](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L605)*
 
 Indicate that this field contains XFA data - or rich text. For example:
 ```js
@@ -541,7 +541,7 @@ ___
 
 ▸ **enableScrolling**(): *void*
 
-*Defined in [api/form/PDFTextField.ts:479](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L479)*
+*Defined in [api/form/PDFTextField.ts:479](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L479)*
 
 Allow PDF readers to present a scroll bar to the user when the contents
 of this text field do not fit within its view bounds. For example:
@@ -560,7 +560,7 @@ ___
 
 ▸ **enableSpellChecking**(): *void*
 
-*Defined in [api/form/PDFTextField.ts:438](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L438)*
+*Defined in [api/form/PDFTextField.ts:438](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L438)*
 
 Allow PDF readers to spell check the text entered in this field.
 For example:
@@ -577,7 +577,7 @@ ___
 
 ▸ **getAlignment**(): *[TextAlignment](../enums/textalignment.md)*
 
-*Defined in [api/form/PDFTextField.ts:177](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L177)*
+*Defined in [api/form/PDFTextField.ts:177](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L177)*
 
 Get the alignment for this text field. This value represents the
 justification of the text when it is displayed to the user in PDF readers.
@@ -600,7 +600,7 @@ ___
 
 ▸ **getMaxLength**(): *number | undefined*
 
-*Defined in [api/form/PDFTextField.ts:229](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L229)*
+*Defined in [api/form/PDFTextField.ts:229](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L229)*
 
 Get the maximum length of this field. This value represents the maximum
 number of characters that can be typed into this field by the user. If
@@ -626,7 +626,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[getName](pdffield.md#getname)*
 
-*Defined in [api/form/PDFField.ts:116](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L116)*
+*Defined in [api/form/PDFField.ts:117](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L117)*
 
 Get the fully qualified name of this field. For example:
 ```js
@@ -656,7 +656,7 @@ ___
 
 ▸ **getText**(): *string | undefined*
 
-*Defined in [api/form/PDFTextField.ts:100](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L100)*
+*Defined in [api/form/PDFTextField.ts:100](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L100)*
 
 Get the text that this field contains. This text is visible to users who
 view this field in a PDF reader.
@@ -693,7 +693,7 @@ ___
 
 ▸ **isCombed**(): *boolean*
 
-*Defined in [api/form/PDFTextField.ts:514](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L514)*
+*Defined in [api/form/PDFTextField.ts:514](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L514)*
 
 Returns `true` if this is a combed text field. This means that the field
 is split into `n` equal size cells with one character in each (where `n`
@@ -724,7 +724,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[isExported](pdffield.md#isexported)*
 
-*Defined in [api/form/PDFField.ts:211](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L211)*
+*Defined in [api/form/PDFField.ts:212](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L212)*
 
 Returns `true` if this field's value should be exported when the form is
 submitted. See [PDFField.enableExporting](pdffield.md#enableexporting) and
@@ -745,7 +745,7 @@ ___
 
 ▸ **isFileSelector**(): *boolean*
 
-*Defined in [api/form/PDFTextField.ts:387](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L387)*
+*Defined in [api/form/PDFTextField.ts:387](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L387)*
 
 Returns `true` if the contents of this text field represent a file path.
 See [PDFTextField.enableFileSelection](pdftextfield.md#enablefileselection) and
@@ -765,7 +765,7 @@ ___
 
 ▸ **isMultiline**(): *boolean*
 
-*Defined in [api/form/PDFTextField.ts:295](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L295)*
+*Defined in [api/form/PDFTextField.ts:295](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L295)*
 
 Returns `true` if each line of text is shown on a new line when this
 field is displayed in a PDF reader. The alternative is that all lines of
@@ -787,7 +787,7 @@ ___
 
 ▸ **isPassword**(): *boolean*
 
-*Defined in [api/form/PDFTextField.ts:340](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L340)*
+*Defined in [api/form/PDFTextField.ts:340](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L340)*
 
 Returns `true` if this is a password text field. This means that the field
 is intended for storing a secure password. See
@@ -810,7 +810,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[isReadOnly](pdffield.md#isreadonly)*
 
-*Defined in [api/form/PDFField.ts:131](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L131)*
+*Defined in [api/form/PDFField.ts:132](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L132)*
 
 Returns `true` if this field is read only. This means that PDF readers
 will not allow users to interact with the field or change its value. See
@@ -833,7 +833,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[isRequired](pdffield.md#isrequired)*
 
-*Defined in [api/form/PDFField.ts:172](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFField.ts#L172)*
+*Defined in [api/form/PDFField.ts:173](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L173)*
 
 Returns `true` if this field must have a value when the form is submitted.
 See [PDFField.enableRequired](pdffield.md#enablerequired) and [PDFField.disableRequired](pdffield.md#disablerequired).
@@ -853,7 +853,7 @@ ___
 
 ▸ **isRichFormatted**(): *boolean*
 
-*Defined in [api/form/PDFTextField.ts:587](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L587)*
+*Defined in [api/form/PDFTextField.ts:587](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L587)*
 
 Returns `true` if this text field contains rich text. See
 [PDFTextField.enableRichFormatting](pdftextfield.md#enablerichformatting) and
@@ -873,7 +873,7 @@ ___
 
 ▸ **isScrollable**(): *boolean*
 
-*Defined in [api/form/PDFTextField.ts:465](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L465)*
+*Defined in [api/form/PDFTextField.ts:465](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L465)*
 
 Returns `true` if PDF readers should allow the user to scroll the text
 field when its contents do not fit within the field's view bounds. See
@@ -894,7 +894,7 @@ ___
 
 ▸ **isSpellChecked**(): *boolean*
 
-*Defined in [api/form/PDFTextField.ts:426](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L426)*
+*Defined in [api/form/PDFTextField.ts:426](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L426)*
 
 Returns `true` if the text entered in this field should be spell checked
 by PDF readers. See [PDFTextField.enableSpellChecking](pdftextfield.md#enablespellchecking) and
@@ -916,7 +916,7 @@ ___
 
 *Overrides void*
 
-*Defined in [api/form/PDFTextField.ts:693](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L693)*
+*Defined in [api/form/PDFTextField.ts:693](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L693)*
 
 Returns `true` if this text field has been marked as dirty, or if any of
 this text field's widgets do not have an appearance stream. For example:
@@ -935,7 +935,7 @@ ___
 
 ▸ **removeMaxLength**(): *void*
 
-*Defined in [api/form/PDFTextField.ts:278](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L278)*
+*Defined in [api/form/PDFTextField.ts:278](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L278)*
 
 Remove the maximum length for this text field. This allows any number of
 characters to be typed into this field by the user. For example:
@@ -954,7 +954,7 @@ ___
 
 ▸ **setAlignment**(`alignment`: [TextAlignment](../enums/textalignment.md)): *void*
 
-*Defined in [api/form/PDFTextField.ts:209](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L209)*
+*Defined in [api/form/PDFTextField.ts:209](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L209)*
 
 Set the alignment for this text field. This will determine the
 justification of the text when it is displayed to the user in PDF readers.
@@ -988,7 +988,7 @@ ___
 
 ▸ **setMaxLength**(`maxLength?`: undefined | number): *void*
 
-*Defined in [api/form/PDFTextField.ts:252](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L252)*
+*Defined in [api/form/PDFTextField.ts:252](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L252)*
 
 Set the maximum length of this field. This limits the number of characters
 that can be typed into this field by the user. This also limits the length
@@ -1020,7 +1020,7 @@ ___
 
 ▸ **setText**(`text`: string | undefined): *void*
 
-*Defined in [api/form/PDFTextField.ts:146](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L146)*
+*Defined in [api/form/PDFTextField.ts:146](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L146)*
 
 Set the text for this field. This operation is analogous to a human user
 clicking on the text field in a PDF reader and typing in text via their
@@ -1071,7 +1071,7 @@ ___
 
 ▸ **updateAppearances**(`font`: [PDFFont](pdffont.md), `provider?`: [AppearanceProviderFor](../index.md#appearanceproviderfor)‹[PDFTextField](pdftextfield.md)›): *void*
 
-*Defined in [api/form/PDFTextField.ts:738](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L738)*
+*Defined in [api/form/PDFTextField.ts:738](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L738)*
 
 Update the appearance streams for each of this text field's widgets using
 the given appearance provider. If no `provider` is passed, the default
@@ -1100,7 +1100,7 @@ ___
 
 ▸ **of**(`acroText`: PDFAcroText, `ref`: PDFRef, `doc`: [PDFDocument](pdfdocument.md)): *[PDFTextField](pdftextfield.md)‹›*
 
-*Defined in [api/form/PDFTextField.ts:58](https://github.com/Hopding/pdf-lib/blob/aa457ba/src/api/form/PDFTextField.ts#L58)*
+*Defined in [api/form/PDFTextField.ts:58](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFTextField.ts#L58)*
 
 > **NOTE:** You probably don't want to call this method directly. Instead,
 > consider using the [PDFForm.getTextField](pdfform.md#gettextfield) method, which will create an
