@@ -25,7 +25,7 @@ sidebar_label: "MultilineTextLayout"
 
 • **bounds**: *[LayoutBounds](layoutbounds.md)*
 
-*Defined in [api/text/layout.ts:94](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/text/layout.ts#L94)*
+*Defined in [api/text/layout.ts:94](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/text/layout.ts#L94)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **fontSize**: *number*
 
-*Defined in [api/text/layout.ts:96](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/text/layout.ts#L96)*
+*Defined in [api/text/layout.ts:96](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/text/layout.ts#L96)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **lineHeight**: *number*
 
-*Defined in [api/text/layout.ts:97](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/text/layout.ts#L97)*
+*Defined in [api/text/layout.ts:97](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/text/layout.ts#L97)*
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 • **lines**: *[TextPosition](textposition.md)[]*
 
-*Defined in [api/text/layout.ts:95](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/text/layout.ts#L95)*
+*Defined in [api/text/layout.ts:95](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/text/layout.ts#L95)*

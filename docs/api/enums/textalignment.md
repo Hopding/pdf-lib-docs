@@ -20,7 +20,7 @@ sidebar_label: "TextAlignment"
 
 • **Center**: = 1
 
-*Defined in [api/text/alignment.ts:3](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/text/alignment.ts#L3)*
+*Defined in [api/text/alignment.ts:3](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/text/alignment.ts#L3)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **Left**: = 0
 
-*Defined in [api/text/alignment.ts:2](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/text/alignment.ts#L2)*
+*Defined in [api/text/alignment.ts:2](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/text/alignment.ts#L2)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **Right**: = 2
 
-*Defined in [api/text/alignment.ts:4](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/text/alignment.ts#L4)*
+*Defined in [api/text/alignment.ts:4](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/text/alignment.ts#L4)*

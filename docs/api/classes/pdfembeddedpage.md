@@ -38,7 +38,7 @@ Represents a PDF page that has been embedded in a [PDFDocument](pdfdocument.md).
 
 • **doc**: *[PDFDocument](pdfdocument.md)*
 
-*Defined in [api/PDFEmbeddedPage.ts:29](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFEmbeddedPage.ts#L29)*
+*Defined in [api/PDFEmbeddedPage.ts:29](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/PDFEmbeddedPage.ts#L29)*
 
 The document to which this embedded page belongs.
 
@@ -48,7 +48,7 @@ ___
 
 • **height**: *number*
 
-*Defined in [api/PDFEmbeddedPage.ts:35](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFEmbeddedPage.ts#L35)*
+*Defined in [api/PDFEmbeddedPage.ts:35](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/PDFEmbeddedPage.ts#L35)*
 
 The height of this page in pixels.
 
@@ -58,7 +58,7 @@ ___
 
 • **ref**: *PDFRef*
 
-*Defined in [api/PDFEmbeddedPage.ts:26](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFEmbeddedPage.ts#L26)*
+*Defined in [api/PDFEmbeddedPage.ts:26](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/PDFEmbeddedPage.ts#L26)*
 
 The unique reference assigned to this embedded page within the document.
 
@@ -68,7 +68,7 @@ ___
 
 • **width**: *number*
 
-*Defined in [api/PDFEmbeddedPage.ts:32](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFEmbeddedPage.ts#L32)*
+*Defined in [api/PDFEmbeddedPage.ts:32](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/PDFEmbeddedPage.ts#L32)*
 
 The width of this page in pixels.
 
@@ -78,7 +78,7 @@ The width of this page in pixels.
 
 ▸ **embed**(): *Promise‹void›*
 
-*Defined in [api/PDFEmbeddedPage.ts:98](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFEmbeddedPage.ts#L98)*
+*Defined in [api/PDFEmbeddedPage.ts:98](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/PDFEmbeddedPage.ts#L98)*
 
 > **NOTE:** You probably don't need to call this method directly. The
 > [PDFDocument.save](pdfdocument.md#save) and [PDFDocument.saveAsBase64](pdfdocument.md#saveasbase64) methods will
@@ -96,7 +96,7 @@ ___
 
 ▸ **scale**(`factor`: number): *object*
 
-*Defined in [api/PDFEmbeddedPage.ts:73](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFEmbeddedPage.ts#L73)*
+*Defined in [api/PDFEmbeddedPage.ts:73](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/PDFEmbeddedPage.ts#L73)*
 
 Compute the width and height of this page after being scaled by the
 given `factor`. For example:
@@ -131,7 +131,7 @@ ___
 
 ▸ **size**(): *object*
 
-*Defined in [api/PDFEmbeddedPage.ts:85](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFEmbeddedPage.ts#L85)*
+*Defined in [api/PDFEmbeddedPage.ts:85](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/PDFEmbeddedPage.ts#L85)*
 
 Get the width and height of this page. For example:
 ```js
@@ -152,7 +152,7 @@ ___
 
 ▸ **of**(`ref`: PDFRef, `doc`: [PDFDocument](pdfdocument.md), `embedder`: PDFPageEmbedder): *[PDFEmbeddedPage](pdfembeddedpage.md)‹›*
 
-*Defined in [api/PDFEmbeddedPage.ts:22](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/PDFEmbeddedPage.ts#L22)*
+*Defined in [api/PDFEmbeddedPage.ts:22](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/PDFEmbeddedPage.ts#L22)*
 
 > **NOTE:** You probably don't want to call this method directly. Instead,
 > consider using the [PDFDocument.embedPdf](pdfdocument.md#embedpdf) and

@@ -31,7 +31,7 @@ sidebar_label: "FieldAppearanceOptions"
 
 • **backgroundColor**? : *[Color](../index.md#color)*
 
-*Defined in [api/form/PDFField.ts:26](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L26)*
+*Defined in [api/form/PDFField.ts:26](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L26)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **borderColor**? : *[Color](../index.md#color)*
 
-*Defined in [api/form/PDFField.ts:27](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L27)*
+*Defined in [api/form/PDFField.ts:27](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L27)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **borderWidth**? : *undefined | number*
 
-*Defined in [api/form/PDFField.ts:28](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L28)*
+*Defined in [api/form/PDFField.ts:28](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L28)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **font**? : *[PDFFont](../classes/pdffont.md)*
 
-*Defined in [api/form/PDFField.ts:30](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L30)*
+*Defined in [api/form/PDFField.ts:30](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L30)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 • **height**? : *undefined | number*
 
-*Defined in [api/form/PDFField.ts:24](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L24)*
+*Defined in [api/form/PDFField.ts:24](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L24)*
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 • **rotate**? : *[Rotation](../index.md#rotation)*
 
-*Defined in [api/form/PDFField.ts:29](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L29)*
+*Defined in [api/form/PDFField.ts:29](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L29)*
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 • **textColor**? : *[Color](../index.md#color)*
 
-*Defined in [api/form/PDFField.ts:25](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L25)*
+*Defined in [api/form/PDFField.ts:25](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L25)*
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 • **width**? : *undefined | number*
 
-*Defined in [api/form/PDFField.ts:23](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L23)*
+*Defined in [api/form/PDFField.ts:23](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L23)*
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 • **x**? : *undefined | number*
 
-*Defined in [api/form/PDFField.ts:21](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L21)*
+*Defined in [api/form/PDFField.ts:21](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L21)*
 
 ___
 
@@ -103,4 +103,4 @@ ___
 
 • **y**? : *undefined | number*
 
-*Defined in [api/form/PDFField.ts:22](https://github.com/Hopding/pdf-lib/blob/30d2aa2/src/api/form/PDFField.ts#L22)*
+*Defined in [api/form/PDFField.ts:22](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L22)*
