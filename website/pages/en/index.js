@@ -320,6 +320,32 @@ async function fillForm() {
 }
 ${pre}`;
 
+const flattenFormSnippet = `${pre}js
+import { PDFDocument } from 'pdf-lib'
+
+async function flattenForm() {
+  const formUrl = 'https://pdf-lib.js.org/assets/form_to_flatten.pdf'
+  const formPdfBytes = await fetch(formUrl).then(res => res.arrayBuffer())
+
+  const pdfDoc = await PDFDocument.load(formPdfBytes)
+
+  const form = pdfDoc.getForm()
+
+  form.getTextField('Text1').setText('Some Text');
+  form.getRadioGroup('Group2').select('Choice1');
+  form.getRadioGroup('Group3').select('Choice3');
+  form.getRadioGroup('Group4').select('Choice1');
+  form.getCheckBox('Check Box3').check();
+  form.getCheckBox('Check Box4').uncheck();
+  form.getDropdown('Dropdown7').select('Infinity');
+  form.getOptionList('List Box6').select('Honda');
+
+  form.flatten();
+
+  const pdfBytes = await pdfDoc.save()
+}
+${pre}`;
+
 const copyPagesSnippet = `${pre}js
 import { PDFDocument } from 'pdf-lib'
 
@@ -920,6 +946,13 @@ class Index extends React.Component {
                 />
                 <MarkdownBlock>{fillFormSnippet}</MarkdownBlock>
                 <Pdf url="/assets/fill_form.pdf" />
+
+                <ExampleHeader
+                  title="Flatten Form"
+                  // jsFiddleUrl="https://jsfiddle.net/Hopding/0mwfqkv6/3/"
+                />
+                <MarkdownBlock>{flattenFormSnippet}</MarkdownBlock>
+                <Pdf url="/assets/flatten_form.pdf" />
 
                 <ExampleHeader
                   title="Copy Pages"
