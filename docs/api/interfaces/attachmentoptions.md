@@ -30,7 +30,7 @@ sidebar_label: "AttachmentOptions"
 
 *Inherited from [AttachmentOptions](attachmentoptions.md).[afRelationship](attachmentoptions.md#optional-afrelationship)*
 
-*Defined in [core/embedders/FileEmbedder.ts:27](https://github.com/Hopding/pdf-lib/blob/1f63950/src/core/embedders/FileEmbedder.ts#L27)*
+*Defined in [core/embedders/FileEmbedder.ts:27](https://github.com/Hopding/pdf-lib/blob/c957768/src/core/embedders/FileEmbedder.ts#L27)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 *Inherited from [AttachmentOptions](attachmentoptions.md).[creationDate](attachmentoptions.md#optional-creationdate)*
 
-*Defined in [core/embedders/FileEmbedder.ts:25](https://github.com/Hopding/pdf-lib/blob/1f63950/src/core/embedders/FileEmbedder.ts#L25)*
+*Defined in [core/embedders/FileEmbedder.ts:25](https://github.com/Hopding/pdf-lib/blob/c957768/src/core/embedders/FileEmbedder.ts#L25)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 *Inherited from [AttachmentOptions](attachmentoptions.md).[description](attachmentoptions.md#optional-description)*
 
-*Defined in [core/embedders/FileEmbedder.ts:24](https://github.com/Hopding/pdf-lib/blob/1f63950/src/core/embedders/FileEmbedder.ts#L24)*
+*Defined in [core/embedders/FileEmbedder.ts:24](https://github.com/Hopding/pdf-lib/blob/c957768/src/core/embedders/FileEmbedder.ts#L24)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 *Inherited from [AttachmentOptions](attachmentoptions.md).[mimeType](attachmentoptions.md#optional-mimetype)*
 
-*Defined in [core/embedders/FileEmbedder.ts:23](https://github.com/Hopding/pdf-lib/blob/1f63950/src/core/embedders/FileEmbedder.ts#L23)*
+*Defined in [core/embedders/FileEmbedder.ts:23](https://github.com/Hopding/pdf-lib/blob/c957768/src/core/embedders/FileEmbedder.ts#L23)*
 
 ___
 
@@ -70,4 +70,4 @@ ___
 
 *Inherited from [AttachmentOptions](attachmentoptions.md).[modificationDate](attachmentoptions.md#optional-modificationdate)*
 
-*Defined in [core/embedders/FileEmbedder.ts:26](https://github.com/Hopding/pdf-lib/blob/1f63950/src/core/embedders/FileEmbedder.ts#L26)*
+*Defined in [core/embedders/FileEmbedder.ts:26](https://github.com/Hopding/pdf-lib/blob/c957768/src/core/embedders/FileEmbedder.ts#L26)*

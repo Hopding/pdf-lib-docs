@@ -30,7 +30,7 @@ sidebar_label: "PDFPageDrawLineOptions"
 
 • **blendMode**? : *[BlendMode](../enums/blendmode.md)*
 
-*Defined in [api/PDFPageOptions.ts:88](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/PDFPageOptions.ts#L88)*
+*Defined in [api/PDFPageOptions.ts:88](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/PDFPageOptions.ts#L88)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **color**? : *[Color](../index.md#color)*
 
-*Defined in [api/PDFPageOptions.ts:83](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/PDFPageOptions.ts#L83)*
+*Defined in [api/PDFPageOptions.ts:83](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/PDFPageOptions.ts#L83)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **dashArray**? : *number[]*
 
-*Defined in [api/PDFPageOptions.ts:86](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/PDFPageOptions.ts#L86)*
+*Defined in [api/PDFPageOptions.ts:86](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/PDFPageOptions.ts#L86)*
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 • **dashPhase**? : *undefined | number*
 
-*Defined in [api/PDFPageOptions.ts:87](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/PDFPageOptions.ts#L87)*
+*Defined in [api/PDFPageOptions.ts:87](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/PDFPageOptions.ts#L87)*
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 • **end**: *object*
 
-*Defined in [api/PDFPageOptions.ts:81](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/PDFPageOptions.ts#L81)*
+*Defined in [api/PDFPageOptions.ts:81](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/PDFPageOptions.ts#L81)*
 
 #### Type declaration:
 
@@ -76,7 +76,7 @@ ___
 
 • **lineCap**? : *[LineCapStyle](../enums/linecapstyle.md)*
 
-*Defined in [api/PDFPageOptions.ts:85](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/PDFPageOptions.ts#L85)*
+*Defined in [api/PDFPageOptions.ts:85](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/PDFPageOptions.ts#L85)*
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 • **opacity**? : *undefined | number*
 
-*Defined in [api/PDFPageOptions.ts:84](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/PDFPageOptions.ts#L84)*
+*Defined in [api/PDFPageOptions.ts:84](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/PDFPageOptions.ts#L84)*
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 • **start**: *object*
 
-*Defined in [api/PDFPageOptions.ts:80](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/PDFPageOptions.ts#L80)*
+*Defined in [api/PDFPageOptions.ts:80](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/PDFPageOptions.ts#L80)*
 
 #### Type declaration:
 
@@ -106,4 +106,4 @@ ___
 
 • **thickness**? : *undefined | number*
 
-*Defined in [api/PDFPageOptions.ts:82](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/PDFPageOptions.ts#L82)*
+*Defined in [api/PDFPageOptions.ts:82](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/PDFPageOptions.ts#L82)*

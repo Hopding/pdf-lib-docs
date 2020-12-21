@@ -70,7 +70,7 @@ to be rendered.
 
 • **acroField**: *PDFAcroTerminal*
 
-*Defined in [api/form/PDFField.ts:75](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L75)*
+*Defined in [api/form/PDFField.ts:90](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L90)*
 
 The low-level PDFAcroTerminal wrapped by this field.
 
@@ -80,7 +80,7 @@ ___
 
 • **doc**: *[PDFDocument](pdfdocument.md)*
 
-*Defined in [api/form/PDFField.ts:81](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L81)*
+*Defined in [api/form/PDFField.ts:96](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L96)*
 
 The document to which this field belongs.
 
@@ -90,7 +90,7 @@ ___
 
 • **ref**: *PDFRef*
 
-*Defined in [api/form/PDFField.ts:78](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L78)*
+*Defined in [api/form/PDFField.ts:93](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L93)*
 
 The unique reference assigned to this field within the document.
 
@@ -100,7 +100,7 @@ The unique reference assigned to this field within the document.
 
 ▸ **disableExporting**(): *void*
 
-*Defined in [api/form/PDFField.ts:236](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L236)*
+*Defined in [api/form/PDFField.ts:251](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L251)*
 
 Indicate that this field's value should **not** be exported when the form
 is submitted in a PDF reader. For example:
@@ -117,7 +117,7 @@ ___
 
 ▸ **disableReadOnly**(): *void*
 
-*Defined in [api/form/PDFField.ts:159](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L159)*
+*Defined in [api/form/PDFField.ts:174](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L174)*
 
 Allow users to interact with this field and change its value in PDF
 readers via mouse and keyboard input. For example:
@@ -134,7 +134,7 @@ ___
 
 ▸ **disableRequired**(): *void*
 
-*Defined in [api/form/PDFField.ts:197](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L197)*
+*Defined in [api/form/PDFField.ts:212](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L212)*
 
 Do not require this field to have a value when the form is submitted.
 For example:
@@ -151,7 +151,7 @@ ___
 
 ▸ **enableExporting**(): *void*
 
-*Defined in [api/form/PDFField.ts:224](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L224)*
+*Defined in [api/form/PDFField.ts:239](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L239)*
 
 Indicate that this field's value should be exported when the form is
 submitted in a PDF reader. For example:
@@ -168,7 +168,7 @@ ___
 
 ▸ **enableReadOnly**(): *void*
 
-*Defined in [api/form/PDFField.ts:147](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L147)*
+*Defined in [api/form/PDFField.ts:162](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L162)*
 
 Prevent PDF readers from allowing users to interact with this field or
 change its value. The field will not respond to mouse or keyboard input.
@@ -188,7 +188,7 @@ ___
 
 ▸ **enableRequired**(): *void*
 
-*Defined in [api/form/PDFField.ts:185](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L185)*
+*Defined in [api/form/PDFField.ts:200](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L200)*
 
 Require this field to have a value when the form is submitted.
 For example:
@@ -205,7 +205,7 @@ ___
 
 ▸ **getName**(): *string*
 
-*Defined in [api/form/PDFField.ts:117](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L117)*
+*Defined in [api/form/PDFField.ts:132](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L132)*
 
 Get the fully qualified name of this field. For example:
 ```js
@@ -235,7 +235,7 @@ ___
 
 ▸ **isExported**(): *boolean*
 
-*Defined in [api/form/PDFField.ts:212](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L212)*
+*Defined in [api/form/PDFField.ts:227](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L227)*
 
 Returns `true` if this field's value should be exported when the form is
 submitted. See [PDFField.enableExporting](pdffield.md#enableexporting) and
@@ -256,7 +256,7 @@ ___
 
 ▸ **isReadOnly**(): *boolean*
 
-*Defined in [api/form/PDFField.ts:132](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L132)*
+*Defined in [api/form/PDFField.ts:147](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L147)*
 
 Returns `true` if this field is read only. This means that PDF readers
 will not allow users to interact with the field or change its value. See
@@ -277,7 +277,7 @@ ___
 
 ▸ **isRequired**(): *boolean*
 
-*Defined in [api/form/PDFField.ts:173](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFField.ts#L173)*
+*Defined in [api/form/PDFField.ts:188](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L188)*
 
 Returns `true` if this field must have a value when the form is submitted.
 See [PDFField.enableRequired](pdffield.md#enablerequired) and [PDFField.disableRequired](pdffield.md#disablerequired).

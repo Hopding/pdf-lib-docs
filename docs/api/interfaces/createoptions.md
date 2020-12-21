@@ -22,4 +22,4 @@ sidebar_label: "CreateOptions"
 
 • **updateMetadata**? : *undefined | false | true*
 
-*Defined in [api/PDFDocumentOptions.ts:32](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/PDFDocumentOptions.ts#L32)*
+*Defined in [api/PDFDocumentOptions.ts:33](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/PDFDocumentOptions.ts#L33)*

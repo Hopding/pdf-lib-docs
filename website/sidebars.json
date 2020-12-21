@@ -22,6 +22,7 @@
     "Enums": [
       "api/enums/blendmode",
       "api/enums/colortypes",
+      "api/enums/imagealignment",
       "api/enums/linecapstyle",
       "api/enums/linejoinstyle",
       "api/enums/parsespeeds",
@@ -43,6 +44,7 @@
       "api/interfaces/embedfontoptions",
       "api/interfaces/embeddable",
       "api/interfaces/fieldappearanceoptions",
+      "api/interfaces/flattenoptions",
       "api/interfaces/grayscale",
       "api/interfaces/layoutbounds",
       "api/interfaces/layoutcombedtextoptions",
@@ -62,6 +64,7 @@
       "api/interfaces/rgb",
       "api/interfaces/radians",
       "api/interfaces/saveoptions",
+      "api/interfaces/settitleoptions",
       "api/interfaces/singlelinetextlayout",
       "api/interfaces/textposition"
     ]

@@ -37,6 +37,7 @@ The fields of an interactive form are represented by [PDFField](pdffield.md) ins
 * [createTextField](pdfform.md#createtextfield)
 * [deleteXFA](pdfform.md#deletexfa)
 * [fieldIsDirty](pdfform.md#fieldisdirty)
+* [flatten](pdfform.md#flatten)
 * [getButton](pdfform.md#getbutton)
 * [getCheckBox](pdfform.md#getcheckbox)
 * [getDefaultFont](pdfform.md#getdefaultfont)
@@ -60,7 +61,7 @@ The fields of an interactive form are represented by [PDFField](pdffield.md) ins
 
 • **acroForm**: *PDFAcroForm*
 
-*Defined in [api/form/PDFForm.ts:62](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L62)*
+*Defined in [api/form/PDFForm.ts:75](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L75)*
 
 The low-level PDFAcroForm wrapped by this form.
 
@@ -70,7 +71,7 @@ ___
 
 • **doc**: *[PDFDocument](pdfdocument.md)*
 
-*Defined in [api/form/PDFForm.ts:65](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L65)*
+*Defined in [api/form/PDFForm.ts:78](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L78)*
 
 The document to which this form belongs.
 
@@ -80,7 +81,7 @@ The document to which this form belongs.
 
 ▸ **createButton**(`name`: string): *[PDFButton](pdfbutton.md)*
 
-*Defined in [api/form/PDFForm.ts:333](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L333)*
+*Defined in [api/form/PDFForm.ts:346](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L346)*
 
 Create a new button field in this [PDFForm](pdfform.md) with the given name.
 For example:
@@ -111,7 +112,7 @@ ___
 
 ▸ **createCheckBox**(`name`: string): *[PDFCheckBox](pdfcheckbox.md)*
 
-*Defined in [api/form/PDFForm.ts:363](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L363)*
+*Defined in [api/form/PDFForm.ts:376](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L376)*
 
 Create a new check box field in this [PDFForm](pdfform.md) with the given name.
 For example:
@@ -142,7 +143,7 @@ ___
 
 ▸ **createDropdown**(`name`: string): *[PDFDropdown](pdfdropdown.md)*
 
-*Defined in [api/form/PDFForm.ts:393](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L393)*
+*Defined in [api/form/PDFForm.ts:406](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L406)*
 
 Create a new dropdown field in this [PDFForm](pdfform.md) with the given name.
 For example:
@@ -173,7 +174,7 @@ ___
 
 ▸ **createOptionList**(`name`: string): *[PDFOptionList](pdfoptionlist.md)*
 
-*Defined in [api/form/PDFForm.ts:423](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L423)*
+*Defined in [api/form/PDFForm.ts:436](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L436)*
 
 Create a new option list field in this [PDFForm](pdfform.md) with the given name.
 For example:
@@ -204,7 +205,7 @@ ___
 
 ▸ **createRadioGroup**(`name`: string): *[PDFRadioGroup](pdfradiogroup.md)*
 
-*Defined in [api/form/PDFForm.ts:454](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L454)*
+*Defined in [api/form/PDFForm.ts:467](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L467)*
 
 Create a new radio group field in this [PDFForm](pdfform.md) with the given name.
 For example:
@@ -236,7 +237,7 @@ ___
 
 ▸ **createTextField**(`name`: string): *[PDFTextField](pdftextfield.md)*
 
-*Defined in [api/form/PDFForm.ts:488](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L488)*
+*Defined in [api/form/PDFForm.ts:501](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L501)*
 
 Create a new text field in this [PDFForm](pdfform.md) with the given name.
 For example:
@@ -267,7 +268,7 @@ ___
 
 ▸ **deleteXFA**(): *void*
 
-*Defined in [api/form/PDFForm.ts:110](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L110)*
+*Defined in [api/form/PDFForm.ts:123](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L123)*
 
 Disconnect the XFA data from this [PDFForm](pdfform.md) (if any exists). This will
 force readers to fallback to standard fields if the [PDFDocument](pdfdocument.md)
@@ -287,7 +288,7 @@ ___
 
 ▸ **fieldIsDirty**(`fieldRef`: PDFRef): *boolean*
 
-*Defined in [api/form/PDFForm.ts:586](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L586)*
+*Defined in [api/form/PDFForm.ts:683](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L683)*
 
 Returns `true` is the specified field has been marked as dirty.
 ```js
@@ -308,11 +309,47 @@ Whether or not the specified field is dirty.
 
 ___
 
+###  flatten
+
+▸ **flatten**(`options`: [FlattenOptions](../interfaces/flattenoptions.md)): *void*
+
+*Defined in [api/form/PDFForm.ts:536](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L536)*
+
+Flatten all fields in this [PDFForm](pdfform.md).
+
+Flattening a form field will take the current appearance for each of that
+field's widgets and make them part of their page's content stream. All form
+fields and annotations associated are then removed. Note that once a form
+has been flattened its fields can no longer be accessed or edited.
+
+This operation is often used after filling form fields to ensure a
+consistent appearance across different PDF readers and/or printers.
+Another common use case is to copy a template document with form fields
+into another document. In this scenario you would load the template
+document, fill its fields, flatten it, and then copy its pages into the
+recipient document - the filled fields will be copied over.
+
+For example:
+```js
+const form = pdfDoc.getForm();
+form.flatten();
+```
+
+**Parameters:**
+
+Name | Type | Default |
+------ | ------ | ------ |
+`options` | [FlattenOptions](../interfaces/flattenoptions.md) | { updateFieldAppearances: true } |
+
+**Returns:** *void*
+
+___
+
 ###  getButton
 
 ▸ **getButton**(`name`: string): *[PDFButton](pdfbutton.md)*
 
-*Defined in [api/form/PDFForm.ts:188](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L188)*
+*Defined in [api/form/PDFForm.ts:201](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L201)*
 
 Get the button field in this [PDFForm](pdfform.md) with the given name. For example:
 ```js
@@ -338,7 +375,7 @@ ___
 
 ▸ **getCheckBox**(`name`: string): *[PDFCheckBox](pdfcheckbox.md)*
 
-*Defined in [api/form/PDFForm.ts:208](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L208)*
+*Defined in [api/form/PDFForm.ts:221](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L221)*
 
 Get the check box field in this [PDFForm](pdfform.md) with the given name.
 For example:
@@ -366,7 +403,7 @@ ___
 
 ▸ **getDefaultFont**(): *[PDFFont](pdffont.md)‹›*
 
-*Defined in [api/form/PDFForm.ts:591](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L591)*
+*Defined in [api/form/PDFForm.ts:688](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L688)*
 
 **Returns:** *[PDFFont](pdffont.md)‹›*
 
@@ -376,7 +413,7 @@ ___
 
 ▸ **getDropdown**(`name`: string): *[PDFDropdown](pdfdropdown.md)*
 
-*Defined in [api/form/PDFForm.ts:229](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L229)*
+*Defined in [api/form/PDFForm.ts:242](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L242)*
 
 Get the dropdown field in this [PDFForm](pdfform.md) with the given name.
 For example:
@@ -405,7 +442,7 @@ ___
 
 ▸ **getField**(`name`: string): *[PDFField](pdffield.md)*
 
-*Defined in [api/form/PDFForm.ts:170](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L170)*
+*Defined in [api/form/PDFForm.ts:183](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L183)*
 
 Get the field in this [PDFForm](pdfform.md) with the given name. For example:
 ```js
@@ -430,7 +467,7 @@ ___
 
 ▸ **getFieldMaybe**(`name`: string): *[PDFField](pdffield.md) | undefined*
 
-*Defined in [api/form/PDFForm.ts:150](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L150)*
+*Defined in [api/form/PDFForm.ts:163](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L163)*
 
 Get the field in this [PDFForm](pdfform.md) with the given name. For example:
 ```js
@@ -455,7 +492,7 @@ ___
 
 ▸ **getFields**(): *[PDFField](pdffield.md)[]*
 
-*Defined in [api/form/PDFForm.ts:127](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L127)*
+*Defined in [api/form/PDFForm.ts:140](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L140)*
 
 Get all fields contained in this [PDFForm](pdfform.md). For example:
 ```js
@@ -478,7 +515,7 @@ ___
 
 ▸ **getOptionList**(`name`: string): *[PDFOptionList](pdfoptionlist.md)*
 
-*Defined in [api/form/PDFForm.ts:250](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L250)*
+*Defined in [api/form/PDFForm.ts:263](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L263)*
 
 Get the option list field in this [PDFForm](pdfform.md) with the given name.
 For example:
@@ -507,7 +544,7 @@ ___
 
 ▸ **getRadioGroup**(`name`: string): *[PDFRadioGroup](pdfradiogroup.md)*
 
-*Defined in [api/form/PDFForm.ts:271](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L271)*
+*Defined in [api/form/PDFForm.ts:284](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L284)*
 
 Get the radio group field in this [PDFForm](pdfform.md) with the given name.
 For example:
@@ -536,7 +573,7 @@ ___
 
 ▸ **getSignature**(`name`: string): *[PDFSignature](pdfsignature.md)*
 
-*Defined in [api/form/PDFForm.ts:290](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L290)*
+*Defined in [api/form/PDFForm.ts:303](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L303)*
 
 Get the signature field in this [PDFForm](pdfform.md) with the given name.
 For example:
@@ -563,7 +600,7 @@ ___
 
 ▸ **getTextField**(`name`: string): *[PDFTextField](pdftextfield.md)*
 
-*Defined in [api/form/PDFForm.ts:310](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L310)*
+*Defined in [api/form/PDFForm.ts:323](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L323)*
 
 Get the text field in this [PDFForm](pdfform.md) with the given name.
 For example:
@@ -591,7 +628,7 @@ ___
 
 ▸ **hasXFA**(): *boolean*
 
-*Defined in [api/form/PDFForm.ts:95](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L95)*
+*Defined in [api/form/PDFForm.ts:108](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L108)*
 
 Returns `true` if this [PDFForm](pdfform.md) has XFA data. Most PDFs with form
 fields do not use XFA as it is not widely supported by PDF readers.
@@ -615,7 +652,7 @@ ___
 
 ▸ **markFieldAsClean**(`fieldRef`: PDFRef): *void*
 
-*Defined in [api/form/PDFForm.ts:571](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L571)*
+*Defined in [api/form/PDFForm.ts:668](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L668)*
 
 Mark a field as dirty. This will cause its appearance streams to not be
 updated by [PDFForm.updateFieldAppearances](pdfform.md#updatefieldappearances).
@@ -639,7 +676,7 @@ ___
 
 ▸ **markFieldAsDirty**(`fieldRef`: PDFRef): *void*
 
-*Defined in [api/form/PDFForm.ts:556](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L556)*
+*Defined in [api/form/PDFForm.ts:653](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L653)*
 
 Mark a field as dirty. This will cause its appearance streams to be
 updated by [PDFForm.updateFieldAppearances](pdfform.md#updatefieldappearances).
@@ -663,7 +700,7 @@ ___
 
 ▸ **updateFieldAppearances**(`font?`: [PDFFont](pdffont.md)): *void*
 
-*Defined in [api/form/PDFForm.ts:531](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L531)*
+*Defined in [api/form/PDFForm.ts:628](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L628)*
 
 Update the appearance streams for all widgets of all fields in this
 [PDFForm](pdfform.md). Appearance streams will only be created for a widget if it
@@ -705,7 +742,7 @@ ___
 
 ▸ **of**(`acroForm`: PDFAcroForm, `doc`: [PDFDocument](pdfdocument.md)): *[PDFForm](pdfform.md)‹›*
 
-*Defined in [api/form/PDFForm.ts:58](https://github.com/Hopding/pdf-lib/blob/1f63950/src/api/form/PDFForm.ts#L58)*
+*Defined in [api/form/PDFForm.ts:71](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFForm.ts#L71)*
 
 > **NOTE:** You probably don't want to call this method directly. Instead,
 > consider using the [PDFDocument.getForm](pdfdocument.md#getform) method, which will create an
