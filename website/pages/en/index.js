@@ -949,7 +949,7 @@ class Index extends React.Component {
 
                 <ExampleHeader
                   title="Flatten Form"
-                  // jsFiddleUrl="https://jsfiddle.net/Hopding/0mwfqkv6/3/"
+                  jsFiddleUrl="https://jsfiddle.net/Hopding/skevywdz/2/"
                 />
                 <MarkdownBlock>{flattenFormSnippet}</MarkdownBlock>
                 <Pdf url="/assets/flatten_form.pdf" />
