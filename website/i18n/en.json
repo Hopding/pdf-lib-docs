@@ -69,6 +69,10 @@
         "title": "ColorTypes",
         "sidebar_label": "ColorTypes"
       },
+      "api/enums/imagealignment": {
+        "title": "ImageAlignment",
+        "sidebar_label": "ImageAlignment"
+      },
       "api/enums/linecapstyle": {
         "title": "LineCapStyle",
         "sidebar_label": "LineCapStyle"
@@ -149,6 +153,10 @@
         "title": "FieldAppearanceOptions",
         "sidebar_label": "FieldAppearanceOptions"
       },
+      "api/interfaces/flattenoptions": {
+        "title": "FlattenOptions",
+        "sidebar_label": "FlattenOptions"
+      },
       "api/interfaces/grayscale": {
         "title": "Grayscale",
         "sidebar_label": "Grayscale"
@@ -224,6 +232,10 @@
       "api/interfaces/saveoptions": {
         "title": "SaveOptions",
         "sidebar_label": "SaveOptions"
+      },
+      "api/interfaces/settitleoptions": {
+        "title": "SetTitleOptions",
+        "sidebar_label": "SetTitleOptions"
       },
       "api/interfaces/singlelinetextlayout": {
         "title": "SinglelineTextLayout",
