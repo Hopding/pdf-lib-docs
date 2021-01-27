@@ -61,6 +61,10 @@
         "title": "PDFTextField",
         "sidebar_label": "PDFTextField"
       },
+      "api/classes/viewerpreferences": {
+        "title": "ViewerPreferences",
+        "sidebar_label": "ViewerPreferences"
+      },
       "api/enums/blendmode": {
         "title": "BlendMode",
         "sidebar_label": "BlendMode"
@@ -68,6 +72,10 @@
       "api/enums/colortypes": {
         "title": "ColorTypes",
         "sidebar_label": "ColorTypes"
+      },
+      "api/enums/duplex": {
+        "title": "Duplex",
+        "sidebar_label": "Duplex"
       },
       "api/enums/imagealignment": {
         "title": "ImageAlignment",
@@ -81,9 +89,21 @@
         "title": "LineJoinStyle",
         "sidebar_label": "LineJoinStyle"
       },
+      "api/enums/nonfullscreenpagemode": {
+        "title": "NonFullScreenPageMode",
+        "sidebar_label": "NonFullScreenPageMode"
+      },
       "api/enums/parsespeeds": {
         "title": "ParseSpeeds",
         "sidebar_label": "ParseSpeeds"
+      },
+      "api/enums/printscaling": {
+        "title": "PrintScaling",
+        "sidebar_label": "PrintScaling"
+      },
+      "api/enums/readingdirection": {
+        "title": "ReadingDirection",
+        "sidebar_label": "ReadingDirection"
       },
       "api/enums/rotationtypes": {
         "title": "RotationTypes",
@@ -184,6 +204,10 @@
       "api/interfaces/multilinetextlayout": {
         "title": "MultilineTextLayout",
         "sidebar_label": "MultilineTextLayout"
+      },
+      "api/interfaces/pagerange": {
+        "title": "PageRange",
+        "sidebar_label": "PageRange"
       },
       "api/interfaces/pdfpagedrawcircleoptions": {
         "title": "PDFPageDrawCircleOptions",

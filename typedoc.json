@@ -4,12 +4,29 @@
   "tsconfig": "./tsconfig.json",
   "out": "../docs/api",
   "exclude": [
-    "./src/core/**/*",
+    "./src/core/annotation/**/*",
+    "./src/core/objects/**/*",
+    "./src/core/streams/**/*",
+    "./src/core/writers/**/*",
+    "./src/core/document/**/*",
+    "./src/core/operators/**/*",
+    "./src/core/structures/**/*",
+    "./src/core/acroform/**/*",
+    "./src/core/embedders/**/*",
+    "./src/core/parser/**/*",
+    "./src/core/syntax/**/*",
+    "./src/core/PDFObjectCopier.ts",
+    "./src/core/PDFContext.ts",
+    "./src/core/errors.ts",
+    "./src/core/index.ts",
+
     "./src/utils/**/*",
+
     "./src/api/errors.ts",
     "./src/api/svgPath.ts",
     "./src/api/PDFEmbeddedFile.ts",
     "./src/api/PDFJavaScript.ts",
+
     "./src/types/fontkit.ts"
   ],
   "excludePrivate": true,

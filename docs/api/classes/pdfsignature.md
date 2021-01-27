@@ -49,7 +49,7 @@ reading the contents of existing digital signatures.
 
 *Overrides [PDFField](pdffield.md).[acroField](pdffield.md#acrofield)*
 
-*Defined in [api/form/PDFSignature.ts:34](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFSignature.ts#L34)*
+*Defined in [api/form/PDFSignature.ts:34](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFSignature.ts#L34)*
 
 The low-level PDFAcroSignature wrapped by this signature.
 
@@ -61,7 +61,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[doc](pdffield.md#doc)*
 
-*Defined in [api/form/PDFField.ts:96](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L96)*
+*Defined in [api/form/PDFField.ts:97](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L97)*
 
 The document to which this field belongs.
 
@@ -73,7 +73,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[ref](pdffield.md#ref)*
 
-*Defined in [api/form/PDFField.ts:93](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L93)*
+*Defined in [api/form/PDFField.ts:94](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L94)*
 
 The unique reference assigned to this field within the document.
 
@@ -85,7 +85,7 @@ The unique reference assigned to this field within the document.
 
 *Inherited from [PDFField](pdffield.md).[disableExporting](pdffield.md#disableexporting)*
 
-*Defined in [api/form/PDFField.ts:251](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L251)*
+*Defined in [api/form/PDFField.ts:252](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L252)*
 
 Indicate that this field's value should **not** be exported when the form
 is submitted in a PDF reader. For example:
@@ -104,7 +104,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[disableReadOnly](pdffield.md#disablereadonly)*
 
-*Defined in [api/form/PDFField.ts:174](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L174)*
+*Defined in [api/form/PDFField.ts:175](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L175)*
 
 Allow users to interact with this field and change its value in PDF
 readers via mouse and keyboard input. For example:
@@ -123,7 +123,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[disableRequired](pdffield.md#disablerequired)*
 
-*Defined in [api/form/PDFField.ts:212](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L212)*
+*Defined in [api/form/PDFField.ts:213](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L213)*
 
 Do not require this field to have a value when the form is submitted.
 For example:
@@ -142,7 +142,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[enableExporting](pdffield.md#enableexporting)*
 
-*Defined in [api/form/PDFField.ts:239](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L239)*
+*Defined in [api/form/PDFField.ts:240](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L240)*
 
 Indicate that this field's value should be exported when the form is
 submitted in a PDF reader. For example:
@@ -161,7 +161,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[enableReadOnly](pdffield.md#enablereadonly)*
 
-*Defined in [api/form/PDFField.ts:162](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L162)*
+*Defined in [api/form/PDFField.ts:163](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L163)*
 
 Prevent PDF readers from allowing users to interact with this field or
 change its value. The field will not respond to mouse or keyboard input.
@@ -183,7 +183,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[enableRequired](pdffield.md#enablerequired)*
 
-*Defined in [api/form/PDFField.ts:200](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L200)*
+*Defined in [api/form/PDFField.ts:201](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L201)*
 
 Require this field to have a value when the form is submitted.
 For example:
@@ -202,7 +202,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[getName](pdffield.md#getname)*
 
-*Defined in [api/form/PDFField.ts:132](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L132)*
+*Defined in [api/form/PDFField.ts:133](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L133)*
 
 Get the fully qualified name of this field. For example:
 ```js
@@ -234,7 +234,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[isExported](pdffield.md#isexported)*
 
-*Defined in [api/form/PDFField.ts:227](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L227)*
+*Defined in [api/form/PDFField.ts:228](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L228)*
 
 Returns `true` if this field's value should be exported when the form is
 submitted. See [PDFField.enableExporting](pdffield.md#enableexporting) and
@@ -257,7 +257,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[isReadOnly](pdffield.md#isreadonly)*
 
-*Defined in [api/form/PDFField.ts:147](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L147)*
+*Defined in [api/form/PDFField.ts:148](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L148)*
 
 Returns `true` if this field is read only. This means that PDF readers
 will not allow users to interact with the field or change its value. See
@@ -280,7 +280,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[isRequired](pdffield.md#isrequired)*
 
-*Defined in [api/form/PDFField.ts:188](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L188)*
+*Defined in [api/form/PDFField.ts:189](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L189)*
 
 Returns `true` if this field must have a value when the form is submitted.
 See [PDFField.enableRequired](pdffield.md#enablerequired) and [PDFField.disableRequired](pdffield.md#disablerequired).
@@ -302,7 +302,7 @@ ___
 
 *Overrides void*
 
-*Defined in [api/form/PDFSignature.ts:50](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFSignature.ts#L50)*
+*Defined in [api/form/PDFSignature.ts:50](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFSignature.ts#L50)*
 
 **Returns:** *boolean*
 
@@ -312,7 +312,7 @@ ___
 
 ▸ **of**(`acroSignature`: PDFAcroSignature, `ref`: PDFRef, `doc`: [PDFDocument](pdfdocument.md)): *[PDFSignature](pdfsignature.md)‹›*
 
-*Defined in [api/form/PDFSignature.ts:27](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFSignature.ts#L27)*
+*Defined in [api/form/PDFSignature.ts:27](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFSignature.ts#L27)*
 
 > **NOTE:** You probably don't want to call this method directly. Instead,
 > consider using the [PDFForm.getSignature](pdfform.md#getsignature) method, which will create an

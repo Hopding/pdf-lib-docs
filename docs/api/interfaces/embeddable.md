@@ -31,7 +31,7 @@ document before saving.
 
 • **embed**: *function*
 
-*Defined in [api/Embeddable.ts:6](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/Embeddable.ts#L6)*
+*Defined in [api/Embeddable.ts:6](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/Embeddable.ts#L6)*
 
 #### Type declaration:
 

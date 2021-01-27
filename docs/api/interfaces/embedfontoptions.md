@@ -24,7 +24,7 @@ sidebar_label: "EmbedFontOptions"
 
 • **customName**? : *undefined | string*
 
-*Defined in [api/PDFDocumentOptions.ts:38](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/PDFDocumentOptions.ts#L38)*
+*Defined in [api/PDFDocumentOptions.ts:38](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/PDFDocumentOptions.ts#L38)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **features**? : *TypeFeatures*
 
-*Defined in [api/PDFDocumentOptions.ts:39](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/PDFDocumentOptions.ts#L39)*
+*Defined in [api/PDFDocumentOptions.ts:39](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/PDFDocumentOptions.ts#L39)*
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 • **subset**? : *undefined | false | true*
 
-*Defined in [api/PDFDocumentOptions.ts:37](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/PDFDocumentOptions.ts#L37)*
+*Defined in [api/PDFDocumentOptions.ts:37](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/PDFDocumentOptions.ts#L37)*

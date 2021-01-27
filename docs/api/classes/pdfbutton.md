@@ -43,6 +43,7 @@ have a text label describing the action that they perform when clicked.
 * [isReadOnly](pdfbutton.md#isreadonly)
 * [isRequired](pdfbutton.md#isrequired)
 * [needsAppearancesUpdate](pdfbutton.md#needsappearancesupdate)
+* [setFontSize](pdfbutton.md#setfontsize)
 * [setImage](pdfbutton.md#setimage)
 * [updateAppearances](pdfbutton.md#updateappearances)
 * [of](pdfbutton.md#static-of)
@@ -55,7 +56,7 @@ have a text label describing the action that they perform when clicked.
 
 *Overrides [PDFField](pdffield.md).[acroField](pdffield.md#acrofield)*
 
-*Defined in [api/form/PDFButton.ts:54](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFButton.ts#L54)*
+*Defined in [api/form/PDFButton.ts:54](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFButton.ts#L54)*
 
 The low-level PDFAcroPushButton wrapped by this button.
 
@@ -67,7 +68,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[doc](pdffield.md#doc)*
 
-*Defined in [api/form/PDFField.ts:96](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L96)*
+*Defined in [api/form/PDFField.ts:97](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L97)*
 
 The document to which this field belongs.
 
@@ -79,7 +80,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[ref](pdffield.md#ref)*
 
-*Defined in [api/form/PDFField.ts:93](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L93)*
+*Defined in [api/form/PDFField.ts:94](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L94)*
 
 The unique reference assigned to this field within the document.
 
@@ -89,7 +90,7 @@ The unique reference assigned to this field within the document.
 
 ▸ **addToPage**(`text`: string, `page`: [PDFPage](pdfpage.md), `options?`: [FieldAppearanceOptions](../interfaces/fieldappearanceoptions.md)): *void*
 
-*Defined in [api/form/PDFButton.ts:123](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFButton.ts#L123)*
+*Defined in [api/form/PDFButton.ts:149](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFButton.ts#L149)*
 
 Show this button on the specified page with the given text. For example:
 ```js
@@ -132,7 +133,7 @@ ___
 
 *Overrides void*
 
-*Defined in [api/form/PDFButton.ts:192](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFButton.ts#L192)*
+*Defined in [api/form/PDFButton.ts:219](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFButton.ts#L219)*
 
 Update the appearance streams for each of this button's widgets using
 the default appearance provider for buttons. For example:
@@ -158,7 +159,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[disableExporting](pdffield.md#disableexporting)*
 
-*Defined in [api/form/PDFField.ts:251](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L251)*
+*Defined in [api/form/PDFField.ts:252](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L252)*
 
 Indicate that this field's value should **not** be exported when the form
 is submitted in a PDF reader. For example:
@@ -177,7 +178,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[disableReadOnly](pdffield.md#disablereadonly)*
 
-*Defined in [api/form/PDFField.ts:174](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L174)*
+*Defined in [api/form/PDFField.ts:175](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L175)*
 
 Allow users to interact with this field and change its value in PDF
 readers via mouse and keyboard input. For example:
@@ -196,7 +197,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[disableRequired](pdffield.md#disablerequired)*
 
-*Defined in [api/form/PDFField.ts:212](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L212)*
+*Defined in [api/form/PDFField.ts:213](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L213)*
 
 Do not require this field to have a value when the form is submitted.
 For example:
@@ -215,7 +216,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[enableExporting](pdffield.md#enableexporting)*
 
-*Defined in [api/form/PDFField.ts:239](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L239)*
+*Defined in [api/form/PDFField.ts:240](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L240)*
 
 Indicate that this field's value should be exported when the form is
 submitted in a PDF reader. For example:
@@ -234,7 +235,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[enableReadOnly](pdffield.md#enablereadonly)*
 
-*Defined in [api/form/PDFField.ts:162](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L162)*
+*Defined in [api/form/PDFField.ts:163](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L163)*
 
 Prevent PDF readers from allowing users to interact with this field or
 change its value. The field will not respond to mouse or keyboard input.
@@ -256,7 +257,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[enableRequired](pdffield.md#enablerequired)*
 
-*Defined in [api/form/PDFField.ts:200](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L200)*
+*Defined in [api/form/PDFField.ts:201](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L201)*
 
 Require this field to have a value when the form is submitted.
 For example:
@@ -275,7 +276,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[getName](pdffield.md#getname)*
 
-*Defined in [api/form/PDFField.ts:132](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L132)*
+*Defined in [api/form/PDFField.ts:133](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L133)*
 
 Get the fully qualified name of this field. For example:
 ```js
@@ -307,7 +308,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[isExported](pdffield.md#isexported)*
 
-*Defined in [api/form/PDFField.ts:227](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L227)*
+*Defined in [api/form/PDFField.ts:228](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L228)*
 
 Returns `true` if this field's value should be exported when the form is
 submitted. See [PDFField.enableExporting](pdffield.md#enableexporting) and
@@ -330,7 +331,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[isReadOnly](pdffield.md#isreadonly)*
 
-*Defined in [api/form/PDFField.ts:147](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L147)*
+*Defined in [api/form/PDFField.ts:148](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L148)*
 
 Returns `true` if this field is read only. This means that PDF readers
 will not allow users to interact with the field or change its value. See
@@ -353,7 +354,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[isRequired](pdffield.md#isrequired)*
 
-*Defined in [api/form/PDFField.ts:188](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L188)*
+*Defined in [api/form/PDFField.ts:189](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L189)*
 
 Returns `true` if this field must have a value when the form is submitted.
 See [PDFField.enableRequired](pdffield.md#enablerequired) and [PDFField.disableRequired](pdffield.md#disablerequired).
@@ -375,7 +376,7 @@ ___
 
 *Overrides void*
 
-*Defined in [api/form/PDFButton.ts:168](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFButton.ts#L168)*
+*Defined in [api/form/PDFButton.ts:195](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFButton.ts#L195)*
 
 Returns `true` if this button has been marked as dirty, or if any of this
 button's widgets do not have an appearance stream. For example:
@@ -390,11 +391,44 @@ Whether or not this button needs an appearance update.
 
 ___
 
+###  setFontSize
+
+▸ **setFontSize**(`fontSize`: number): *void*
+
+*Defined in [api/form/PDFButton.ts:116](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFButton.ts#L116)*
+
+Set the font size for this field. Larger font sizes will result in larger
+text being displayed when PDF readers render this button. Font sizes may
+be integer or floating point numbers. Supplying a negative font size will
+cause this method to throw an error.
+
+For example:
+```js
+const button = form.getButton('some.button.field')
+button.setFontSize(4)
+button.setFontSize(15.7)
+```
+
+> This method depends upon the existence of a default appearance
+> (`/DA`) string. If this field does not have a default appearance string,
+> or that string does not contain a font size (via the `Tf` operator),
+> then this method will throw an error.
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`fontSize` | number | The font size to be used when rendering text in this field.  |
+
+**Returns:** *void*
+
+___
+
 ###  setImage
 
 ▸ **setImage**(`image`: [PDFImage](pdfimage.md), `alignment`: [ImageAlignment](../enums/imagealignment.md)): *void*
 
-*Defined in [api/form/PDFButton.ts:81](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFButton.ts#L81)*
+*Defined in [api/form/PDFButton.ts:81](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFButton.ts#L81)*
 
 Display an image inside the bounds of this button's widgets. For example:
 ```js
@@ -419,7 +453,7 @@ ___
 
 ▸ **updateAppearances**(`font`: [PDFFont](pdffont.md), `provider?`: [AppearanceProviderFor](../index.md#appearanceproviderfor)‹[PDFButton](pdfbutton.md)›): *void*
 
-*Defined in [api/form/PDFButton.ts:216](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFButton.ts#L216)*
+*Defined in [api/form/PDFButton.ts:243](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFButton.ts#L243)*
 
 Update the appearance streams for each of this button's widgets using
 the given appearance provider. If no `provider` is passed, the default
@@ -451,7 +485,7 @@ ___
 
 ▸ **of**(`acroPushButton`: PDFAcroPushButton, `ref`: PDFRef, `doc`: [PDFDocument](pdfdocument.md)): *[PDFButton](pdfbutton.md)‹›*
 
-*Defined in [api/form/PDFButton.ts:47](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFButton.ts#L47)*
+*Defined in [api/form/PDFButton.ts:47](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFButton.ts#L47)*
 
 > **NOTE:** You probably don't want to call this method directly. Instead,
 > consider using the [PDFForm.getButton](pdfform.md#getbutton) method, which will create an

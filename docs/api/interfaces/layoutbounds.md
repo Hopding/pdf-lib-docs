@@ -25,7 +25,7 @@ sidebar_label: "LayoutBounds"
 
 • **height**: *number*
 
-*Defined in [api/text/layout.ts:27](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/text/layout.ts#L27)*
+*Defined in [api/text/layout.ts:27](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/text/layout.ts#L27)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **width**: *number*
 
-*Defined in [api/text/layout.ts:26](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/text/layout.ts#L26)*
+*Defined in [api/text/layout.ts:26](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/text/layout.ts#L26)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **x**: *number*
 
-*Defined in [api/text/layout.ts:24](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/text/layout.ts#L24)*
+*Defined in [api/text/layout.ts:24](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/text/layout.ts#L24)*
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 • **y**: *number*
 
-*Defined in [api/text/layout.ts:25](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/text/layout.ts#L25)*
+*Defined in [api/text/layout.ts:25](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/text/layout.ts#L25)*

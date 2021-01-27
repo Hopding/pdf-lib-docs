@@ -59,6 +59,7 @@ more than one option (see [PDFOptionList.isMultiselect](pdfoptionlist.md#ismulti
 * [isSorted](pdfoptionlist.md#issorted)
 * [needsAppearancesUpdate](pdfoptionlist.md#needsappearancesupdate)
 * [select](pdfoptionlist.md#select)
+* [setFontSize](pdfoptionlist.md#setfontsize)
 * [setOptions](pdfoptionlist.md#setoptions)
 * [updateAppearances](pdfoptionlist.md#updateappearances)
 * [of](pdfoptionlist.md#static-of)
@@ -71,7 +72,7 @@ more than one option (see [PDFOptionList.isMultiselect](pdfoptionlist.md#ismulti
 
 *Overrides [PDFField](pdffield.md).[acroField](pdffield.md#acrofield)*
 
-*Defined in [api/form/PDFOptionList.ts:55](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFOptionList.ts#L55)*
+*Defined in [api/form/PDFOptionList.ts:60](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFOptionList.ts#L60)*
 
 The low-level PDFAcroListBox wrapped by this option list.
 
@@ -83,7 +84,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[doc](pdffield.md#doc)*
 
-*Defined in [api/form/PDFField.ts:96](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L96)*
+*Defined in [api/form/PDFField.ts:97](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L97)*
 
 The document to which this field belongs.
 
@@ -95,7 +96,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[ref](pdffield.md#ref)*
 
-*Defined in [api/form/PDFField.ts:93](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L93)*
+*Defined in [api/form/PDFField.ts:94](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L94)*
 
 The unique reference assigned to this field within the document.
 
@@ -105,7 +106,7 @@ The unique reference assigned to this field within the document.
 
 ▸ **addOptions**(`options`: string | string[]): *void*
 
-*Defined in [api/form/PDFOptionList.ts:171](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFOptionList.ts#L171)*
+*Defined in [api/form/PDFOptionList.ts:176](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFOptionList.ts#L176)*
 
 Add to the list of options that are available for this option list. Users
 will be able to select these values in a PDF reader. In addition to the
@@ -133,7 +134,7 @@ ___
 
 ▸ **addToPage**(`page`: [PDFPage](pdfpage.md), `options?`: [FieldAppearanceOptions](../interfaces/fieldappearanceoptions.md)): *void*
 
-*Defined in [api/form/PDFOptionList.ts:406](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFOptionList.ts#L406)*
+*Defined in [api/form/PDFOptionList.ts:448](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFOptionList.ts#L448)*
 
 Show this option list on the specified page. For example:
 ```js
@@ -175,7 +176,7 @@ ___
 
 ▸ **clear**(): *void*
 
-*Defined in [api/form/PDFOptionList.ts:249](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFOptionList.ts#L249)*
+*Defined in [api/form/PDFOptionList.ts:254](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFOptionList.ts#L254)*
 
 Clear all selected values for this option list. This operation is
 equivalent to selecting an empty list. This method will update the
@@ -199,7 +200,7 @@ ___
 
 *Overrides void*
 
-*Defined in [api/form/PDFOptionList.ts:475](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFOptionList.ts#L475)*
+*Defined in [api/form/PDFOptionList.ts:518](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFOptionList.ts#L518)*
 
 Update the appearance streams for each of this option list's widgets using
 the default appearance provider for option lists. For example:
@@ -225,7 +226,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[disableExporting](pdffield.md#disableexporting)*
 
-*Defined in [api/form/PDFField.ts:251](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L251)*
+*Defined in [api/form/PDFField.ts:252](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L252)*
 
 Indicate that this field's value should **not** be exported when the form
 is submitted in a PDF reader. For example:
@@ -242,7 +243,7 @@ ___
 
 ▸ **disableMultiselect**(): *void*
 
-*Defined in [api/form/PDFOptionList.ts:330](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFOptionList.ts#L330)*
+*Defined in [api/form/PDFOptionList.ts:372](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFOptionList.ts#L372)*
 
 Do not allow users to select more than one option from this option list.
 For example:
@@ -261,7 +262,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[disableReadOnly](pdffield.md#disablereadonly)*
 
-*Defined in [api/form/PDFField.ts:174](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L174)*
+*Defined in [api/form/PDFField.ts:175](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L175)*
 
 Allow users to interact with this field and change its value in PDF
 readers via mouse and keyboard input. For example:
@@ -280,7 +281,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[disableRequired](pdffield.md#disablerequired)*
 
-*Defined in [api/form/PDFField.ts:212](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L212)*
+*Defined in [api/form/PDFField.ts:213](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L213)*
 
 Do not require this field to have a value when the form is submitted.
 For example:
@@ -297,7 +298,7 @@ ___
 
 ▸ **disableSelectOnClick**(): *void*
 
-*Defined in [api/form/PDFOptionList.ts:374](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFOptionList.ts#L374)*
+*Defined in [api/form/PDFOptionList.ts:416](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFOptionList.ts#L416)*
 
 Wait to store the option selected by a user until they leave this option
 list field (by clicking outside of it - on another field, for example).
@@ -315,7 +316,7 @@ ___
 
 ▸ **disableSorting**(): *void*
 
-*Defined in [api/form/PDFOptionList.ts:292](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFOptionList.ts#L292)*
+*Defined in [api/form/PDFOptionList.ts:334](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFOptionList.ts#L334)*
 
 Do not always display the options of this option list in alphabetical
 order. Instead, display the options in whichever order they were added
@@ -335,7 +336,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[enableExporting](pdffield.md#enableexporting)*
 
-*Defined in [api/form/PDFField.ts:239](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L239)*
+*Defined in [api/form/PDFField.ts:240](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L240)*
 
 Indicate that this field's value should be exported when the form is
 submitted in a PDF reader. For example:
@@ -352,7 +353,7 @@ ___
 
 ▸ **enableMultiselect**(): *void*
 
-*Defined in [api/form/PDFOptionList.ts:318](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFOptionList.ts#L318)*
+*Defined in [api/form/PDFOptionList.ts:360](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFOptionList.ts#L360)*
 
 Allow users to select more than one option from this option list.
 For example:
@@ -371,7 +372,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[enableReadOnly](pdffield.md#enablereadonly)*
 
-*Defined in [api/form/PDFField.ts:162](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L162)*
+*Defined in [api/form/PDFField.ts:163](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L163)*
 
 Prevent PDF readers from allowing users to interact with this field or
 change its value. The field will not respond to mouse or keyboard input.
@@ -393,7 +394,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[enableRequired](pdffield.md#enablerequired)*
 
-*Defined in [api/form/PDFField.ts:200](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L200)*
+*Defined in [api/form/PDFField.ts:201](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L201)*
 
 Require this field to have a value when the form is submitted.
 For example:
@@ -410,7 +411,7 @@ ___
 
 ▸ **enableSelectOnClick**(): *void*
 
-*Defined in [api/form/PDFOptionList.ts:361](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFOptionList.ts#L361)*
+*Defined in [api/form/PDFOptionList.ts:403](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFOptionList.ts#L403)*
 
 Store the option selected by a user immediately after the user clicks the
 option. Do not wait for the user to leave this option list field (by
@@ -428,7 +429,7 @@ ___
 
 ▸ **enableSorting**(): *void*
 
-*Defined in [api/form/PDFOptionList.ts:279](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFOptionList.ts#L279)*
+*Defined in [api/form/PDFOptionList.ts:321](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFOptionList.ts#L321)*
 
 Always display the options of this option list in alphabetical order,
 irrespective of the order in which the options were added to this option
@@ -449,7 +450,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[getName](pdffield.md#getname)*
 
-*Defined in [api/form/PDFField.ts:132](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L132)*
+*Defined in [api/form/PDFField.ts:133](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L133)*
 
 Get the fully qualified name of this field. For example:
 ```js
@@ -479,7 +480,7 @@ ___
 
 ▸ **getOptions**(): *string[]*
 
-*Defined in [api/form/PDFOptionList.ts:80](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFOptionList.ts#L80)*
+*Defined in [api/form/PDFOptionList.ts:85](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFOptionList.ts#L85)*
 
 Get the list of available options for this option list. These options will
 be displayed to users who view this option list in a PDF reader.
@@ -500,7 +501,7 @@ ___
 
 ▸ **getSelected**(): *string[]*
 
-*Defined in [api/form/PDFOptionList.ts:104](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFOptionList.ts#L104)*
+*Defined in [api/form/PDFOptionList.ts:109](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFOptionList.ts#L109)*
 
 Get the selected options for this option list. These are the values that
 were selected by a human user via a PDF reader, or programatically via
@@ -524,7 +525,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[isExported](pdffield.md#isexported)*
 
-*Defined in [api/form/PDFField.ts:227](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L227)*
+*Defined in [api/form/PDFField.ts:228](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L228)*
 
 Returns `true` if this field's value should be exported when the form is
 submitted. See [PDFField.enableExporting](pdffield.md#enableexporting) and
@@ -545,7 +546,7 @@ ___
 
 ▸ **isMultiselect**(): *boolean*
 
-*Defined in [api/form/PDFOptionList.ts:306](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFOptionList.ts#L306)*
+*Defined in [api/form/PDFOptionList.ts:348](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFOptionList.ts#L348)*
 
 Returns `true` if multiple options can be selected from this option list.
 See [PDFOptionList.enableMultiselect](pdfoptionlist.md#enablemultiselect) and
@@ -567,7 +568,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[isReadOnly](pdffield.md#isreadonly)*
 
-*Defined in [api/form/PDFField.ts:147](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L147)*
+*Defined in [api/form/PDFField.ts:148](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L148)*
 
 Returns `true` if this field is read only. This means that PDF readers
 will not allow users to interact with the field or change its value. See
@@ -590,7 +591,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[isRequired](pdffield.md#isrequired)*
 
-*Defined in [api/form/PDFField.ts:188](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L188)*
+*Defined in [api/form/PDFField.ts:189](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L189)*
 
 Returns `true` if this field must have a value when the form is submitted.
 See [PDFField.enableRequired](pdffield.md#enablerequired) and [PDFField.disableRequired](pdffield.md#disablerequired).
@@ -610,7 +611,7 @@ ___
 
 ▸ **isSelectOnClick**(): *boolean*
 
-*Defined in [api/form/PDFOptionList.ts:348](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFOptionList.ts#L348)*
+*Defined in [api/form/PDFOptionList.ts:390](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFOptionList.ts#L390)*
 
 Returns `true` if the option selected by a user is stored, or "committed",
 when the user clicks the option. The alternative is that the user's
@@ -634,7 +635,7 @@ ___
 
 ▸ **isSorted**(): *boolean*
 
-*Defined in [api/form/PDFOptionList.ts:265](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFOptionList.ts#L265)*
+*Defined in [api/form/PDFOptionList.ts:307](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFOptionList.ts#L307)*
 
 Returns `true` if the options of this option list are always displayed
 in alphabetical order, irrespective of the order in which the options
@@ -657,7 +658,7 @@ ___
 
 *Overrides void*
 
-*Defined in [api/form/PDFOptionList.ts:451](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFOptionList.ts#L451)*
+*Defined in [api/form/PDFOptionList.ts:494](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFOptionList.ts#L494)*
 
 Returns `true` if this option list has been marked as dirty, or if any of
 this option list's widgets do not have an appearance stream. For example:
@@ -676,7 +677,7 @@ ___
 
 ▸ **select**(`options`: string | string[], `merge`: boolean): *void*
 
-*Defined in [api/form/PDFOptionList.ts:208](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFOptionList.ts#L208)*
+*Defined in [api/form/PDFOptionList.ts:213](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFOptionList.ts#L213)*
 
 Select one or more values for this option list. This operation is analogous
 to a human user opening the option list in a PDF reader and clicking on one
@@ -703,11 +704,44 @@ Name | Type | Default | Description |
 
 ___
 
+###  setFontSize
+
+▸ **setFontSize**(`fontSize`: number): *void*
+
+*Defined in [api/form/PDFOptionList.ts:290](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFOptionList.ts#L290)*
+
+Set the font size for this field. Larger font sizes will result in larger
+text being displayed when PDF readers render this option list. Font sizes
+may be integer or floating point numbers. Supplying a negative font size
+will cause this method to throw an error.
+
+For example:
+```js
+const optionList = form.getOptionList('some.optionList.field')
+optionList.setFontSize(4)
+optionList.setFontSize(15.7)
+```
+
+> This method depends upon the existence of a default appearance
+> (`/DA`) string. If this field does not have a default appearance string,
+> or that string does not contain a font size (via the `Tf` operator),
+> then this method will throw an error.
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`fontSize` | number | The font size to be used when rendering text in this field.  |
+
+**Returns:** *void*
+
+___
+
 ###  setOptions
 
 ▸ **setOptions**(`options`: string[]): *void*
 
-*Defined in [api/form/PDFOptionList.ts:146](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFOptionList.ts#L146)*
+*Defined in [api/form/PDFOptionList.ts:151](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFOptionList.ts#L151)*
 
 Set the list of options that are available for this option list. These are
 the values that will be available for users to select when they view this
@@ -751,7 +785,7 @@ ___
 
 ▸ **updateAppearances**(`font`: [PDFFont](pdffont.md), `provider?`: [AppearanceProviderFor](../index.md#appearanceproviderfor)‹[PDFOptionList](pdfoptionlist.md)›): *void*
 
-*Defined in [api/form/PDFOptionList.ts:496](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFOptionList.ts#L496)*
+*Defined in [api/form/PDFOptionList.ts:539](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFOptionList.ts#L539)*
 
 Update the appearance streams for each of this option list's widgets using
 the given appearance provider. If no `provider` is passed, the default
@@ -780,7 +814,7 @@ ___
 
 ▸ **of**(`acroListBox`: PDFAcroListBox, `ref`: PDFRef, `doc`: [PDFDocument](pdfdocument.md)): *[PDFOptionList](pdfoptionlist.md)‹›*
 
-*Defined in [api/form/PDFOptionList.ts:51](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFOptionList.ts#L51)*
+*Defined in [api/form/PDFOptionList.ts:56](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFOptionList.ts#L56)*
 
 > **NOTE:** You probably don't want to call this method directly. Instead,
 > consider using the [PDFForm.getOptionList](pdfform.md#getoptionlist) method, which will create

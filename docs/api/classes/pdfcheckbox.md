@@ -57,7 +57,7 @@ square in shape and display a check mark when they are in the `on` state.
 
 *Overrides [PDFField](pdffield.md).[acroField](pdffield.md#acrofield)*
 
-*Defined in [api/form/PDFCheckBox.ts:49](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFCheckBox.ts#L49)*
+*Defined in [api/form/PDFCheckBox.ts:49](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFCheckBox.ts#L49)*
 
 The low-level PDFAcroCheckBox wrapped by this check box.
 
@@ -69,7 +69,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[doc](pdffield.md#doc)*
 
-*Defined in [api/form/PDFField.ts:96](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L96)*
+*Defined in [api/form/PDFField.ts:97](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L97)*
 
 The document to which this field belongs.
 
@@ -81,7 +81,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[ref](pdffield.md#ref)*
 
-*Defined in [api/form/PDFField.ts:93](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L93)*
+*Defined in [api/form/PDFField.ts:94](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L94)*
 
 The unique reference assigned to this field within the document.
 
@@ -91,7 +91,7 @@ The unique reference assigned to this field within the document.
 
 ▸ **addToPage**(`page`: [PDFPage](pdfpage.md), `options?`: [FieldAppearanceOptions](../interfaces/fieldappearanceoptions.md)): *void*
 
-*Defined in [api/form/PDFCheckBox.ts:150](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFCheckBox.ts#L150)*
+*Defined in [api/form/PDFCheckBox.ts:150](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFCheckBox.ts#L150)*
 
 Show this check box on the specified page. For example:
 ```js
@@ -130,7 +130,7 @@ ___
 
 ▸ **check**(): *void*
 
-*Defined in [api/form/PDFCheckBox.ts:84](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFCheckBox.ts#L84)*
+*Defined in [api/form/PDFCheckBox.ts:84](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFCheckBox.ts#L84)*
 
 Mark this check box. This operation is analogous to a human user clicking
 a check box to fill it in a PDF reader. This method will update the
@@ -160,7 +160,7 @@ ___
 
 *Overrides void*
 
-*Defined in [api/form/PDFCheckBox.ts:215](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFCheckBox.ts#L215)*
+*Defined in [api/form/PDFCheckBox.ts:218](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFCheckBox.ts#L218)*
 
 Update the appearance streams for each of this check box's widgets using
 the default appearance provider for check boxes. For example:
@@ -179,7 +179,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[disableExporting](pdffield.md#disableexporting)*
 
-*Defined in [api/form/PDFField.ts:251](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L251)*
+*Defined in [api/form/PDFField.ts:252](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L252)*
 
 Indicate that this field's value should **not** be exported when the form
 is submitted in a PDF reader. For example:
@@ -198,7 +198,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[disableReadOnly](pdffield.md#disablereadonly)*
 
-*Defined in [api/form/PDFField.ts:174](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L174)*
+*Defined in [api/form/PDFField.ts:175](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L175)*
 
 Allow users to interact with this field and change its value in PDF
 readers via mouse and keyboard input. For example:
@@ -217,7 +217,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[disableRequired](pdffield.md#disablerequired)*
 
-*Defined in [api/form/PDFField.ts:212](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L212)*
+*Defined in [api/form/PDFField.ts:213](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L213)*
 
 Do not require this field to have a value when the form is submitted.
 For example:
@@ -236,7 +236,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[enableExporting](pdffield.md#enableexporting)*
 
-*Defined in [api/form/PDFField.ts:239](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L239)*
+*Defined in [api/form/PDFField.ts:240](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L240)*
 
 Indicate that this field's value should be exported when the form is
 submitted in a PDF reader. For example:
@@ -255,7 +255,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[enableReadOnly](pdffield.md#enablereadonly)*
 
-*Defined in [api/form/PDFField.ts:162](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L162)*
+*Defined in [api/form/PDFField.ts:163](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L163)*
 
 Prevent PDF readers from allowing users to interact with this field or
 change its value. The field will not respond to mouse or keyboard input.
@@ -277,7 +277,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[enableRequired](pdffield.md#enablerequired)*
 
-*Defined in [api/form/PDFField.ts:200](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L200)*
+*Defined in [api/form/PDFField.ts:201](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L201)*
 
 Require this field to have a value when the form is submitted.
 For example:
@@ -296,7 +296,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[getName](pdffield.md#getname)*
 
-*Defined in [api/form/PDFField.ts:132](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L132)*
+*Defined in [api/form/PDFField.ts:133](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L133)*
 
 Get the fully qualified name of this field. For example:
 ```js
@@ -326,7 +326,7 @@ ___
 
 ▸ **isChecked**(): *boolean*
 
-*Defined in [api/form/PDFCheckBox.ts:120](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFCheckBox.ts#L120)*
+*Defined in [api/form/PDFCheckBox.ts:120](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFCheckBox.ts#L120)*
 
 Returns `true` if this check box is selected (either by a human user via
 a PDF reader, or else programmatically via software). For example:
@@ -347,7 +347,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[isExported](pdffield.md#isexported)*
 
-*Defined in [api/form/PDFField.ts:227](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L227)*
+*Defined in [api/form/PDFField.ts:228](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L228)*
 
 Returns `true` if this field's value should be exported when the form is
 submitted. See [PDFField.enableExporting](pdffield.md#enableexporting) and
@@ -370,7 +370,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[isReadOnly](pdffield.md#isreadonly)*
 
-*Defined in [api/form/PDFField.ts:147](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L147)*
+*Defined in [api/form/PDFField.ts:148](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L148)*
 
 Returns `true` if this field is read only. This means that PDF readers
 will not allow users to interact with the field or change its value. See
@@ -393,7 +393,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[isRequired](pdffield.md#isrequired)*
 
-*Defined in [api/form/PDFField.ts:188](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFField.ts#L188)*
+*Defined in [api/form/PDFField.ts:189](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFField.ts#L189)*
 
 Returns `true` if this field must have a value when the form is submitted.
 See [PDFField.enableRequired](pdffield.md#enablerequired) and [PDFField.disableRequired](pdffield.md#disablerequired).
@@ -415,7 +415,7 @@ ___
 
 *Overrides void*
 
-*Defined in [api/form/PDFCheckBox.ts:195](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFCheckBox.ts#L195)*
+*Defined in [api/form/PDFCheckBox.ts:196](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFCheckBox.ts#L196)*
 
 Returns `true` if any of this check box's widgets do not have an
 appearance stream for its current state. For example:
@@ -434,7 +434,7 @@ ___
 
 ▸ **uncheck**(): *void*
 
-*Defined in [api/form/PDFCheckBox.ts:106](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFCheckBox.ts#L106)*
+*Defined in [api/form/PDFCheckBox.ts:106](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFCheckBox.ts#L106)*
 
 Clears this check box. This operation is analogous to a human user clicking
 a check box to unmark it in a PDF reader. This method will update the
@@ -459,7 +459,7 @@ ___
 
 ▸ **updateAppearances**(`provider?`: [AppearanceProviderFor](../index.md#appearanceproviderfor)‹[PDFCheckBox](pdfcheckbox.md)›): *void*
 
-*Defined in [api/form/PDFCheckBox.ts:236](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFCheckBox.ts#L236)*
+*Defined in [api/form/PDFCheckBox.ts:239](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFCheckBox.ts#L239)*
 
 Update the appearance streams for each of this check box's widgets using
 the given appearance provider. If no `provider` is passed, the default
@@ -489,7 +489,7 @@ ___
 
 ▸ **of**(`acroCheckBox`: PDFAcroCheckBox, `ref`: PDFRef, `doc`: [PDFDocument](pdfdocument.md)): *[PDFCheckBox](pdfcheckbox.md)‹›*
 
-*Defined in [api/form/PDFCheckBox.ts:45](https://github.com/Hopding/pdf-lib/blob/c957768/src/api/form/PDFCheckBox.ts#L45)*
+*Defined in [api/form/PDFCheckBox.ts:45](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFCheckBox.ts#L45)*
 
 > **NOTE:** You probably don't want to call this method directly. Instead,
 > consider using the [PDFForm.getCheckBox](pdfform.md#getcheckbox) method, which will create an
