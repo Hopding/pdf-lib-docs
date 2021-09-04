@@ -27,7 +27,7 @@ sidebar_label: "TextPosition"
 
 • **encoded**: *PDFHexString*
 
-*Defined in [api/text/layout.ts:16](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/text/layout.ts#L16)*
+*Defined in [api/text/layout.ts:16](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/text/layout.ts#L16)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **height**: *number*
 
-*Defined in [api/text/layout.ts:20](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/text/layout.ts#L20)*
+*Defined in [api/text/layout.ts:20](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/text/layout.ts#L20)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **text**: *string*
 
-*Defined in [api/text/layout.ts:15](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/text/layout.ts#L15)*
+*Defined in [api/text/layout.ts:15](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/text/layout.ts#L15)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **width**: *number*
 
-*Defined in [api/text/layout.ts:19](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/text/layout.ts#L19)*
+*Defined in [api/text/layout.ts:19](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/text/layout.ts#L19)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 • **x**: *number*
 
-*Defined in [api/text/layout.ts:17](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/text/layout.ts#L17)*
+*Defined in [api/text/layout.ts:17](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/text/layout.ts#L17)*
 
 ___
 
@@ -67,4 +67,4 @@ ___
 
 • **y**: *number*
 
-*Defined in [api/text/layout.ts:18](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/text/layout.ts#L18)*
+*Defined in [api/text/layout.ts:18](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/text/layout.ts#L18)*

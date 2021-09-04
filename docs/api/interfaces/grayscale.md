@@ -23,7 +23,7 @@ sidebar_label: "Grayscale"
 
 • **gray**: *number*
 
-*Defined in [api/colors.ts:19](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/colors.ts#L19)*
+*Defined in [api/colors.ts:19](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/colors.ts#L19)*
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 • **type**: *[Grayscale](../enums/colortypes.md#grayscale)*
 
-*Defined in [api/colors.ts:18](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/colors.ts#L18)*
+*Defined in [api/colors.ts:18](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/colors.ts#L18)*

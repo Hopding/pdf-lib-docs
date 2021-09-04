@@ -47,7 +47,7 @@ sidebar_label: "ViewerPreferences"
 
 ▸ **getCenterWindow**(): *boolean*
 
-*Defined in [core/interactive/ViewerPreferences.ts:239](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L239)*
+*Defined in [core/interactive/ViewerPreferences.ts:239](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L239)*
 
 Returns `true` if PDF readers should position the document's window in the
 center of the screen.
@@ -62,7 +62,7 @@ ___
 
 ▸ **getDisplayDocTitle**(): *boolean*
 
-*Defined in [core/interactive/ViewerPreferences.ts:250](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L250)*
+*Defined in [core/interactive/ViewerPreferences.ts:250](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L250)*
 
 Returns `true` if the window's title bar should display the document
 `Title`, taken from the document metadata (see [PDFDocument.getTitle](pdfdocument.md#gettitle)).
@@ -79,7 +79,7 @@ ___
 
 ▸ **getDuplex**(): *[Duplex](../enums/duplex.md) | undefined*
 
-*Defined in [core/interactive/ViewerPreferences.ts:288](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L288)*
+*Defined in [core/interactive/ViewerPreferences.ts:288](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L288)*
 
 Returns the paper handling option that should be used when printing the
 file from the print dialog.
@@ -94,7 +94,7 @@ ___
 
 ▸ **getFitWindow**(): *boolean*
 
-*Defined in [core/interactive/ViewerPreferences.ts:230](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L230)*
+*Defined in [core/interactive/ViewerPreferences.ts:230](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L230)*
 
 Returns `true` if PDF readers should resize the document's window to fit
 the size of the first displayed page.
@@ -109,7 +109,7 @@ ___
 
 ▸ **getHideMenubar**(): *boolean*
 
-*Defined in [core/interactive/ViewerPreferences.ts:211](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L211)*
+*Defined in [core/interactive/ViewerPreferences.ts:211](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L211)*
 
 Returns `true` if PDF readers should hide the menu bar when displaying this
 document.
@@ -124,7 +124,7 @@ ___
 
 ▸ **getHideToolbar**(): *boolean*
 
-*Defined in [core/interactive/ViewerPreferences.ts:202](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L202)*
+*Defined in [core/interactive/ViewerPreferences.ts:202](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L202)*
 
 Returns `true` if PDF readers should hide the toolbar menus when displaying
 this document.
@@ -139,7 +139,7 @@ ___
 
 ▸ **getHideWindowUI**(): *boolean*
 
-*Defined in [core/interactive/ViewerPreferences.ts:221](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L221)*
+*Defined in [core/interactive/ViewerPreferences.ts:221](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L221)*
 
 Returns `true` if PDF readers should hide the user interface elements in
 the document's window (such as scroll bars and navigation controls),
@@ -155,7 +155,7 @@ ___
 
 ▸ **getNonFullScreenPageMode**(): *[NonFullScreenPageMode](../enums/nonfullscreenpagemode.md)*
 
-*Defined in [core/interactive/ViewerPreferences.ts:259](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L259)*
+*Defined in [core/interactive/ViewerPreferences.ts:259](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L259)*
 
 Returns the page mode, which tells the PDF reader how to display the
 document after exiting full-screen mode.
@@ -170,7 +170,7 @@ ___
 
 ▸ **getNumCopies**(): *number*
 
-*Defined in [core/interactive/ViewerPreferences.ts:343](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L343)*
+*Defined in [core/interactive/ViewerPreferences.ts:343](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L343)*
 
 Returns the number of copies to be printed when the print dialog is opened
 for this document.
@@ -185,7 +185,7 @@ ___
 
 ▸ **getPickTrayByPDFSize**(): *boolean | undefined*
 
-*Defined in [core/interactive/ViewerPreferences.ts:299](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L299)*
+*Defined in [core/interactive/ViewerPreferences.ts:299](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L299)*
 
 Returns `true` if the PDF page size should be used to select the input
 paper tray.
@@ -201,7 +201,7 @@ ___
 
 ▸ **getPrintPageRange**(): *[PageRange](../interfaces/pagerange.md)[]*
 
-*Defined in [core/interactive/ViewerPreferences.ts:320](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L320)*
+*Defined in [core/interactive/ViewerPreferences.ts:320](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L320)*
 
 Returns an array of page number ranges, which are the values used to
 initialize the print dialog box when the file is printed. Each range
@@ -228,7 +228,7 @@ ___
 
 ▸ **getPrintScaling**(): *[PrintScaling](../enums/printscaling.md)*
 
-*Defined in [core/interactive/ViewerPreferences.ts:278](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L278)*
+*Defined in [core/interactive/ViewerPreferences.ts:278](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L278)*
 
 Returns the page scaling option that the PDF reader should select when the
 print dialog is displayed.
@@ -243,7 +243,7 @@ ___
 
 ▸ **getReadingDirection**(): *[ReadingDirection](../enums/readingdirection.md)*
 
-*Defined in [core/interactive/ViewerPreferences.ts:268](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L268)*
+*Defined in [core/interactive/ViewerPreferences.ts:268](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L268)*
 
 Returns the predominant reading order for text.
 
@@ -257,7 +257,7 @@ ___
 
 ▸ **setCenterWindow**(`centerWindow`: boolean): *void*
 
-*Defined in [core/interactive/ViewerPreferences.ts:393](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L393)*
+*Defined in [core/interactive/ViewerPreferences.ts:393](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L393)*
 
 Choose whether the PDF reader should position the document's window in the
 center of the screen.
@@ -276,7 +276,7 @@ ___
 
 ▸ **setDisplayDocTitle**(`displayTitle`: boolean): *void*
 
-*Defined in [core/interactive/ViewerPreferences.ts:404](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L404)*
+*Defined in [core/interactive/ViewerPreferences.ts:404](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L404)*
 
 Choose whether the window's title bar should display the document `Title`
 taken from the document metadata (see [PDFDocument.setTitle](pdfdocument.md#settitle)). If
@@ -296,7 +296,7 @@ ___
 
 ▸ **setDuplex**(`duplex`: [Duplex](../enums/duplex.md)): *void*
 
-*Defined in [core/interactive/ViewerPreferences.ts:501](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L501)*
+*Defined in [core/interactive/ViewerPreferences.ts:501](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L501)*
 
 Choose the paper handling option that should be selected by default in the
 print dialog.
@@ -324,7 +324,7 @@ ___
 
 ▸ **setFitWindow**(`fitWindow`: boolean): *void*
 
-*Defined in [core/interactive/ViewerPreferences.ts:383](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L383)*
+*Defined in [core/interactive/ViewerPreferences.ts:383](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L383)*
 
 Choose whether the PDF reader should resize the document's window to fit
 the size of the first displayed page.
@@ -343,7 +343,7 @@ ___
 
 ▸ **setHideMenubar**(`hideMenubar`: boolean): *void*
 
-*Defined in [core/interactive/ViewerPreferences.ts:362](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L362)*
+*Defined in [core/interactive/ViewerPreferences.ts:362](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L362)*
 
 Choose whether the PDF reader's menu bar should be hidden while the
 document is active.
@@ -362,7 +362,7 @@ ___
 
 ▸ **setHideToolbar**(`hideToolbar`: boolean): *void*
 
-*Defined in [core/interactive/ViewerPreferences.ts:352](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L352)*
+*Defined in [core/interactive/ViewerPreferences.ts:352](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L352)*
 
 Choose whether the PDF reader's toolbars should be hidden while the
 document is active.
@@ -381,7 +381,7 @@ ___
 
 ▸ **setHideWindowUI**(`hideWindowUI`: boolean): *void*
 
-*Defined in [core/interactive/ViewerPreferences.ts:373](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L373)*
+*Defined in [core/interactive/ViewerPreferences.ts:373](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L373)*
 
 Choose whether the PDF reader should hide user interface elements in the
 document's window (such as scroll bars and navigation controls), leaving
@@ -401,7 +401,7 @@ ___
 
 ▸ **setNonFullScreenPageMode**(`nonFullScreenPageMode`: [NonFullScreenPageMode](../enums/nonfullscreenpagemode.md)): *void*
 
-*Defined in [core/interactive/ViewerPreferences.ts:431](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L431)*
+*Defined in [core/interactive/ViewerPreferences.ts:431](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L431)*
 
 Choose how the PDF reader should display the document upon exiting
 full-screen mode. This entry is meaningful only if the value of the
@@ -435,7 +435,7 @@ ___
 
 ▸ **setNumCopies**(`numCopies`: number): *void*
 
-*Defined in [core/interactive/ViewerPreferences.ts:571](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L571)*
+*Defined in [core/interactive/ViewerPreferences.ts:571](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L571)*
 
 Choose the default number of copies to be printed when the print dialog is
 opened for this file.
@@ -454,7 +454,7 @@ ___
 
 ▸ **setPickTrayByPDFSize**(`pickTrayByPDFSize`: boolean): *void*
 
-*Defined in [core/interactive/ViewerPreferences.ts:520](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L520)*
+*Defined in [core/interactive/ViewerPreferences.ts:520](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L520)*
 
 Choose whether the PDF document's page size should be used to select the
 input paper tray when printing. This setting influences only the preset
@@ -479,7 +479,7 @@ ___
 
 ▸ **setPrintPageRange**(`printPageRange`: [PageRange](../interfaces/pagerange.md)[] | [PageRange](../interfaces/pagerange.md)): *void*
 
-*Defined in [core/interactive/ViewerPreferences.ts:551](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L551)*
+*Defined in [core/interactive/ViewerPreferences.ts:551](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L551)*
 
 Choose the page numbers used to initialize the print dialog box when the
 file is printed. The first page of the PDF file is denoted by 0.
@@ -516,7 +516,7 @@ ___
 
 ▸ **setPrintScaling**(`printScaling`: [PrintScaling](../enums/printscaling.md)): *void*
 
-*Defined in [core/interactive/ViewerPreferences.ts:480](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L480)*
+*Defined in [core/interactive/ViewerPreferences.ts:480](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L480)*
 
 Choose the page scaling option that should be selected when a print dialog
 is displayed for this document.
@@ -544,7 +544,7 @@ ___
 
 ▸ **setReadingDirection**(`readingDirection`: [ReadingDirection](../enums/readingdirection.md)): *void*
 
-*Defined in [core/interactive/ViewerPreferences.ts:459](https://github.com/Hopding/pdf-lib/blob/d213f92/src/core/interactive/ViewerPreferences.ts#L459)*
+*Defined in [core/interactive/ViewerPreferences.ts:459](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L459)*
 
 Choose the predominant reading order for text.
 

@@ -22,4 +22,4 @@ sidebar_label: "SetTitleOptions"
 
 • **showInWindowTitleBar**: *boolean*
 
-*Defined in [api/PDFDocumentOptions.ts:43](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/PDFDocumentOptions.ts#L43)*
+*Defined in [api/PDFDocumentOptions.ts:43](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/PDFDocumentOptions.ts#L43)*

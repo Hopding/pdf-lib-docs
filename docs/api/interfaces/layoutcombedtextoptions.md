@@ -25,7 +25,7 @@ sidebar_label: "LayoutCombedTextOptions"
 
 • **bounds**: *[LayoutBounds](layoutbounds.md)*
 
-*Defined in [api/text/layout.ts:210](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/text/layout.ts#L210)*
+*Defined in [api/text/layout.ts:210](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/text/layout.ts#L210)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **cellCount**: *number*
 
-*Defined in [api/text/layout.ts:211](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/text/layout.ts#L211)*
+*Defined in [api/text/layout.ts:211](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/text/layout.ts#L211)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **font**: *[PDFFont](../classes/pdffont.md)*
 
-*Defined in [api/text/layout.ts:209](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/text/layout.ts#L209)*
+*Defined in [api/text/layout.ts:209](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/text/layout.ts#L209)*
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 • **fontSize**? : *undefined | number*
 
-*Defined in [api/text/layout.ts:208](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/text/layout.ts#L208)*
+*Defined in [api/text/layout.ts:208](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/text/layout.ts#L208)*

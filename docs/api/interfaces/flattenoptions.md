@@ -22,4 +22,4 @@ sidebar_label: "FlattenOptions"
 
 • **updateFieldAppearances**: *boolean*
 
-*Defined in [api/form/PDFForm.ts:47](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/form/PDFForm.ts#L47)*
+*Defined in [api/form/PDFForm.ts:47](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFForm.ts#L47)*

@@ -30,7 +30,7 @@ sidebar_label: "PDFPageDrawImageOptions"
 
 • **blendMode**? : *[BlendMode](../enums/blendmode.md)*
 
-*Defined in [api/PDFPageOptions.ts:46](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/PDFPageOptions.ts#L46)*
+*Defined in [api/PDFPageOptions.ts:46](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/PDFPageOptions.ts#L46)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **height**? : *undefined | number*
 
-*Defined in [api/PDFPageOptions.ts:41](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/PDFPageOptions.ts#L41)*
+*Defined in [api/PDFPageOptions.ts:41](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/PDFPageOptions.ts#L41)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **opacity**? : *undefined | number*
 
-*Defined in [api/PDFPageOptions.ts:45](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/PDFPageOptions.ts#L45)*
+*Defined in [api/PDFPageOptions.ts:45](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/PDFPageOptions.ts#L45)*
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 • **rotate**? : *[Rotation](../index.md#rotation)*
 
-*Defined in [api/PDFPageOptions.ts:42](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/PDFPageOptions.ts#L42)*
+*Defined in [api/PDFPageOptions.ts:42](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/PDFPageOptions.ts#L42)*
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 • **width**? : *undefined | number*
 
-*Defined in [api/PDFPageOptions.ts:40](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/PDFPageOptions.ts#L40)*
+*Defined in [api/PDFPageOptions.ts:40](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/PDFPageOptions.ts#L40)*
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 • **x**? : *undefined | number*
 
-*Defined in [api/PDFPageOptions.ts:38](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/PDFPageOptions.ts#L38)*
+*Defined in [api/PDFPageOptions.ts:38](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/PDFPageOptions.ts#L38)*
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 • **xSkew**? : *[Rotation](../index.md#rotation)*
 
-*Defined in [api/PDFPageOptions.ts:43](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/PDFPageOptions.ts#L43)*
+*Defined in [api/PDFPageOptions.ts:43](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/PDFPageOptions.ts#L43)*
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 • **y**? : *undefined | number*
 
-*Defined in [api/PDFPageOptions.ts:39](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/PDFPageOptions.ts#L39)*
+*Defined in [api/PDFPageOptions.ts:39](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/PDFPageOptions.ts#L39)*
 
 ___
 
@@ -94,4 +94,4 @@ ___
 
 • **ySkew**? : *[Rotation](../index.md#rotation)*
 
-*Defined in [api/PDFPageOptions.ts:44](https://github.com/Hopding/pdf-lib/blob/d213f92/src/api/PDFPageOptions.ts#L44)*
+*Defined in [api/PDFPageOptions.ts:44](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/PDFPageOptions.ts#L44)*
