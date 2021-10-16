@@ -25,7 +25,7 @@ sidebar_label: "LayoutSinglelineTextOptions"
 
 • **alignment**: *[TextAlignment](../enums/textalignment.md)*
 
-*Defined in [api/text/layout.ts:281](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/text/layout.ts#L281)*
+*Defined in [api/text/layout.ts:281](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/text/layout.ts#L281)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **bounds**: *[LayoutBounds](layoutbounds.md)*
 
-*Defined in [api/text/layout.ts:284](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/text/layout.ts#L284)*
+*Defined in [api/text/layout.ts:284](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/text/layout.ts#L284)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **font**: *[PDFFont](../classes/pdffont.md)*
 
-*Defined in [api/text/layout.ts:283](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/text/layout.ts#L283)*
+*Defined in [api/text/layout.ts:283](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/text/layout.ts#L283)*
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 • **fontSize**? : *undefined | number*
 
-*Defined in [api/text/layout.ts:282](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/text/layout.ts#L282)*
+*Defined in [api/text/layout.ts:282](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/text/layout.ts#L282)*

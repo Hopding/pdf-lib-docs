@@ -21,7 +21,7 @@ sidebar_label: "NonFullScreenPageMode"
 
 • **UseNone**: = "UseNone"
 
-*Defined in [core/interactive/ViewerPreferences.ts:27](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L27)*
+*Defined in [core/interactive/ViewerPreferences.ts:27](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/core/interactive/ViewerPreferences.ts#L27)*
 
 After exiting FullScreen mode, neither the document outline nor thumbnail
 images should be visible.
@@ -32,7 +32,7 @@ ___
 
 • **UseOC**: = "UseOC"
 
-*Defined in [core/interactive/ViewerPreferences.ts:39](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L39)*
+*Defined in [core/interactive/ViewerPreferences.ts:39](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/core/interactive/ViewerPreferences.ts#L39)*
 
 After exiting FullScreen mode, the optional content group panel should be
 visible.
@@ -43,7 +43,7 @@ ___
 
 • **UseOutlines**: = "UseOutlines"
 
-*Defined in [core/interactive/ViewerPreferences.ts:30](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L30)*
+*Defined in [core/interactive/ViewerPreferences.ts:30](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/core/interactive/ViewerPreferences.ts#L30)*
 
 After exiting FullScreen mode, the document outline should be visible.
 
@@ -53,6 +53,6 @@ ___
 
 • **UseThumbs**: = "UseThumbs"
 
-*Defined in [core/interactive/ViewerPreferences.ts:33](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L33)*
+*Defined in [core/interactive/ViewerPreferences.ts:33](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/core/interactive/ViewerPreferences.ts#L33)*
 
 After exiting FullScreen mode, thumbnail images should be visible.

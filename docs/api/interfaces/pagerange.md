@@ -23,7 +23,7 @@ sidebar_label: "PageRange"
 
 • **end**: *number*
 
-*Defined in [core/interactive/ViewerPreferences.ts:94](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L94)*
+*Defined in [core/interactive/ViewerPreferences.ts:94](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/core/interactive/ViewerPreferences.ts#L94)*
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 • **start**: *number*
 
-*Defined in [core/interactive/ViewerPreferences.ts:93](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L93)*
+*Defined in [core/interactive/ViewerPreferences.ts:93](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/core/interactive/ViewerPreferences.ts#L93)*

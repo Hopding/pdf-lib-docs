@@ -26,7 +26,7 @@ sidebar_label: "LoadOptions"
 
 • **capNumbers**? : *undefined | false | true*
 
-*Defined in [api/PDFDocumentOptions.ts:29](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/PDFDocumentOptions.ts#L29)*
+*Defined in [api/PDFDocumentOptions.ts:29](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/PDFDocumentOptions.ts#L29)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **ignoreEncryption**? : *undefined | false | true*
 
-*Defined in [api/PDFDocumentOptions.ts:25](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/PDFDocumentOptions.ts#L25)*
+*Defined in [api/PDFDocumentOptions.ts:25](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/PDFDocumentOptions.ts#L25)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **parseSpeed**? : *[ParseSpeeds](../enums/parsespeeds.md) | number*
 
-*Defined in [api/PDFDocumentOptions.ts:26](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/PDFDocumentOptions.ts#L26)*
+*Defined in [api/PDFDocumentOptions.ts:26](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/PDFDocumentOptions.ts#L26)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **throwOnInvalidObject**? : *undefined | false | true*
 
-*Defined in [api/PDFDocumentOptions.ts:27](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/PDFDocumentOptions.ts#L27)*
+*Defined in [api/PDFDocumentOptions.ts:27](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/PDFDocumentOptions.ts#L27)*
 
 ___
 
@@ -58,4 +58,4 @@ ___
 
 • **updateMetadata**? : *undefined | false | true*
 
-*Defined in [api/PDFDocumentOptions.ts:28](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/PDFDocumentOptions.ts#L28)*
+*Defined in [api/PDFDocumentOptions.ts:28](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/PDFDocumentOptions.ts#L28)*

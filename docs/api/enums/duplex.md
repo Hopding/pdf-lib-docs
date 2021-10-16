@@ -20,7 +20,7 @@ sidebar_label: "Duplex"
 
 • **DuplexFlipLongEdge**: = "DuplexFlipLongEdge"
 
-*Defined in [core/interactive/ViewerPreferences.ts:75](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L75)*
+*Defined in [core/interactive/ViewerPreferences.ts:75](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/core/interactive/ViewerPreferences.ts#L75)*
 
 The PDF reader should print double sided and flip on the long edge of the
 sheet.
@@ -31,7 +31,7 @@ ___
 
 • **DuplexFlipShortEdge**: = "DuplexFlipShortEdge"
 
-*Defined in [core/interactive/ViewerPreferences.ts:69](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L69)*
+*Defined in [core/interactive/ViewerPreferences.ts:69](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/core/interactive/ViewerPreferences.ts#L69)*
 
 The PDF reader should print double sided and flip on the short edge of the
 sheet.
@@ -42,6 +42,6 @@ ___
 
 • **Simplex**: = "Simplex"
 
-*Defined in [core/interactive/ViewerPreferences.ts:63](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L63)*
+*Defined in [core/interactive/ViewerPreferences.ts:63](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/core/interactive/ViewerPreferences.ts#L63)*
 
 The PDF reader should print single-sided.

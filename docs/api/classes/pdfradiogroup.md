@@ -72,7 +72,7 @@ state at the same type **if** they represent the same underlying value (see
 
 *Overrides [PDFField](pdffield.md).[acroField](pdffield.md#acrofield)*
 
-*Defined in [api/form/PDFRadioGroup.ts:64](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFRadioGroup.ts#L64)*
+*Defined in [api/form/PDFRadioGroup.ts:64](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFRadioGroup.ts#L64)*
 
 The low-level PDFAcroRadioButton wrapped by this radio group.
 
@@ -84,7 +84,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[doc](pdffield.md#doc)*
 
-*Defined in [api/form/PDFField.ts:97](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFField.ts#L97)*
+*Defined in [api/form/PDFField.ts:92](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFField.ts#L92)*
 
 The document to which this field belongs.
 
@@ -96,7 +96,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[ref](pdffield.md#ref)*
 
-*Defined in [api/form/PDFField.ts:94](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFField.ts#L94)*
+*Defined in [api/form/PDFField.ts:89](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFField.ts#L89)*
 
 The unique reference assigned to this field within the document.
 
@@ -106,7 +106,7 @@ The unique reference assigned to this field within the document.
 
 ▸ **addOptionToPage**(`option`: string, `page`: [PDFPage](pdfpage.md), `options?`: [FieldAppearanceOptions](../interfaces/fieldappearanceoptions.md)): *void*
 
-*Defined in [api/form/PDFRadioGroup.ts:352](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFRadioGroup.ts#L352)*
+*Defined in [api/form/PDFRadioGroup.ts:352](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFRadioGroup.ts#L352)*
 
 Add a new radio button to this group on the specified page. For example:
 ```js
@@ -147,7 +147,7 @@ ___
 
 ▸ **clear**(): *void*
 
-*Defined in [api/form/PDFRadioGroup.ts:222](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFRadioGroup.ts#L222)*
+*Defined in [api/form/PDFRadioGroup.ts:222](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFRadioGroup.ts#L222)*
 
 Clear any selected option for this dropdown. This will result in all
 radio buttons in this group being toggled off. This method will update
@@ -171,7 +171,7 @@ ___
 
 *Overrides void*
 
-*Defined in [api/form/PDFRadioGroup.ts:422](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFRadioGroup.ts#L422)*
+*Defined in [api/form/PDFRadioGroup.ts:423](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFRadioGroup.ts#L423)*
 
 Update the appearance streams for each of this group's radio button widgets
 using the default appearance provider for radio groups. For example:
@@ -190,7 +190,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[disableExporting](pdffield.md#disableexporting)*
 
-*Defined in [api/form/PDFField.ts:252](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFField.ts#L252)*
+*Defined in [api/form/PDFField.ts:247](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFField.ts#L247)*
 
 Indicate that this field's value should **not** be exported when the form
 is submitted in a PDF reader. For example:
@@ -207,7 +207,7 @@ ___
 
 ▸ **disableMutualExclusion**(): *void*
 
-*Defined in [api/form/PDFRadioGroup.ts:321](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFRadioGroup.ts#L321)*
+*Defined in [api/form/PDFRadioGroup.ts:321](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFRadioGroup.ts#L321)*
 
 When the user clicks a radio button in this group only it will be selected.
 No other radio buttons in the group will be selected, even if they share
@@ -228,7 +228,7 @@ ___
 
 ▸ **disableOffToggling**(): *void*
 
-*Defined in [api/form/PDFRadioGroup.ts:270](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFRadioGroup.ts#L270)*
+*Defined in [api/form/PDFRadioGroup.ts:270](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFRadioGroup.ts#L270)*
 
 Prevent users from clicking on selected radio buttons in this group to
 toggle them off. Clicking on a selected radio button will have no effect.
@@ -249,7 +249,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[disableReadOnly](pdffield.md#disablereadonly)*
 
-*Defined in [api/form/PDFField.ts:175](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFField.ts#L175)*
+*Defined in [api/form/PDFField.ts:170](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFField.ts#L170)*
 
 Allow users to interact with this field and change its value in PDF
 readers via mouse and keyboard input. For example:
@@ -268,7 +268,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[disableRequired](pdffield.md#disablerequired)*
 
-*Defined in [api/form/PDFField.ts:213](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFField.ts#L213)*
+*Defined in [api/form/PDFField.ts:208](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFField.ts#L208)*
 
 Do not require this field to have a value when the form is submitted.
 For example:
@@ -287,7 +287,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[enableExporting](pdffield.md#enableexporting)*
 
-*Defined in [api/form/PDFField.ts:240](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFField.ts#L240)*
+*Defined in [api/form/PDFField.ts:235](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFField.ts#L235)*
 
 Indicate that this field's value should be exported when the form is
 submitted in a PDF reader. For example:
@@ -304,7 +304,7 @@ ___
 
 ▸ **enableMutualExclusion**(): *void*
 
-*Defined in [api/form/PDFRadioGroup.ts:305](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFRadioGroup.ts#L305)*
+*Defined in [api/form/PDFRadioGroup.ts:305](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFRadioGroup.ts#L305)*
 
 When the user clicks a radio button in this group it will be selected. In
 addition, any other radio buttons in this group that share the same
@@ -325,7 +325,7 @@ ___
 
 ▸ **enableOffToggling**(): *void*
 
-*Defined in [api/form/PDFRadioGroup.ts:256](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFRadioGroup.ts#L256)*
+*Defined in [api/form/PDFRadioGroup.ts:256](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFRadioGroup.ts#L256)*
 
 Allow users to click on selected radio buttons in this group to toggle
 them off. For example:
@@ -350,7 +350,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[enableReadOnly](pdffield.md#enablereadonly)*
 
-*Defined in [api/form/PDFField.ts:163](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFField.ts#L163)*
+*Defined in [api/form/PDFField.ts:158](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFField.ts#L158)*
 
 Prevent PDF readers from allowing users to interact with this field or
 change its value. The field will not respond to mouse or keyboard input.
@@ -372,7 +372,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[enableRequired](pdffield.md#enablerequired)*
 
-*Defined in [api/form/PDFField.ts:201](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFField.ts#L201)*
+*Defined in [api/form/PDFField.ts:196](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFField.ts#L196)*
 
 Require this field to have a value when the form is submitted.
 For example:
@@ -391,7 +391,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[getName](pdffield.md#getname)*
 
-*Defined in [api/form/PDFField.ts:133](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFField.ts#L133)*
+*Defined in [api/form/PDFField.ts:128](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFField.ts#L128)*
 
 Get the fully qualified name of this field. For example:
 ```js
@@ -421,7 +421,7 @@ ___
 
 ▸ **getOptions**(): *string[]*
 
-*Defined in [api/form/PDFRadioGroup.ts:93](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFRadioGroup.ts#L93)*
+*Defined in [api/form/PDFRadioGroup.ts:93](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFRadioGroup.ts#L93)*
 
 Get the list of available options for this radio group. Each option is
 represented by a radio button. These radio buttons are displayed at
@@ -444,7 +444,7 @@ ___
 
 ▸ **getSelected**(): *string | undefined*
 
-*Defined in [api/form/PDFRadioGroup.ts:124](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFRadioGroup.ts#L124)*
+*Defined in [api/form/PDFRadioGroup.ts:124](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFRadioGroup.ts#L124)*
 
 Get the selected option for this radio group. The selected option is
 represented by the radio button in this group that is turned on. At most
@@ -469,7 +469,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[isExported](pdffield.md#isexported)*
 
-*Defined in [api/form/PDFField.ts:228](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFField.ts#L228)*
+*Defined in [api/form/PDFField.ts:223](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFField.ts#L223)*
 
 Returns `true` if this field's value should be exported when the form is
 submitted. See [PDFField.enableExporting](pdffield.md#enableexporting) and
@@ -490,7 +490,7 @@ ___
 
 ▸ **isMutuallyExclusive**(): *boolean*
 
-*Defined in [api/form/PDFRadioGroup.ts:289](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFRadioGroup.ts#L289)*
+*Defined in [api/form/PDFRadioGroup.ts:289](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFRadioGroup.ts#L289)*
 
 Returns `true` if the radio buttons in this group are mutually exclusive.
 This means that when the user selects a radio button, only that specific
@@ -514,7 +514,7 @@ ___
 
 ▸ **isOffToggleable**(): *boolean*
 
-*Defined in [api/form/PDFRadioGroup.ts:238](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFRadioGroup.ts#L238)*
+*Defined in [api/form/PDFRadioGroup.ts:238](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFRadioGroup.ts#L238)*
 
 Returns `true` if users can click on radio buttons in this group to toggle
 them off. The alternative is that once a user clicks on a radio button
@@ -536,7 +536,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[isReadOnly](pdffield.md#isreadonly)*
 
-*Defined in [api/form/PDFField.ts:148](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFField.ts#L148)*
+*Defined in [api/form/PDFField.ts:143](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFField.ts#L143)*
 
 Returns `true` if this field is read only. This means that PDF readers
 will not allow users to interact with the field or change its value. See
@@ -559,7 +559,7 @@ ___
 
 *Inherited from [PDFField](pdffield.md).[isRequired](pdffield.md#isrequired)*
 
-*Defined in [api/form/PDFField.ts:189](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFField.ts#L189)*
+*Defined in [api/form/PDFField.ts:184](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFField.ts#L184)*
 
 Returns `true` if this field must have a value when the form is submitted.
 See [PDFField.enableRequired](pdffield.md#enablerequired) and [PDFField.disableRequired](pdffield.md#disablerequired).
@@ -581,7 +581,7 @@ ___
 
 *Overrides void*
 
-*Defined in [api/form/PDFRadioGroup.ts:400](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFRadioGroup.ts#L400)*
+*Defined in [api/form/PDFRadioGroup.ts:401](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFRadioGroup.ts#L401)*
 
 Returns `true` if any of this group's radio button widgets do not have an
 appearance stream for their current state. For example:
@@ -600,7 +600,7 @@ ___
 
 ▸ **select**(`option`: string): *void*
 
-*Defined in [api/form/PDFRadioGroup.ts:185](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFRadioGroup.ts#L185)*
+*Defined in [api/form/PDFRadioGroup.ts:185](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFRadioGroup.ts#L185)*
 
 Select an option for this radio group. This operation is analogous to a
 human user clicking one of the radio buttons in this group via a PDF
@@ -635,7 +635,7 @@ ___
 
 ▸ **updateAppearances**(`provider?`: [AppearanceProviderFor](../index.md#appearanceproviderfor)‹[PDFRadioGroup](pdfradiogroup.md)›): *void*
 
-*Defined in [api/form/PDFRadioGroup.ts:449](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFRadioGroup.ts#L449)*
+*Defined in [api/form/PDFRadioGroup.ts:450](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFRadioGroup.ts#L450)*
 
 Update the appearance streams for each of this group's radio button widgets
 using the given appearance provider. If no `provider` is passed, the
@@ -665,7 +665,7 @@ ___
 
 ▸ **of**(`acroRadioButton`: PDFAcroRadioButton, `ref`: PDFRef, `doc`: [PDFDocument](pdfdocument.md)): *[PDFRadioGroup](pdfradiogroup.md)‹›*
 
-*Defined in [api/form/PDFRadioGroup.ts:57](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/form/PDFRadioGroup.ts#L57)*
+*Defined in [api/form/PDFRadioGroup.ts:57](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/form/PDFRadioGroup.ts#L57)*
 
 > **NOTE:** You probably don't want to call this method directly. Instead,
 > consider using the [PDFForm.getOptionList](pdfform.md#getoptionlist) method, which will create an

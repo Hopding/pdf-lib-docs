@@ -27,7 +27,7 @@ sidebar_label: "DrawTextLinesOptions"
 
 • **color**: *[Color](../index.md#color)*
 
-*Defined in [api/operations.ts:591](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/operations.ts#L591)*
+*Defined in [api/operations.ts:591](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/operations.ts#L591)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **font**: *string | PDFName*
 
-*Defined in [api/operations.ts:592](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/operations.ts#L592)*
+*Defined in [api/operations.ts:592](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/operations.ts#L592)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **rotate**: *[Rotation](../index.md#rotation)*
 
-*Defined in [api/operations.ts:594](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/operations.ts#L594)*
+*Defined in [api/operations.ts:594](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/operations.ts#L594)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **size**: *number | PDFNumber*
 
-*Defined in [api/operations.ts:593](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/operations.ts#L593)*
+*Defined in [api/operations.ts:593](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/operations.ts#L593)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 • **xSkew**: *[Rotation](../index.md#rotation)*
 
-*Defined in [api/operations.ts:595](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/operations.ts#L595)*
+*Defined in [api/operations.ts:595](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/operations.ts#L595)*
 
 ___
 
@@ -67,4 +67,4 @@ ___
 
 • **ySkew**: *[Rotation](../index.md#rotation)*
 
-*Defined in [api/operations.ts:596](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/operations.ts#L596)*
+*Defined in [api/operations.ts:596](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/operations.ts#L596)*

@@ -19,7 +19,7 @@ sidebar_label: "PrintScaling"
 
 • **AppDefault**: = "AppDefault"
 
-*Defined in [core/interactive/ViewerPreferences.ts:58](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L58)*
+*Defined in [core/interactive/ViewerPreferences.ts:58](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/core/interactive/ViewerPreferences.ts#L58)*
 
 ___
 
@@ -27,6 +27,6 @@ ___
 
 • **None**: = "None"
 
-*Defined in [core/interactive/ViewerPreferences.ts:55](https://github.com/Hopding/pdf-lib/blob/e10290a/src/core/interactive/ViewerPreferences.ts#L55)*
+*Defined in [core/interactive/ViewerPreferences.ts:55](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/core/interactive/ViewerPreferences.ts#L55)*
 
 No page scaling.

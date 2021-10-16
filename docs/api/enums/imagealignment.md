@@ -20,7 +20,7 @@ sidebar_label: "ImageAlignment"
 
 • **Center**: = 1
 
-*Defined in [api/image/alignment.ts:3](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/image/alignment.ts#L3)*
+*Defined in [api/image/alignment.ts:3](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/image/alignment.ts#L3)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **Left**: = 0
 
-*Defined in [api/image/alignment.ts:2](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/image/alignment.ts#L2)*
+*Defined in [api/image/alignment.ts:2](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/image/alignment.ts#L2)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **Right**: = 2
 
-*Defined in [api/image/alignment.ts:4](https://github.com/Hopding/pdf-lib/blob/e10290a/src/api/image/alignment.ts#L4)*
+*Defined in [api/image/alignment.ts:4](https://github.com/Hopding/pdf-lib/blob/b8a44bd/src/api/image/alignment.ts#L4)*
