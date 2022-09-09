@@ -6,6 +6,16 @@ sidebar_label: "RGB"
 
 [pdf-lib](../index.md) › [RGB](rgb.md)
 
+Red, Green and Blue. Each color consists of 8 bits (1 byte) having a
+value which goes from 0 to 255. Therefore pdf-lib expresses colors as
+fractional values between 0 and 1. You can divide each of your color
+component values by 255 to produce the correct fractional value. For
+example:
+
+```
+rgb(0 / 255, 74 / 255, 153 / 255)
+```
+
 ## Hierarchy
 
 * **RGB**
